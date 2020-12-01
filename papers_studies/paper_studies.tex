@@ -1,0 +1,60 @@
+\documentclass[12pt,onecolumn,a4paper]{article}
+\usepackage{epsfig,amsthm,amsmath,booktabs,csquotes}
+\usepackage [pagebackref=true, colorlinks, linkcolor=blue, citecolor=magenta, urlcolor=cyan] {hyperref}
+\usepackage{color,xcolor}
+
+\usepackage{subcaption}
+\usepackage[labelformat=parens,labelsep=quad, skip=3pt]{caption}
+\usepackage{graphicx}
+\usepackage{enumerate,braket}
+\usepackage[localise]{xepersian}
+\settextfont[Scale=1.2]{BZAR.TTF}
+\setlatintextfont[Scale=1]{Times New Roman}
+
+
+
+
+
+\begin{document}
+\title{سیر مطالعاتی من برای ارائه پایان نامه کارشناسی ارشد} 
+\author{محسن مهرانی - استاد راهنما: دکتر سامان مقیمی عراقی}
+\date{}
+\maketitle
+\قسمت{مطالعه مقاله شماره \cite{PhysRevLett.105.158104}:} 
+در این مقاله مدلی را مشاهده کردیم که به کمک مدل $KM$ یک شبکه نورونی کامل را توصیف کرده است. این شبکه شامل نورون‌های مهاری است که روشن شدن هر کدوم از آن‌ها باعث مهار شدن نورون‌های همسایه می‌شود. معادله تحول اختلاف پتانسیل هر کدام از نورون‌ها با محیط بیرونش از رابطه زیر داده می‌شود ($g:$ ضریب اتصال هر جفت نورون، $S:$ ماتریس اتصال، $t_d$ زمان تاخیر میان زدن تیزه و تحریک آن، $a_i$ یک پتانسیل تحریکی و خارجی):
+\begin{align}
+v_i=a_i - v_i - g N \sum_{n|t_n<t} S_{i,l(n)} \delta(t - t_n - t_d) 
+\label{eq:potential_1}
+\end{align}
+
+پارامتر نظم سیستم را به کمک میدان ($E$) تعریف کرده است اما پارامتر نظم را انحراف از معیار آن در طول زمان معرفی کرده است.
+\begin{align}
+\ddot{E}+ 2\alpha \dot{E}+\alpha^{2}E &=2\alpha N \sum_{n|tـn<t} \delta(t - t_n - t_d) \\
+\sigma^{2} &= \braket{E^{2}}_{t} - \braket{E}^{2}_{t}
+\end{align}
+در طول زمان میدان $E$ و $\sigma$ را رصد کرده است و دیده‌است که میدان خاموش و روشن می‌شود و انحراف از معیار آن مقدار خوبی مثبت است چنان که این خاموش و روشن‌ها را با معنا نشان می‌دهد. حال ادعای این مقاله است که این خاموش و روشن شدن‌ها الگویی آشوبناک دارند و ادعا کرده است که به اندازه متناهی سامانه نیز وابسته نیست.
+
+\textbf{سوالات:}
+
+\begin{enumerate}[(1)]
+\item
+مدل $Kuramoto$ به قرار زیر است. چطور معادله \ref{eq:potential_1} به آن تبدیل می‌شود. دلتای یاد شده در معادله \ref{eq:potential_1} دلتای دیراک است؟ یا دلتایی که بیشینه آن عدد یک است؟ 
+\begin{align}
+\frac {d\theta _{i}}{dt}=\omega _{i}+\sum _{j=1}^{N}a_{ij}\sin(\theta _{j}-\theta _{i}),\qquad i=1\ldots N
+\end{align}
+\item
+$t_n$ چیست؟
+\item
+اگر قرار باشد جمعی که در رابطه \ref{eq:potential_1} نوشته‌ایم روی تمام زمان‌های از ازل تا $t$ باشد پس آیا هر نورون حافظه‌ای از کل رخدادهای گذشته دارد؟ حتی از لحظاتی که قبل از تیزه زدن ها وجود دارند؟
+\item
+میدان $E$ به چه معناست؟ چطور تعریف کردیم؟ آیا مشخصه‌ای از کل سیستم است؟
+\end{enumerate}
+
+
+%\newpage
+\bibliographystyle{plain-fa}
+\bibliography{MyReferences}
+
+\end{document}
+
+
