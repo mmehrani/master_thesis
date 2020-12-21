@@ -69,9 +69,10 @@ $t_n$ چیست؟
 v_{i}(t+\Delta t) &= v_{i}(t) + \int_{t}^{t+\Delta t} \dot{v_i}  dt \\
 &= v_{i}(t) + \int_{t}^{t+\Delta t} \left[ a_i - v_i - g N \sum_{n|t_n<t} S_{i,l(n)} \delta(t - t_n - t_d)  \right]   dt \\
 &\approx v_{i}(t) +  \left[ a_i - v_i(t) \right] \Delta t - g N \sum_{n|t_n<t} S_{i,l(n)} \int_{t}^{t+\Delta t} \delta(t - t_n - t_d) dt  \\
-&\approx v_{i}(t) +  \left[ a_i - v_i(t) \right] \Delta t - g N \sum_{n|t_n<t} S_{i,l(n)} H(t - t_n - t_d)
+&\approx v_{i}(t) +  \left[ a_i - v_i(t) \right] \Delta t - g N \sum_{n|t_n<t} S_{i,l(n)} H(t + \Delta t- t_n - t_d) \label{eq:potential_changes}
 \end{align}
 
+حالا تابع پله کاملا برای ما آشنا و قابل مدلسازی است. دقت شود که تابع پله یاد شده فقط در محدوده $t, t+\Delta t$ زندگی می‌کند و پس از آن اعتبار ندارد. معادله \ref{eq:potential_changes}  می‌گوید که باید برای تحول پتانسیل نورون $i$ام بررسی کنیم که آیا نورونی در همسایگی آن تیزه زده است یا نه. اگر چنان باشد یک واحد به جمع تیزه زدگان اضافه کنیم.
 %\newpage
 \bibliographystyle{plain-fa}
 \bibliography{MyReferences}
