@@ -37,7 +37,8 @@ class Kuramoto_neural_network:
         self.spiking_records = np.array( np.zeros((total_steps,self.num_neurons)), dtype = bool )
         
         for i in tqdm(range(total_steps),desc = 'network dynamic'):
-            potentail_arr = potentail_arr + (random_input - potentail_arr)*time_step - self.g * self.num_neurons*self._retarded_spikes_record(i)
+            potentail_arr = potentail_arr + (random_input - potentail_arr)*time_step \
+                                - (self.g / self.num_neurons )*self._retarded_spikes_record(i)
             self.spiking_records[i] = potentail_arr > 1
             reset_func = lambda v: v-1 if v>1 else v
             vfunc = np.vectorize(reset_func)
@@ -55,7 +56,8 @@ class Kuramoto_neural_network:
         e_arr = np.zeros(self.total_steps)
         
         for i in range(0,self.total_steps-1):
-            m_arr[i+1] = m_arr[i] + self.time_step*( -alpha*m_arr[i] + 2*alpha*self.num_neurons*self._retarded_spikes_record(i) )
+            m_arr[i+1] = m_arr[i] + self.time_step* \
+                        ( -alpha*m_arr[i] ) + (alpha**2 / self.num_neurons ) * self._retarded_spikes_record(i)
             e_arr[i+1] = e_arr[i] + self.time_step*( m_arr[i] - alpha*e_arr[i] )
         
         self.effective_field_array = e_arr

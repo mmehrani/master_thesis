@@ -24,7 +24,7 @@
 \قسمت{مطالعه مقاله شماره \cite{PhysRevLett.105.158104}:} 
 در این مقاله مدلی را مشاهده کردیم که به کمک مدل $KM$ یک شبکه نورونی کامل را توصیف کرده است. این شبکه شامل نورون‌های مهاری است که روشن شدن هر کدوم از آن‌ها باعث مهار شدن نورون‌های همسایه می‌شود. معادله تحول اختلاف پتانسیل هر کدام از نورون‌ها با محیط بیرونش از رابطه زیر داده می‌شود ($g:$ ضریب اتصال هر جفت نورون، $S:$ ماتریس اتصال، $t_d$ زمان تاخیر میان زدن تیزه و تحریک آن، $a_i$ یک پتانسیل تحریکی و خارجی):
 \begin{align}
-\ddot{v_i}=a_i - v_i - g N \sum_{n|t_n<t} S_{i,l(n)} \delta(t - t_n - t_d) 
+\dot{v_i}=a_i - v_i - \frac{g}{N} \sum_{n|t_n<t} S_{i,l(n)} \delta(t - t_n - t_d) 
 \label{eq:potential_1}
 \end{align}
 
@@ -67,9 +67,9 @@ $t_n$ چیست؟
 یکی از مشکلات شبیه سازی معادلات دیفرانسیلی حضور تابع دلتای دیراک است. این تابع در نقطه صفر خود دارای مقداری بینهایت است. برای برطرف کردن این معذل چه باید کرد؟ نکته در این جا نهفته است که چون ما برای حل عددی معادله دیفرانسیلی خود از زمان پیوسته استفاده نمی‌کنیم و از گام‌هایی با طول مثبت $\Delta t$ استفاده می‌کنیم این مشکل به صورت زیر مدیریت می‌شود.
 \begin{align}
 v_{i}(t+\Delta t) &= v_{i}(t) + \int_{t}^{t+\Delta t} \dot{v_i}  dt \\
-&= v_{i}(t) + \int_{t}^{t+\Delta t} \left[ a_i - v_i - g N \sum_{n|t_n<t} S_{i,l(n)} \delta(t - t_n - t_d)  \right]   dt \\
-&\approx v_{i}(t) +  \left[ a_i - v_i(t) \right] \Delta t - g N \sum_{n|t_n<t} S_{i,l(n)} \int_{t}^{t+\Delta t} \delta(t - t_n - t_d) dt  \\
-&\approx v_{i}(t) +  \left[ a_i - v_i(t) \right] \Delta t - g N \sum_{n|t_n<t} S_{i,l(n)} H(t + \Delta t- t_n - t_d) \label{eq:potential_changes}
+&= v_{i}(t) + \int_{t}^{t+\Delta t} \left[ a_i - v_i - \frac{g}{N} \sum_{n|t_n<t} S_{i,l(n)} \delta(t - t_n - t_d)  \right]   dt \\
+&\approx v_{i}(t) +  \left[ a_i - v_i(t) \right] \Delta t - \frac{g}{N} \sum_{n|t_n<t} S_{i,l(n)} \int_{t}^{t+\Delta t} \delta(t - t_n - t_d) dt  \\
+&\approx v_{i}(t) +  \left[ a_i - v_i(t) \right] \Delta t - \frac{g}{N} \sum_{n|t_n<t} S_{i,l(n)} H(t + \Delta t- t_n - t_d) \label{eq:potential_changes}
 \end{align}
 
 حالا تابع پله کاملا برای ما آشنا و قابل مدلسازی است. دقت شود که تابع پله یاد شده فقط در محدوده $t, t+\Delta t$ زندگی می‌کند و پس از آن اعتبار ندارد. معادله \ref{eq:potential_changes}  می‌گوید که باید برای تحول پتانسیل نورون $i$ام بررسی کنیم که آیا نورونی در همسایگی آن تیزه زده است یا نه. اگر چنان باشد یک واحد به جمع تیزه زدگان اضافه کنیم.
