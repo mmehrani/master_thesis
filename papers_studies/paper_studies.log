@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  1 JAN 2021 16:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  10 FEB 2021 15:28
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -848,7 +848,12 @@ LaTeX Font Info:    Font shape `TU/BZAR.TTF(0)/b/n' will be
 ]
 LaTeX Font Info:    Font shape `TU/BZAR.TTF(0)/b/n' will be
 (Font)              scaled to size 14.39996pt on input line 54.
- [2] (paper_studies.bbl (paper_studies.brf)
+ [2]
+File: ../scripts/raster_plot_N1000.png Graphic file (type bmp)
+<../scripts/raster_plot_N1000.png>
+File: ../scripts/two_pops_sigma.png Graphic file (type bmp)
+<../scripts/two_pops_sigma.png>
+ [3] [4] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write4
 \openout4 = `paper_studies.brf'.
 
@@ -859,28 +864,27 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
  (paper_studies.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 80.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 107.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: 9A43FB8D2BEB780DCF7E4D23CB28825B;261.
+(rerunfilecheck)             Checksum: 06640479F735898843F38A3DCFF10A0A;514.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: E301B67034437176E64445184097D40F;54.
-
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17715 strings out of 414602
- 320271 string characters out of 2910870
+ 17746 strings out of 414602
+ 320893 string characters out of 2910870
  695030 words of memory out of 3000000
- 34548 multiletter control sequences out of 15000+200000
+ 34574 multiletter control sequences out of 15000+200000
  537712 words of font info for 72 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  51i,10n,79p,1158b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper_studies.pdf (3 pages).
+Output written on paper_studies.pdf (5 pages).

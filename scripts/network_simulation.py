@@ -68,7 +68,7 @@ class Kuramoto_neural_network:
     
     pass
 
-sample_model = Kuramoto_neural_network(num_neurons=10000,g=0.1)
-sample_model.ignite(total_time = 1000)
-sample_model.compute_effective_field( alpha = 20)
-sigma = sample_model.report_sigma()
+# sample_model = Kuramoto_neural_network(num_neurons=10000,g=0.1)
+# sample_model.ignite(total_time = 1000)
+# sample_model.compute_effective_field( alpha = 20)
+# sigma = sample_model.report_sigma()
