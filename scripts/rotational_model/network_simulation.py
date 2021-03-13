@@ -39,18 +39,24 @@ class Rotational_neural_network:
         
         random_input = np.random.uniform(*random_input_span,size = self.num_neurons)
         
+        self.amin_saman_param = np.zeros( total_steps )
         self.spiking_records = np.array( np.zeros(total_steps) )
         self.completed_laps = np.zeros( self.num_neurons )
         
         for i in tqdm( range(total_steps - 1),desc = 'network dynamic' ):
-            self.completed_laps = np.floor( (theta_arr - np.pi) / 2*np.pi,dtype = float) #pi is the checkpoints for neurons
+            # self.completed_laps = np.floor( (theta_arr - np.pi) / 2*np.pi,dtype = float) #pi is the checkpoints for neurons
             theta_arr = theta_arr + (random_input - np.cos(theta_arr) - self.g * e_arr[i] )*time_step
             
             #here we should spot the spiking neurons. we capture if any has completed new lap
-            self.spiking_records[i] =  np.sum( np.floor( (theta_arr - np.pi) / 2*np.pi,dtype = float) > self.completed_laps )
+            # self.spiking_records[i] =  np.sum( np.floor( (theta_arr - np.pi) / 2*np.pi,dtype = float) > self.completed_laps )
+            mask = theta_arr > np.pi
+            self.spiking_records[i] = np.sum( mask )
+            theta_arr = theta_arr - 2 * np.pi * mask
             
             m_arr[i+1] = m_arr[i] + time_step*( -alpha*m_arr[i] ) + ( (alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
             e_arr[i+1] = e_arr[i] + time_step*( m_arr[i] - alpha*e_arr[i] )
+            
+            self.amin_saman_param[i] = np.mean( np.sin(theta_arr) )**2
             
         
         
@@ -61,9 +67,9 @@ class Rotational_neural_network:
         self.effective_field_array = e_arr
         return
     
-    def report_sync_parameter(self):
-        param = np.sum( np.sin(self.theta_arr)**2 ) / self.num_neurons
-        return param
+    def report_sync_parameter(self,last_steps_period = 1000):
+        if self.total_steps < 1000: last_steps_period = self.total_steps
+        return np.mean( self.amin_saman_param[-last_steps_period:] )
     
     def report_sigma(self):
         sigma = np.std( self.effective_field_array )
@@ -72,8 +78,8 @@ class Rotational_neural_network:
     
     pass
 
-# sample_model = Rotational_neural_network(num_neurons=1000,g=5)
-# sample_model.ignite(total_time = 1000)
-# # sample_model.compute_effective_field( alpha = 20)
-# sync_param = sample_model.report_sync_parameter()
-# sigma = sample_model.report_sigma()
+sample_model = Rotational_neural_network(num_neurons=1000,g=0)
+sample_model.ignite(total_time = 1000)
+# sample_model.compute_effective_field( alpha = 20)
+sync_param = sample_model.report_sync_parameter()
+sigma = sample_model.report_sigma()
