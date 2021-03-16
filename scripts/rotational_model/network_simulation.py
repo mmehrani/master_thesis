@@ -45,8 +45,11 @@ class Rotational_neural_network:
         self.completed_laps = np.zeros( self.num_neurons )
         
         for i in tqdm( range(total_steps - 1),desc = 'network dynamic' ):
-            theta_arr = theta_arr + (random_input - np.cos(theta_arr) - self.g * e_arr[i] )*time_step
-            
+            # theta_arr = theta_arr + (random_input - np.cos(theta_arr) - self.g * e_arr[i] )*time_step
+    
+            adding_term = (-self.g*e_arr[i] + random_input - 1 )* np.cos(theta_arr) + (-self.g*e_arr[i] + random_input + 1)
+            theta_arr = theta_arr + adding_term*time_step
+    
             #here we should spot the spiking neurons.
             mask = theta_arr > np.pi
             self.spiking_records[i] = np.sum( mask )
