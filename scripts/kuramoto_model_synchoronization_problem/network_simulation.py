@@ -39,9 +39,7 @@ class Kuramoto_neural_network:
         for i in tqdm(range(total_steps),desc = 'network dynamic'):
             potentail_arr = potentail_arr + (random_input - potentail_arr)*time_step - (self.g / self.num_neurons )*self._retarded_spikes_record(i)
             self.spiking_records[i] = np.sum( potentail_arr > 1 )
-            reset_func = lambda v: v-1 if v>1 else v
-            vfunc = np.vectorize(reset_func)
-            potentail_arr = vfunc(potentail_arr)
+            potentail_arr = potentail_arr - 1*(potentail_arr > 1)
         
         self.total_time = total_time
         self.total_steps = total_steps
@@ -68,7 +66,7 @@ class Kuramoto_neural_network:
     
     pass
 
-# sample_model = Kuramoto_neural_network(num_neurons=10000,g=0.1)
+# sample_model = Kuramoto_neural_network(num_neurons=10000,g=5)
 # sample_model.ignite(total_time = 1000)
 # sample_model.compute_effective_field( alpha = 20)
 # sigma = sample_model.report_sigma()

@@ -55,7 +55,8 @@ class Rotational_neural_network:
             m_arr[i+1] = m_arr[i] + time_step*( -self.alpha*m_arr[i] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
             e_arr[i+1] = e_arr[i] + time_step*( m_arr[i] - self.alpha*e_arr[i] )
             
-            self.amin_saman_param[i] = np.mean( np.sin(theta_arr) )**2
+            left_handed_neurons = np.cos(theta_arr) < 0
+            self.amin_saman_param[i] = np.mean( np.sin(theta_arr[left_handed_neurons]) )**2
             
         
         
@@ -77,7 +78,7 @@ class Rotational_neural_network:
     
     pass
 
-# sample_model = Rotational_neural_network(num_neurons=1000,g=0.1,alpha = 100)
+# sample_model = Rotational_neural_network(num_neurons=1000,g=5,alpha = 20)
 # sample_model.ignite(total_time = 1000)
 # sync_param = sample_model.report_sync_parameter()
 # sigma = sample_model.report_sigma()
