@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  23 MAR 2021 22:44
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  8 APR 2021 21:00
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -774,11 +774,7 @@ text;"
 LaTeX Info: Redefining \latinfont on input line 15.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (paper_studies.aux
-
-LaTeX Warning: Label `fig:two_pops_sync_rotational' multiply defined.
-
-)
+ (paper_studies.aux)
 \openout1 = `paper_studies.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -792,7 +788,8 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 0.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 20.
@@ -881,7 +878,20 @@ File: ../scripts/rotational_model/two_pops_sigma.png Graphic file (type bmp)
 File: ../scripts/rotational_model/two_pops_sync_param.png Graphic file (type bm
 p)
 <../scripts/rotational_model/two_pops_sync_param.png>
- [6] (paper_studies.bbl (paper_studies.brf)
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: • on input line 150.
+
+
+Package caption Warning: \label without proper reference on input line 178.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:kuramoto_rotational' on page 6 undefined on input
+ line 153.
+
+[6] [7] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write4
 \openout4 = `paper_studies.brf'.
 
@@ -890,28 +900,31 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
  (paper_studies.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 154.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
 (rerunfilecheck)             Checksum: 0E71F09FD4723D017697022431F609FE;1043.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: E301B67034437176E64445184097D40F;54.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 17789 strings out of 414602
- 323083 string characters out of 2910870
+ 17792 strings out of 414602
+ 323161 string characters out of 2910870
  696110 words of memory out of 3000000
- 34602 multiletter control sequences out of 15000+200000
+ 34605 multiletter control sequences out of 15000+200000
  537792 words of font info for 82 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 51i,10n,79p,1159b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,11n,79p,1159b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper_studies.pdf (7 pages).
+Output written on paper_studies.pdf (8 pages).

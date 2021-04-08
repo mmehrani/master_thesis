@@ -129,7 +129,7 @@ s = \frac{1}{N_a} \braket{\sum_{i_a} sin^{2}(\theta_{i_a})}_t
 
 
 \subsubsection{نتایج }
-پس از برطرف کردن مشکلات ذکر شده، شبیه سازی اجرا شد. مرتبه‌ی اجرای این الگورتیم خطی است. برای یک شبکه شامل ۱۰۰۰ نورون و برای ۱۰۰۰۰ گام شبیه‌سازی زمانی در حدود ۴ ثانیه به طول انجامید. اما تغییرفازی برای این مدل با پارامترهای مشابه قبلی مشاهده نشد.
+پس از برطرف کردن مشکلات ذکر شده، شبیه سازی اجرا شد (شکل \ref{fig:two_pops_sync_rotational}و\ref{fig:two_pops_amin_saman_rotational}). مرتبه‌ی اجرای این الگورتیم خطی است. برای یک شبکه شامل ۱۰۰۰ نورون و برای ۱۰۰۰۰ گام شبیه‌سازی زمانی در حدود ۴ ثانیه به طول انجامید. اما تغییرفازی برای این مدل با پارامترهای مشابه قبلی مشاهده نشد.
 \begin{figure}
 \centering
   \includegraphics[width = 10 cm]{../scripts/rotational_model/two_pops_sigma.png}
@@ -141,12 +141,45 @@ s = \frac{1}{N_a} \braket{\sum_{i_a} sin^{2}(\theta_{i_a})}_t
 \begin{figure}
 \centering
   \includegraphics[width = 10 cm]{../scripts/rotational_model/two_pops_sync_param.png}
- \caption{پارامتر نظم تعریف شده در رابطه \ref{eq:saman_amin_param} }
-  \label{fig:two_pops_sync_rotational}
+ \caption{پارامتر نظم تعریف شده در رابطه \ref{eq:saman_amin_param} برای مدل چرخنده }
+  \label{fig:two_pops_amin_saman_rotational}
 \end{figure}
 
 \subsubsection{تفسیر و تحلیل نتایج}
 بنظر می‌آید اگر چه مدل چرخنده با مدل کوراموتو شبهات‌هایی دارد اما تفاوت‌هایی نیز موجود است که باعث شده‌است رفتار سامانه ما چهره‌هایی متفاوت از خود نشان دهند. به این منظور تفاوت‌های زیر را پیشنهاد کردیم و تلاش خواهیم کرد در ادامه در هر کدام دو مدل را به یکدیگر نزدیک کنیم.
+\begin{enumerate}[•]
+\item
+\textbf{تفاوت بسامد}: فرض کنید دو نورون تنها را که هر کدام از دینامیک یک مدل پیروی می‌کنند؛ در کنار یکدیگر قرار دهیم. متوجه خواهیم شد که به ازای ورودی‌های یکسان پاسخ آن دو باهم متفاوت است.
+جدول \ref{tab:kuramoto_rotational} نشان دهنده‌ی نتایج این آزمایش است.
+\end{enumerate}
+
+
+\begin{center}
+\begin{table}
+\centering
+\begin{tabular}{|l|l||l|l|}
+\hline
+\multicolumn{2}{|c}{کوراموتو} &
+\multicolumn{2}{c|}{چرخنده}  \\
+\hline 
+
+فاصله زمانی (ثانیه) & جریان (آمپر)& فاصله زمانی (ثانیه) & جریان(آمپر)\\
+\hline 
+۱,۷۸ & ۱,۲  & ۱,۸۶ & ۳,۵\\
+۰,۴۳ & ۲,۸ & ۲,۲۰  & ۳ \\
+ &  &  ۱,۶۱&۴ \\ 
+ &  &  ۱,۴۲& ۴,۵\\
+  &  &  ۱,۲۷& ۵\\
+ &  &  ۰,۷۸& ۸\\
+ &  &  ۰,۶۲& ۱۰\\
+  &  &  ۰,۴۷& ۱۳\\
+   &  &  ۰,۴۵& ۱۳,۵\\
+\hline
+\end{tabular}
+\label{tab:kuramoto_rotational}
+\caption{نتایج آزمایش بررسی دو تک نورون با مدل‌های متفاوت}
+\end{table}
+\end{center}
 \newpage
 \bibliographystyle{plain-fa}
 \bibliography{MyReferences}
