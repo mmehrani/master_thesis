@@ -67,6 +67,12 @@ class Rotational_neural_network:
         self.effective_field_array = e_arr
         return
     
+    def _record_amin_saman_param(self):
+        return
+    
+    def _watch_cornometers(self):
+        return
+    
     def report_sync_parameter(self,last_steps_period = 1000):
         if self.total_steps < 1000: last_steps_period = self.total_steps
         return np.mean( self.amin_saman_param[-last_steps_period:] )
