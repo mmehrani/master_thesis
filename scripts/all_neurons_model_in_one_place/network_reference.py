@@ -1,4 +1,4 @@
-neuron_engine = 'IF'
+neuron_engine = 'Rotational'
 
 # -*- coding: utf-8 -*-
 """
@@ -103,7 +103,7 @@ class Network_of_neurons(network_engine_class):
 
 
     
-sample_model = Network_of_neurons(num_neurons= 1000, g = 5)
-sample_model.ignite(random_input_span = (3.5,13.5),total_time = 1000)
-sigma = sample_model.report_sigma()
-spikies_period_mean = sample_model.report_spikies_period_mean()
+# sample_model = Network_of_neurons(num_neurons= 1000, g = 5)
+# sample_model.ignite(random_input_span = (3.5,13.5),total_time = 1000)
+# sigma = sample_model.report_sigma()
+# spikies_period_mean = sample_model.report_spikies_period_mean()
