@@ -1,3 +1,5 @@
+neuron_engine = 'IF'
+
 # -*- coding: utf-8 -*-
 """
 Created on Sun Apr 11 17:02:33 2021
@@ -11,7 +13,9 @@ import matplotlib.pyplot as plt
 
 from neurons_engines import Rotational_neural_network, Kuramoto_neural_network
 
-network_engine_class = Kuramoto_neural_network
+engines_dict = {'IF':Kuramoto_neural_network, 'Rotational':Rotational_neural_network}
+network_engine_class = engines_dict[neuron_engine]
+
 
 class Network_of_neurons(network_engine_class):
     def __init__(self,num_neurons,g,alpha = 20):
@@ -98,12 +102,6 @@ class Network_of_neurons(network_engine_class):
 
 
 
-
-
-# sample_model = Kuramoto_neural_network(num_neurons=10000,g=5)
-# sample_model.ignite(total_time = 1000)
-# sample_model.compute_effective_field( alpha = 20)
-# sigma = sample_model.report_sigma()
     
 sample_model = Network_of_neurons(num_neurons= 1000, g = 5)
 sample_model.ignite(random_input_span = (3.5,13.5),total_time = 1000)
