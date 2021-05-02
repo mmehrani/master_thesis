@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  8 APR 2021 21:00
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  3 MAY 2021 03:20
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -873,25 +873,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
  []
 
 [5]
-File: ../scripts/rotational_model/two_pops_sigma.png Graphic file (type bmp)
-<../scripts/rotational_model/two_pops_sigma.png>
-File: ../scripts/rotational_model/two_pops_sync_param.png Graphic file (type bm
-p)
-<../scripts/rotational_model/two_pops_sync_param.png>
-
-
-LaTeX Warning: The counter will not be printed.
-             The label is: • on input line 150.
-
-
-Package caption Warning: \label without proper reference on input line 178.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:kuramoto_rotational' on page 6 undefined on input
- line 153.
-
-[6] [7] (paper_studies.bbl (paper_studies.brf)
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+00/sigma_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/si
+gma_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+00/amin_saman_param_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/am
+in_saman_param_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+00/silent_neurons_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/si
+lent_neurons_g_0.1_65.png>
+ [6] [7]
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+00/mean_spiking_persiods_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/me
+an_spiking_persiods_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+00/mean_spiking_persiods_with_trending_line_g_0.1_65.png Graphic file (type bmp
+)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/me
+an_spiking_persiods_with_trending_line_g_0.1_65.png>
+ [8]
+File: ../scripts/rotational_model/single_runs/N10000_T1000_g50_input_8.5_13.5/s
+pikies_num_vs_input.png Graphic file (type bmp)
+<../scripts/rotational_model/single_runs/N10000_T1000_g50_input_8.5_13.5/spikie
+s_num_vs_input.png>
+ [9] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write4
 \openout4 = `paper_studies.brf'.
 
@@ -900,31 +909,29 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
- (paper_studies.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
+
+(paper_studies.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: 0E71F09FD4723D017697022431F609FE;1043.
+(rerunfilecheck)             Checksum: 2FFDCBFC92C018A88A4A6E4127A2B311;1307.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: E301B67034437176E64445184097D40F;54.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 17792 strings out of 414602
- 323161 string characters out of 2910870
+ 17822 strings out of 414602
+ 326318 string characters out of 2910870
  696110 words of memory out of 3000000
- 34605 multiletter control sequences out of 15000+200000
+ 34629 multiletter control sequences out of 15000+200000
  537792 words of font info for 82 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 51i,11n,79p,1159b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,15n,79p,1159b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper_studies.pdf (8 pages).
+Output written on paper_studies.pdf (10 pages).
