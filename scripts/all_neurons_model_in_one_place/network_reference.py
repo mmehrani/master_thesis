@@ -22,6 +22,7 @@ class Network_of_neurons(network_engine_class):
         self.num_neurons = num_neurons
         self.g = g
         self.alpha = alpha
+        self.potentail_arr = np.zeros(self.num_neurons,dtype = float)
         return
     
     def _retarded_spikes_record(self,step):
@@ -42,7 +43,7 @@ class Network_of_neurons(network_engine_class):
         self.time_step = time_step
         self.delay_step = int(delay_time/time_step)
         
-        self.potentail_arr = np.zeros(self.num_neurons,dtype = float)
+        
         self.m_arr = np.zeros(total_steps)
         self.e_arr = np.zeros(total_steps)
         self.random_input = np.random.uniform(*random_input_span,size = self.num_neurons)
