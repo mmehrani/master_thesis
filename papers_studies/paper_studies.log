@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  3 MAY 2021 03:20
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  11 MAY 2021 10:55
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -920,10 +920,6 @@ Package rerunfilecheck Info: File `paper_studies.out' has not changed.
 (rerunfilecheck)             Checksum: 2FFDCBFC92C018A88A4A6E4127A2B311;1307.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: E301B67034437176E64445184097D40F;54.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  17822 strings out of 414602
