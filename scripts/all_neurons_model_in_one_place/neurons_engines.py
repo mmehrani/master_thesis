@@ -30,8 +30,6 @@ class Rotational_neural_network:
         None.
 
         """
-        #potential to fall
-        # potential_free_fall_mask = self.potentail_arr > - 4.7123 #-3pi/2
 
         #dynamics
         self.potentail_arr = self.potentail_arr + (self.random_input - np.cos(self.potentail_arr) - self.g * self.e_arr[i] )*self.time_step
@@ -40,9 +38,8 @@ class Rotational_neural_network:
         self.e_arr[i+1] = self.e_arr[i] + self.time_step*( self.m_arr[i] - self.alpha*self.e_arr[i] )
 
         # Prevent neurons from free falling to large negative degrees.
-        free_fall_mask = self.potentail_arr < - 4.7123
-        # self.potentail_arr[free_fall_mask & potential_free_fall_mask] = - 4.7123
-        self.potentail_arr[free_fall_mask] = - 4.7123
+        free_fall_mask = self.potentail_arr < - 7.8539 # slightly greater than -5pi/2
+        self.potentail_arr[free_fall_mask] = - 7.8539
         
         #here we should spot the spiking neurons.
         self.spike_mask = self.potentail_arr > np.pi
