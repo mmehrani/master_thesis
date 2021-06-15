@@ -49,8 +49,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 1000
-total_time = 100
-start_time_to_sample = 90
+total_time = 10
+start_time_to_sample = 1
 g = 60
 
 
@@ -80,7 +80,7 @@ plateau = np.zeros((grating_num, num_neurons))
 def update(frame):
     fig.suptitle('Network dynamic N={} g={}'.format(num_neurons,g))
     sample_network._march_on(frame-1)
-    phase_marks = np.floor( (sample_network.potentail_arr - min_degree) / grating_blocks_length )
+    phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - min_degree) / grating_blocks_length )
     
     for neuron_index in range(num_neurons):
         sample_zero = np.zeros(grating_num)
@@ -88,18 +88,21 @@ def update(frame):
         plateau[:,neuron_index] = sample_zero
     
     colored_plateau.set_data(plateau)
-
+    colored_pop_dist.set_data( np.atleast_2d(np.sum(plateau,axis = 1)).T )
     return plateau
 
-fig, ax = plt.subplots()
+fig, (ax, ax_stat) = plt.subplots(nrows = 1,ncols = 2, gridspec_kw={'width_ratios':[7, 1],}, sharey=True)
 colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent, vmin = 0, vmax = 1 )
+colored_pop_dist = ax_stat.imshow( np.atleast_2d(np.sum(plateau,axis = 1)).T, aspect= 'auto', extent = extent, vmin = 0, vmax = num_neurons/10, cmap = 'Reds')
 
+
+ax_stat.set_axis_off()
 
 y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
 ax.set_yticks([min_degree, - np.pi, 0, max_degree])
 ax.set_yticklabels(y_label_list)
 
-fig.colorbar(colored_plateau)
+fig.colorbar(colored_pop_dist)
 
 frames_range = range( int(start_time_to_sample/sample_network.time_step), sample_network.total_steps)
 ani = FuncAnimation(fig, update, frames= frames_range, interval = 50)
