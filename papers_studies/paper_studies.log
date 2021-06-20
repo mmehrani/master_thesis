@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  11 MAY 2021 10:55
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  20 JUN 2021 17:27
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -354,6 +354,257 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks27
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/braket\braket.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/tcolorbox\tcolorbox.sty"
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen172
+\pgfutil@tempdimb=\dimen173
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-latex.def"
+\pgfutil@abb=\box48
+("C:\Program Files\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfrcs.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf\pgf.revision.tex")
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys.code.tex"
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen174
+\pgf@y=\dimen175
+\pgf@xa=\dimen176
+\pgf@ya=\dimen177
+\pgf@xb=\dimen178
+\pgf@yb=\dimen179
+\pgf@xc=\dimen180
+\pgf@yc=\dimen181
+\pgf@xd=\dimen182
+\pgf@yd=\dimen183
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count276
+\c@pgf@countb=\count277
+\c@pgf@countc=\count278
+\c@pgf@countd=\count279
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count280
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf.cfg"
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-xetex.def"
+File: pgfsys-xetex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-dvipdfmx.def"
+File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+"
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)
+\pgfsys@objnum=\count281
+)))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.t
+ex"
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count282
+\pgfsyssoftpath@bigbuffer@items=\count283
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsysprotocol.code.t
+ex"
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcore.code.tex"
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen184
+\pgfmath@count=\count284
+\pgfmath@box=\box49
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count285
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfint.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+"
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathconstruct.c
+ode.tex"
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathusage.code.
+tex"
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+"
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box50
+\pgf@hbox=\box51
+\pgf@layerbox@main=\box52
+\pgf@picture@serial@count=\count286
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoregraphicstate.co
+de.tex"
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen259
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransformations
+.code.tex"
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreobjects.code.te
+x"
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathprocessing.
+code.tex"
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+"
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen263
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count287
+\pgf@shadingcount=\count288
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreimage.code.te
+x"
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreexternal.code.t
+ex"
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box53
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+"
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransparency.co
+de.tex"
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepatterns.code.t
+ex"
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex"
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleshapes.code.
+tex"
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box54
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-0-65.
+sty"
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen265
+\pgf@nodesepend=\dimen266
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-1-18.
+sty"
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks38
+\verbatim@line=\toks39
+\verbatim@in@stream=\read3
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/environ\environ.sty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/trimspaces\trimspaces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box55
+\tcb@upperbox=\box56
+\tcb@lowerbox=\box57
+\tcb@phantombox=\box58
+\c@tcbbreakpart=\count289
+\c@tcblayer=\count290
+\tcolorbox@number=\count291
+\tcb@temp=\box59
+\tcb@temp=\box60
+\tcb@temp=\box61
+\tcb@temp=\box62
+\tcb@out=\write4
+\tcb@record@out=\write5
+)
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/xepersian\xepersian.sty"
 Package: xepersian 2020-01-31 v22.8 Persian typesetting in XeLaTeX
 
@@ -364,36 +615,36 @@ Package: expl3 2020-02-21 L3 programming layer (loader)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-xdvipdfmx.def"
 File: l3backend-xdvipdfmx.def 2020-02-21 L3 backend support: xdvipdfmx
-\g__graphics_track_int=\count276
-\l__pdf_internal_box=\box48
-\g__pdf_backend_object_int=\count277
-\g__pdf_backend_annotation_int=\count278
+\g__graphics_track_int=\count292
+\l__pdf_internal_box=\box63
+\g__pdf_backend_object_int=\count293
+\g__pdf_backend_annotation_int=\count294
 ))
 Package: xparse 2020-02-14 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count279
-\g__xparse_grabber_int=\count280
-\l__xparse_m_args_int=\count281
-\l__xparse_v_nesting_int=\count282
+\l__xparse_current_arg_int=\count295
+\g__xparse_grabber_int=\count296
+\l__xparse_m_args_int=\count297
+\l__xparse_v_nesting_int=\count298
 )
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/fontspec\fontspec-xetex.sty"
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count283
-\l__fontspec_language_int=\count284
-\l__fontspec_strnum_int=\count285
-\l__fontspec_tmp_int=\count286
-\l__fontspec_tmpa_int=\count287
-\l__fontspec_tmpb_int=\count288
-\l__fontspec_tmpc_int=\count289
-\l__fontspec_em_int=\count290
-\l__fontspec_emdef_int=\count291
-\l__fontspec_strong_int=\count292
-\l__fontspec_strongdef_int=\count293
-\l__fontspec_tmpa_dim=\dimen172
-\l__fontspec_tmpb_dim=\dimen173
-\l__fontspec_tmpc_dim=\dimen174
+\l__fontspec_script_int=\count299
+\l__fontspec_language_int=\count300
+\l__fontspec_strnum_int=\count301
+\l__fontspec_tmp_int=\count302
+\l__fontspec_tmpa_int=\count303
+\l__fontspec_tmpb_int=\count304
+\l__fontspec_tmpc_int=\count305
+\l__fontspec_em_int=\count306
+\l__fontspec_emdef_int=\count307
+\l__fontspec_strong_int=\count308
+\l__fontspec_strongdef_int=\count309
+\l__fontspec_tmpa_dim=\dimen267
+\l__fontspec_tmpb_dim=\dimen268
+\l__fontspec_tmpc_dim=\dimen269
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
@@ -401,43 +652,43 @@ Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 ("C:\Program Files\MiKTeX 2.9\tex/latex/fontspec\fontspec.cfg")))
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/xepersian\xepersian-persiancal.sty"
 Package: xepersian-persiancal 2012/07/25 v0.2 provides Persian calendar
-\XePersian@i=\count294
-\XePersian@y=\count295
-\XePersian@m=\count296
-\XePersian@d=\count297
-\XePersian@latini=\count298
-\XePersian@persiani=\count299
-\XePersian@latinii=\count300
-\XePersian@persianii=\count301
-\XePersian@latiniii=\count302
-\XePersian@persianiii=\count303
-\XePersian@latiniv=\count304
-\XePersian@persianiv=\count305
-\XePersian@latinv=\count306
-\XePersian@persianv=\count307
-\XePersian@latinvi=\count308
-\XePersian@persianvi=\count309
-\XePersian@latinvii=\count310
-\XePersian@persianvii=\count311
-\XePersian@latinviii=\count312
-\XePersian@persianviii=\count313
-\XePersian@latinix=\count314
-\XePersian@persianix=\count315
-\XePersian@latinx=\count316
-\XePersian@persianx=\count317
-\XePersian@latinxi=\count318
-\XePersian@persianxi=\count319
-\XePersian@latinxii=\count320
-\XePersian@persianxii=\count321
-\XePersian@persianxiii=\count322
-\XePersian@temp=\count323
-\XePersian@temptwo=\count324
-\XePersian@tempthree=\count325
-\XePersian@yModHundred=\count326
-\XePersian@thirtytwo=\count327
-\XePersian@dn=\count328
-\XePersian@sn=\count329
-\XePersian@mminusone=\count330
+\XePersian@i=\count310
+\XePersian@y=\count311
+\XePersian@m=\count312
+\XePersian@d=\count313
+\XePersian@latini=\count314
+\XePersian@persiani=\count315
+\XePersian@latinii=\count316
+\XePersian@persianii=\count317
+\XePersian@latiniii=\count318
+\XePersian@persianiii=\count319
+\XePersian@latiniv=\count320
+\XePersian@persianiv=\count321
+\XePersian@latinv=\count322
+\XePersian@persianv=\count323
+\XePersian@latinvi=\count324
+\XePersian@persianvi=\count325
+\XePersian@latinvii=\count326
+\XePersian@persianvii=\count327
+\XePersian@latinviii=\count328
+\XePersian@persianviii=\count329
+\XePersian@latinix=\count330
+\XePersian@persianix=\count331
+\XePersian@latinx=\count332
+\XePersian@persianx=\count333
+\XePersian@latinxi=\count334
+\XePersian@persianxi=\count335
+\XePersian@latinxii=\count336
+\XePersian@persianxii=\count337
+\XePersian@persianxiii=\count338
+\XePersian@temp=\count339
+\XePersian@temptwo=\count340
+\XePersian@tempthree=\count341
+\XePersian@yModHundred=\count342
+\XePersian@thirtytwo=\count343
+\XePersian@dn=\count344
+\XePersian@sn=\count345
+\XePersian@mminusone=\count346
 )
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/xepersian\xepersian-mathsdigitspec.st
 y"
@@ -472,18 +723,18 @@ X
 ****************************************************
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/bidi\biditools.sty"
 Package: biditools 2020-01-29 v1.10 Programming tools for bidi package
-\@bidi@envbody=\toks28
-\@bidi@emptytoks=\toks29
-\bidi@tempcountb=\count331
-\bidi@temptoksa=\toks30
-\bidi@temptoksb=\toks31
-\bidi@dummies=\count332
-\bidi@are@these@correct=\toks32
-\bidi@toks@lista=\toks33
-\bidi@toks@listb=\toks34
-\bidi@stack@length=\count333
-\bidi@empty@stack=\toks35
-\bidi@looprepeat@depth=\count334
+\@bidi@envbody=\toks40
+\@bidi@emptytoks=\toks41
+\bidi@tempcountb=\count347
+\bidi@temptoksa=\toks42
+\bidi@temptoksb=\toks43
+\bidi@dummies=\count348
+\bidi@are@these@correct=\toks44
+\bidi@toks@lista=\toks45
+\bidi@toks@listb=\toks46
+\bidi@stack@length=\count349
+\bidi@empty@stack=\toks47
+\bidi@looprepeat@depth=\count350
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/zref\zref-abspage.sty"
 Package: zref-abspage 2019/11/29 v2.28 Module abspage for zref (HO)
@@ -494,7 +745,7 @@ Package zref Info: New property list: main on input line 763.
 Package zref Info: New property: default on input line 764.
 Package zref Info: New property: page on input line 765.
 )
-\c@abspage=\count335
+\c@abspage=\count351
 Package zref Info: New property: abspage on input line 66.
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
@@ -502,10 +753,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
 ("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
-\XKV@toks=\toks36
-\XKV@tempa@toks=\toks37
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
 )
-\XKV@depth=\count336
+\XKV@depth=\count352
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \@bidi@copyins@=\insert252
@@ -513,14 +764,14 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/bidi\latex-xetex-bidi.def"
 File: latex-xetex-bidi.def 2019/03/03 v1.3.7 bidi adaptations for `latex.ltx' f
 or XeTeX engine
-\bidi@n@everypar=\toks38
-\bidi@column@check@number=\count337
+\bidi@n@everypar=\toks50
+\bidi@column@check@number=\count353
 
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/bidi\footnote-xetex-bidi.def"
 File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count338
-\footdir@toks=\toks39
+\c@footdir@label=\count354
+\footdir@toks=\toks51
 )
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/bidi\article-xetex-bidi.def"
 File: article-xetex-bidi.def 2017/06/09 v0.6 bidi adaptations for standard arti
@@ -564,12 +815,20 @@ kage for XeTeX engine
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/bidi\hyperref-xetex-bidi.def"
 File: hyperref-xetex-bidi.def 2018/11/11 v1.1 bidi adaptations for hyperref pac
 kage for XeTeX engine
+)
+("C:\Program Files\MiKTeX 2.9\tex/xelatex/bidi\pgfcorescopes.code-xetex-bidi.de
+f"
+File: pgfcorescopes.code-xetex-bidi.def 2015/11/14 v0.1 bidi adaptations for pg
+f package for XeTeX engine
+) ("C:\Program Files\MiKTeX 2.9\tex/xelatex/bidi\tcolorbox-xetex-bidi.def"
+File: tcolorbox-xetex-bidi.def 2018/11/11 v0.2 bidi adaptations for tcolorbox p
+ackage for XeTeX engine
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/bidi\loadingorder-xetex-bidi.def"
 File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
  last package loaded
 )
-\bidi@digits=\count339
+\bidi@digits=\count355
 \bidi@digits@charclass=\XeTeXcharclass1
 \bidi@sepmark@charclass=\XeTeXcharclass2
 )
@@ -594,9 +853,9 @@ File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
 * Issue tracker: https://github.com/bidi-tex/xepersian/issues
 * 
 ****************************************************
-\xepersian@tcl=\count340
-\xepersian@ilg=\dimen175
-\xepersian@strutilg=\dimen176
+\xepersian@tcl=\count356
+\xepersian@ilg=\dimen270
+\xepersian@strutilg=\dimen271
 ("C:\Program Files\MiKTeX 2.9\tex/xelatex/xepersian\loadingorder-xepersian.def"
 File: loadingorder-xepersian.def 2018/09/29 v0.5 making sure that xepersian is 
 the last package loaded
@@ -803,7 +1062,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-\AtBeginShipoutBox=\box49
+\AtBeginShipoutBox=\box64
 Package hyperref Info: Link coloring ON on input line 20.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
@@ -815,18 +1074,19 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ("C:\Program Files\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count341
+\c@section@level=\count357
 )
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
 LaTeX Info: Redefining \nameref on input line 20.
 
 (paper_studies.out) (paper_studies.out)
-\@outlinefile=\write3
-\openout3 = `paper_studies.out'.
+\@outlinefile=\write6
+\openout6 = `paper_studies.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+ ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 (Font)              scaled to size 20.74pt on input line 25.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
@@ -836,98 +1096,117 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 (Font)              scaled to size 17.28pt on input line 25.
 
+(paper_studies.toc
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1.
+)
+\tf@toc=\write7
+\openout7 = `paper_studies.toc'.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/stringenc\se-ascii-print.def"
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-Missing character: There is no ـ in font cmmi8!
-Missing character: There is no ـ in font cmmi8!
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
-[][]
- []
-
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 39.
 [1
 
 ]
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 55.
- [2]
-File: ../scripts/kuramoto_model_synchoronization_problem/raster_plot_N1000.png 
-Graphic file (type bmp)
-<../scripts/kuramoto_model_synchoronization_problem/raster_plot_N1000.png>
-File: ../scripts/kuramoto_model_synchoronization_problem/two_pops_sigma.png Gra
-phic file (type bmp)
-<../scripts/kuramoto_model_synchoronization_problem/two_pops_sigma.png>
- [3] [4]
-Missing character: There is no ـ in font cmmi8!
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 [][]
  []
 
-[5]
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-00/sigma_g_0.1_65.png Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/si
-gma_g_0.1_65.png>
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-00/amin_saman_param_g_0.1_65.png Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/am
-in_saman_param_g_0.1_65.png>
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-00/silent_neurons_g_0.1_65.png Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/si
-lent_neurons_g_0.1_65.png>
- [6] [7]
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-00/mean_spiking_persiods_g_0.1_65.png Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/me
-an_spiking_persiods_g_0.1_65.png>
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-00/mean_spiking_persiods_with_trending_line_g_0.1_65.png Graphic file (type bmp
-)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/me
-an_spiking_persiods_with_trending_line_g_0.1_65.png>
- [8]
-File: ../scripts/rotational_model/single_runs/N10000_T1000_g50_input_8.5_13.5/s
-pikies_num_vs_input.png Graphic file (type bmp)
-<../scripts/rotational_model/single_runs/N10000_T1000_g50_input_8.5_13.5/spikie
-s_num_vs_input.png>
- [9] (paper_studies.bbl (paper_studies.brf)
-\tf@brf=\write4
-\openout4 = `paper_studies.brf'.
+
+Overfull \hbox (0.5918pt too wide) in paragraph at lines 33--35
+[]\TU/XBNiloofar(0)/m/n/12 متن اصلی این جستار شامل معرفی این مدل‌ها و پویایی آن
+‌ها در زمان و نتایج ضبط شده از نشانگرهایی[]
+ []
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 44.
+
+[2]
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 63.
+Missing character: There is no ـ in font cmmi8!
+Missing character: There is no ـ in font cmmi8!
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+[][]
+ []
+
+[3]
+File: ../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T100
+0_g5_input_1.2_2.8/raster_plot.png Graphic file (type bmp)
+<../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T1000_g5_
+input_1.2_2.8/raster_plot.png>
+
+
+LaTeX Warning: Reference `fig:two_pops_sync' on page 4 undefined on input line 
+102.
+
+[4]
+Missing character: There is no ـ in font cmmi8!
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+[][]
+ []
+
+[6]
+
+LaTeX Warning: Reference `fig:two_pops_sync_rotational' on page 7 undefined on 
+input line 144.
+
+
+LaTeX Warning: Reference `fig:two_pops_amin_saman_rotational' on page 7 undefin
+ed on input line 144.
+
+
+LaTeX Warning: Reference `fig:silent_neurons' on page 7 undefined on input line
+ 160.
+
+
+LaTeX Warning: Reference `fig:interspikes_rotational' on page 7 undefined on in
+put line 169.
+
+
+LaTeX Warning: Reference `fig:interspikes_rotational_trending_line' on page 7 u
+ndefined on input line 170.
+
+
+LaTeX Warning: Reference `fig:spikes_num_vs_background_current' on page 7 undef
+ined on input line 188.
+
+[7] [8] (paper_studies.bbl (paper_studies.brf)
+\tf@brf=\write8
+\openout8 = `paper_studies.brf'.
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
-
-(paper_studies.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 210.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
+) [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+ (paper_studies.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: 2FFDCBFC92C018A88A4A6E4127A2B311;1307.
+(rerunfilecheck)             Checksum: 61533BF4D994D5BD186A3F8E24C8C9BD;1413.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
-(rerunfilecheck)             Checksum: E301B67034437176E64445184097D40F;54.
+(rerunfilecheck)             Checksum: 1B29C1BD923CA3FB2D3DC3E25855490B;108.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 17822 strings out of 414602
- 326318 string characters out of 2910870
- 696110 words of memory out of 3000000
- 34629 multiletter control sequences out of 15000+200000
+ 26848 strings out of 414602
+ 519322 string characters out of 2910870
+ 871648 words of memory out of 3000000
+ 43477 multiletter control sequences out of 15000+200000
  537792 words of font info for 82 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 51i,15n,79p,1159b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,15n,79p,1159b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper_studies.pdf (10 pages).
+Output written on paper_studies.pdf (9 pages).

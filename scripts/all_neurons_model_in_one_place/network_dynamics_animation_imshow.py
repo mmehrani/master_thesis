@@ -48,14 +48,15 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 
-num_neurons = 1000
-total_time = 10
-start_time_to_sample = 1
-g = 60
-
+num_neurons = 10000
+total_time = 100
+start_time_to_sample = 90
+# g = 20
+g = 5
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
-random_input_span = (3.5,13.5)
+# random_input_span = (9.5,13.5)
+random_input_span = (1.2,2.8)
 sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01)
 
 
@@ -66,8 +67,11 @@ for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
 current_sort_args = np.argsort(sample_network.random_input)
 
 
-max_degree = np.pi
-min_degree = -5*np.pi/2
+# max_degree = np.pi
+# min_degree = -5*np.pi/2
+
+max_degree = -0.5
+min_degree = 1
 
 extent = [1 , num_neurons, max_degree , min_degree] #imshow axises are updside down
 
@@ -80,27 +84,27 @@ plateau = np.zeros((grating_num, num_neurons))
 def update(frame):
     fig.suptitle('Network dynamic N={} g={}'.format(num_neurons,g))
     sample_network._march_on(frame-1)
-    phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - min_degree) / grating_blocks_length )
+    phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - min_degree) / grating_blocks_length ) #sorted neurons
     
     for neuron_index in range(num_neurons):
         sample_zero = np.zeros(grating_num)
-        sample_zero[int(phase_marks[neuron_index])] = 2
+        sample_zero[int(phase_marks[neuron_index])] = 1
         plateau[:,neuron_index] = sample_zero
     
     colored_plateau.set_data(plateau)
-    colored_pop_dist.set_data( np.atleast_2d(np.sum(plateau,axis = 1)).T )
+    colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau,axis = 1)) ).T )
     return plateau
 
 fig, (ax, ax_stat) = plt.subplots(nrows = 1,ncols = 2, gridspec_kw={'width_ratios':[7, 1],}, sharey=True)
 colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent, vmin = 0, vmax = 1 )
-colored_pop_dist = ax_stat.imshow( np.atleast_2d(np.sum(plateau,axis = 1)).T, aspect= 'auto', extent = extent, vmin = 0, vmax = num_neurons/10, cmap = 'Reds')
+colored_pop_dist = ax_stat.imshow( np.log10( np.atleast_2d(np.sum(plateau,axis = 1)) ).T, aspect= 'auto', extent = extent, vmin = 0, vmax = np.log10(num_neurons), cmap = 'Reds')
 
 
 ax_stat.set_axis_off()
 
-y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
-ax.set_yticks([min_degree, - np.pi, 0, max_degree])
-ax.set_yticklabels(y_label_list)
+# y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
+# ax.set_yticks([min_degree, - np.pi, 0, max_degree])
+# ax.set_yticklabels(y_label_list)
 
 fig.colorbar(colored_pop_dist)
 
