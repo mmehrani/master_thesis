@@ -1,12 +1,30 @@
+# Neurons in sync
+## (Markovian approch toward modeling networks of spiking neurons)
+
+In this project we have studied how the strength of connectivity between neurons pairs will control the phase transition.
+
+## Dynamics of the neurons
+
+$$
+\begin{cases}
+\dot{\theta_i}=I_i - cos(\theta_i) -g  E \\
+\ddot{E}+ 2\alpha \dot{E}+\alpha^{2}E =\frac{\alpha^{2}}{N} \sum_{n|tـn<t} \delta(t - t_n - t_d)
+\end{cases}
+$$
+We have used mean-field approximation in order of simulation. In other words, the network is fully connected and each neuron is free to influence all the present neurons or even get influenced by so.
+
+## Synchronized phase
+The following animation shows how the total population of neurons got synchronized by choice of corresponding value of connecitivity.
+
+## Insynchronized phase
+When the conncetivity is low, neurons walks around almost ignoring the other exisiting ones.
+
+
+## Source codes
+you may have your own produced animation from this [python code]().
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/mmehrani/master_thesis/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
@@ -26,7 +44,6 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
 
