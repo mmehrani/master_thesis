@@ -15,10 +15,11 @@ We have used mean-field approximation in order of simulation. In other words, th
 
 ## Synchronized phase
 The following animation shows how the total population of neurons got synchronized by choice of corresponding value of connecitivity.
+![](..\scripts\all_neurons_model_in_one_place\animations\sea_shore\well_in_negatives\N10000_g20_Imin9.5_Imax13.5_neurons_rotational.gif)
 
 ## Insynchronized phase
 When the conncetivity is low, neurons walks around almost ignoring the other exisiting ones.
-
+![](..\scripts\all_neurons_model_in_one_place\animations\sea_shore\well_in_negatives\N10000_g10_Imin9.5_Imax13.5_neurons_rotational.gif)
 
 ## Source codes
 you may have your own produced animation from this [python code]().
