@@ -9,14 +9,13 @@ Created on Mon Jun  7 09:14:03 2021
 import os
 from network_reference import Network_of_neurons
 import numpy as np
+
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-import networkx as nx
-
+import matplotlib.gridspec as gridspec
 from matplotlib import animation, rc
-from IPython.display import HTML
+
 from tqdm import tqdm
-import progressbar
 
 
 class Animated_network_of_neurons(Network_of_neurons):
@@ -111,12 +110,24 @@ def update(frame):
     
     colored_plateau.set_data(plateau)
     colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
+    e_pulse.set_ydata(sample_network.e_arr[-100:])
     return plateau
 
-fig, (ax, ax_stat) = plt.subplots(nrows = 1,ncols = 2, gridspec_kw={'width_ratios':[7, 1],}, sharey=True)
+
+
+gs = gridspec.GridSpec(2, 2, width_ratios = (7,1) )
+
+fig = plt.figure()
+ax = fig.add_subplot(gs[0, 0])
+ax_stat = fig.add_subplot(gs[0, 1], sharey = ax)
+ax_e = fig.add_subplot(gs[1, 0])
+
+# fig, (ax, ax_stat, ax_e,) = plt.subplots(nrows = 2,ncols = 2, gridspec_kw={'width_ratios':[7, 1],}, sharey=True)
 colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 100, cmap = 'tab20b')
 colored_pop_dist = ax_stat.imshow( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T, aspect= 'auto', extent = extent, vmin = 0, vmax = np.log10(num_neurons), cmap = 'Reds')
 
+time_series = np.arange(0,1,sample_network.time_step)
+e_pulse = ax_e.plot(time_series,time_series*0)
 
 
 ax_stat.set_axis_off()
@@ -125,7 +136,7 @@ y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
 ax.set_yticks([min_degree, - np.pi, 0, max_degree])
 ax.set_yticklabels(y_label_list)
 
-fig.colorbar(colored_pop_dist)
+# fig.colorbar(colored_pop_dist)
 
 frames_range = range( int(start_time_to_sample/sample_network.time_step), sample_network.total_steps)
 ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval = 50)
@@ -133,5 +144,5 @@ ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval
 
 version_name = 'well_in_negatives'
 path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.gif".format(num_neurons,g,random_input_span[0],random_input_span[1]))
-ani.save(path, writer='imagemagick')
+# ani.save(path, writer='imagemagick')
 
