@@ -1,17 +1,20 @@
 \BOOKMARK [1][-]{section.1}{سخن نخست}{}% 1
 \BOOKMARK [1][-]{section.2}{مقدمه}{}% 2
 \BOOKMARK [1][-]{section.3}{شبکه انباشت و شلیک}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{نشانگر تشخیص فاز هم‌گامی}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{مسائل پیشروی پیاده سازی شبیه سازی}{section.3}% 5
-\BOOKMARK [3][-]{subsubsection.3.2.1}{تابع بی‌کران دلتا}{subsection.3.2}% 6
-\BOOKMARK [3][-]{subsubsection.3.2.2}{ثبت تاریخ تیزه زدن‌ها}{subsection.3.2}% 7
-\BOOKMARK [2][-]{subsection.3.3}{نتایج}{section.3}% 8
-\BOOKMARK [1][-]{section.4}{شبیه‌سازی مدل چرخنده}{}% 9
-\BOOKMARK [2][-]{subsection.4.1}{شبیه‌سازی}{section.4}% 10
-\BOOKMARK [3][-]{subsubsection.4.1.1}{مشکل: به پیمانه گرفتن}{subsection.4.1}% 11
-\BOOKMARK [3][-]{subsubsection.4.1.2}{مشکل: یک تیزه را چند بار می‌شماریم؟}{subsection.4.1}% 12
-\BOOKMARK [2][-]{subsection.4.2}{نتایج }{section.4}% 13
-\BOOKMARK [3][-]{subsubsection.4.2.1}{در جستجوی تغییرفاز}{subsection.4.2}% 14
-\BOOKMARK [3][-]{subsubsection.4.2.2}{نورون‌های خاموش}{subsection.4.2}% 15
-\BOOKMARK [3][-]{subsubsection.4.2.3}{فاصله زمانی بین تیزه‌ها}{subsection.4.2}% 16
-\BOOKMARK [3][-]{subsubsection.4.2.4}{فعالیت شبکه}{subsection.4.2}% 17
+\BOOKMARK [2][-]{subsection.3.1}{آهنگ تیزه زدن}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{نشانگر تشخیص فاز هم‌گامی}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{مسائل پیشروی پیاده سازی شبیه سازی}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.3.1}{تابع بی‌کران دلتا}{subsection.3.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.3.2}{ثبت تاریخ تیزه زدن‌ها}{subsection.3.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{نتایج}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.4.1}{انحراف از معیار میدان}{subsection.3.4}% 10
+\BOOKMARK [3][-]{subsubsection.3.4.2}{توزیع تناوب زمانی تیزه‌ها}{subsection.3.4}% 11
+\BOOKMARK [1][-]{section.4}{شبکه‌ی نورون‌های چرخنده}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{آهنگ تیزه زدن}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{نشانگر توسعه یافته‌ی تشخیص همگامی}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{شبیه‌سازی}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.4}{نتایج }{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.4.1}{در جستجوی تغییرفاز}{subsection.4.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.4.2}{نورون‌های خاموش}{subsection.4.4}% 18
+\BOOKMARK [3][-]{subsubsection.4.4.3}{فاصله زمانی بین تیزه‌ها}{subsection.4.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.4.4}{فعالیت شبکه}{subsection.4.4}% 20

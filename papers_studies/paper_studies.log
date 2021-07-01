@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  21 JUN 2021 09:50
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.2.23)  22 JUN 2021 18:50
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1217,57 +1217,90 @@ LaTeX Warning: The counter will not be printed.
 
 [2]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 64.
+(Font)              scaled to size 14.4pt on input line 63.
 Missing character: There is no ـ in font cmmi8!
 Missing character: There is no ـ in font cmmi8!
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 [][]
  []
 
-[3]
+[4]
 File: ../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T100
 0_g5_input_1.2_2.8/raster_plot.png Graphic file (type bmp)
 <../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T1000_g5_
 input_1.2_2.8/raster_plot.png>
 
 
-LaTeX Warning: Reference `fig:two_pops_sync' on page 4 undefined on input line 
-103.
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 108.
 
-[4]
-Missing character: There is no ـ in font cmmi8!
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+[5]
+File: ../papers_studies/figs/IF/sigma.png Graphic file (type bmp)
+<../papers_studies/figs/IF/sigma.png>
+File: ../papers_studies/figs/IF/mean_spiking_persiods.png Graphic file (type bm
+p)
+<../papers_studies/figs/IF/mean_spiking_persiods.png>
+ [6]
+File: ../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png Gr
+aphic file (type bmp)
+<../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 [][]
  []
 
-[6]
-
-LaTeX Warning: Reference `fig:two_pops_sync_rotational' on page 7 undefined on 
-input line 145.
+[7]
+Missing character: There is no ـ in font cmmi8!
 
 
-LaTeX Warning: Reference `fig:two_pops_amin_saman_rotational' on page 7 undefin
-ed on input line 145.
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 161.
 
 
-LaTeX Warning: Reference `fig:silent_neurons' on page 7 undefined on input line
- 161.
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+[][]
+ []
 
 
-LaTeX Warning: Reference `fig:interspikes_rotational' on page 7 undefined on in
-put line 170.
+LaTeX Warning: Citation `safaeesirat2020critical' on page 8 undefined on input 
+line 173.
 
 
-LaTeX Warning: Reference `fig:interspikes_rotational_trending_line' on page 7 u
-ndefined on input line 171.
+LaTeX Warning: Citation `safaeesirat2020critical' on page 8 undefined on input 
+line 179.
+
+[8]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 189.
 
 
-LaTeX Warning: Reference `fig:spikes_num_vs_background_current' on page 7 undef
-ined on input line 189.
+LaTeX Warning: Reference `fig:two_pops_sync_rotational' on page 9 undefined on 
+input line 209.
 
-[7] [8] (paper_studies.bbl (paper_studies.brf)
+
+LaTeX Warning: Reference `fig:two_pops_amin_saman_rotational' on page 9 undefin
+ed on input line 209.
+
+
+LaTeX Warning: Reference `fig:silent_neurons' on page 9 undefined on input line
+ 225.
+
+
+LaTeX Warning: Reference `fig:interspikes_rotational' on page 9 undefined on in
+put line 234.
+
+
+LaTeX Warning: Reference `fig:interspikes_rotational_trending_line' on page 9 u
+ndefined on input line 235.
+
+[9]
+
+LaTeX Warning: Reference `fig:spikes_num_vs_background_current' on page 10 unde
+fined on input line 253.
+
+[10] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write8
 \openout8 = `paper_studies.brf'.
 
@@ -1275,28 +1308,28 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+) [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
  (paper_studies.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 283.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: 61533BF4D994D5BD186A3F8E24C8C9BD;1413.
+(rerunfilecheck)             Checksum: BC60A88C8F17BB71E5F2D1F567E55E15;1666.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
-(rerunfilecheck)             Checksum: 1B29C1BD923CA3FB2D3DC3E25855490B;108.
+(rerunfilecheck)             Checksum: F092E6545DC5567E00E865DBB9BFD97E;232.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26923 strings out of 414602
- 522306 string characters out of 2910870
- 872579 words of memory out of 3000000
- 43522 multiletter control sequences out of 15000+200000
+ 26951 strings out of 414602
+ 523423 string characters out of 2910870
+ 871579 words of memory out of 3000000
+ 43547 multiletter control sequences out of 15000+200000
  538008 words of font info for 109 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 59i,15n,79p,1159b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,15n,79p,1159b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper_studies.pdf (9 pages).
+Output written on paper_studies.pdf (11 pages).
