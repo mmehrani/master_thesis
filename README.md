@@ -5,12 +5,7 @@ In this project we have studied how the strength of connectivity between neurons
 
 ## Dynamics of the neurons
 
-$$
-\begin{cases}
-\dot{\theta_i}=I_i - cos(\theta_i) -g  E \\
-\ddot{E}+ 2\alpha \dot{E}+\alpha^{2}E =\frac{\alpha^{2}}{N} \sum_{n|tـn<t} \delta(t - t_n - t_d)
-\end{cases}
-$$
+<p align="center"><img src="https://rawgit.com/in	git@github.com:mmehrani/master_thesis/main/svgs/778365caa3c76dcb7ed83455b3595274.svg?invert_in_darkmode" align=middle width=329.57364pt height=49.315569599999996pt/></p>
 We have used mean-field approximation in order of simulation. In other words, the network is fully connected and each neuron is free to influence all the present neurons or even get influenced by so.
 
 ## Synchronized phase
