@@ -49,7 +49,7 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 93
+total_time = 100
 start_time_to_sample = 90
 g = 20
 # g = 5
@@ -81,7 +81,7 @@ grating_blocks_length = ( max_degree - min_degree )/grating_num
 
 plateau = np.zeros((grating_num, num_neurons))
 
-color_num = 10
+color_num = 5
 
 def init():
     phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - min_degree) / grating_blocks_length ) #sorted neurons
@@ -92,14 +92,17 @@ def init():
 
 
 def update(frame):
-    fig.suptitle('Network dynamic N={} g={}'.format(num_neurons,g))
+    
+    is_network_active = np.sum(sample_network.spike_mask) > 0
+    
     sample_network._march_on(frame-1)
     phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - min_degree) / grating_blocks_length ) #sorted neurons
     
-    if not (True in (sample_network.wind_power>0) ):
+    # if not (True in (sample_network.wind_power>0) ):
+    if np.sum(sample_network.spike_mask) == 0 and is_network_active:
         global color_num
         color_num += 1
-        color_num = color_num %100
+        color_num = (color_num %10)
 
     for neuron_index in range(num_neurons):
         current_color = np.sum( plateau[:,neuron_index] )
@@ -114,7 +117,7 @@ def update(frame):
     return plateau
 
 fig, (ax, ax_stat) = plt.subplots(nrows = 1,ncols = 2, gridspec_kw={'width_ratios':[7, 1],}, sharey=True)
-colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 100, cmap = 'tab20b')
+colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
 colored_pop_dist = ax_stat.imshow( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T, aspect= 'auto', extent = extent, vmin = 0, vmax = np.log10(num_neurons), cmap = 'Reds')
 
 
@@ -125,7 +128,10 @@ y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
 ax.set_yticks([min_degree, - np.pi, 0, max_degree])
 ax.set_yticklabels(y_label_list)
 
+fig.suptitle('Network dynamic N={} g={}'.format(num_neurons,g))
+
 fig.colorbar(colored_pop_dist)
+fig.tight_layout()
 
 frames_range = range( int(start_time_to_sample/sample_network.time_step), sample_network.total_steps)
 ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval = 50)
@@ -133,5 +139,5 @@ ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval
 
 version_name = 'well_in_negatives'
 path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.gif".format(num_neurons,g,random_input_span[0],random_input_span[1]))
-ani.save(path, writer='imagemagick')
+# ani.save(path, writer='imagemagick')
 

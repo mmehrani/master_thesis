@@ -250,7 +250,7 @@ $t_d = 0.1\, s$
   \label{fig:interspikes_rotational}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
   \includegraphics[width = 10 cm]{figs/Rotational/mean_spiking_periods_with_trending_line.png}
  \caption{محاسبه‌ی نمای بحرانی}
@@ -259,15 +259,15 @@ $t_d = 0.1\, s$
 
 
 \subsubsection{فعالیت شبکه}
-همان طور که دیدیم تعدادی از نورون‌ها در شبکه به حالت خاموش درمی‌آیند. قابل حدس است که اگر جمعیتی خاموش در شبکه داشته باشیم؛ احتمالا آنهایی هستند که جریان تصادفی اولیه آن‌ها از بقیه کمتر است. برای تحقیق این حدس تعداد تیزه‌های نورون‌های شبکه را بر حسب جریان تصادفی اولیه آنها مرتب کردیم. شکل \ref{fig:spikes_num_vs_background_current} لازم به ذکر است که این رفتار در فاز هم‌گام قابل مشاهده است. در فاز ناهم‌گام تمام نورون‌ها که از هم تاثیر کمتری می‌پذیرند؛ فعال هستند.
+همان طور که دیدیم تعدادی از نورون‌ها در شبکه به حالت خاموش درمی‌آیند. قابل حدس است که اگر جمعیتی خاموش در شبکه داشته باشیم؛ احتمالا آنهایی هستند که جریان تصادفی اولیه آن‌ها از بقیه کمتر است. برای تحقیق این حدس لازم است تا تعداد تیزه‌های نورون‌های شبکه را بر حسب جریان تصادفی اولیه آنها مرتب کنیم. شکل \ref{fig:spikes_num_vs_background_current} نشانگر سامانه‌ای از ده هزار نورون است که با قدرت $g=50$ روی هم تاثیر می‌گذارند. لازم به ذکر است که این رفتار در فاز هم‌گام قابل مشاهده است. در فاز ناهم‌گام تمام نورون‌ها که از هم تاثیر کمتری می‌پذیرند؛ فعال هستند.
 
 
-%\begin{figure}[h]
-%\centering
-%  \includegraphics[width = 10 cm]{../scripts/rotational_model/single_runs/N10000_T1000_g50_input_8.5_13.5/spikies_num_vs_input.png}
-% \caption{تعداد تیزه بر حسب جریان تصادفی }
-%  \label{fig:spikes_num_vs_background_current}
-%\end{figure}
+\begin{figure}[h]
+\centering
+  \includegraphics[width = 10 cm]{figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png}
+ \caption{تعداد تیزه بر حسب جریان تصادفی برای سامانه‌ای با ده هزار نورون و ضریب تاثیر $g=50$}
+  \label{fig:spikes_num_vs_background_current}
+\end{figure}
 
 تعداد تیزه‌های کل شبکه رابطه‌ی مستقیمی با جریان خارجی جاری در شبکه دارد. می‌توانیم با محاسبات تحلیلی نیز به شکل بدست آمده از شبیه‌سازی عددی نزدیک شویم:
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  5 JUL 2021 10:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  5 JUL 2021 10:36
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1257,35 +1257,16 @@ line 188.
 LaTeX Warning: The counter will not be printed.
              The label is: * on input line 198.
 
-
-LaTeX Warning: Reference `fig:sigma_rotational' on page 9 undefined on input li
-ne 218.
-
-
-LaTeX Warning: Reference `fig:amin_saman_rotational' on page 9 undefined on inp
-ut line 218.
-
 File: figs/Rotational/sigma.png Graphic file (type bmp)
 <figs/Rotational/sigma.png>
 File: figs/Rotational/amin_saman_param.png Graphic file (type bmp)
 <figs/Rotational/amin_saman_param.png>
-
-LaTeX Warning: Reference `fig:silent_neurons_rotational' on page 9 undefined on
- input line 234.
-
 File: figs/Rotational/silent_neurons.png Graphic file (type bmp)
 <figs/Rotational/silent_neurons.png>
 [9] [10]
-
-LaTeX Warning: Reference `fig:interspikes_rotational' on page 11 undefined on i
-nput line 243.
-
-
-LaTeX Warning: Reference `fig:interspikes_rotational_trending_line' on page 11 
-undefined on input line 244.
-
 File: figs/Rotational/mean_spiking_periods.png Graphic file (type bmp)
 <figs/Rotational/mean_spiking_periods.png>
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1293,8 +1274,13 @@ File: figs/Rotational/mean_spiking_periods_with_trending_line.png Graphic file
 (type bmp)
 <figs/Rotational/mean_spiking_periods_with_trending_line.png>
 
-LaTeX Warning: Reference `fig:spikes_num_vs_background_current' on page 11 unde
-fined on input line 262.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png 
+Graphic file (type bmp)
+<figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11] [12] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
@@ -1304,31 +1290,25 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [13] (paper_studies.aux)
+) [13] [14] (paper_studies.aux)
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `paper_studies.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper_studies.out':
-(rerunfilecheck)             Before: 5C78D09F637F0166890AB5725212C844;1686
-(rerunfilecheck)             After:  C2E6DA88FCF6CB60C3E3812BF2558C8D;3903.
+Package rerunfilecheck Info: File `paper_studies.out' has not changed.
+(rerunfilecheck)             Checksum: C2E6DA88FCF6CB60C3E3812BF2558C8D;3903.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: F092E6545DC5567E00E865DBB9BFD97E;232.
  ) 
 Here is how much of TeX's memory you used:
- 26569 strings out of 411254
- 522134 string characters out of 2832814
+ 26577 strings out of 411254
+ 522729 string characters out of 2832814
  957070 words of memory out of 3000000
- 46501 multiletter control sequences out of 15000+600000
+ 46508 multiletter control sequences out of 15000+600000
  409100 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,15n,95p,1060b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (13 pages).
+Output written on paper_studies.pdf (14 pages).
