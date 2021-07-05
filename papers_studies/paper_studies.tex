@@ -1,6 +1,5 @@
 \documentclass[12pt,onecolumn,a4paper]{article}
 \usepackage{epsfig,amsthm,amsmath,booktabs,csquotes}
-\usepackage{geometry}
 \usepackage [pagebackref=true, colorlinks, linkcolor=blue, citecolor=magenta, urlcolor=cyan] {hyperref}
 \usepackage{color,xcolor}
 
@@ -12,6 +11,13 @@
 %\settextfont[Scale=1.2]{‌BNAZANIN.TTF}
 %\settextfont[Scale=1.2]{BZAR.TTF}
 \settextfont[Scale=1]{XB Niloofar}
+\ExplSyntaxOn
+\cs_set_eq:NN
+\etex_iffontchar:D
+\tex_iffontchar:D
+\cs_undefine:N \c_one
+\int_const:Nn \c_one { 1 }
+\ExplSyntaxOff
 \setdigitfont[Scale=1]{XB Niloofar}
 \setlatintextfont[Scale=1]{Times New Roman}
 
@@ -171,7 +177,7 @@ $t_d = 0.1\, s$
 
 این مدل نسبت به مدل قبلی شامل ویژگی‌های مثبتی است. یکی از ویژگی‌های خوب آن این است که پس از بازنشانی فاز نورون تیزه زده، فاز آن به زاویه‌ای برده می‌شود که دارای خواص مثلثاتی مشابهی است. به این معنا که دیگر شاهد گسستگی در اندازه‌ی جملاتی که تحول نورون را توصیف می‌کنند؛ نیستیم.\\
 \زیرقسمت{آهنگ تیزه زدن}
-برای نورونی تنها که از پویایی از جنس چرخنده دارد؛ دوره‌ی تناوب تیزه زدن آن بر حسب مجموع جریان ورودی‌ رفتاری مطابق زیر دارد \cite{safaeesirat2020critical}:
+برای نورونی تنها که پویایی از جنس چرخنده دارد؛ دوره‌ی تناوب تیزه زدن آن بر حسب مجموع جریان ورودی‌ رفتاری مطابق زیر دارد \cite{safaeesirat2020critical}:
 
 \begin{align}
 T = \frac{2\pi}{\sqrt{I^2 - 1}}
@@ -209,47 +215,47 @@ $t_d = 0.1\, s$
 
 
 \subsubsection{در جستجوی تغییرفاز}
-پس از رصد کردن تغییرات رفتار سیستم بر حسب قدرت مهار نورون‌ها، تغییر فاز مانند مدل قبلی مشاهده شد اما مکان تغییر فاز تغییر کرد و حول $g=40$ قرارگرفت. این تغییر فاز در دو شکل \ref{fig:two_pops_sync_rotational} و \ref{fig:two_pops_amin_saman_rotational}  قابل مشاهده‌است. قابل توجه است که شکل دوم تغییرفاز را به گونه‌ای متفاوت نشان می‌دهد. این امر می‌تواند حاصل از پدیده‌ی نورون‌های خاموش باشد که در بخش بعد بررسی می‌کنیم.
-%\begin{figure}
-%\centering
-%  \includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/sigma_g_0.1_65.png}
-% \caption{پهنای جریان یک سامانه چرخنده با ده هزار نورون}
-%  \label{fig:two_pops_sync_rotational}
-%\end{figure}
+پس از رصد کردن تغییرات رفتار سیستم بر حسب قدرت مهار نورون‌ها، تغییر فاز مانند مدل قبلی مشاهده شد اما مکان تغییر فاز تغییر کرد و حول $g=30$ قرارگرفت. این تغییر فاز در دو شکل \ref{fig:sigma_rotational} و \ref{fig:amin_saman_rotational}  قابل مشاهده‌است.
+\begin{figure}
+\centering
+  \includegraphics[width = 10 cm]{figs/Rotational/sigma.png}
+ \caption{پهنای جریان یک سامانه چرخنده با ده هزار نورون}
+  \label{fig:sigma_rotational}
+\end{figure}
 
-%\begin{figure}
-%\centering
-%  \includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/amin_saman_param_g_0.1_65.png}
-% \caption{پارامتر نظم تعریف شده در رابطه \ref{eq:saman_amin_param} برای مدل چرخنده }
-%  \label{fig:two_pops_amin_saman_rotational}
-%\end{figure}
+\begin{figure}
+\centering
+  \includegraphics[width = 10 cm]{figs/Rotational/amin_saman_param.png}
+ \caption{پارامتر نظم تعریف شده در رابطه \ref{eq:saman_amin_param} برای مدل چرخنده }
+  \label{fig:amin_saman_rotational}
+\end{figure}
 
 \subsubsection{نورون‌های خاموش}
-در حین شبیه‌سازی متوجه شدیم که در ناحیه‌ای که به فاز هم‌گامی در حال گذار هستیم؛ جمعیت همیشه خاموشی از نورون‌ها در حال گسترش است - شکل \ref{fig:silent_neurons}. هر چه قدر قدرت مهار نورون‌ها را زیاد می‌کنیم؛ این تعداد بیشتر می‌شود. همچنین شایان ذکر است که پس از تغییر فاز این مقدار به اشباع می‌رسد و تعداد نورون‌های فعال به ثبات می‌رسند.
-%\begin{figure}[h]
-%\centering
-%  \includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/silent_neurons_g_0.1_65.png}
-% \caption{تعداد نورون‌های خاموش برحسب قدرت مهار نورون‌ها}
-%  \label{fig:silent_neurons}
-%\end{figure}
+در حین شبیه‌سازی متوجه شدیم که در ناحیه‌ای که به فاز هم‌گامی در حال گذار هستیم؛ جمعیت نورون‌هایی که همیشه خاموش هستند؛ در حال گسترش است - شکل \ref{fig:silent_neurons_rotational}. هر چه قدر قدرت مهار نورون‌ها را زیاد می‌کنیم؛ این تعداد بیشتر می‌شود. همچنین شایان ذکر است که پس از تغییر فاز این مقدار به اشباع می‌رسد و تعداد نورون‌های فعال به ثبات می‌رسند.
+\begin{figure}[h]
+\centering
+  \includegraphics[width = 10 cm]{figs/Rotational/silent_neurons.png}
+ \caption{تعداد نورون‌های خاموش برحسب قدرت مهار نورون‌ها}
+  \label{fig:silent_neurons_rotational}
+\end{figure}
 
 \subsubsection{فاصله زمانی بین تیزه‌ها}
 حال که دیدیم برخی نورون‌ها همواره خاموش می‌مانند و یا به عبارتی دوره‌ی تیزه زدن آن‌ها بینهایت است؛ خوب است که دوره‌ی تیزه زدن‌های نورون‌های دیگر را نیز بررسی کنیم. شکل \ref{fig:interspikes_rotational} این شکل نمایان‌گر آن است که توزیع دوره‌ها به توزیع بی‌توانی و رفتار بی‌مقیاس نزدیک است.\\
-با این مشاهده، کنجکاو می‌شویم تا نمای بحرانی را برای آن حساب کنیم. در شکل \ref{fig:interspikes_rotational_trending_line} با گذراندن یک خط بر داده‌های بدست آمده از شبکه‌ای با قدرت مهار ۵۵ را می‌بینیم.
+با این مشاهده، کنجکاو می‌شویم تا نمای بحرانی را برای آن حساب کنیم. در شکل \ref{fig:interspikes_rotational_trending_line} با گذراندن یک خط بر داده‌های بدست آمده از شبکه‌ای با قدرت مهار ۴۵ را می‌بینیم.
 
-%\begin{figure}[h]
-%\centering
-%  \includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/mean_spiking_persiods_g_0.1_65.png}
-% \caption{فاصله‌ی زمانی بین تیزه زدن‌ها}
-%  \label{fig:interspikes_rotational}
-%\end{figure}
-%
-%\begin{figure}[h]
-%\centering
-%  \includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T1000/mean_spiking_persiods_with_trending_line_g_0.1_65.png}
-% \caption{محاسبه‌ی نمای بحرانی}
-%  \label{fig:interspikes_rotational_trending_line}
-%\end{figure}
+\begin{figure}[h]
+\centering
+  \includegraphics[width = 10 cm]{figs/Rotational/mean_spiking_periods.png}
+ \caption{فاصله‌ی زمانی بین تیزه زدن‌ها}
+  \label{fig:interspikes_rotational}
+\end{figure}
+
+\begin{figure}
+\centering
+  \includegraphics[width = 10 cm]{figs/Rotational/mean_spiking_periods_with_trending_line.png}
+ \caption{محاسبه‌ی نمای بحرانی}
+  \label{fig:interspikes_rotational_trending_line}
+\end{figure}
 
 
 \subsubsection{فعالیت شبکه}
