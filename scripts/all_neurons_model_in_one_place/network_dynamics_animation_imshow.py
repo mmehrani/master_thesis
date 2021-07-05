@@ -93,21 +93,24 @@ def init():
 
 def update(frame):
     
-    is_network_active = np.sum(sample_network.spike_mask) > 0
+    was_network_active = np.sum(sample_network.spike_mask) > 0
     
     sample_network._march_on(frame-1)
     phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - min_degree) / grating_blocks_length ) #sorted neurons
     
-    # if not (True in (sample_network.wind_power>0) ):
-    if np.sum(sample_network.spike_mask) == 0 and is_network_active:
+    # Change the spiking group color if they stopped spiking
+    if np.sum(sample_network.spike_mask) == 0 and was_network_active:
         global color_num
         color_num += 1
         color_num = (color_num %10)
 
+    # Update neuron phase marks
     for neuron_index in range(num_neurons):
         current_color = np.sum( plateau[:,neuron_index] )
         plateau[:,neuron_index] = plateau[:,neuron_index]*0
         plateau[int(phase_marks[neuron_index]),neuron_index] = current_color
+        
+        #Spiking ones
         if sample_network.spike_mask[current_sort_args[neuron_index]] == True:
             plateau[int(phase_marks[neuron_index]),neuron_index] = color_num
         
@@ -122,7 +125,9 @@ colored_pop_dist = ax_stat.imshow( np.log10( np.atleast_2d(np.sum(plateau>0,axis
 
 
 
-ax_stat.set_axis_off()
+ax_stat.set_xticks([])
+ax_stat.set_yticks([])
+ax_stat.set_ylabel('logarthism of populations')
 
 y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
 ax.set_yticks([min_degree, - np.pi, 0, max_degree])
