@@ -87,6 +87,8 @@ def init():
     for neuron_index in range(num_neurons):
         plateau[int(phase_marks[neuron_index]),neuron_index] = color_num
     colored_plateau.set_data(plateau)
+    
+    e_pulse.set_ydata(time_series*0)
     return
 
 
@@ -110,24 +112,27 @@ def update(frame):
     
     colored_plateau.set_data(plateau)
     colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
-    e_pulse.set_ydata(sample_network.e_arr[-100:])
-    return plateau
+    e_pulse.set_ydata(sample_network.e_arr[frame-80:frame])
+    return
 
 
 
-gs = gridspec.GridSpec(2, 2, width_ratios = (7,1) )
+gs = gridspec.GridSpec(2, 2, width_ratios = (7,1), height_ratios = (7,2))
 
 fig = plt.figure()
 ax = fig.add_subplot(gs[0, 0])
 ax_stat = fig.add_subplot(gs[0, 1], sharey = ax)
-ax_e = fig.add_subplot(gs[1, 0])
 
-# fig, (ax, ax_stat, ax_e,) = plt.subplots(nrows = 2,ncols = 2, gridspec_kw={'width_ratios':[7, 1],}, sharey=True)
+ax_e = fig.add_subplot(gs[1, 0])
+ax_e.set_xlim([0,1])
+ax_e.set_ylim([0,1.5])
+ax_e.set_
+
 colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 100, cmap = 'tab20b')
 colored_pop_dist = ax_stat.imshow( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T, aspect= 'auto', extent = extent, vmin = 0, vmax = np.log10(num_neurons), cmap = 'Reds')
 
-time_series = np.arange(0,1,sample_network.time_step)
-e_pulse = ax_e.plot(time_series,time_series*0)
+time_series = np.arange(0,0.8,sample_network.time_step)
+e_pulse, = ax_e.plot(time_series,time_series*0)
 
 
 ax_stat.set_axis_off()
