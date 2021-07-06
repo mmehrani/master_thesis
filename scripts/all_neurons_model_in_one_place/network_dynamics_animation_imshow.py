@@ -50,9 +50,9 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 100
+total_time = 93
 start_time_to_sample = 90
-g = 20
+g = 10
 # g = 5
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
@@ -102,7 +102,7 @@ def update(frame):
     # Change the spiking group color if they stopped spiking
     if np.sum(sample_network.spike_mask) == 0 and was_network_active:
         global color_num
-        color_num += 1
+        color_num += 2
         color_num = (color_num %10)
 
     # Update neuron phase marks
@@ -123,7 +123,7 @@ def update(frame):
 
 gs = gridspec.GridSpec(1, 2, width_ratios = (10,1), wspace = 0.2)
 
-fig = plt.figure()
+fig = plt.figure(figsize = (11,6.5),dpi = 60)
 ax = fig.add_subplot(gs[0])
 ax_stat = fig.add_subplot(gs[1], sharey = ax)
 
@@ -149,5 +149,5 @@ ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval
 
 version_name = 'well_in_negatives'
 path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.gif".format(num_neurons,g,random_input_span[0],random_input_span[1]))
-# ani.save(path, writer='imagemagick')
+ani.save(path, writer='imagemagick')
 
