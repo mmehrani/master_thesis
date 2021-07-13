@@ -50,14 +50,14 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 93
+total_time = 100
 start_time_to_sample = 90
-g = 10
-# g = 5
+g = 20
+g = 0
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 # random_input_span = (3.5,13.5)
-random_input_span = (9.5,13.5)
+random_input_span = (10.5,13.5)
 # random_input_span = (1.2,2.8)
 sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01)
 
@@ -123,7 +123,9 @@ def update(frame):
 
 gs = gridspec.GridSpec(1, 2, width_ratios = (10,1), wspace = 0.2)
 
-fig = plt.figure(figsize = (11,6.5),dpi = 60)
+fig = plt.figure(figsize = (12.3,7.2),dpi = 100)
+# fig = plt.figure()
+
 ax = fig.add_subplot(gs[0])
 ax_stat = fig.add_subplot(gs[1], sharey = ax)
 
