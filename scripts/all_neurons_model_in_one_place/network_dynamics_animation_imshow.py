@@ -126,7 +126,6 @@ ax_stat = fig.add_subplot(gs[0, 1], sharey = ax)
 ax_e = fig.add_subplot(gs[1, 0])
 ax_e.set_xlim([0,1])
 ax_e.set_ylim([0,1.5])
-ax_e.set_
 
 colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 100, cmap = 'tab20b')
 colored_pop_dist = ax_stat.imshow( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T, aspect= 'auto', extent = extent, vmin = 0, vmax = np.log10(num_neurons), cmap = 'Reds')
