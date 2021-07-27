@@ -49,17 +49,17 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 
-num_neurons = 10000
+num_neurons = 20000
 total_time = 93
 start_time_to_sample = 90
-g = 20
+g = 13
 # g = 0
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 # random_input_span = (3.5,13.5)
 random_input_span = (9.5,13.5)
 # random_input_span = (1.2,2.8)
-sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01)
+sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01, delay_time = 0.1)
 
 
 for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
@@ -122,17 +122,20 @@ def update(frame):
     # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
     pop_dist.set_xdata( np.sum(plateau>0,axis = 1) )
     e_pulse.set_ydata(sample_network.e_arr[frame-80:frame])
+    wind_direction.set_ydata(sample_network.driving_wind[current_sort_args])
     return plateau
 
 
-gs = gridspec.GridSpec(2, 2, width_ratios = (10,4), height_ratios = (7,2), wspace = 0.2)
+gs = gridspec.GridSpec(3, 2, width_ratios = (10,4), height_ratios = (7,2,5), wspace = 0.2)
 
-fig = plt.figure(figsize = (13.8,7.2),dpi = 100)
+# fig = plt.figure(figsize = (13.8,7.2),dpi = 100)
+fig = plt.figure()
 # fig = plt.figure()
 
 ax = fig.add_subplot(gs[0,0])
 ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
 ax_e = fig.add_subplot(gs[1, 0])
+ax_theta_dot = fig.add_subplot(gs[2, 0])
 
 ax_e.set_xlim([0,1])
 ax_e.set_ylim([0,1.5])
@@ -145,6 +148,8 @@ ax_stat.set_xlim([0,3*num_neurons/grating_num])
 
 time_series = np.arange(0,0.8,sample_network.time_step)
 e_pulse, = ax_e.plot(time_series,time_series*0)
+
+wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
 
 y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
 ax.set_yticks([min_degree, - np.pi, 0, max_degree])
