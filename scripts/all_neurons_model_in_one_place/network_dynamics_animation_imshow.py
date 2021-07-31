@@ -49,10 +49,10 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 
-num_neurons = 20000
+num_neurons = 10000
 total_time = 93
 start_time_to_sample = 90
-g = 13
+g = 15
 # g = 0
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
@@ -126,38 +126,39 @@ def update(frame):
     return plateau
 
 
-gs = gridspec.GridSpec(3, 2, width_ratios = (10,4), height_ratios = (7,2,5), wspace = 0.2)
+gs = gridspec.GridSpec(3, 2, width_ratios = (10,4), height_ratios = (10,5,2), wspace = 0.2)
 
 # fig = plt.figure(figsize = (13.8,7.2),dpi = 100)
 fig = plt.figure()
-# fig = plt.figure()
 
 ax = fig.add_subplot(gs[0,0])
 ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
-ax_e = fig.add_subplot(gs[1, 0])
-ax_theta_dot = fig.add_subplot(gs[2, 0])
-
-ax_e.set_xlim([0,1])
-ax_e.set_ylim([0,1.5])
-
-colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
-# colored_pop_dist = ax_stat.imshow( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T, aspect= 'auto', extent = extent, vmin = 0, vmax = np.log10(num_neurons), cmap = 'Reds')
-pop_dist, = ax_stat.plot( np.sum(plateau>0,axis = 1), np.linspace(min_degree,max_degree,num = grating_num) )
-ax_stat.set_xlim([0,3*num_neurons/grating_num])
-# ax_stat.set_axis_off()
-
-time_series = np.arange(0,0.8,sample_network.time_step)
-e_pulse, = ax_e.plot(time_series,time_series*0)
-
-wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
+ax_e = fig.add_subplot(gs[2, 0])
+ax_theta_dot = fig.add_subplot(gs[1, 0], sharex = ax)
 
 y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
 ax.set_yticks([min_degree, - np.pi, 0, max_degree])
 ax.set_yticklabels(y_label_list)
-
 ax.set_title('Network dynamic N={} g={}'.format(num_neurons,g))
+colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
 
-# fig.colorbar(colored_pop_dist, pad =0.2)
+ax_e.set_ylabel('E')
+ax_e.set_xlabel('t')
+
+ax_theta_dot.set_ylabel(r'$\dot\theta$')
+ax_theta_dot.set_xlabel('neuron number')
+wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
+ax_theta_dot.set_ylim([-13,13])
+
+ax_e.set_xlim([0,1])
+ax_e.set_ylim([0,1.5])
+time_series = np.arange(0,0.8,sample_network.time_step)
+e_pulse, = ax_e.plot(time_series,time_series*0)
+
+ax_stat.set_xlabel('population')
+pop_dist, = ax_stat.plot( np.sum(plateau>0,axis = 1), np.linspace(min_degree,max_degree,num = grating_num) )
+ax_stat.set_xlim([0,3*num_neurons/grating_num])
+
 fig.tight_layout()
 
 frames_range = range( int(start_time_to_sample/sample_network.time_step), sample_network.total_steps)
