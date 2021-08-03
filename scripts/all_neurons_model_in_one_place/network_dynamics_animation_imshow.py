@@ -50,8 +50,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 93
-start_time_to_sample = 90
+total_time = 20
+start_time_to_sample = 10
 g = 15
 # g = 0
 
