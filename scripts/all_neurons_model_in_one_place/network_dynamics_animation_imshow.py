@@ -50,8 +50,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 20
-start_time_to_sample = 10
+total_time = 102
+start_time_to_sample = 100
 g = 15
 # g = 0
 
@@ -122,7 +122,7 @@ def update(frame):
     # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
     pop_dist.set_xdata( np.sum(plateau>0,axis = 1) )
     e_pulse.set_ydata(sample_network.e_arr[frame-80:frame])
-    wind_direction.set_ydata(sample_network.driving_wind[current_sort_args])
+    wind_direction.set_ydata(sample_network.driving_wind[current_sort_args[:100]])
     return plateau
 
 
@@ -134,7 +134,7 @@ fig = plt.figure()
 ax = fig.add_subplot(gs[0,0])
 ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
 ax_e = fig.add_subplot(gs[2, 0])
-ax_theta_dot = fig.add_subplot(gs[1, 0], sharex = ax)
+ax_theta_dot = fig.add_subplot(gs[1, 0])
 
 y_label_list = [r'$-5\frac{\pi}{2}$', '$-\pi$', '0', '$\pi$']
 ax.set_yticks([min_degree, - np.pi, 0, max_degree])
@@ -147,7 +147,7 @@ ax_e.set_xlabel('t')
 
 ax_theta_dot.set_ylabel(r'$\dot\theta$')
 ax_theta_dot.set_xlabel('neuron number')
-wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
+wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1)[:100], sample_network.driving_wind[current_sort_args[:100]])
 ax_theta_dot.set_ylim([-13,13])
 
 ax_e.set_xlim([0,1])
