@@ -12,14 +12,14 @@ We have used mean-field approximation in order of simulation. In other words, th
 The following animation shows how the total population of neurons got synchronized by choice of corresponding value of connecitivity.
 
 <p align="center">
-  <img src="scripts/all_neurons_model_in_one_place/animations/sea_shore/well_in_negatives/N10000_g20_Imin9.5_Imax13.5_neurons_rotational.gif" alt="drawing" width="70%" height = "70%"/>
+  <img src="scripts/all_neurons_model_in_one_place/animations/sea_shore/well_in_negatives/N10000_g20_Imin9.5_Imax13.5_neurons_rotational_synced.gif" alt="drawing" width="70%" height = "70%"/>
 </p>
 
 
 ## Insynchronized phase
 When the conncetivity is low, neurons walks around almost ignoring the other exisiting ones.
 <p align="center">
-  <img src="scripts/all_neurons_model_in_one_place/animations/sea_shore/well_in_negatives/N10000_g10_Imin9.5_Imax13.5_neurons_rotational.gif" alt="drawing" width="70%" height = "70%"/>
+  <img src="scripts/all_neurons_model_in_one_place/animations/sea_shore/well_in_negatives/N10000_g10_Imin9.5_Imax13.5_neurons_rotational_unsynced.gif" alt="drawing" width="70%" height = "70%"/>
 </p>
 
 ## Source codes
