@@ -50,16 +50,17 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 102
-start_time_to_sample = 100
-g = 15
+total_time = 1010
+start_time_to_sample = 1000
+g = 10
 # g = 0
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 # random_input_span = (3.5,13.5)
 random_input_span = (9.5,13.5)
-# random_input_span = (1.2,2.8)
-sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01, delay_time = 0.1)
+# random_input_span = (2.8,4)
+# random_input_span = (6.5,7)
+sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01, delay_time = 0.2)
 
 
 for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
@@ -122,7 +123,7 @@ def update(frame):
     # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
     pop_dist.set_xdata( np.sum(plateau>0,axis = 1) )
     e_pulse.set_ydata(sample_network.e_arr[frame-80:frame])
-    wind_direction.set_ydata(sample_network.driving_wind[current_sort_args[:100]])
+    wind_direction.set_ydata(sample_network.driving_wind[current_sort_args])
     return plateau
 
 
@@ -147,7 +148,8 @@ ax_e.set_xlabel('t')
 
 ax_theta_dot.set_ylabel(r'$\dot\theta$')
 ax_theta_dot.set_xlabel('neuron number')
-wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1)[:100], sample_network.driving_wind[current_sort_args[:100]])
+# wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1)[:100], sample_network.driving_wind[current_sort_args[:100]])
+wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
 ax_theta_dot.set_ylim([-13,13])
 
 ax_e.set_xlim([0,1])

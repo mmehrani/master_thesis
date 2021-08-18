@@ -285,6 +285,37 @@ f(a) &= \frac{\sqrt{a^2 - 1}}{2\pi}
 I_{in} = \frac{-g}{2} (-a \sqrt{-1 + a^2} + log(a + \sqrt{-1 + a^2})) \Big|_{a_{min} + I_{in}}^{a_{max} + I_{in}}
 \end{align}
 
+\section{مطالعه تحلیلی تحول}
+برای آن که تحول توزیع آماری نورون‌ها را در فازهای مختلف مشاهده کنیم؛ نیاز داریم تا معادله‌ی کرامرز مویال حاکم بر آن را بنویسیم. به صورت کلی معادله‌ی کرامزمویال به صورت زیر برای سامانه‌های مارکوفی نوشته می‌شود.
+\begin{align}
+\frac{\partial \rho}{\partial t} &= \sum_{n=1}^{\infty} \frac{1}{n!} \frac{\partial^n}{\partial x^n} \big[ \frac{M_{n}(x,t,\tau)}{\tau} \rho \big] \\
+M_{n}(x,t,\tau) &= \int (x'-x)^n P(x',t+\tau|x,t) dx'
+\end{align}
+
+در عبارت بالا $P(x',t+\tau|x,t)$ نشان دهنده‌ی نرخ گذار به حالت‌های همسایه است. از آنجا که معادله‌ی ما کاملا تعینی است؛ می‌توانیم به راحتی همه‌ ممان‌های مراتب $n$ را محاسبه کنیم.
+\begin{align}
+P(\theta,t+\tau|\theta',t) &= \delta(\theta' - [\theta + (a - cos\theta + I(t) )\tau] )\\
+M_{n}(\theta,t,\tau) &= \int (\theta'-\theta)^n \delta(\theta' - [\theta + (a - cos\theta + I(t) )\tau]) d\theta'\\
+&= [ \theta + ( a - cos\theta + I(t) )\tau - \theta]^n \\
+&= [ a - cos\theta + I(t) ]^n \cdot \tau^n
+\end{align}
+حال مجددا معادله‌ی کرامز را بازنویسی می‌کنیم:
+\begin{align}
+\frac{\partial \rho_a}{\partial t} &= \sum_{n=1}^{\infty} \frac{1}{n!} \frac{\partial^n}{\partial \theta^n} \big[ [ a - cos\theta + I(t) ]^n \cdot \tau^{n-1} \rho_a \big] \\
+\end{align}
+از آن‌جا که باز زمانی $\tau$ را کاملا کوچک و دیفرانسیلی در نظر گرفتیم؛ می‌توانیم جملات بسط کرامرز را فقط تا مرتبه‌ی اول نگه داریم.
+\begin{align}
+\frac{\partial \rho_a}{\partial t} &=  \frac{\partial}{\partial \theta} \big[ [ a - cos\theta + I(t) ] \rho_a \big] \\
+&+  \frac{1}{2} \frac{\partial^2}{\partial \theta^2} \big[ [ a - cos\theta + I(t) ]^2 \cdot \tau  \rho_a \big]
+\end{align}
+عبارت سمت راست را می‌توانیم به شکل معادله‌ی پیوستگی نیز مرتب کنیم. در این صورت می‌توانیم عبارت جریان را نیز شرح دهیم.
+\begin{align}
+\frac{\partial \rho_a}{\partial t} &=  - \frac{\partial J_a}{\partial \theta} \\
+\frac{\partial \rho_a}{\partial t} &=  - \frac{\partial}{\partial \theta} \bigg[ - ( a - cos\theta + I(t) ) \rho_a  \\
+&-  \frac{1}{2} \frac{\partial}{\partial \theta}[ ( a - cos\theta + I(t) )^2 \cdot \tau  \rho_a ] \bigg] \\
+J_a &= - [ a - cos\theta + I(t) ] \rho_a -  \frac{1}{2} \frac{\partial}{\partial \theta}[ ( a - cos\theta + I(t) )^2 \cdot \tau  \rho_a ]
+\end{align}
+
 \newpage
 \bibliographystyle{plain-fa}
 \bibliography{MyReferences}
