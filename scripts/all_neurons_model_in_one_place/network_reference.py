@@ -100,24 +100,34 @@ class Network_of_neurons(network_engine_class):
         return sigma
     
     def report_e_period(self, **kwargs):
-        sampling_period = kwargs.get('sampling_period',int( self.total_steps / 100 ) )
+        sampling_period = kwargs.get('sampling_period',int( self.total_steps / 10 ) )
         e_sampled = self.e_arr[-sampling_period:]
         self.e_mean = np.mean(e_sampled)
         
         e_booled = 1*(e_sampled > self.e_mean)
         
         #computing E(t) main period
+        period_list = []
+        start_index = 0
         index = 0
-        
-        while e_booled[index] == e_booled[0]:
-            index += 1
-        
-        period = 0
-
-        while e_booled[index] != e_booled[0]:
-            period += 1
-        
-        self.e_period = period/self.time_step
+        for i in range(5):
+            while e_booled[index] == e_booled[start_index]: # Find when it start to get a different value
+                index += 1 
+            
+            period = 0
+            try:
+                while e_booled[index + period] != e_booled[0]: # How long this value resist
+                    period += 1
+                period*=2  # period must show the total oscillation time
+                period_list.append(period)
+                start_index = index
+                
+            except:
+                if i == 0 : period_list.append(sampling_period)
+                # period = sampling_period
+                break
+            
+        self.e_period = round( np.mean(period_list) * self.time_step, 2)
         return self.e_period 
 
     pass
@@ -125,7 +135,11 @@ class Network_of_neurons(network_engine_class):
 
 
     
-# sample_model = Network_of_neurons(num_neurons= 1000, g = 5)
-# sample_model.ignite(random_input_span = (3.5,13.5),total_time = 1000)
-# sigma = sample_model.report_sigma()
-# spikies_period_mean = sample_model.report_spikies_period_mean()
+sample_model = Network_of_neurons(num_neurons= 10000, g = 15)
+sample_model.ignite(random_input_span = (9.5,13.5), total_time = 1000, delay_time = 0.1)
+
+sigma = sample_model.report_sigma()
+e_period = sample_model.report_e_period()
+e_mean = sample_model.e_mean
+
+spikies_period_mean = sample_model.report_spikies_period_mean()
