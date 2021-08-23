@@ -98,6 +98,27 @@ class Network_of_neurons(network_engine_class):
     def report_sigma(self):
         sigma = np.std( self.e_arr )
         return sigma
+    
+    def report_e_period(self, **kwargs):
+        sampling_period = kwargs.get('sampling_period',int( self.total_steps / 100 ) )
+        e_sampled = self.e_arr[-sampling_period:]
+        self.e_mean = np.mean(e_sampled)
+        
+        e_booled = 1*(e_sampled > self.e_mean)
+        
+        #computing E(t) main period
+        index = 0
+        
+        while e_booled[index] == e_booled[0]:
+            index += 1
+        
+        period = 0
+
+        while e_booled[index] != e_booled[0]:
+            period += 1
+        
+        self.e_period = period/self.time_step
+        return self.e_period 
 
     pass
 
