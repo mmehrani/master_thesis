@@ -33,9 +33,14 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.time_step = time_step
         self.delay_step = int(delay_time/time_step)
         
-        
-        self.m_arr = np.zeros(total_steps)
+        # self.m_arr = np.zeros(total_steps)
         self.e_arr = np.zeros(total_steps)
+        self.e_mean = 0.5
+        self.sigma = 0.2
+        self.e_period = 0.6
+        self.e_angular_velocity = 2*np.pi/self.e_period
+        self.e_domain = self.sigma * np.sqrt(2/self.e_period)
+        
         self.random_input = np.random.uniform(*random_input_span,size = self.num_neurons)
         
         self.amin_saman_param = np.zeros( total_steps )
@@ -50,8 +55,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 20
-start_time_to_sample = 10
+total_time = 1010
+start_time_to_sample = 1000
 g = 15
 # g = 0
 
@@ -59,6 +64,7 @@ sample_network = Animated_network_of_neurons(num_neurons, g = g)
 # random_input_span = (3.5,13.5)
 random_input_span = (9.5,13.5)
 # random_input_span = (1.2,2.8)
+
 sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01, delay_time = 0.1)
 
 
