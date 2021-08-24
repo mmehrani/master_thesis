@@ -135,11 +135,11 @@ class Network_of_neurons(network_engine_class):
 
 
     
-sample_model = Network_of_neurons(num_neurons= 10000, g = 15)
-sample_model.ignite(random_input_span = (9.5,13.5), total_time = 1000, delay_time = 0.1)
+# sample_model = Network_of_neurons(num_neurons= 10000, g = 15)
+# sample_model.ignite(random_input_span = (9.5,13.5), total_time = 1000, delay_time = 0.1)
 
-sigma = sample_model.report_sigma()
-e_period = sample_model.report_e_period()
-e_mean = sample_model.e_mean
+# sigma = sample_model.report_sigma()
+# e_period = sample_model.report_e_period()
+# e_mean = sample_model.e_mean
 
-spikies_period_mean = sample_model.report_spikies_period_mean()
+# spikies_period_mean = sample_model.report_spikies_period_mean()
