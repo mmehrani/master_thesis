@@ -50,8 +50,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 10
-start_time_to_sample = 1
+total_time = 11
+start_time_to_sample = 10
 g = 16
 # g = 0
 
@@ -59,7 +59,7 @@ sample_network = Animated_network_of_neurons(num_neurons, g = g)
 # random_input_span = (3.5,13.5)
 random_input_span = (9.5,13.5)
 # random_input_span = (1.2,2.8)
-sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01, delay_time = 0.25)
+sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01, delay_time = 0.1)
 
 
 for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
