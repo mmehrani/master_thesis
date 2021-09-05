@@ -107,6 +107,12 @@ class Network_of_neurons(network_engine_class):
         max_index = np.where( yf == np.max(yf) )[0][0] #we need the index not the array including it!
         self.e_period = 1 / xf[max_index]
         return self.e_period
+
+    def plot_e_fft(self):
+        yf = fft( self.e_arr )
+        xf = fftfreq(self.e_arr.size, d = self.time_step)
+        plt.plot(xf,yf)
+        return
     
     def report_e_period(self, **kwargs):
         sampling_period = kwargs.get('sampling_period',int( self.total_steps / 10 ) )
