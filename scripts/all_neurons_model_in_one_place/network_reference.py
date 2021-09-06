@@ -10,7 +10,7 @@ Created on Sun Apr 11 17:02:33 2021
 import numpy as np
 from tqdm import tqdm
 import matplotlib.pyplot as plt
-from scipy.fft import fft, fftfreq
+
 
 from neurons_engines import Rotational_neural_network, Kuramoto_neural_network
 
@@ -101,16 +101,16 @@ class Network_of_neurons(network_engine_class):
         return sigma
     
     def report_e_period_fft(self):
-        yf = np.real( fft( self.e_arr - np.mean(self.e_arr) ) )
-        xf = fftfreq(self.e_arr.size, d = self.time_step)
+        yf = np.abs( np.fft.fft( self.e_arr - np.mean(self.e_arr) ) ) #remove the constant variable
+        xf = np.fft.fftfreq(self.e_arr.size, d = self.time_step)
         
         max_index = np.where( yf == np.max(yf) )[0][0] #we need the index not the array including it!
         self.e_period = 1 / xf[max_index]
         return self.e_period
 
     def plot_e_fft(self):
-        yf = fft( self.e_arr )
-        xf = fftfreq(self.e_arr.size, d = self.time_step)
+        yf = np.fft.fft( self.e_arr )
+        xf = np.fft.fftfreq(self.e_arr.size, d = self.time_step)
         plt.plot(xf,yf)
         return
     
