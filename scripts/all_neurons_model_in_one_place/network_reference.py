@@ -104,9 +104,10 @@ class Network_of_neurons(network_engine_class):
         yf = np.abs( np.fft.fft( self.e_arr - np.mean(self.e_arr) ) ) #remove the constant variable
         xf = np.fft.fftfreq(self.e_arr.size, d = self.time_step)
         
-        max_index = np.where( yf == np.max(yf) )[0][0] #we need the index not the array including it!
+        self.max_intensity = np.max(yf)
+        max_index = np.where( yf == self.max_intensity )[0][0] #we need the index not the array including it!
         self.e_period = 1 / xf[max_index]
-        return self.e_period
+        return self.e_period, self.max_intensity
 
     def plot_e_fft(self):
         yf = np.fft.fft( self.e_arr )

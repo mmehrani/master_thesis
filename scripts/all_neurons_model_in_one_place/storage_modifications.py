@@ -27,10 +27,10 @@ def make_inner_dir(parent_dir, child_dir_name):
         pass
     return path
 
-def save_field_period(reported_period,ensemble_path):
-    file_path = os.path.join(ensemble_path,'field_period.txt')
+def save_field_period(dominant_mod_period, dominant_mod_intensity, ensemble_path):
+    file_path = os.path.join(ensemble_path,'field_properties.txt')
     with open(file_path, "w") as file: 
-        file.write( '{}'.format(reported_period) )
+        file.write( '{0},{1}'.format(dominant_mod_period, dominant_mod_intensity) )
     return
 
 def save_sigma(reported_sigma,ensemble_path):
