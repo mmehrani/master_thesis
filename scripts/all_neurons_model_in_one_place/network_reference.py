@@ -101,8 +101,8 @@ class Network_of_neurons(network_engine_class):
         return sigma
     
     def report_e_period_fft(self):
-        yf = np.abs( np.fft.fft( self.e_arr - np.mean(self.e_arr) ) ) #remove the constant variable
-        xf = np.fft.fftfreq(self.e_arr.size, d = self.time_step)
+        yf = np.abs( np.fft.fft( self.e_arr ) )[1:self.e_arr.size//2] #remove the constant variable
+        xf = np.fft.fftfreq(self.e_arr.size, d = self.time_step)[1:self.e_arr.size//2] #we want only the first half containing the positive freqs.
         
         self.max_intensity = np.max(yf)
         max_index = np.where( yf == self.max_intensity )[0][0] #we need the index not the array including it!
