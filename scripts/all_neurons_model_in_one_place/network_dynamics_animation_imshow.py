@@ -50,9 +50,9 @@ class Animated_network_of_neurons(Network_of_neurons):
 
 
 num_neurons = 10000
-total_time = 120
+total_time = 110
 start_time_to_sample = 100
-g = 16
+g = 12.7
 # g = 0
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
@@ -166,6 +166,9 @@ ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval
 
 
 version_name = 'well_in_negatives'
-path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.gif".format(num_neurons,g,random_input_span[0],random_input_span[1]))
+path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.html".format(num_neurons,g,random_input_span[0],random_input_span[1]))
 # ani.save(path, writer='imagemagick')
+
+with open(path, "w") as f:
+    print(ani.to_html5_video(), file=f)
 

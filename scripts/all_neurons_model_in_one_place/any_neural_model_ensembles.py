@@ -17,7 +17,7 @@ import os
 # In[2]:
 
 
-# get_ipython().run_cell_magic('capture', '', 'from tqdm import tqdm_notebook as tqdm\ntqdm().pandas() #This line make sure that the progress bars looks natural')
+get_ipython().run_cell_magic('capture', '', 'from tqdm import tqdm_notebook as tqdm\ntqdm().pandas() #This line make sure that the progress bars looks natural')
 
 
 # ## Order your neuron model of interest
@@ -56,7 +56,7 @@ from network_reference import Network_of_neurons
 num_neurons = 10000
 total_time = 100
 
-num_ensembles_each_g = 1
+num_ensembles_each_g = 2
 
 
 # In[7]:
@@ -69,14 +69,14 @@ random_input_span = (9.5,13.5)
 # In[8]:
 
 
-connectivity_min,connectivity_max, connectivity_step =0, 50, 1
+connectivity_min,connectivity_max, connectivity_step =10, 15, 0.1
 connectivity_span = np.arange(connectivity_min,connectivity_max,connectivity_step).round(2)
 
 
 # In[9]:
 
 
-delay_min, delay_max, delay_step = 0, 2, 0.02
+delay_min, delay_max, delay_step =0.11, 0.12, 0.02
 delay_span = np.arange(delay_min, delay_max, delay_step).round(2)
 
 
@@ -138,10 +138,7 @@ for connectivity in tqdm( connectivity_span , desc='Variation of connectivities'
                 current_ensemble_folder = make_inner_dir(alpha_subgroup_storage, str(last_index + i + 1) )
 
                 save_sigma(sample_model.report_sigma(), current_ensemble_folder)
-                
-                sample_model.report_e_period_fft()
-                save_field_period(sample_model.e_period, sample_model.max_intensity, current_ensemble_folder )
-                
+                save_field_period(*sample_model.report_e_period_fft(), current_ensemble_folder)
                 if neuron_model == current_models[1]: save_amin_saman_param(sample_model.report_sync_parameter(), current_ensemble_folder)
                 save_mean_spiking_periods( sample_model.report_spikies_period_mean(), current_ensemble_folder )
 
@@ -155,7 +152,7 @@ for connectivity in tqdm( connectivity_span , desc='Variation of connectivities'
 # In[ ]:
 
 
-# get_ipython().system('ipython nbconvert --to python any_neural_model_ensembles.ipynb')
+get_ipython().system('ipython nbconvert --to python any_neural_model_ensembles.ipynb')
 
 
 # In[ ]:
