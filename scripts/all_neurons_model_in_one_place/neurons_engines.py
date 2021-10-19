@@ -89,7 +89,8 @@ class Kuramoto_neural_network:
         None.
 
         """
-        self.potentail_arr = self.potentail_arr + (self.random_input - self.potentail_arr)*self.time_step - (self.g / self.num_neurons )*self._retarded_spikes_record(i)
+        self.driving_wind = (self.random_input - self.potentail_arr - self.g * self.e_arr[i])
+        self.potentail_arr = self.potentail_arr + self.driving_wind *self.time_step 
         
         #here we should spot the spiking neurons.
         self.spike_mask = self.potentail_arr > 1

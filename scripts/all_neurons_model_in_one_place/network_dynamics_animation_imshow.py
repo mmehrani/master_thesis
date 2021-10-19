@@ -48,17 +48,28 @@ class Animated_network_of_neurons(Network_of_neurons):
     pass
 
 
+current_models = ['IF','Rotational']
+neuron_model = current_models[0]
 
+with open("network_reference.py") as net_ref: 
+    lines = net_ref.readlines() #read 
+ 
+    #modify 
+    lines[0] = "neuron_engine = '{}'\n".format(neuron_model) #you can replace zero with any line number. 
+ 
+with open("network_reference.py", "w") as net_ref: 
+    net_ref.writelines(lines) #write back 
+    
 num_neurons = 10000
-total_time = 110
-start_time_to_sample = 100
-g = 12.7
-# g = 0
+total_time = 1010
+start_time_to_sample = 1000
+# g = 12.7
+g = 0.3
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 # random_input_span = (3.5,13.5)
-random_input_span = (9.5,13.5)
-# random_input_span = (2.7,2.8)
+# random_input_span = (9.5,13.5)
+random_input_span = (1.2,2.8)
 sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01, delay_time = 0.1)
 
 
@@ -69,11 +80,11 @@ for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
 current_sort_args = np.argsort(sample_network.random_input)
 
 
-max_degree = np.pi
-min_degree = -5*np.pi/2
+# max_degree = np.pi
+# min_degree = -5*np.pi/2
 
-# max_degree = -0.5
-# min_degree = 1
+max_degree = 1
+min_degree = -0.5
 
 extent = [1 , num_neurons, max_degree , min_degree] #imshow axises are updside down
 
@@ -148,7 +159,8 @@ ax_e.set_xlabel('t')
 ax_theta_dot.set_ylabel(r'$\dot\theta$')
 ax_theta_dot.set_xlabel('neuron number')
 wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
-ax_theta_dot.set_ylim([-13,13])
+# ax_theta_dot.set_ylim([-13,13])
+ax_theta_dot.set_ylim([-1,1])
 
 ax_e.set_xlim([0,1])
 ax_e.set_ylim([0,1.5])
@@ -169,6 +181,6 @@ version_name = 'well_in_negatives'
 path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.html".format(num_neurons,g,random_input_span[0],random_input_span[1]))
 # ani.save(path, writer='imagemagick')
 
-with open(path, "w") as f:
-    print(ani.to_html5_video(), file=f)
+# with open(path, "w") as f:
+#     print(ani.to_html5_video(), file=f)
 
