@@ -52,7 +52,8 @@ class Rotational_neural_network:
         for i in tqdm( range(total_steps - 1),desc = 'network dynamic' ):
             #potential to fall
             # potential_free_fall_mask = self.theta_arr > - np.pi/2
-            self.theta_arr = self.theta_arr + (random_input - self.g * e_arr[i] )*time_step
+            self.theta_arr = self.theta_arr + (random_input - np.cos(self.theta_arr) - self.g * e_arr[i] )*time_step
+            # self.theta_arr = self.theta_arr + (random_input - self.g * e_arr[i] )*time_step
             
             #here we should spot the spiking neurons.
             self.spike_mask = self.theta_arr > np.pi
