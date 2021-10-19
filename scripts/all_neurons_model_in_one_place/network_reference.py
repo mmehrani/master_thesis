@@ -1,4 +1,4 @@
-neuron_engine = 'IF'
+neuron_engine = 'Rotational'
 
 # -*- coding: utf-8 -*-
 """

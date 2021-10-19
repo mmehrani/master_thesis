@@ -32,7 +32,8 @@ class Rotational_neural_network:
         """
 
         #dynamics
-        self.driving_wind = (self.random_input - np.cos(self.potentail_arr) - self.g * self.e_arr[i] )
+        # self.driving_wind = (self.random_input - np.cos(self.potentail_arr) - self.g * self.e_arr[i] )
+        self.driving_wind = (self.random_input - self.g * self.e_arr[i] )
         self.potentail_arr = self.potentail_arr + self.driving_wind * self.time_step
 
         self.m_arr[i+1] = self.m_arr[i] + self.time_step*( -self.alpha*self.m_arr[i] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
