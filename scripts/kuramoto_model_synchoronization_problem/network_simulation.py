@@ -37,7 +37,7 @@ class Kuramoto_neural_network:
         self.spiking_records = np.array( np.zeros(total_steps) )
         
         for i in tqdm(range(total_steps),desc = 'network dynamic'):
-            potentail_arr = potentail_arr + (random_input - potentail_arr)*time_step - (self.g / self.num_neurons )*self._retarded_spikes_record(i)
+            potentail_arr = potentail_arr + (random_input)*time_step - (self.g / self.num_neurons )*self._retarded_spikes_record(i)
             self.spiking_records[i] = np.sum( potentail_arr > 1 )
             potentail_arr = potentail_arr - 1*(potentail_arr > 1)
         
