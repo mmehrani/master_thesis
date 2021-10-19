@@ -48,7 +48,7 @@ class Animated_network_of_neurons(Network_of_neurons):
     pass
 
 
-current_models = ['IF','Rotational']
+current_models = ['IF','Rotational','Non_repulsive_rotational']
 neuron_model = current_models[0]
 
 with open("network_reference.py") as net_ref: 
@@ -56,7 +56,7 @@ with open("network_reference.py") as net_ref:
  
     #modify 
     lines[0] = "neuron_engine = '{}'\n".format(neuron_model) #you can replace zero with any line number. 
- 
+
 with open("network_reference.py", "w") as net_ref: 
     net_ref.writelines(lines) #write back 
     

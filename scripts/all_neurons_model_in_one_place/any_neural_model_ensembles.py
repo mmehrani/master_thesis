@@ -25,12 +25,8 @@ get_ipython().run_cell_magic('capture', '', 'from tqdm import tqdm_notebook as t
 # In[3]:
 
 
-current_models = ['IF','Rotational']
-neuron_model = current_models[1]
-
-
-# In[4]:
-
+current_models = ['IF','Rotational','Non_repulsive_rotational']
+neuron_model = current_models[2]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -42,7 +38,7 @@ with open("network_reference.py", "w") as net_ref:
     net_ref.writelines(lines) #write back 
 
 
-# In[5]:
+# In[4]:
 
 
 from network_reference import Network_of_neurons
@@ -50,7 +46,7 @@ from network_reference import Network_of_neurons
 
 # ## Parameters and constants
 
-# In[6]:
+# In[5]:
 
 
 num_neurons = 10000
@@ -59,31 +55,31 @@ total_time = 100
 num_ensembles_each_g = 2
 
 
-# In[7]:
+# In[6]:
 
 
 random_input_span = (9.5,13.5)
 # random_input_span = (1.2,2.8)
 
 
+# In[7]:
+
+
+connectivity_min,connectivity_max, connectivity_step =5, 20, 1
+connectivity_span = np.arange(connectivity_min,connectivity_max,connectivity_step).round(2)
+
+
 # In[8]:
 
 
-connectivity_min,connectivity_max, connectivity_step =10, 15, 0.1
-connectivity_span = np.arange(connectivity_min,connectivity_max,connectivity_step).round(2)
+delay_min, delay_max, delay_step =0.1, 0.12, 0.2
+delay_span = np.arange(delay_min, delay_max, delay_step).round(2)
 
 
 # In[9]:
 
 
-delay_min, delay_max, delay_step =0.11, 0.12, 0.02
-delay_span = np.arange(delay_min, delay_max, delay_step).round(2)
-
-
-# In[10]:
-
-
-alpha_min, alpha_max, alpha_step = 20, 30, 10
+alpha_min, alpha_max, alpha_step = 20, 30, 20
 alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
 
 
@@ -95,7 +91,7 @@ alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
 
 # ## Prepare the storage to record the outputs
 
-# In[11]:
+# In[10]:
 
 
 current_size_networks_path = os.path.join(neuron_model + '_ensembles','N{}_T{}_I{}_{}'.format(num_neurons,total_time,random_input_span[0],random_input_span[1]) )
@@ -105,7 +101,7 @@ except:
     pass
 
 
-# In[12]:
+# In[11]:
 
 
 from storage_modifications import *
@@ -139,7 +135,8 @@ for connectivity in tqdm( connectivity_span , desc='Variation of connectivities'
 
                 save_sigma(sample_model.report_sigma(), current_ensemble_folder)
                 save_field_period(*sample_model.report_e_period_fft(), current_ensemble_folder)
-                if neuron_model == current_models[1]: save_amin_saman_param(sample_model.report_sync_parameter(), current_ensemble_folder)
+                if neuron_model == current_models[1] or neuron_model == current_models[2]:
+                    save_amin_saman_param(sample_model.report_sync_parameter(), current_ensemble_folder)
                 save_mean_spiking_periods( sample_model.report_spikies_period_mean(), current_ensemble_folder )
 
 

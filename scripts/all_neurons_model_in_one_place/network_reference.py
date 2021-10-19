@@ -1,4 +1,4 @@
-neuron_engine = 'IF'
+neuron_engine = 'Non_repulsive_rotational'
 
 # -*- coding: utf-8 -*-
 """
@@ -12,9 +12,9 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 
 
-from neurons_engines import Rotational_neural_network, Kuramoto_neural_network
+from neurons_engines import Rotational_neural_network, Kuramoto_neural_network, Non_repulsive_rotational_neural_network
 
-engines_dict = {'IF':Kuramoto_neural_network, 'Rotational':Rotational_neural_network}
+engines_dict = {'IF':Kuramoto_neural_network, 'Rotational':Rotational_neural_network, 'Non_repulsive_rotational':Non_repulsive_rotational_neural_network}
 network_engine_class = engines_dict[neuron_engine]
 
 
@@ -32,7 +32,7 @@ class Network_of_neurons(network_engine_class):
         else:
             return 0
     
-    def ignite(self,random_input_span,total_time,time_step = 0.01,delay_time = 0.1):
+    def ignite(self, random_input_span, total_time, time_step = 0.01, delay_time = 0.1):
         
         # random_input_span = (3.5,13.5)
         
