@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  5 JUL 2021 10:36
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  23 OCT 2021 15:47
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1176,13 +1176,13 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 (Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 (Font)              scaled to size 6.0pt on input line 4.
-)
+ [1
+
+])
 \tf@toc=\write5
 \openout5 = `paper_studies.toc'.
 
- [1
-
-]
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 36--37
 [][]
  []
@@ -1197,17 +1197,17 @@ Overfull \hbox (0.5918pt too wide) in paragraph at lines 41--43
 LaTeX Warning: The counter will not be printed.
              The label is: - on input line 52.
 
-[2]
+[3]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 70.
 Missing character: There is no ـ in font cmmi8!
 Missing character: There is no ـ in font cmmi8!
- [3]
+ [4]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 [][]
  []
 
-[4]
+[5]
 File: ../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T100
 0_g5_input_1.2_2.8/raster_plot.png Graphic file (type bmp)
 <../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T1000_g5_
@@ -1217,13 +1217,13 @@ input_1.2_2.8/raster_plot.png>
 LaTeX Warning: The counter will not be printed.
              The label is: * on input line 115.
 
-[5]
+[6]
 File: ../papers_studies/figs/IF/sigma.png Graphic file (type bmp)
 <../papers_studies/figs/IF/sigma.png>
 File: ../papers_studies/figs/IF/mean_spiking_persiods.png Graphic file (type bm
 p)
 <../papers_studies/figs/IF/mean_spiking_persiods.png>
- [6]
+ [7]
 File: ../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png Gr
 aphic file (type bmp)
 <../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png>
@@ -1232,7 +1232,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 [][]
  []
 
-[7]
+[8]
 Missing character: There is no ـ in font cmmi8!
 
 
@@ -1245,14 +1245,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
  []
 
 
-LaTeX Warning: Citation `safaeesirat2020critical' on page 8 undefined on input 
+LaTeX Warning: Citation `safaeesirat2020critical' on page 9 undefined on input 
 line 180.
 
 
-LaTeX Warning: Citation `safaeesirat2020critical' on page 8 undefined on input 
+LaTeX Warning: Citation `safaeesirat2020critical' on page 9 undefined on input 
 line 188.
 
-[8]
+[9]
 
 LaTeX Warning: The counter will not be printed.
              The label is: * on input line 198.
@@ -1263,7 +1263,7 @@ File: figs/Rotational/amin_saman_param.png Graphic file (type bmp)
 <figs/Rotational/amin_saman_param.png>
 File: figs/Rotational/silent_neurons.png Graphic file (type bmp)
 <figs/Rotational/silent_neurons.png>
-[9] [10]
+[10] [11]
 File: figs/Rotational/mean_spiking_periods.png Graphic file (type bmp)
 <figs/Rotational/mean_spiking_periods.png>
 
@@ -1282,7 +1282,24 @@ Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11] [12] (paper_studies.bbl (paper_studies.brf)
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+[][]
+ []
+
+[13]
+Missing character: There is no ـ in font cmmi8!
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 309.
+
+[14]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 324.
+
+[15] [16] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
@@ -1290,25 +1307,36 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [13] [14] (paper_studies.aux)
+) [17] (paper_studies.aux)
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: C2E6DA88FCF6CB60C3E3812BF2558C8D;3903.
-Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
-(rerunfilecheck)             Checksum: F092E6545DC5567E00E865DBB9BFD97E;232.
+
+Package rerunfilecheck Warning: File `paper_studies.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `paper_studies.out':
+(rerunfilecheck)             Before: 693900753327F7687FEF10BC3968E01A;3923
+(rerunfilecheck)             After:  969CB0261AADE7663CCAE4AC11D496E4;5243.
+
+Package rerunfilecheck Warning: File `paper_studies.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `paper_studies.brf':
+(rerunfilecheck)             Before: F092E6545DC5567E00E865DBB9BFD97E;232
+(rerunfilecheck)             After:  B990A96F2722A0FA7E4FF94A2681E3E4;232.
  ) 
 Here is how much of TeX's memory you used:
- 26577 strings out of 411254
- 522729 string characters out of 2832814
- 957070 words of memory out of 3000000
- 46508 multiletter control sequences out of 15000+600000
+ 26579 strings out of 411254
+ 522759 string characters out of 2832814
+ 960070 words of memory out of 3000000
+ 46510 multiletter control sequences out of 15000+600000
  409100 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,15n,95p,1060b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (14 pages).
+Output written on paper_studies.pdf (17 pages).
