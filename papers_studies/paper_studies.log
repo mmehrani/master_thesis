@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  5 JUL 2021 10:36
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  23 OCT 2021 15:21
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1282,7 +1282,24 @@ Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11] [12] (paper_studies.bbl (paper_studies.brf)
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+[][]
+ []
+
+[12]
+Missing character: There is no ـ in font cmmi8!
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 309.
+
+[13]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 322.
+
+[14] [15] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
@@ -1290,25 +1307,28 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [13] [14] (paper_studies.aux)
+) [16] (paper_studies.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package rerunfilecheck Warning: File `paper_studies.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: C2E6DA88FCF6CB60C3E3812BF2558C8D;3903.
+Package rerunfilecheck Info: Checksums for `paper_studies.out':
+(rerunfilecheck)             Before: AB3A2CB52B17C81D39E90B853A2F5FB7;4803
+(rerunfilecheck)             After:  969CB0261AADE7663CCAE4AC11D496E4;5243.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: F092E6545DC5567E00E865DBB9BFD97E;232.
  ) 
 Here is how much of TeX's memory you used:
- 26577 strings out of 411254
- 522729 string characters out of 2832814
- 957070 words of memory out of 3000000
- 46508 multiletter control sequences out of 15000+600000
+ 26580 strings out of 411254
+ 522770 string characters out of 2832814
+ 960070 words of memory out of 3000000
+ 46511 multiletter control sequences out of 15000+600000
  409100 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,15n,95p,1060b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (14 pages).
+Output written on paper_studies.pdf (16 pages).
