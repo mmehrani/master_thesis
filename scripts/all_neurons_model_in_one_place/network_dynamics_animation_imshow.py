@@ -61,10 +61,10 @@ with open("network_reference.py", "w") as net_ref:
     net_ref.writelines(lines) #write back 
     
 num_neurons = 10000
-total_time = 1010
-start_time_to_sample = 1000
+total_time = 110
+start_time_to_sample = 100
 # g = 12.7
-g = 0.3
+g = 0.2
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 # random_input_span = (3.5,13.5)

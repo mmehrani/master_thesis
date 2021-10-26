@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  23 OCT 2021 15:47
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  25 OCT 2021 13:48
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1220,86 +1220,146 @@ LaTeX Warning: The counter will not be printed.
 [6]
 File: ../papers_studies/figs/IF/sigma.png Graphic file (type bmp)
 <../papers_studies/figs/IF/sigma.png>
+File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
+2.8_cluster_computed/silent_neurons_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
+luster_computed/silent_neurons_g_0.1_65.png>
+ [7]
 File: ../papers_studies/figs/IF/mean_spiking_persiods.png Graphic file (type bm
 p)
 <../papers_studies/figs/IF/mean_spiking_persiods.png>
- [7]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: ../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png Gr
 aphic file (type bmp)
 <../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 [][]
+ []
+
+File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
+2.8_cluster_computed/sigma_phase_space.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
+luster_computed/sigma_phase_space.png>
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 175--176
+ [][][][][][] 
  []
 
 [8]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+[][]
+ []
+
 Missing character: There is no ـ in font cmmi8!
 
-
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 168.
+             The label is: - on input line 195.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 [][]
  []
 
 
-LaTeX Warning: Citation `safaeesirat2020critical' on page 9 undefined on input 
-line 180.
+LaTeX Warning: Citation `safaeesirat2020critical' on page 10 undefined on input
+ line 207.
 
+[10]
 
-LaTeX Warning: Citation `safaeesirat2020critical' on page 9 undefined on input 
-line 188.
+LaTeX Warning: Citation `safaeesirat2020critical' on page 11 undefined on input
+ line 215.
 
-[9]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 198.
+             The label is: * on input line 225.
 
-File: figs/Rotational/sigma.png Graphic file (type bmp)
-<figs/Rotational/sigma.png>
-File: figs/Rotational/amin_saman_param.png Graphic file (type bmp)
-<figs/Rotational/amin_saman_param.png>
-File: figs/Rotational/silent_neurons.png Graphic file (type bmp)
-<figs/Rotational/silent_neurons.png>
-[10] [11]
-File: figs/Rotational/mean_spiking_periods.png Graphic file (type bmp)
-<figs/Rotational/mean_spiking_periods.png>
+[11]
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/sigma_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/sigma_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/amin_saman_param_g_0.1_65.png Graphic file (type b
+mp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/amin_saman_param_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/mean_spiking_persiods_g_0.1_65.png Graphic file (t
+ype bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/mean_spiking_persiods_g_0.1_65.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: figs/Rotational/mean_spiking_periods_with_trending_line.png Graphic file 
-(type bmp)
-<figs/Rotational/mean_spiking_periods_with_trending_line.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/mean_spiking_persiods_with_trending_line_g_0.1_65.
+png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/mean_spiking_persiods_with_trending_line_g_0.1_65.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[12] [13]
 File: figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png 
 Graphic file (type bmp)
 <figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png>
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 [][]
  []
 
-[13]
+[14]
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/sigma_phase_space.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/sigma_phase_space.png>
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 316--317
+ [][][][][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+[][]
+ []
+
+[15]
 Missing character: There is no ـ in font cmmi8!
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 309.
+             The label is: - on input line 341.
 
-[14]
+[16]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 324.
+             The label is: * on input line 356.
 
-[15] [16] (paper_studies.bbl (paper_studies.brf)
+[17]
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5/sigma_g_0.1_65.png>
+ [18] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
@@ -1307,36 +1367,22 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [17] (paper_studies.aux)
+) [19] (paper_studies.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `paper_studies.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper_studies.out':
-(rerunfilecheck)             Before: 693900753327F7687FEF10BC3968E01A;3923
-(rerunfilecheck)             After:  969CB0261AADE7663CCAE4AC11D496E4;5243.
-
-Package rerunfilecheck Warning: File `paper_studies.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `paper_studies.brf':
-(rerunfilecheck)             Before: F092E6545DC5567E00E865DBB9BFD97E;232
-(rerunfilecheck)             After:  B990A96F2722A0FA7E4FF94A2681E3E4;232.
+Package rerunfilecheck Info: File `paper_studies.out' has not changed.
+(rerunfilecheck)             Checksum: 919903B3C432BE1B94A3A2F85100EDB7;6295.
+Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
+(rerunfilecheck)             Checksum: B99A21565441E39F58B5CE8E78A393B7;234.
  ) 
 Here is how much of TeX's memory you used:
- 26579 strings out of 411254
- 522759 string characters out of 2832814
- 960070 words of memory out of 3000000
- 46510 multiletter control sequences out of 15000+600000
+ 26613 strings out of 411254
+ 529144 string characters out of 2832814
+ 961070 words of memory out of 3000000
+ 46539 multiletter control sequences out of 15000+600000
  409100 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,15n,95p,1060b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,15n,95p,1060b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (17 pages).
+Output written on paper_studies.pdf (19 pages).
