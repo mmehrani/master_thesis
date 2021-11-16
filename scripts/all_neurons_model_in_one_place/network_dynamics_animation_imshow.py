@@ -21,7 +21,7 @@ from tqdm import tqdm
 
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
-neuron_model = current_models[0]
+neuron_model = current_models[1]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -56,6 +56,11 @@ class Animated_network_of_neurons(Network_of_neurons):
             
             self.wind_name = r'$\dot\theta$'
             self.wind_amplitude = [-13,13]
+    
+    def gaussian(self, x):
+        mu = (self.random_input_span[0] + self.random_input_span[1])/2
+        sig = 0.1
+        return 1./(np.sqrt(2.*np.pi)*sig)*np.exp(-np.power((x - mu)/sig, 2.)/2)
             
     def brace_for_lunch(self,total_time,time_step = 0.01,delay_time = 0.1):
         
@@ -72,7 +77,10 @@ class Animated_network_of_neurons(Network_of_neurons):
         
         self.m_arr = np.zeros(total_steps)
         self.e_arr = np.zeros(total_steps)
-        self.random_input = np.random.uniform(*self.random_input_span,size = self.num_neurons)
+        
+        # self.random_input = np.random.uniform(*self.random_input_span,size = self.num_neurons)
+        input_space = np.linspace(*self.random_input_span , num = num_neurons)
+        self.random_input = np.random.choice(input_space,size = self.num_neurons, p = self.gaussian(input_space)/ np.sum(self.gaussian(input_space)) )
         
         self.amin_saman_param = np.zeros( total_steps )
         self.spiking_records = np.zeros(total_steps)
@@ -89,8 +97,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 num_neurons = 10000
 total_time = 110
 start_time_to_sample = 100
-# g = 12.7
-g = 0.2
+g = 16
+# g = 0.2
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 
