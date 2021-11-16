@@ -12,8 +12,7 @@ class Rotational_neural_network:
     def __init__(self,num_neurons,g):
         self.num_neurons = num_neurons
         self.g = g
-
-    
+        
         return
     
     def _march_on(self,i):
@@ -109,6 +108,7 @@ class Kuramoto_neural_network:
         self.num_neurons = num_neurons
         self.g = g
         self.alpha = alpha
+        
         return
 
     def _march_on(self,i):
