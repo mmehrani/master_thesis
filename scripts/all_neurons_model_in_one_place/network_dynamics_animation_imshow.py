@@ -48,8 +48,8 @@ class Animated_network_of_neurons(Network_of_neurons):
     pass
 
 
-current_models = ['IF','Rotational']
-neuron_model = current_models[0]
+current_models = ['IF','Rotational','Non_repulsive_rotational']
+neuron_model = current_models[2]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -63,13 +63,13 @@ with open("network_reference.py", "w") as net_ref:
 num_neurons = 10000
 total_time = 110
 start_time_to_sample = 100
-# g = 12.7
-g = 0.2
+g = 12.7
+# g = 0.2
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 # random_input_span = (3.5,13.5)
-# random_input_span = (9.5,13.5)
-random_input_span = (1.2,2.8)
+random_input_span = (9.5,13.5)
+# random_input_span = (1.2,2.8)
 sample_network.brace_for_lunch(random_input_span, total_time, time_step = 0.01, delay_time = 0.1)
 
 
@@ -80,11 +80,11 @@ for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
 current_sort_args = np.argsort(sample_network.random_input)
 
 
-# max_degree = np.pi
-# min_degree = -5*np.pi/2
+max_degree = np.pi
+min_degree = -5*np.pi/2
 
-max_degree = 1
-min_degree = -0.5
+# max_degree = 1
+# min_degree = -0.5
 
 extent = [1 , num_neurons, max_degree , min_degree] #imshow axises are updside down
 
@@ -152,6 +152,7 @@ ax.set_yticks([min_degree, - np.pi, 0, max_degree])
 ax.set_yticklabels(y_label_list)
 ax.set_title('Network dynamic N={} g={}'.format(num_neurons,g))
 colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
+ax.invert_yaxis()
 
 ax_e.set_ylabel('E')
 ax_e.set_xlabel('t')

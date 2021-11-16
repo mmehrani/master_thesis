@@ -65,7 +65,43 @@ class Rotational_neural_network:
     
     pass
 
+class Non_repulsive_rotational_neural_network(Rotational_neural_network):
+    
+    def _march_on(self,i):
+        """
+        Push the network forward in time.
 
+        Parameters
+        ----------
+        i : integer
+            This is the steps number during the dynamic
+
+        Returns
+        -------
+        None.
+
+        """
+
+        #dynamics
+        self.driving_wind = (self.random_input - self.g * self.e_arr[i] )
+        self.potentail_arr = self.potentail_arr + self.driving_wind * self.time_step
+
+        self.m_arr[i+1] = self.m_arr[i] + self.time_step*( -self.alpha*self.m_arr[i] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
+        self.e_arr[i+1] = self.e_arr[i] + self.time_step*( self.m_arr[i] - self.alpha*self.e_arr[i] )
+
+        # Prevent neurons from free falling to large negative degrees.
+        # free_fall_mask = self.potentail_arr < - 31.41 # slightly greater than -20pi/2
+        # self.potentail_arr[free_fall_mask] = - 31.41
+        
+        #here we should spot the spiking neurons.
+        self.spike_mask = self.potentail_arr > np.pi
+        self.spiking_records[i] = np.sum( self.spike_mask )
+        self.potentail_arr = self.potentail_arr - 2 * np.pi * self.spike_mask
+        
+    
+        self._record_amin_saman_param(i)
+
+        return
 
 class Kuramoto_neural_network:
     
