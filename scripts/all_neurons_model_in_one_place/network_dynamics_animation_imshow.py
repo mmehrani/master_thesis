@@ -57,14 +57,13 @@ class Animated_network_of_neurons(Network_of_neurons):
             self.wind_name = r'$\dot\theta$'
             self.wind_amplitude = [-13,13]
     
-    def gaussian(self, x):
+    def gaussian_input(self, x):
         mu = (self.random_input_span[0] + self.random_input_span[1])/2
-        sig = 0.1
+        sig = 1
         return 1./(np.sqrt(2.*np.pi)*sig)*np.exp(-np.power((x - mu)/sig, 2.)/2)
             
     def brace_for_lunch(self,total_time,time_step = 0.01,delay_time = 0.1):
         
-        # random_input_span = (3.5,13.5)
         
         total_steps = int(total_time/time_step)
         time_span = np.arange(0,total_time,time_step)
@@ -74,13 +73,13 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.time_step = time_step
         self.delay_step = int(delay_time/time_step)
         
-        
         self.m_arr = np.zeros(total_steps)
         self.e_arr = np.zeros(total_steps)
         
         # self.random_input = np.random.uniform(*self.random_input_span,size = self.num_neurons)
-        input_space = np.linspace(*self.random_input_span , num = num_neurons)
-        self.random_input = np.random.choice(input_space,size = self.num_neurons, p = self.gaussian(input_space)/ np.sum(self.gaussian(input_space)) )
+        input_space = np.linspace(*self.random_input_span , num = 10*num_neurons)
+        self.random_input = np.random.choice(input_space,size = self.num_neurons, p = self.gaussian_input(input_space)/ np.sum(self.gaussian_input(input_space)) )
+        # self.random_input = np.random.choice(input_space,size = self.num_neurons, p = (input_space - 9.5)/ np.sum(input_space- 9.5) )
         
         self.amin_saman_param = np.zeros( total_steps )
         self.spiking_records = np.zeros(total_steps)
@@ -170,7 +169,7 @@ fig = plt.figure()
 ax = fig.add_subplot(gs[0,0])
 ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
 ax_e = fig.add_subplot(gs[2, 0])
-ax_theta_dot = fig.add_subplot(gs[1, 0], sharex = ax)
+ax_theta_dot = fig.add_subplot(gs[1, 0])
 
 
 ax.set_yticks([sample_network.floor_state, - np.pi, 0, sample_network.ceiling_state])
@@ -184,11 +183,12 @@ ax_e.set_xlabel('t')
 
 ax_theta_dot.set_ylabel(sample_network.wind_name)
 ax_theta_dot.set_xlabel('neuron number')
-wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
+# wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
+wind_direction, = ax_theta_dot.plot(sample_network.random_input[current_sort_args], sample_network.driving_wind[current_sort_args])
 ax_theta_dot.set_ylim(sample_network.wind_amplitude)
 
 ax_e.set_xlim([0,1])
-ax_e.set_ylim([0,1.5])
+ax_e.set_ylim([-0.5,1.5])
 time_series = np.arange(0,0.8,sample_network.time_step)
 e_pulse, = ax_e.plot(time_series,time_series*0)
 
