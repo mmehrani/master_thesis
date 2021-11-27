@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  2 NOV 2021 11:38
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  27 NOV 2021 16:19
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1057,32 +1057,32 @@ Package csquotes Info: ... none found.
 (paper_studies.aux)
 \openout1 = `paper_studies.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+0.
  (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-Package hyperref Info: Link coloring ON on input line 28.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1095,9 +1095,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count373
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
 (paper_studies.out) (paper_studies.out)
 \@outlinefile=\write4
@@ -1106,43 +1106,43 @@ LaTeX Info: Redefining \nameref on input line 28.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 33.
+(Font)              scaled to size 20.74pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 33.
+(Font)              scaled to size 14.4pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 33.
+(Font)              scaled to size 14.4pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 33.
+(Font)              scaled to size 10.0pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <14.4> not avail
 able
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 33.
+ne 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 33.
+(Font)              scaled to size 14.4pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <10> not availab
 le
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 33.
+ne 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 33.
+(Font)              scaled to size 10.0pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <7> not availabl
 e
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 33.
+ne 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 14.4pt on input line 33.
+(Font)              scaled to size 14.4pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 33.
+(Font)              scaled to size 10.0pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 7.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 33.
+(Font)              scaled to size 17.28pt on input line 35.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 33.
+(Font)              scaled to size 17.28pt on input line 35.
  (paper_studies.toc
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -1183,27 +1183,27 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 \openout5 = `paper_studies.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 [][]
  []
 
 
-Overfull \hbox (0.5918pt too wide) in paragraph at lines 41--43
+Overfull \hbox (0.5918pt too wide) in paragraph at lines 43--45
 []\TU/XBNiloofar(0)/m/n/12 متن اصلی این جستار شامل معرفی این مدل‌ها و پویایی آن
 ‌ها در زمان و نتایج ضبط شده از نشانگرهایی[]
  []
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 52.
+             The label is: - on input line 54.
 
 [3]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 70.
+(Font)              scaled to size 14.4pt on input line 72.
 Missing character: There is no ـ in font cmmi8!
 Missing character: There is no ـ in font cmmi8!
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 [][]
  []
 
@@ -1215,7 +1215,7 @@ input_1.2_2.8/raster_plot.png>
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 115.
+             The label is: * on input line 117.
 
 [6]
 File: ../papers_studies/figs/IF/sigma.png Graphic file (type bmp)
@@ -1239,50 +1239,50 @@ aphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 [][]
  []
 
+[8]
 File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
 2.8_cluster_computed/sigma_phase_space.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
 luster_computed/sigma_phase_space.png>
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 175--176
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 178--179
  [][][][][][] 
  []
 
-[8]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 [][]
  []
 
 Missing character: There is no ـ in font cmmi8!
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 195.
+             The label is: - on input line 198.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 [][]
  []
 
 
 LaTeX Warning: Citation `safaeesirat2020critical' on page 10 undefined on input
- line 207.
+ line 210.
 
 [10]
 
 LaTeX Warning: Citation `safaeesirat2020critical' on page 11 undefined on input
- line 215.
+ line 218.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 225.
+             The label is: * on input line 228.
 
 [11]
 File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
@@ -1320,7 +1320,7 @@ Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 [][]
  []
 
@@ -1330,7 +1330,7 @@ File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
 <../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
 5_13.5_cluster_computed/sigma_phase_space.png>
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 316--317
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 319--320
  [][][][][][] 
  []
 
@@ -1340,24 +1340,29 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Missing character: There is no ـ in font cmmi8!
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 333.
+             The label is: - on input line 336.
 
 [15]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 348.
+             The label is: * on input line 351.
 
 [16]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
 les/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
 10000_T100_I9.5_13.5/sigma_g_0.1_65.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+ [17] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 459--461
 [][]
  []
 
-[17] [18] [19] (paper_studies.bbl (paper_studies.brf)
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+[][]
+ []
+
+[21] [22] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
@@ -1365,22 +1370,22 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [20] (paper_studies.aux)
+) [23] (paper_studies.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: 2D6DAF9176CEFE98E0A0DAF08B050A64;7051.
+(rerunfilecheck)             Checksum: ECBB2175121E332710423EA9F4B5998B;6309.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: B99A21565441E39F58B5CE8E78A393B7;234.
  ) 
 Here is how much of TeX's memory you used:
- 26616 strings out of 411254
- 529181 string characters out of 2832814
+ 26618 strings out of 411254
+ 529212 string characters out of 2832814
  961070 words of memory out of 3000000
- 46542 multiletter control sequences out of 15000+600000
+ 46544 multiletter control sequences out of 15000+600000
  409100 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,15n,95p,1060b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,18n,95p,1060b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (20 pages).
+Output written on paper_studies.pdf (23 pages).
