@@ -26,6 +26,9 @@
 \let\endchangemargin=\endlist 
 %
 
+% newcommands
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
 
 \begin{document}
 \title{مطالعه همگامی در شبکه‌های عصبی} 
@@ -479,32 +482,68 @@ $n_a(\pi,t-d)$
 را بدست آوریم. جواب پیشنهادی ما برای سطر دوم معادلات از جنس تابع دلتاست:
 \begin{align}
 n_a(\theta,t) &= \delta(\theta - \theta_a(t)) \\
-&= \delta(\theta - \theta_0 - (a - g E_0)t + 2 K_a \pi )\\
-&= \delta( \theta - (a - g E_0)t + 2 K_a \pi )\\
-\Rightarrow n_a(\pi,t) &= \delta(  (2K_a + 1)\pi - (a - g E_0)t  )\\
+&= \delta(\theta + \theta_0 - (a - g E_0)t + 2 \floor{K^{(t)}_a}\pi )\\
+&= \delta( \theta - (a - g E_0)t + 2 \floor{K^{(t)}_a} \pi + \theta_0  )\\
+\Rightarrow n_a(\pi,t) &= \delta(  (2\floor{K^{(t)}_a} + 1)\pi - (a - g E_0)t + \theta_0   )\\
 \end{align}
 که در این معادلات 
-$K_a$
-تعداد دور کاملی است که نورون از آغاز تا کنون زده است و ما مجبور به عقب کشیدن 
+$K^{(t)}_a$
+کسری است که تعداد دور هر نورون را از آغاز تا کنون روایت می‌کند و ما مجبور به عقب کشیدن 
 $2\pi$
-فاز کامل پس از تیزه زدن آن شده‌ایم. قابل امتحان است که این جنس جواب در سطر دوم معادلات ما صدق می‌کند.\\
-حال با این نتیجه انتگرال‌های مورد نیاز خود را محاسبه می‌کنیم:
+فاز کامل پس از تیزه زدن آن به تعداد 
+$\floor{K^{(t)}_a}$
+شده‌ایم.
+\footnote{دقت کنیم که معادله‌ی ذکر شده برای نورون‌هایی درست است که 
+$(a - g E_0) > 0 $
+}
+  قابل محاسبه است که عبارت کامل آن به صورت زیر است.
+\begin{equation}
+K^{(t)}_a = \frac{(a - gE_0)t + \pi + \theta_0}{2\pi}
+\end{equation}
+
+برای محاسبه‌ی انتگرال‌هایی که شامل این دلتای دیراک هستند؛ لازم است تا صفر‌های آرگومان آن را محاسبه کنیم.
 \begin{align}
-\int n_a(\pi,t-d)a\,da &= \int \delta(  (2K_a + 1)\pi - (a - g E_0)t  ) a\,da\\
-&= \frac{1}{t} \int \delta(  (2K_a + 1)\pi  + g E_0 t - at  ) a\,da\\
-&= \frac{1}{t} \cdot \frac{ (2K_a + 1)\pi + gE_0 t }{t}\\
-&= \frac{1}{t} [ \frac{ (2K_a + 1)\pi}{t} + gE_0 ] \\
+\big( 2 \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}} + 1 \big)\pi - (a - g E_0)t + \theta_0 &= 0\\
+2\pi \times \bigg( \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}}  - \frac{(a - gE_0)t + \pi + \theta_0}{2\pi} \bigg) &= 0\\
+2\pi \times \bigg( \floor{K^{(t)}_a} - K^{(t)}_a \bigg) &= 0  \label{eq:neuron_pattern_simple_model}
+\end{align}
+این رابطه کاملا یک تابع تناوبی را توصیف می‌کند. یک تابع مقطع که در مکانی که آرگومان آن صحیح می‌شود؛ مقدار صفر به خود می‌گیرد. پس روشن است که توقع داشته باشیم. تعداد صفرهای این معادله به اندازه‌ی تعداد تناوبی است که در هر زمان در بازه‌ی جریان‌های داده شده دارد.
+\begin{align}
+\Delta K^{(t)}_a  &= 1\\
+\Delta K^{(t)}_a &= \frac{t}{2\pi}\Delta a\\
+\Delta a &= \frac{2\pi}{t}
+\end{align}
+این دوره‌ی تناوب با افزایش زمان کوچکتر می‌شود. اگر تعداد نورون‌ها را به صورتی ترمودینامیکی بزرگ بگیریم؛ آنگاه به ازای هر دوره‌ی تناوب یک نورون حتما هست که روی محور آستانه قرار گرفته است.\\
+حال که دوره‌ی تناوب 
+$\Delta a$
+را بدست آوردیم؛ می‌دانیم که ریشه‌های رابطه‌ی 
+\ref{eq:neuron_pattern_simple_model}
+چه زمانی رخ می‌دهند. فرض کنیم که اولین صفر در جریانی مثل
+$a_m$
+رخ می‌دهد. توجه کنید حتما اندازه‌ی این جریان به گونه‌ای است که نورون را به صورت فعال نگه دارد. پس باید حتما
+$(a_m - g E_0) > 0 $
+باشد.
+ حال می‌توانیم انتگرال‌های مورد نظر خود را این چنین بسط دهیم.
+
+\begin{align}
+\int n_a(\pi,t-d)a\,da &= \int \delta \bigg( 2\pi ( \floor{K^{(t)}_a} - K^{(t)}_a) \bigg) a\,da\\
+&= \frac{1}{2\pi} \cdot \sum_{K^{(t)}_a \in Z} a_i \\
+&= \frac{1}{2\pi} \cdot \sum^{M}_{m=0} a_m + m \cdot \Delta a\\
+&= \frac{M+1}{2\pi} \cdot ( a_m + \frac{M}{2} \Delta a )\\
+&= \frac{M+1}{2\pi} \cdot \bar{a}\\
 \end{align}
 و از طرفی:
 \begin{align}
-\int n_a(\pi,t-d)\,da &= \int \delta(  (2K_a + 1)\pi - (a - g E_0)t  ) da\\
-&= \frac{1}{t} \int \delta(  (2K_a + 1)\pi  + g E_0 t - at  ) \,da\\
-&= \frac{1}{t}
+\int n_a(\pi,t-d)\,da &= \int \delta \bigg( 2\pi ( \floor{K^{(t)}_a} - K^{(t)}_a) \bigg) a\,da\\
+&= \frac{1}{2\pi} \cdot \sum_{K^{(t)}_a \in Z} 1 \\
+&= \frac{1}{2\pi} \cdot \sum^{M}_{m=0}  1\\
+&= \frac{M+1}{2\pi}
 \end{align}
 حال اگر به محاسبه‌ی میدان ثابت خود برگردیم و تکه‌های پازل را کنار هم بگذاریم؛ خواهیم داشت:
 \begin{align}
 E_0 &= \frac{1}{g}\cdot \frac{\int n_a(\pi,t-d)\cdot a\,da}{\int n_a(\pi,t-d) da } \\
-&= \frac{1}{g}\cdot \frac{ t^{-1} [ \frac{ (2K_a + 1)\pi}{t} + gE_0 ]}{ t^{-1} } \\
+&= \frac{1}{g}\cdot \frac{ \frac{M+1}{2\pi} \cdot \bar{a} }{ \frac{M+1}{2\pi} } \\
+&= \frac{1}{g} \bar{a}
 \end{align}
 
 \newpage

@@ -21,7 +21,7 @@ from tqdm import tqdm
 
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
-neuron_model = current_models[0]
+neuron_model = current_models[2]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -90,7 +90,7 @@ num_neurons = 10000
 total_time = 110
 start_time_to_sample = 100
 # g = 12.7
-g = 0.2
+g = 0.5
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 
@@ -180,7 +180,7 @@ wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.drivi
 ax_theta_dot.set_ylim(sample_network.wind_amplitude)
 
 ax_e.set_xlim([0,1])
-ax_e.set_ylim([0,1.5])
+ax_e.set_ylim([-0.5,2.5])
 time_series = np.arange(0,0.8,sample_network.time_step)
 e_pulse, = ax_e.plot(time_series,time_series*0)
 

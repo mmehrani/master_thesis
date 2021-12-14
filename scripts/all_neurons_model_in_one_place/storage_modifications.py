@@ -39,6 +39,12 @@ def save_sigma(reported_sigma,ensemble_path):
         file.write( '{}'.format(reported_sigma) )
     return
 
+def save_field_average(e_array,ensemble_path):
+    file_path = os.path.join(ensemble_path,'field_average.txt')
+    with open(file_path, "w") as file: 
+        file.write( '{}'.format(np.mean(e_array)) )
+    return
+
 def save_amin_saman_param(reported_param,ensemble_path):
     file_path = os.path.join(ensemble_path,'amin_saman_param.txt')
     with open(file_path, "w") as file: 
