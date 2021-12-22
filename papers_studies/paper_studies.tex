@@ -411,6 +411,8 @@ E(t) = \sum c_i \cdot cos(\omega_i t)
 دشواری مساله از در هم تنیدگی معادلات برآمده است. اگر به تقریب در معادله‌ی پخش میدان را یک نوفه درنظر بگیریم و پاسخ را در معادله‌ی اول قرار دهیم.
 \item
 انتگرال اول را به صورت بازگشتی در خودش جاگذاری کنیم.
+\item
+مسئله را در حالت آماری بررسی کنیم و حالت پایستار آن را پیدا کنیم و  بپرسیم در چه حالتی است که حالت پایستار داریم.
 \end{enumerate}
 
 \زیرزیرقسمت{روش بازگشتی}
@@ -529,8 +531,7 @@ $(a_m - g E_0) > 0 $
 \int n_a(\pi,t-d)a\,da &= \int \delta \bigg( 2\pi ( \floor{K^{(t)}_a} - K^{(t)}_a) \bigg) a\,da\\
 &= \frac{1}{2\pi} \cdot \sum_{K^{(t)}_a \in Z} a_i \\
 &= \frac{1}{2\pi} \cdot \sum^{M}_{m=0} a_m + m \cdot \Delta a\\
-&= \frac{M+1}{2\pi} \cdot ( a_m + \frac{M}{2} \Delta a )\\
-&= \frac{M+1}{2\pi} \cdot \bar{a}\\
+&= \frac{M+1}{2\pi} \cdot ( \frac{a_m +a_{max} }{2} )\\
 \end{align}
 و از طرفی:
 \begin{align}
@@ -542,8 +543,32 @@ $(a_m - g E_0) > 0 $
 حال اگر به محاسبه‌ی میدان ثابت خود برگردیم و تکه‌های پازل را کنار هم بگذاریم؛ خواهیم داشت:
 \begin{align}
 E_0 &= \frac{1}{g}\cdot \frac{\int n_a(\pi,t-d)\cdot a\,da}{\int n_a(\pi,t-d) da } \\
-&= \frac{1}{g}\cdot \frac{ \frac{M+1}{2\pi} \cdot \bar{a} }{ \frac{M+1}{2\pi} } \\
-&= \frac{1}{g} \bar{a}
+&= \frac{1}{g}\cdot \frac{ \frac{M+1}{2\pi} \cdot ( \frac{a_m +a_{max} }{2} ) }{ \frac{M+1}{2\pi} } \\
+&= \frac{1}{g} ( \frac{a_m +a_{max} }{2} )
+\end{align}
+
+\زیرزیرقسمت{روش آماری}
+در این روش فرض می‌کنیم که برای هر جریان تصادفی اولیه، نورون‌های زیادی را به اختیار گرفته‌ایم. در حالت پایستار، در یک حالت خاص تغییری در چگالی جمعیت مشاهده نمی‌شود پس در معادله‌ی
+\ref{eq:simple_network}
+خواهیم داشت:
+$\frac{\partial n_a}{\partial t} = 0 $
+به این ترتیب جریان در تمام حالت‌ها یکی خواهد بود:
+
+\begin{align}
+\begin{cases}
+\frac{\partial n_a}{\partial t} = - \frac{\partial J_{a}(t)}{\partial \theta} = 0\\
+J_{a}(\theta, t) = n_a(\theta,t) \cdot [ a - g E(t) ]\\
+\end{cases}
+\rightarrow J_{a}(\theta, t) = J_{a}(t)\\
+\rightarrow n_{a}(\theta, t) = n_{a}(t)\\
+\end{align}
+
+پس توزیع جمعیت نورون‌‌ها مستقل از حالت آن‌ها خواهد شد.
+
+
+برای جریان بین نورون‌ها هم خواهیم داشت:
+\begin{align}
+E(t) = \int_{- \infty}^{t - d} \int n_a(\pi,u) \cdot \big[ a - g E(u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
 \end{align}
 
 \newpage

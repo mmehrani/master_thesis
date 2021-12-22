@@ -87,10 +87,10 @@ class Animated_network_of_neurons(Network_of_neurons):
 
     
 num_neurons = 10000
-total_time = 110
-start_time_to_sample = 100
-# g = 12.7
-g = 0.5
+total_time = 60
+start_time_to_sample = 50
+g = 100
+# g = 0.5
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 
@@ -111,11 +111,14 @@ grating_blocks_length = ( sample_network.ceiling_state - sample_network.floor_st
 plateau = np.zeros((grating_num, num_neurons))
 
 color_num = 5
+global color_marks
+color_marks = np.ones(num_neurons) * color_num
 
 def init():
     phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
     for neuron_index in range(num_neurons):
-        plateau[int(phase_marks[neuron_index]),neuron_index] = color_num
+        if int(phase_marks[neuron_index]) >= 0:
+            plateau[int(phase_marks[neuron_index]),neuron_index] = color_num
     colored_plateau.set_data(plateau)
     
     e_pulse.set_ydata(time_series*0)
@@ -135,15 +138,17 @@ def update(frame):
         color_num += 2
         color_num = (color_num %10)
 
-    # Update neuron phase marks
+    # Update neuron phase marks and color
     for neuron_index in range(num_neurons):
-        current_color = np.sum( plateau[:,neuron_index] )
         plateau[:,neuron_index] = plateau[:,neuron_index]*0
-        plateau[int(phase_marks[neuron_index]),neuron_index] = current_color
         
         #Spiking ones
         if sample_network.spike_mask[current_sort_args[neuron_index]] == True:
-            plateau[int(phase_marks[neuron_index]),neuron_index] = color_num
+            color_marks[neuron_index] = color_num
+            
+        #coloring
+        if int(phase_marks[neuron_index]) >= 0:
+            plateau[int(phase_marks[neuron_index]),neuron_index] = color_marks[neuron_index]
         
     
     colored_plateau.set_data(plateau)
@@ -158,6 +163,7 @@ gs = gridspec.GridSpec(3, 2, width_ratios = (10,4), height_ratios = (10,5,2), ws
 
 # fig = plt.figure(figsize = (13.8,7.2),dpi = 100)
 fig = plt.figure()
+plt.style.use('dark_background')
 
 ax = fig.add_subplot(gs[0,0])
 ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
@@ -168,7 +174,8 @@ ax_theta_dot = fig.add_subplot(gs[1, 0], sharex = ax)
 ax.set_yticks([sample_network.floor_state, - np.pi, 0, sample_network.ceiling_state])
 ax.set_yticklabels(sample_network.important_states_namestrings)
 ax.set_title('Network dynamic N={} g={}'.format(num_neurons,g))
-colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
+# colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
+colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'hot')
 ax.invert_yaxis()
 
 ax_e.set_ylabel('E')
