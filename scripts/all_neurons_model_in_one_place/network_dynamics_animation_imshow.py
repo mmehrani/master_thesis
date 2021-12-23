@@ -21,7 +21,7 @@ from tqdm import tqdm
 
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
-neuron_model = current_models[2]
+neuron_model = current_models[1]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -89,7 +89,7 @@ class Animated_network_of_neurons(Network_of_neurons):
 num_neurons = 10000
 total_time = 60
 start_time_to_sample = 50
-g = 100
+g = 20
 # g = 0.5
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
@@ -147,7 +147,7 @@ def update(frame):
             color_marks[neuron_index] = color_num
             
         #coloring
-        if int(phase_marks[neuron_index]) >= 0:
+        if int(phase_marks[neuron_index]) >= 0 and int(phase_marks[neuron_index]) <= grating_num:
             plateau[int(phase_marks[neuron_index]),neuron_index] = color_marks[neuron_index]
         
     
@@ -163,6 +163,7 @@ gs = gridspec.GridSpec(3, 2, width_ratios = (10,4), height_ratios = (10,5,2), ws
 
 # fig = plt.figure(figsize = (13.8,7.2),dpi = 100)
 fig = plt.figure()
+plt.rc('font', family='serif')
 plt.style.use('dark_background')
 
 ax = fig.add_subplot(gs[0,0])
