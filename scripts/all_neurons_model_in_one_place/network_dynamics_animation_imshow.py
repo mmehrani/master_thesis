@@ -88,8 +88,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 
     
 num_neurons = 10000
-total_time = 55
-start_time_to_sample = 50
+total_time = 60
+start_time_to_sample = 55
 g = 20
 # g = 0.5
 
@@ -111,18 +111,11 @@ grating_blocks_length = ( sample_network.ceiling_state - sample_network.floor_st
 
 plateau = np.zeros((grating_num, num_neurons))
 
-color_num = 4
+color_num = 3
 global color_marks
 color_marks = np.ones(num_neurons) * color_num
 
 def init():
-    phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
-    for neuron_index in range(num_neurons):
-        if int(phase_marks[neuron_index]) >= 0:
-            plateau[int(phase_marks[neuron_index]),neuron_index] = color_num
-    colored_plateau.set_data(plateau)
-    
-    e_pulse.set_ydata(time_series*0)
     return
 
 
@@ -130,30 +123,31 @@ def update(frame):
     
     was_network_active = np.sum(sample_network.spike_mask) > 0
     sample_network._march_on(frame-1)
-    no_spike_chance = not ( False in sample_network.driving_wind<0 )
     
-    phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
+    phase_marks = np.floor( (sample_network.potentail_arr - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
     
     # Change the spiking group color if they stopped spiking
-    if was_network_active and no_spike_chance:
+    if was_network_active and  np.sum(sample_network.spike_mask) == 0:
         global color_num
         # color_num = 10 - color_num
         color_num +=2
         color_num = (color_num %10)
-
+    
     # Update neuron phase marks and color
-    for neuron_index in range(num_neurons):
-        plateau[:,neuron_index] = plateau[:,neuron_index]*0
+    for column in range(num_neurons):
+        neuron_index = current_sort_args[column]
+        plateau[:,column] = plateau[:,column]*0
         
         #Spiking ones
-        if sample_network.spike_mask[current_sort_args[neuron_index]] == True:
+        if sample_network.spike_mask[neuron_index] == True:
             color_marks[neuron_index] = color_num
             
         #coloring
         if int(phase_marks[neuron_index]) >= 0 and int(phase_marks[neuron_index]) <= grating_num:
-            plateau[int(phase_marks[neuron_index]),neuron_index] = color_marks[neuron_index]
-        
+            plateau[int(phase_marks[neuron_index]),column] = color_marks[neuron_index]
+
     
+        
     colored_plateau.set_data(plateau)
     # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
     pop_dist.set_xdata( np.sum(plateau>0,axis = 1) )
@@ -167,7 +161,7 @@ gs = gridspec.GridSpec(2, 2, width_ratios = (10,4), height_ratios = (10,2), wspa
 # fig = plt.figure(figsize = (19.2,10.8),dpi = 100)
 fig = plt.figure()
 plt.rc('font', family='serif')
-# plt.style.use('dark_background')
+plt.style.use('dark_background')
 
 ax = fig.add_subplot(gs[0,0])
 ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
@@ -179,9 +173,8 @@ ax_e = fig.add_subplot(gs[1, 0])
 ax.set_yticks([sample_network.floor_state, - np.pi, 0, sample_network.ceiling_state])
 ax.set_yticklabels(sample_network.important_states_namestrings)
 ax.set_title('Network dynamic N={} g={}'.format(num_neurons,g))
-colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
-# colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'hot')
-# colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'twilight_shifted')
+# colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
+colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'hot')
 ax.invert_yaxis()
 
 ax_e.set_ylabel('E')
@@ -203,6 +196,7 @@ ax_stat.set_xlim([0,3*num_neurons/grating_num])
 
 # fig.tight_layout()
 
+
 frames_range = range( int(start_time_to_sample/sample_network.time_step), sample_network.total_steps)
 ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval = 50)
 
@@ -214,9 +208,8 @@ make_inner_dir(path, version_name)
 file_path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.gif".format(
     num_neurons,g,sample_network.random_input_span[0],sample_network.random_input_span[1]))
 
-# ani.save(file_path, writer='imagemagick')
+ani.save(file_path, writer='imagemagick')
 
 # with open(path, "w") as f:
 #     print(ani.to_html5_video(), file=f)
-# ani.save('../../files/animation.gif', writer='imagemagick', fps=60)
 
