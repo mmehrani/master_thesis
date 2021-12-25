@@ -8,6 +8,7 @@ Created on Mon Jun  7 09:14:03 2021
 
 import os
 from network_reference import Network_of_neurons
+from storage_modifications import make_inner_dir
 import numpy as np
 import networkx as nx
 
@@ -87,7 +88,7 @@ class Animated_network_of_neurons(Network_of_neurons):
 
     
 num_neurons = 10000
-total_time = 60
+total_time = 55
 start_time_to_sample = 50
 g = 20
 # g = 0.5
@@ -110,7 +111,7 @@ grating_blocks_length = ( sample_network.ceiling_state - sample_network.floor_st
 
 plateau = np.zeros((grating_num, num_neurons))
 
-color_num = 5
+color_num = 4
 global color_marks
 color_marks = np.ones(num_neurons) * color_num
 
@@ -128,14 +129,16 @@ def init():
 def update(frame):
     
     was_network_active = np.sum(sample_network.spike_mask) > 0
-    
     sample_network._march_on(frame-1)
+    no_spike_chance = not ( False in sample_network.driving_wind<0 )
+    
     phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
     
     # Change the spiking group color if they stopped spiking
-    if np.sum(sample_network.spike_mask) == 0 and was_network_active:
+    if was_network_active and no_spike_chance:
         global color_num
-        color_num += 2
+        # color_num = 10 - color_num
+        color_num +=2
         color_num = (color_num %10)
 
     # Update neuron phase marks and color
@@ -155,37 +158,39 @@ def update(frame):
     # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
     pop_dist.set_xdata( np.sum(plateau>0,axis = 1) )
     e_pulse.set_ydata(sample_network.e_arr[frame-80:frame])
-    wind_direction.set_ydata(sample_network.driving_wind[current_sort_args])
+    # wind_direction.set_ydata(sample_network.driving_wind[current_sort_args])
     return plateau
 
 
-gs = gridspec.GridSpec(3, 2, width_ratios = (10,4), height_ratios = (10,5,2), wspace = 0.2)
+gs = gridspec.GridSpec(2, 2, width_ratios = (10,4), height_ratios = (10,2), wspace = 0.2)
 
-# fig = plt.figure(figsize = (13.8,7.2),dpi = 100)
+# fig = plt.figure(figsize = (19.2,10.8),dpi = 100)
 fig = plt.figure()
 plt.rc('font', family='serif')
-plt.style.use('dark_background')
+# plt.style.use('dark_background')
 
 ax = fig.add_subplot(gs[0,0])
 ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
-ax_e = fig.add_subplot(gs[2, 0])
-ax_theta_dot = fig.add_subplot(gs[1, 0], sharex = ax)
+# ax_e = fig.add_subplot(gs[2, 0])
+ax_e = fig.add_subplot(gs[1, 0])
+# ax_theta_dot = fig.add_subplot(gs[1, 0], sharex = ax)
 
 
 ax.set_yticks([sample_network.floor_state, - np.pi, 0, sample_network.ceiling_state])
 ax.set_yticklabels(sample_network.important_states_namestrings)
 ax.set_title('Network dynamic N={} g={}'.format(num_neurons,g))
-# colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
-colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'hot')
+colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
+# colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'hot')
+# colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'twilight_shifted')
 ax.invert_yaxis()
 
 ax_e.set_ylabel('E')
 ax_e.set_xlabel('t')
 
-ax_theta_dot.set_ylabel(sample_network.wind_name)
-ax_theta_dot.set_xlabel('neuron number')
-wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
-ax_theta_dot.set_ylim(sample_network.wind_amplitude)
+# ax_theta_dot.set_ylabel(sample_network.wind_name)
+# ax_theta_dot.set_xlabel('neuron number')
+# wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
+# ax_theta_dot.set_ylim(sample_network.wind_amplitude)
 
 ax_e.set_xlim([0,1])
 ax_e.set_ylim([-0.5,2.5])
@@ -196,17 +201,22 @@ ax_stat.set_xlabel('population')
 pop_dist, = ax_stat.plot( np.sum(plateau>0,axis = 1), np.linspace(sample_network.floor_state,sample_network.ceiling_state,num = grating_num) )
 ax_stat.set_xlim([0,3*num_neurons/grating_num])
 
-fig.tight_layout()
+# fig.tight_layout()
 
 frames_range = range( int(start_time_to_sample/sample_network.time_step), sample_network.total_steps)
 ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval = 50)
 
 
-version_name = 'well_in_negatives'
-path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.html".format(
+version_name = 'lecture_beta'
+path = os.path.join('animations','sea_shore')
+make_inner_dir(path, version_name)
+
+file_path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.gif".format(
     num_neurons,g,sample_network.random_input_span[0],sample_network.random_input_span[1]))
-# ani.save(path, writer='imagemagick')
+
+# ani.save(file_path, writer='imagemagick')
 
 # with open(path, "w") as f:
 #     print(ani.to_html5_video(), file=f)
+# ani.save('../../files/animation.gif', writer='imagemagick', fps=60)
 
