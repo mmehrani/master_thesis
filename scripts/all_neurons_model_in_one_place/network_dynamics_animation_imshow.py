@@ -88,10 +88,10 @@ class Animated_network_of_neurons(Network_of_neurons):
 
     
 num_neurons = 10000
-total_time = 60
-start_time_to_sample = 55
-g = 20
-# g = 0.5
+total_time = 25
+start_time_to_sample = 20
+g = 6
+# g = 0.2
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 
@@ -111,7 +111,7 @@ grating_blocks_length = ( sample_network.ceiling_state - sample_network.floor_st
 
 plateau = np.zeros((grating_num, num_neurons))
 
-color_num = 3
+color_num = 8
 global color_marks
 color_marks = np.ones(num_neurons) * color_num
 
@@ -129,9 +129,9 @@ def update(frame):
     # Change the spiking group color if they stopped spiking
     if was_network_active and  np.sum(sample_network.spike_mask) == 0:
         global color_num
-        # color_num = 10 - color_num
-        color_num +=2
-        color_num = (color_num %10)
+        color_num = 17 - color_num
+        # color_num +=2
+        # color_num = (color_num %10)
     
     # Update neuron phase marks and color
     for column in range(num_neurons):
@@ -143,7 +143,7 @@ def update(frame):
             color_marks[neuron_index] = color_num
             
         #coloring
-        if int(phase_marks[neuron_index]) >= 0 and int(phase_marks[neuron_index]) <= grating_num:
+        if int(phase_marks[neuron_index]) >= 0 and int(phase_marks[neuron_index]) < grating_num:
             plateau[int(phase_marks[neuron_index]),column] = color_marks[neuron_index]
 
     
