@@ -563,8 +563,8 @@ E_0 &= \frac{1}{g}\cdot \frac{\int n_a(\pi,t-d)\cdot a\,da}{\int n_a(\pi,t-d) da
 \frac{\partial n_a}{\partial t} = - \frac{\partial J_{a}(t)}{\partial \theta} = 0\\
 J_{a}(\theta, t) = n_a(\theta,t) \cdot [ a - g E ]\\
 \end{cases}
-\rightarrow J_{a}(\theta, t) = J_{a}(t)\\
-\rightarrow n_{a}(\theta, t) = n_{a}\\
+\Rightarrow J_{a}(\theta, t) = J_{a}(t)\\
+\Rightarrow n_{a}(\theta, t) = n_{a}\\
 \end{align}
 
 پس توزیع جمعیت نورون‌‌ها مستقل از زمان و حالت آن‌ها خواهد شد. اگر توزیع را در ابتدا یکنواخت میان جریان‌های مختلف توزیع کرده باشیم؛ برای همه‌ی زمان‌ها و حالت‌ها داریم:
@@ -586,7 +586,8 @@ $(a - g E) > 0 $
 اولین جریانی که نورون را مستعد تیزه زدن می‌کند $a_*$ نام‌گذاری می‌کنیم. محاسبات را ادامه می‌دهیم:
 \begin{align}
 E &=  \int n \cdot \big[ a - g E \big] da \\
-&= n \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2} - g E (a_{Max} - a_*) \big]
+&= n \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2} - g E (a_{Max} - a_*) \big] \\
+\Rightarrow E &= n \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2}  \big] / \big[ 1 + g (a_{Max} - a_*)\big]
 \end{align}
 شاید بنظر این یک معادله‌ی درجه یک ساده باشد که میدان را گزارش می‌کند اما در واقع خود $a^*$ هم به میدان وابسته است و باید وابستگی آن را لحاظ کنیم. به تقریب:
 $a^{*} = gE$
@@ -594,21 +595,32 @@ $a^{*} = gE$
 \begin{align}
 E =  \big( \frac{1}{n g^2} + \frac{a_{Max}}{g} \big) \pm \big[ \big( \frac{1}{n g^2} + \frac{a_{Max}}{g} \big)^2 - \frac{{a_{Max}}^2}{g^2} \big]^{\frac{1}{2}}
 \end{align}
-که هر دو اندازه‌ی میدان هم مثبت هستند!
-
-در ضریب تاثیرهای بسیار بزرگ فقط مرتبه‌های اول معکوس g را نگه می‌داریم و تقریبا میدان می‌شود:
-\begin{equation}
-E \cong \frac{a_{Max}}{g}
-\end{equation}
+نتیجه می‌دهد که $a_{*}$ هم باید به صورت زیر باشد:
+\begin{align}
+a_{*} &=  \big( a_{Max} + \frac{1}{n g} \big) \pm \big[ \big( \frac{1}{n g} + a_{Max} \big)^2 - {a_{Max}}^2 \big]^{\frac{1}{2}}\\
+&=  \big( a_{Max} + \frac{1}{n g} \big) \pm \big[  \frac{1}{n^2 g^4} + \frac{2a_{Max}}{ng}  \big]^{\frac{1}{2}}
+\end{align}
+اجازه بدهید علامت مثبت را کنار بگذاریم زیرا مقدار $a_{*}$ را خارج بازه‌ی جریان‌های سامانه گزارش می‌کند. پس هم برای میدان و هم جریان $a_{*}$ خواهیم داشت:
+\begin{align}
+\begin{cases}
+a_{*} =  \big( a_{Max} + \frac{1}{n g} \big) - \big[  \frac{1}{n^2 g^2} + \frac{2a_{Max}}{ng}  \big]^{\frac{1}{2}}\\
+E =  \big( \frac{1}{n g^2} + \frac{a_{Max}}{g} \big) - \big[ \frac{1}{n^2 g^4} + \frac{2a_{Max}}{ng^3}  \big]^{\frac{1}{2}}\\
+\end{cases}
+\end{align}
+در ضریب تاثیرهای بسیار بزرگ داریم:
+\begin{align}
+E \cong & \frac{a_{Max}}{g} + \frac{1}{ng^2} - (\frac{2 a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{1}{2nga_{Max}} \big]^{\frac{1}{2}}\\
+=& \frac{a_{Max}}{g} + \frac{1}{ng^2} - (\frac{2 a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{1}{4nga_{Max}} \big]
+\end{align}
 که اشتباه است یا وجود ندارد زیرا اگر قدرت میدان به اندازه‌ی بزرگترین جریان تصادفی نورونی باشد؛ آنگاه هیچ نورون فعالی وجود نخواهد داشت.
 \subsubsection{میانگین زمانی میدان}
 اگر چه محاسبه‌ی انحراف معیار میدان در طول زمان کار دشواری است اما محاسبه‌ی میانگین آن نسبتا ساده‌تر است. زیرا برای هر تابع f وابسته به زمان داریم
 \begin{align}
-I[f] &= \lim_{T\to\infty} \frac{1}{T} \int^{T}_{d} dt \int_{0}^{t - d} f(u)du \\
-&= \lim_{T\to\infty} \frac{1}{T} \int_{0}^{T - d} du \int^{T}_{u+d} f(t) dt \\
+I[f] &= \lim_{T\to\infty} \frac{1}{T - d} \int^{T}_{d} dt \int_{0}^{t - d} f(u)du \\
+&= \lim_{T\to\infty} \frac{1}{T - d} \int_{0}^{T - d} du \int^{T}_{u+d} f(t) dt \\
 &= \lim_{T\to\infty} \int_{0}^{T - d} du \bar{f}(u)  
 \end{align}
-
+به شرط تعادل
 \newpage
 \bibliographystyle{plain-fa}
 \bibliography{MyReferences}
