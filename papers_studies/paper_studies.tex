@@ -380,7 +380,7 @@ $t_d = 0.1\, s$
 از آنجا که شبیه‌سازی این سامانه شامل تعریف فرآیندهای متفاوتی بود؛ بدیهی است که نوشتن معادله‌ی تحلیلی برای توصیف کامل آن آسان نباشد. اما در این بخش تلاش می‌کنیم که با کنار هم قرار دادن معادلات اصلی چارچوب مسئله‌ی خود را مشخص کنیم.\\
 هر نورون که از حالت $\theta = \pi$ عبور می‌کند [تیزه می‌زند] باعث می‌شود تا سهمی از جریان با کیفیت $p(t):= \alpha^2 t \cdot exp(-\alpha t)$ به جریان درونی کل سامانه $E(t)$ اضافه شود.
 \begin{equation}
-E(t) = \int_{- \infty}^{t - d} \int J_a (\pi,u) da \cdot u\, e^{-\alpha u} du
+E(t) = \frac{1}{N}\int_{- \infty}^{t - d} \int J_a (\pi,u) da \cdot u\, e^{-\alpha u} du
 \end{equation}
 (چک شود آیا بعد معادله درست است؟)\\
 اما جریان برای هر نورون با ورودی $a$ به طریق زیر است:
@@ -396,7 +396,7 @@ J_a (\theta, t) = n_a(\theta,t) \cdot \dot \theta_a
 اجازه بدهید تا اولین تلاش خود را از ساده‌ترین نوع شبکه‌ها شروع کنیم. شبکه‌ای که به جز جریان داخلی و جریان تصادفی اولیه ورودی دیگری ندارد. پس خواهیم داشت:
 \begin{align}
 \begin{cases}
-E(t) = \int_{- \infty}^{t - d} \int n_a(\pi,u) \cdot \big[ a - g E(u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
+E(t) = \frac{1}{N} \int_{- \infty}^{t - d} \int n_a(\pi,u) \cdot \big[ a - g E(u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
 \frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E(t) )
 \end{cases}
 \label{eq:simple_network}
@@ -434,12 +434,12 @@ E(t) = \sum c_i \cdot cos(\omega_i t)
 عبارت $\J{}$ به معنای جمع جریان تصادفی نورون‌هایی است که در زمان u در آستانه قرار دارند. همچنین عبارت $\N{}$ به معنای تعداد همین نورون‌هاست.\\
 حال با نمادهای بالا شروع به بازنویسی جملات پیشین می‌کنیم:
 \begin{align}
-E(t) &= \int_{- \infty}^{t - d} \N{} \cdot u\, e^{-\alpha u} du  - g\int_{- \infty}^{t - d} \J{} \cdot u\, e^{-\alpha u} E(u)  du\\
+E(t) &= \frac{1}{N} \int_{- \infty}^{t - d} \N{} \cdot u\, e^{-\alpha u} du  - \frac{g}{N}\int_{- \infty}^{t - d} \J{} \cdot u\, e^{-\alpha u} E(u)  du\\
 \end{align}
 حال جمله‌ی اول را نیز با عبارت دیگری خلاصه‌سازی می‌کنیم:
 
 \begin{equation}
-\A{t} \equiv \int_{- \infty}^{t - d} \N{} \cdot u\, e^{-\alpha u} du 
+\A{t} \equiv \frac{1}{N}\int_{- \infty}^{t - d} \N{} \cdot u\, e^{-\alpha u} du 
 \end{equation}
 این عبارت جمع تعداد همه‌ی تیزه‌هایی است که تا گام $t-d$ زده شده‌اند و درنتیجه جمله‌ای انباشتی است. پس خواهیم داشت:
 \begin{changemargin}{-3cm}{-3cm} 
@@ -467,14 +467,14 @@ $- \infty \leq u_{i} \leq t - i \, d$.
 با فرض ثابت بودن میدان، اندازه‌ی آن را محاسبه می‌کنیم. سپس مجدد به معادلات برمی‌گردیم و می‌پرسیم که در صورت جمع با یک جمله‌ی اختلالی کوچک این انحراف رشد خواهد کرد یا خیر. به عبارت دیگر آیا این جواب جاذب است.\\
 \begin{align}
 \begin{cases}
-E_0 = \int_{- \infty}^{t - d} \int n_a(\pi,u) \cdot \big[ a - g E_0 \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
+E_0 = \frac{1}{N}\int_{- \infty}^{t - d} \int n_a(\pi,u) \cdot \big[ a - g E_0 \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
 \frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E_0 )
 \end{cases}
 \end{align}
 
 یک راه خوب برای پیشبرد سطر اول معادلات آن است که از دو طرف آهنگ تغییرشان با زمان را بپرسیم. از آنجا که سمت چپ معادله ثابت است؛ سمت راست هم باید جوابی مشابه را حکایت کند.\\
 \begin{equation}
-0 = \frac{dE_0}{dt} = \alpha^2 (t-d) e^{-\alpha (t-d)} \cdot [ - gE_0 \cdot \int n_a(\pi,t-d) da + \int n_a(\pi,t-d)\cdot a\,da ]
+0 = \frac{dE_0}{dt} = \frac{\alpha^2 (t-d) e^{-\alpha (t-d)}}{N} \cdot [ - gE_0 \cdot \int n_a(\pi,t-d) da + \int n_a(\pi,t-d)\cdot a\,da ]
 \end{equation}
 مشخص است که کدام جمله از جملات ضربی بالا صفر است. پس برای $E_0$ خواهیم داشت:
 \begin{equation}
@@ -569,14 +569,14 @@ J_{a}(\theta, t) = n_a(\theta,t) \cdot [ a - g E ]\\
 
 پس توزیع جمعیت نورون‌‌ها مستقل از زمان و حالت آن‌ها خواهد شد. اگر توزیع را در ابتدا یکنواخت میان جریان‌های مختلف توزیع کرده باشیم؛ برای همه‌ی زمان‌ها و حالت‌ها داریم:
 \begin{equation}
-n = \frac{N}{a_{Max} - a_{min} }
+n = \frac{N}{2 \pi (a_{Max} - a_{min}) }
 \end{equation}
 
 
 برای جریان بین نورون‌ها هم خواهیم داشت:
 \begin{align}
-E &= \int_{- \infty}^{t - d} \int n \cdot \big[ a - g E \big] da \cdot \alpha^2 u\, e^{-\alpha u} du\\
-&=  \int n \cdot \big[ a - g E \big] da \label{eq:e_sum_simple}
+E &= \frac{1}{N} \int_{- \infty}^{t - d} \int n \cdot \big[ a - g E \big] da \cdot \alpha^2 u\, e^{-\alpha u} du\\
+&=  \int \frac{n}{N} \cdot \big[ a - g E \big] da \label{eq:e_sum_simple}
 \end{align}
 دقت کنیم که انتگرال رابطه‌ی \ref{eq:e_sum_simple} روی  نورون‌هایی است که مستعد تیزه زدن هستند.
 \footnote{
@@ -585,34 +585,35 @@ $(a - g E) > 0 $
 
 اولین جریانی که نورون را مستعد تیزه زدن می‌کند $a_*$ نام‌گذاری می‌کنیم. محاسبات را ادامه می‌دهیم:
 \begin{align}
-E &=  \int n \cdot \big[ a - g E \big] da \\
-&= n \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2} - g E (a_{Max} - a_*) \big] \\
-\Rightarrow E &= n \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2}  \big] / \big[ 1 + g (a_{Max} - a_*)\big]
+E &=  \int \frac{n}{N} \cdot \big[ a - g E \big] da \\
+&= \frac{n}{N} \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2} - g E (a_{Max} - a_*) \big] \\
+\Rightarrow E &= n \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2}  \big] / \big[ N + g n (a_{Max} - a_*)\big]
 \end{align}
 شاید بنظر این یک معادله‌ی درجه یک ساده باشد که میدان را گزارش می‌کند اما در واقع خود $a^*$ هم به میدان وابسته است و باید وابستگی آن را لحاظ کنیم. به تقریب:
 $a^{*} = gE$
 با اضافه کردن این معادله و حل معمول یک معادله‌ی درجه‌ی دو برای میدان صراحتا خواهیم داشت:
 \begin{align}
-E =  \big( \frac{1}{n g^2} + \frac{a_{Max}}{g} \big) \pm \big[ \big( \frac{1}{n g^2} + \frac{a_{Max}}{g} \big)^2 - \frac{{a_{Max}}^2}{g^2} \big]^{\frac{1}{2}}
+E =  \big( \frac{a_{Max}}{g} + \frac{N}{n g^2}  \big) \pm \big[ \big( \frac{N}{n g^2} + \frac{a_{Max}}{g} \big)^2 - \frac{{a_{Max}}^2}{g^2} \big]^{\frac{1}{2}}
 \end{align}
 نتیجه می‌دهد که $a_{*}$ هم باید به صورت زیر باشد:
 \begin{align}
-a_{*} &=  \big( a_{Max} + \frac{1}{n g} \big) \pm \big[ \big( \frac{1}{n g} + a_{Max} \big)^2 - {a_{Max}}^2 \big]^{\frac{1}{2}}\\
-&=  \big( a_{Max} + \frac{1}{n g} \big) \pm \big[  \frac{1}{n^2 g^4} + \frac{2a_{Max}}{ng}  \big]^{\frac{1}{2}}
+a_{*} &=  \big( a_{Max} + \frac{N}{n g} \big) \pm \big[ \big( \frac{N}{n g} + a_{Max} \big)^2 - {a_{Max}}^2 \big]^{\frac{1}{2}}\\
+&=  \big( a_{Max} + \frac{N}{n g} \big) \pm \big[  \frac{N^2}{n^2 g^2} + \frac{2a_{Max}}{ng}  \big]^{\frac{1}{2}}
 \end{align}
 اجازه بدهید علامت مثبت را کنار بگذاریم زیرا مقدار $a_{*}$ را خارج بازه‌ی جریان‌های سامانه گزارش می‌کند. پس هم برای میدان و هم جریان $a_{*}$ خواهیم داشت:
 \begin{align}
 \begin{cases}
-a_{*} =  \big( a_{Max} + \frac{1}{n g} \big) - \big[  \frac{1}{n^2 g^2} + \frac{2a_{Max}}{ng}  \big]^{\frac{1}{2}}\\
-E =  \big( \frac{1}{n g^2} + \frac{a_{Max}}{g} \big) - \big[ \frac{1}{n^2 g^4} + \frac{2a_{Max}}{ng^3}  \big]^{\frac{1}{2}}\\
+a_{*} =  \big( a_{Max} + \frac{N}{n g} \big) - \big[  \frac{N^2}{n^2 g^2} + \frac{2a_{Max}}{ng}  \big]^{\frac{1}{2}}\\
+E =  \big( \frac{a_{Max}}{g} + \frac{N}{n g^2} \big) - \big[ \frac{N^2}{n^2 g^4} + \frac{2Na_{Max}}{ng^3}  \big]^{\frac{1}{2}}\\
 \end{cases}
 \end{align}
-در ضریب تاثیرهای بسیار بزرگ داریم:
+در ضریب تاثیرهای بسیار بزرگ داریم:(اشتباه است تصحیح شود.)
 \begin{align}
-E \cong & \frac{a_{Max}}{g} + \frac{1}{ng^2} - (\frac{2 a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{1}{2nga_{Max}} \big]^{\frac{1}{2}}\\
-=& \frac{a_{Max}}{g} + \frac{1}{ng^2} - (\frac{2 a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{1}{4nga_{Max}} \big]
+E \cong & \frac{a_{Max}}{g} + \frac{N}{ng^2} - (\frac{2N a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{N}{2nga_{Max}} \big]^{\frac{1}{2}}\\
+=& \frac{a_{Max}}{g} + \frac{N}{ng^2} - (\frac{2 N a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{N}{4nga_{Max}} \big]\\
+=& \frac{a_{Max}}{g} - (\frac{2 N a_{Max}}{n g^3})^{\frac{1}{2}} + \frac{N}{ng^2}  - (\frac{N}{2n})^{\frac{3}{2}}  \cdot \frac{1}{ {a^{\frac{1}{2}}_{Max} g^{\frac{5}{2}}}}
 \end{align}
-که اشتباه است یا وجود ندارد زیرا اگر قدرت میدان به اندازه‌ی بزرگترین جریان تصادفی نورونی باشد؛ آنگاه هیچ نورون فعالی وجود نخواهد داشت.
+
 \subsubsection{میانگین زمانی میدان}
 اگر چه محاسبه‌ی انحراف معیار میدان در طول زمان کار دشواری است اما محاسبه‌ی میانگین آن نسبتا ساده‌تر است. زیرا برای هر تابع f وابسته به زمان داریم
 \begin{align}

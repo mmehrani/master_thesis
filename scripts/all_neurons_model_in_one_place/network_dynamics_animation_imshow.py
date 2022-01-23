@@ -21,7 +21,7 @@ from tqdm import tqdm
 
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
-neuron_model = current_models[1]
+neuron_model = current_models[2]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -89,8 +89,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 num_neurons = 10000
 total_time = 60
 start_time_to_sample = 50
-g = 20
-# g = 0.5
+# g = 20
+g = 0
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 

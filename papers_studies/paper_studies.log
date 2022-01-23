@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  17 JAN 2022 15:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  22 JAN 2022 19:27
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1408,16 +1408,13 @@ No file paper_studies.bbl.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
 (rerunfilecheck)             Checksum: 3709BB2103CA1FDA9AF4039FD9E1B0AE;6669.
  ) 
 Here is how much of TeX's memory you used:
  26917 strings out of 411254
  533260 string characters out of 2832814
- 972092 words of memory out of 3000000
+ 973092 words of memory out of 3000000
  46839 multiletter control sequences out of 15000+600000
  409359 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
