@@ -622,6 +622,85 @@ I[f] &= \lim_{T\to\infty} \frac{1}{T - d} \int^{T}_{d} dt \int_{0}^{t - d} f(u)d
 &= \lim_{T\to\infty} \int_{0}^{T - d} du \bar{f}(u)  
 \end{align}
 به شرط تعادل
+
+\زیرزیرقسمت{حل اختلالی میدان}
+همان طور که مشخص است؛ حل دقیق میدان بسیار کار دشواری است اما می‌توان از طریق ترفندهای اختلالی به جواب آن نزدیک شد. یکی از روش‌های معمول حل زنجیری و تودرتوی دستگاه معادلات است. \\
+به این ترتیب که ابتدا از معادله  پاسخ حالت پایا (مرتبه‌ی صفرم) را در معادله‌ی پخش جاگذاری می‌کنیم تا توزیع آماری وابسته به زمان نورون‌ها بدست آید. سپس مجددا از توزیع بدست آمده؛ میدان مرتبه‌ی اول را که وابسته به زمان است؛ محاسبه می‌کنیم.\\
+از آنجا که توزیع سامانه‌ رفتاری دوره‌ای به طول $2\pi$ دارد؛ می‌توانیم آن را به صورت زیر بسط دهیم:
+\begin{align}
+	\rho(\theta, a, t) = \rho_0 + \sum_k A_k(t) e^{ik\theta}, \quad k \in \mathcal{Z}
+\end{align}
+
+\begin{align}
+	\frac{\partial \rho}{\partial t} &= \sum \dot A_k e^{ik\theta}\\
+	\frac{\partial \rho}{\partial \theta} &= \sum A_k \cdot ik \cdot e^{ik\theta}\\
+\end{align}
+حال آن را در معادله‌ی پخش قرار می‌دهیم تا بتوانیم معادله‌ی حاکم بر ضرایب را محاسبه کنیم.
+\begin{align}
+	\sum \dot A_k e^{ik\theta} &= - \sum A_k \cdot ik(a - gE(t)) \cdot e^{ik\theta}\\
+	\Rightarrow \dot A_k = - A_k \cdot ik(a - gE(t))
+\end{align}
+در تقریب مرتبه‌ی اول برای توزیع داریم:
+\begin{align}
+	\dot A_k &= - A_k \cdot ik(a - g E_0)\\
+	\Rightarrow A_k(t) &= A_k(0) e^{ik\theta - ik(a-gE_0)t}\\
+	\Rightarrow \rho(\theta, a, t) &= \rho_0 + \sum_k A_k(0) e^{ik\theta - ik(a - gE_0)t}
+\end{align}
+پس برای نورون‌های روی آستانه خواهیم داشت:
+\begin{align}
+	\rho(\pi, a, t) = \rho_0 + \sum_k A_k(0) e^{ik\pi - ik(a - gE_0)t}
+\end{align}
+حال از نتیجه‌ی بدست آمده استفاده می‌کنیم و همان طور که اشاره شد به محاسبه‌ی مرتبه‌ی بعدی میدان می‌رویم:
+\begin{align}
+	E(t) &= \int_{0}^{\infty} \rho(\pi, a, t-d-v)\cdot \alpha^2 ve^{-\alpha v} dv da \\
+	&= E_0\\
+	&+ \int_{0}^{\infty} \sum_k A_k(0) e^{ik\pi - ik(a - gE_0)(t-d)} \cdot \alpha^2 ve^{-\alpha v} dv \\
+	&= E_0 + \sum_k \int_{0}^{\infty} A_k(0) e^{ik\pi - ik(a - gE_0)(t-d)} \cdot \alpha^2 ve^{-\alpha v} dv
+\end{align}
+اجازه بدهید سهم مدهای متفاوت از میدان را به صورت جداگانه محاسبه کنیم و سپس مجددا در کنار یکدیگر قرار دهیم.
+\begin{align}
+	E_{k,a}(t) = -\alpha^2 A_k(0)(a - gE_0) e^{ik\pi}\int^{\infty}_{0} v e^{-(\alpha + ik(a - gE_0))v-ik(a - gE_0)(t-d)} dv
+\end{align}
+با با تغییر متغیر 
+$\beta \equiv \alpha + ik(a-gE_0)$
+محاسبات را ادامه می‌دهیم:
+\begin{align}
+	&= \alpha^2 A_k(0) (a - gE_0) e^{ik\pi} e^{-ik(a-gE_0)(t-d)} \cdot \int^{\infty}_0 v e^{\beta v}dv \\
+	&= \alpha^2 A_k(0) (a - gE_0) e^{ik\pi} e^{-ik(a-gE_0)(t-d)} \cdot \frac{1}{\beta^2} \\
+	&= A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} \cdot (\frac{\alpha}{\alpha+ik(a-gE_0)})^2
+\end{align}
+حال قدم به قدم به محاسبات پیشین خود برمی‌گردیم. ابتدا می‌پرسیم میدان همه‌ی نورون‌های با مد یکسان چه جریانی را تولید می‌کنند.
+\begin{align}
+	E_k(t) &= \int E_{k,a} da\\
+	&= \int A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} (\frac{\alpha}{\alpha+ik(a-gE_0)})^2 da
+\end{align}
+با تغییر متغیر
+$h \equiv a - gE_0$
+تلاش می‌کنیم انتگرال را ادامه دهیم.
+\begin{align}
+	E_k(t) = A_k(0)e^{ik\pi} \int^{a_M - gE_0}_{0} h e^{-ikh(t-d)} (\frac{1}{1 + ikh/\alpha})^2 dh
+\end{align}
+نرم‌افزارهای محاسباتی همچون ابزار ولفرم به ما امکان می‌دهد تا پاسخ آن را به صورت زیر بیان کنیم:
+\begin{align}
+	E_k(t) =& \frac{\alpha^2}{k^2} \bigg[ e^{i(\xi_{(h)} - k(t-d)h)} \\
+	&+ (\alpha(t-d) + 1) Ei[1 -ih\alpha(t-d)] \, \bigg]	\Biggr|_{0}^{a_M -gE_0}
+\end{align}
+به صورتی که 
+$e^{i\xi_{(h)}} = \frac{-1 + ibh}{b^2h^2 + 1}$
+است و 
+$Ei$
+همان تابع انتگرال نمایی است که به صورت 
+$Ei[z] = - \int^{+\infty}_{-z} e^{-t}/t dt$
+نوشته می‌شود.
+\begin{align}
+	E_k(t) =& \frac{\alpha^2}{k^2} \bigg[ e^{i(\xi_{(a_M -gE_0)} - k(t-d)(a_M -gE_0))} \\
+	&+ (\alpha(t-d) + 1) Ei[1 -i\alpha(a_M -gE_0)(t-d)] \\
+	&- (-1) e^{-ik(t-d)(a_M -gE_0)} \\
+	&- (\alpha(t-d) + 1) Ei[1] \bigg]\\
+	=& \frac{\alpha^2}{k^2} \bigg[ e^{-ik(t-d)(a_M -gE_0)} \bigg( e^{i(\xi_{(a_M -gE_0)})} + 1\bigg) \\
+	&+ (\alpha(t-d) + 1)\bigg( Ei[1 -i\alpha(a_M -gE_0)(t-d)] - Ei[1] \bigg) \bigg]
+\end{align}
+پس یک جمله‌ی نوسانی دارد و جمله‌ای که شامل تکینگی است.
 \newpage
 \bibliographystyle{plain-fa}
 \bibliography{MyReferences}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  22 JAN 2022 19:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  28 FEB 2022 10:20
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1204,18 +1204,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
  []
 
 
-LaTeX Warning: Citation `PhysRevLett.105.158104' on page 3 undefined on input l
-ine 48.
-
-
 Overfull \hbox (0.5918pt too wide) in paragraph at lines 48--50
 []\TU/XBNiloofar(0)/m/n/12 متن اصلی این جستار شامل معرفی این مدل‌ها و پویایی آن
 ‌ها در زمان و نتایج ضبط شده از نشانگرهایی[]
  []
-
-
-LaTeX Warning: Citation `PhysRevLett.105.158104' on page 3 undefined on input l
-ine 52.
 
 
 LaTeX Warning: The counter will not be printed.
@@ -1295,15 +1287,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--214
 [][]
  []
 
-
-LaTeX Warning: Citation `safaeesirat2020critical' on page 10 undefined on input
- line 215.
-
 [10]
-
-LaTeX Warning: Citation `safaeesirat2020critical' on page 11 undefined on input
- line 223.
-
 
 LaTeX Warning: The counter will not be printed.
              The label is: * on input line 233.
@@ -1402,22 +1386,28 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 (Font)              scaled to size 5.0pt on input line 502.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 502.
-[21] [22] [23] [24] [25]
-No file paper_studies.bbl.
-(paper_studies.aux)
+[21] [22] [23] [24] [25] [26] [27] (paper_studies.bbl (paper_studies.brf)
+\tf@brf=\write6
+\openout6 = `paper_studies.brf'.
 
-LaTeX Warning: There were undefined references.
-
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 7.
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 12.
+)
+[28] (paper_studies.aux)
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: 3709BB2103CA1FDA9AF4039FD9E1B0AE;6669.
+(rerunfilecheck)             Checksum: 6506E8A18A0E6B4FDCD1410E4CE07209;6865.
+Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
+(rerunfilecheck)             Checksum: B99A21565441E39F58B5CE8E78A393B7;234.
  ) 
 Here is how much of TeX's memory you used:
- 26917 strings out of 411254
- 533260 string characters out of 2832814
+ 26939 strings out of 411254
+ 533832 string characters out of 2832814
  973092 words of memory out of 3000000
- 46839 multiletter control sequences out of 15000+600000
- 409359 words of font info for 117 fonts, out of 8000000 for 9000
+ 46853 multiletter control sequences out of 15000+600000
+ 409375 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,18n,95p,1060b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (25 pages).
+Output written on paper_studies.pdf (28 pages).
