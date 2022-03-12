@@ -33,7 +33,7 @@
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
 
 \begin{document}
-\title{مطالعه همگامی در شبکه‌های عصبی} 
+\title{مطالعه همگامی در شبکه‌های عصبی مهاری} 
 \author{محسن مهرانی - استاد راهنما: دکتر سامان مقیمی عراقی}
 \date{}
 \maketitle
@@ -380,7 +380,7 @@ $t_d = 0.1\, s$
 از آنجا که شبیه‌سازی این سامانه شامل تعریف فرآیندهای متفاوتی بود؛ بدیهی است که نوشتن معادله‌ی تحلیلی برای توصیف کامل آن آسان نباشد. اما در این بخش تلاش می‌کنیم که با کنار هم قرار دادن معادلات اصلی چارچوب مسئله‌ی خود را مشخص کنیم.\\
 هر نورون که از حالت $\theta = \pi$ عبور می‌کند [تیزه می‌زند] باعث می‌شود تا سهمی از جریان با کیفیت $p(t):= \alpha^2 t \cdot exp(-\alpha t)$ به جریان درونی کل سامانه $E(t)$ اضافه شود.
 \begin{equation}
-E(t) = \frac{1}{N}\int_{- \infty}^{t - d} \int J_a (\pi,u) da \cdot u\, e^{-\alpha u} du
+E(t) = \frac{1}{N}\int_{0}^{\infty} \int J_a (\pi,t-d-u) da \cdot u\, e^{-\alpha u} du
 \end{equation}
 (چک شود آیا بعد معادله درست است؟)\\
 اما جریان برای هر نورون با ورودی $a$ به طریق زیر است:
@@ -396,7 +396,7 @@ J_a (\theta, t) = n_a(\theta,t) \cdot \dot \theta_a
 اجازه بدهید تا اولین تلاش خود را از ساده‌ترین نوع شبکه‌ها شروع کنیم. شبکه‌ای که به جز جریان داخلی و جریان تصادفی اولیه ورودی دیگری ندارد. پس خواهیم داشت:
 \begin{align}
 \begin{cases}
-E(t) = \frac{1}{N} \int_{- \infty}^{t - d} \int n_a(\pi,u) \cdot \big[ a - g E(u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
+E(t) = \frac{1}{N} \int_{0}^{\infty} \int n_a(\pi,t-d-u) \cdot \big[ a - g E(t-d-u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
 \frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E(t) )
 \end{cases}
 \label{eq:simple_network}
@@ -420,7 +420,7 @@ E(t) = \sum c_i \cdot cos(\omega_i t)
 \زیرزیرقسمت{روش بازگشتی}
 در این روش برای این که از جمله‌ی تابعیت $E(u)$ را از خودش باز کنیم؛ عبارت سمت راست را مجددا در خودش جاگذاری می‌کنیم. برای راحت‌تر شدن محاسبات ابتدا دو متغیر کمکی زیر را تعریف می‌کنیم:
 % abbrivations for calculation of this section
-\newcommand{\J}[1]{\mathcal{J}(\pi,u_{#1})}
+\newcommand{\J}[1]{\mathcal{J}(\pi,t - d - u_{#1})}
 \newcommand{\N}[1]{\mathcal{N}(\pi,u_{#1})}
 
 \newcommand{\A}[1]{\mathcal{A}(#1 - d)}
@@ -428,30 +428,30 @@ E(t) = \sum c_i \cdot cos(\omega_i t)
 \newcommand{\impact}[1]{u_{#1}\, e^{-\alpha u_{#1}}}
 %
 \begin{align}
-\J{} &\equiv \int n_a(\pi,u) a \cdot da\\
-\N{} &\equiv \int n_a(\pi,u) \cdot da
+\J{} &\equiv \int n_a(\pi,t-d-u) a \cdot da\\
+\N{} &\equiv \int n_a(\pi,t-d-u) \cdot da
 \end{align}
 عبارت $\J{}$ به معنای جمع جریان تصادفی نورون‌هایی است که در زمان u در آستانه قرار دارند. همچنین عبارت $\N{}$ به معنای تعداد همین نورون‌هاست.\\
 حال با نمادهای بالا شروع به بازنویسی جملات پیشین می‌کنیم:
 \begin{align}
-E(t) &= \frac{1}{N} \int_{- \infty}^{t - d} \N{} \cdot u\, e^{-\alpha u} du  - \frac{g}{N}\int_{- \infty}^{t - d} \J{} \cdot u\, e^{-\alpha u} E(u)  du\\
+E(t) &= \frac{1}{N} \int_{0}^{\infty} \J{} \cdot u\, e^{-\alpha u} du  - \frac{g}{N}\int_{0}^{\infty} \N{} \cdot u\, e^{-\alpha u} E(t-d-u)  du\\
 \end{align}
 حال جمله‌ی اول را نیز با عبارت دیگری خلاصه‌سازی می‌کنیم:
 
 \begin{equation}
-\A{t} \equiv \frac{1}{N}\int_{- \infty}^{t - d} \N{} \cdot u\, e^{-\alpha u} du 
+\A{t} \equiv \frac{1}{N}\int_{0}^{\infty} \J{} \cdot u\, e^{-\alpha u} du 
 \end{equation}
 این عبارت جمع تعداد همه‌ی تیزه‌هایی است که تا گام $t-d$ زده شده‌اند و درنتیجه جمله‌ای انباشتی است. پس خواهیم داشت:
 \begin{changemargin}{-3cm}{-3cm} 
 %your text here  
 \begin{align}
-E(t) &= \A{t} - g\int_{- \infty}^{t - d} \J{} \cdot u\, e^{-\alpha u}E(u) du\\
-&= \A{t} - g\int_{- \infty}^{t - d} \J{1} \cdot \impact{1} \cdot \big[ \A{u_1} - g\int_{- \infty}^{u_1 - d} \J{2} \cdot \impact{2} E(u_2) du_2 \big] du_1\\
-&= \A{t} - g\int_{- \infty}^{t - d} \J{1} \cdot \impact{1} \cdot \A{u_1} du_1\\ 
-&\hspace{1 cm}+ g^2 \int_{- \infty}^{t - d} \J{1} \cdot \impact{1}\int_{- \infty}^{u_1 - d} \J{2} \cdot \impact{2} E(u_2) du_2 du_1\\
-&= \A{t} - g\int_{- \infty}^{t - d} \J{1} \cdot \impact{1} \cdot \A{u_1} du_1\\ 
-&\hspace{1 cm}+ g^2 \int_{- \infty}^{t - d} \J{1} \cdot \impact{1}\int_{- \infty}^{u_1 - d} \J{2} \cdot \impact{2} \A{u_2} du_2 du_1\\
-&\hspace{1 cm}- g^3 \int_{- \infty}^{t - d} \J{1} \cdot \impact{1}\int_{- \infty}^{u_1 - d} \J{2} \cdot \impact{2} \int_{- \infty}^{u_2 - d} \J{3} \cdot \impact{3} E(u_3) du_3 du_2 du_1
+E(t) &= \A{t} - g\int_{0}^{\infty} \N{} \cdot u\, e^{-\alpha u}E(t-d-u) du\\
+&= \A{t} - g\int_{0}^{\infty} \N{1} \cdot \impact{1} \cdot \big[ \A{u_1} - g\int_{- \infty}^{u_1 - d} \N{2} \cdot \impact{2} E(u_2) du_2 \big] du_1\\
+&= \A{t} - g\int_{- \infty}^{t - d} \N{1} \cdot \impact{1} \cdot \A{u_1} du_1\\ 
+&\hspace{1 cm}+ g^2 \int_{- \infty}^{t - d} \N{1} \cdot \impact{1}\int_{- \infty}^{u_1 - d} \N{2} \cdot \impact{2} E(u_2) du_2 du_1\\
+&= \A{t} - g\int_{- \infty}^{t - d} \N{1} \cdot \impact{1} \cdot \A{u_1} du_1\\ 
+&\hspace{1 cm}+ g^2 \int_{- \infty}^{t - d} \N{1} \cdot \impact{1}\int_{- \infty}^{u_1 - d} \N{2} \cdot \impact{2} \A{u_2} du_2 du_1\\
+&\hspace{1 cm}- g^3 \int_{- \infty}^{t - d} \N{1} \cdot \impact{1}\int_{- \infty}^{u_1 - d} \N{2} \cdot \impact{2} \int_{- \infty}^{u_2 - d} \N{3} \cdot \impact{3} E(u_3) du_3 du_2 du_1
 \end{align}
 
 \end{changemargin}
@@ -583,11 +583,14 @@ E &= \frac{1}{N} \int_{- \infty}^{t - d} \int n \cdot \big[ a - g E \big] da \cd
 $(a - g E) > 0 $
 }
 
-اولین جریانی که نورون را مستعد تیزه زدن می‌کند $a_*$ نام‌گذاری می‌کنیم. محاسبات را ادامه می‌دهیم:
+اولین جریانی که نورون را مستعد تیزه زدن می‌کند $a_*$ نام‌گذاری می‌کنیم. وقتی جریان مهاری حاصل از تیزه زدن‌ها کوچک است؛ همه‌ی نورون‌ها فعال هستند و در نتیجه‌ 
+$a_* = a_{min}$
+می‌شود. اما در حالتی که جریان مهاری زیاد می‌شود؛ این مقدار از کمترین جریان تصادفی اولیه سامانه بزرگتر می‌شود. محاسبات را ادامه می‌دهیم:
 \begin{align}
 E &=  \int \frac{n}{N} \cdot \big[ a - g E \big] da \\
 &= \frac{n}{N} \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2} - g E (a_{Max} - a_*) \big] \\
 \Rightarrow E &= n \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2}  \big] / \big[ N + g n (a_{Max} - a_*)\big]
+\label{}
 \end{align}
 شاید بنظر این یک معادله‌ی درجه یک ساده باشد که میدان را گزارش می‌کند اما در واقع خود $a^*$ هم به میدان وابسته است و باید وابستگی آن را لحاظ کنیم. به تقریب:
 $a^{*} = gE$
@@ -607,6 +610,35 @@ a_{*} =  \big( a_{Max} + \frac{N}{n g} \big) - \big[  \frac{N^2}{n^2 g^2} + \fra
 E =  \big( \frac{a_{Max}}{g} + \frac{N}{n g^2} \big) - \big[ \frac{N^2}{n^2 g^4} + \frac{2Na_{Max}}{ng^3}  \big]^{\frac{1}{2}}\\
 \end{cases}
 \end{align}
+
+حال اگر نتایج بدست آمده را با داده‌های شبیه‌سازی تطبیق دهیم؛ خواهیم دید که تطابق خوبی با یک دیگر دارند.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png}
+		\caption{نسخه‌ای که کمینه‌ی جریان را از حل محاسبات درنظر می‌گیرد}
+		\label{fig:e_zeroth_not_all_gifted}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_simple_g_0.1_130.png}
+		\caption{نسخه‌ای که همه‌ی نورون‌ها را فعال تصور می‌کند.}
+		\label{fig:e_zeroth_all_gifted}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png}
+		\caption{نسخه ساخته شده از اتصال دوتای دیگر}
+		\label{fig:e_zeroth_developed}
+	\end{subfigure}
+	\caption{تطابق جریان پایای بدست آمده از حل عددی و تحلیلی}
+	\label{fig:three graphs}
+\end{figure}
+
 در ضریب تاثیرهای بسیار بزرگ داریم:(اشتباه است تصحیح شود.)
 \begin{align}
 E \cong & \frac{a_{Max}}{g} + \frac{N}{ng^2} - (\frac{2N a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{N}{2nga_{Max}} \big]^{\frac{1}{2}}\\
@@ -638,12 +670,12 @@ I[f] &= \lim_{T\to\infty} \frac{1}{T - d} \int^{T}_{d} dt \int_{0}^{t - d} f(u)d
 حال آن را در معادله‌ی پخش قرار می‌دهیم تا بتوانیم معادله‌ی حاکم بر ضرایب را محاسبه کنیم.
 \begin{align}
 	\sum \dot A_k e^{ik\theta} &= - \sum A_k \cdot ik(a - gE(t)) \cdot e^{ik\theta}\\
-	\Rightarrow \dot A_k = - A_k \cdot ik(a - gE(t))
+	\Rightarrow \dot A_k &= - A_k \cdot ik(a - gE(t))
 \end{align}
 در تقریب مرتبه‌ی اول برای توزیع داریم:
 \begin{align}
 	\dot A_k &= - A_k \cdot ik(a - g E_0)\\
-	\Rightarrow A_k(t) &= A_k(0) e^{ik\theta - ik(a-gE_0)t}\\
+	\Rightarrow A_k(t) &= A_k(0) e^{- ik(a-gE_0)t}\\
 	\Rightarrow \rho(\theta, a, t) &= \rho_0 + \sum_k A_k(0) e^{ik\theta - ik(a - gE_0)t}
 \end{align}
 پس برای نورون‌های روی آستانه خواهیم داشت:
@@ -652,53 +684,53 @@ I[f] &= \lim_{T\to\infty} \frac{1}{T - d} \int^{T}_{d} dt \int_{0}^{t - d} f(u)d
 \end{align}
 حال از نتیجه‌ی بدست آمده استفاده می‌کنیم و همان طور که اشاره شد به محاسبه‌ی مرتبه‌ی بعدی میدان می‌رویم:
 \begin{align}
-	E(t) &= \int_{0}^{\infty} \rho(\pi, a, t-d-v)\cdot \alpha^2 ve^{-\alpha v} dv da \\
+	E(t) &= \int \int_{0}^{\infty} \rho(\pi, a, t-d-v)\cdot \dot \theta \cdot \alpha^2 ve^{-\alpha v} dv da \\
 	&= E_0\\
-	&+ \int_{0}^{\infty} \sum_k A_k(0) e^{ik\pi - ik(a - gE_0)(t-d)} \cdot \alpha^2 ve^{-\alpha v} dv \\
-	&= E_0 + \sum_k \int_{0}^{\infty} A_k(0) e^{ik\pi - ik(a - gE_0)(t-d)} \cdot \alpha^2 ve^{-\alpha v} dv
+	&+ \int \int_{0}^{\infty} \sum_k A_k(0) e^{ik\pi - ik(a - gE_0)(t-d - v)} \cdot (a - gE_0) \alpha^2 ve^{-\alpha v} dv da \\
+	&= E_0 + \sum_k \int \int_{0}^{\infty} A_k(0) e^{ik\pi - ik(a - gE_0)(t-d - v)} \cdot (a - gE_0) \alpha^2 ve^{-\alpha v} dv da
 \end{align}
 اجازه بدهید سهم مدهای متفاوت از میدان را به صورت جداگانه محاسبه کنیم و سپس مجددا در کنار یکدیگر قرار دهیم.
 \begin{align}
-	E_{k,a}(t) = -\alpha^2 A_k(0)(a - gE_0) e^{ik\pi}\int^{\infty}_{0} v e^{-(\alpha + ik(a - gE_0))v-ik(a - gE_0)(t-d)} dv
+	E_{k,a}(t) = -\alpha^2 A_k(0)(a - gE_0) e^{ik\pi}\int^{\infty}_{0} v e^{-[\alpha - ik(a - gE_0)]v-ik(a - gE_0)(t-d)} dv
 \end{align}
 با با تغییر متغیر 
-$\beta \equiv \alpha + ik(a-gE_0)$
+$\beta \equiv \alpha - ik(a-gE_0)$
 محاسبات را ادامه می‌دهیم:
 \begin{align}
-	&= \alpha^2 A_k(0) (a - gE_0) e^{ik\pi} e^{-ik(a-gE_0)(t-d)} \cdot \int^{\infty}_0 v e^{\beta v}dv \\
+	&= \alpha^2 A_k(0) (a - gE_0) e^{ik\pi} e^{-ik(a-gE_0)(t-d)} \cdot \int^{\infty}_0 v e^{-\beta v}dv \\
 	&= \alpha^2 A_k(0) (a - gE_0) e^{ik\pi} e^{-ik(a-gE_0)(t-d)} \cdot \frac{1}{\beta^2} \\
-	&= A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} \cdot (\frac{\alpha}{\alpha+ik(a-gE_0)})^2
+	&= A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} \cdot (\frac{\alpha}{\alpha-ik(a-gE_0)})^2
 \end{align}
 حال قدم به قدم به محاسبات پیشین خود برمی‌گردیم. ابتدا می‌پرسیم میدان همه‌ی نورون‌های با مد یکسان چه جریانی را تولید می‌کنند.
 \begin{align}
 	E_k(t) &= \int E_{k,a} da\\
-	&= \int A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} (\frac{\alpha}{\alpha+ik(a-gE_0)})^2 da
+	&= \int A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} (\frac{\alpha}{\alpha-ik(a-gE_0)})^2 da
 \end{align}
 با تغییر متغیر
 $h \equiv a - gE_0$
 تلاش می‌کنیم انتگرال را ادامه دهیم.
 \begin{align}
-	E_k(t) = A_k(0)e^{ik\pi} \int^{a_M - gE_0}_{0} h e^{-ikh(t-d)} (\frac{1}{1 + ikh/\alpha})^2 dh
+	E_k(t) = A_k(0)e^{ik\pi} \int^{a_M - gE_0}_{0} h e^{-ikh(t-d)} (\frac{1}{1 - ikh/\alpha})^2 dh
 \end{align}
 نرم‌افزارهای محاسباتی همچون ابزار ولفرم به ما امکان می‌دهد تا پاسخ آن را به صورت زیر بیان کنیم:
 \begin{align}
-	E_k(t) =& \frac{\alpha^2}{k^2} \bigg[ e^{i(\xi_{(h)} - k(t-d)h)} \\
-	&+ (\alpha(t-d) + 1) Ei[1 -ih\alpha(t-d)] \, \bigg]	\Biggr|_{0}^{a_M -gE_0}
+	E_k(t) = -A_k(0)\frac{\alpha^2}{k^2} e^{ik\pi} &\bigg[ \frac{ e^{-i(\xi_{(h)} + k(t-d)h)} }{\sqrt{1 + h^2 k^2/\alpha^2}} \\
+	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1) Ei[(\alpha-ikh)(t-d)] \, \bigg]	\Biggr|_{0}^{a_M -gE_0}
 \end{align}
 به صورتی که 
-$e^{i\xi_{(h)}} = \frac{-1 + ibh}{b^2h^2 + 1}$
+$e^{-i\xi_{(h)}} = \frac{1 + ikh/\alpha}{\sqrt{1 + h^2 k^2/\alpha^2}}$
 است و 
 $Ei$
 همان تابع انتگرال نمایی است که به صورت 
 $Ei[z] = - \int^{+\infty}_{-z} e^{-t}/t dt$
 نوشته می‌شود.
 \begin{align}
-	E_k(t) =& \frac{\alpha^2}{k^2} \bigg[ e^{i(\xi_{(a_M -gE_0)} - k(t-d)(a_M -gE_0))} \\
-	&+ (\alpha(t-d) + 1) Ei[1 -i\alpha(a_M -gE_0)(t-d)] \\
-	&- (-1) e^{-ik(t-d)(a_M -gE_0)} \\
-	&- (\alpha(t-d) + 1) Ei[1] \bigg]\\
-	=& \frac{\alpha^2}{k^2} \bigg[ e^{-ik(t-d)(a_M -gE_0)} \bigg( e^{i(\xi_{(a_M -gE_0)})} + 1\bigg) \\
-	&+ (\alpha(t-d) + 1)\bigg( Ei[1 -i\alpha(a_M -gE_0)(t-d)] - Ei[1] \bigg) \bigg]
+	E_k(t) =& - A_k(0) \frac{\alpha^2}{k^2} e^{ik\pi} \bigg[ \frac{ e^{-i(\xi_{(a_M -gE_0)} + k(t-d)(a_M -gE_0))} }{\sqrt{1 + (a_M -gE_0)^2 k^2/\alpha^2}} \\
+	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1) Ei[(\alpha-ik(a_M -gE_0))(t-d)] \\
+	&- e^{-ik(t-d)(a_M -gE_0)} \\
+	&- e^{-\alpha(t-d)}(\alpha(t-d) + 1) Ei[\alpha(t-d)] \bigg]\\
+	=&- A_k(0) \frac{\alpha^2}{k^2} e^{ik\pi} \bigg[ e^{-ik(t-d)(a_M -gE_0)} \bigg( \frac{ e^{-i(\xi_{(a_M -gE_0)})} }{ \sqrt{1 + (a_M -gE_0)^2 k^2/\alpha^2} } + 1\bigg) \\
+	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1)\bigg( Ei[(\alpha-ik(a_M -gE_0))(t-d)] - Ei[\alpha(t-d)] \bigg) \bigg]
 \end{align}
 پس یک جمله‌ی نوسانی دارد و جمله‌ای که شامل تکینگی است.
 \newpage

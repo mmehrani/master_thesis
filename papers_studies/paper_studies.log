@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  28 FEB 2022 10:20
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  9 MAR 2022 12:38
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1360,7 +1360,12 @@ File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
 les/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
 10000_T100_I9.5_13.5/sigma_g_0.1_65.png>
- [17] [18] [19]
+ [17] [18]
+Overfull \hbox (29.47617pt too wide) detected at line 438
+[]
+ []
+
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 466--468
 [][]
  []
@@ -1386,7 +1391,30 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 (Font)              scaled to size 5.0pt on input line 502.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 502.
-[21] [22] [23] [24] [25] [26] [27] (paper_studies.bbl (paper_studies.brf)
+[21] [22] [23] [24]
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png Graphic
+ file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png>
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 621.
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_simple_g_0.1_130.png Graphic 
+file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5_v1.0/field_zeroth_order_simple_g_0.1_130.png>
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png Graph
+ic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png>
+ [25] [26] [27]
+Overfull \hbox (29.92184pt too wide) detected at line 734
+[]
+ []
+
+[28] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
@@ -1394,20 +1422,19 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-)
-[28] (paper_studies.aux)
+) [29] (paper_studies.aux)
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
 (rerunfilecheck)             Checksum: 6506E8A18A0E6B4FDCD1410E4CE07209;6865.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: B99A21565441E39F58B5CE8E78A393B7;234.
  ) 
 Here is how much of TeX's memory you used:
- 26939 strings out of 411254
- 533832 string characters out of 2832814
- 973092 words of memory out of 3000000
- 46853 multiletter control sequences out of 15000+600000
- 409375 words of font info for 119 fonts, out of 8000000 for 9000
+ 26988 strings out of 411254
+ 537708 string characters out of 2832814
+ 969092 words of memory out of 3000000
+ 46897 multiletter control sequences out of 15000+600000
+ 409383 words of font info for 120 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,18n,95p,1060b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,18n,95p,1060b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (28 pages).
+Output written on paper_studies.pdf (29 pages).
