@@ -36,6 +36,7 @@ with open("network_reference.py", "w") as net_ref:
 class Animated_network_of_neurons(Network_of_neurons):
     def __init__(self,num_neurons,g,alpha = 20):
         super().__init__(num_neurons,g,alpha = 20)
+        self.potentail_arr = np.random.uniform(0,np.pi, size = num_neurons)
         
         if neuron_model == current_models[0]:
             self.random_input_span = (1.2,2.8)
@@ -73,7 +74,10 @@ class Animated_network_of_neurons(Network_of_neurons):
         
         self.m_arr = np.zeros(total_steps)
         self.e_arr = np.zeros(total_steps)
-        self.random_input = np.random.uniform(*self.random_input_span,size = self.num_neurons)
+        # self.random_input = np.random.uniform(*self.random_input_span,size = self.num_neurons)
+        
+        self.random_input = np.linspace(self.random_input_span[0], self.random_input_span[1], num=100)
+        self.random_input = np.repeat(self.random_input, repeats = int( self.num_neurons / len(self.random_input)) )
         
         self.amin_saman_param = np.zeros( total_steps )
         self.spiking_records = np.zeros(total_steps)
@@ -108,7 +112,7 @@ warp_num = 100 #vertical axis
 weft_num = 100 #horizental axix
 
 
-column_indices = np.floor( (sample_network.random_input - sample_network.random_input_span[0])/(sample_network.random_input_span[1] - sample_network.random_input_span[0]) * (weft_num) ).astype('int')
+column_indices = np.floor( (sample_network.random_input - sample_network.random_input_span[0])/(sample_network.random_input_span[1] - sample_network.random_input_span[0]) * (weft_num-1) ).astype('int')
 argsort_inputs = np.argsort(column_indices)
 
 grating_blocks_length = ( sample_network.ceiling_state - sample_network.floor_state )/warp_num
@@ -119,10 +123,10 @@ global color_marks
 color_marks = np.ones(num_neurons) * color_num
 
 def init():
-    phase_marks = np.floor( (sample_network.potentail_arr - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
+    phase_marks = np.floor( (sample_network.potentail_arr - sample_network.floor_state) / grating_blocks_length ).astype('int') #sorted neurons
     for neuron_index in range(num_neurons):
-        if int(phase_marks[neuron_index]) >= 0:
-            plateau[int(phase_marks[neuron_index]),column_indices[neuron_index]] = color_num
+        if phase_marks[neuron_index] >= 0:
+            plateau[phase_marks[neuron_index],column_indices[neuron_index]] = color_num
     colored_plateau.set_data(plateau)
     
     e_pulse.set_ydata(time_series*0)
@@ -202,7 +206,7 @@ e_pulse, = ax_e.plot(time_series,time_series*0)
 
 ax_stat.set_xlabel('population')
 pop_dist, = ax_stat.plot( np.sum(plateau>0,axis = 1), np.linspace(sample_network.floor_state,sample_network.ceiling_state,num = warp_num) )
-ax_stat.set_xlim([0,3*num_neurons/warp_num])
+ax_stat.set_xlim([0,num_neurons/warp_num])
 
 fig.tight_layout()
 
