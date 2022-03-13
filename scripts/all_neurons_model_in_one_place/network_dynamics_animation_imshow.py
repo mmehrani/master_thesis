@@ -19,6 +19,7 @@ from matplotlib.animation import FuncAnimation
 from IPython.display import HTML
 from tqdm import tqdm
 
+from scipy.stats import rankdata
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
 neuron_model = current_models[2]
@@ -101,24 +102,27 @@ for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
     sample_network._march_on(i)
 
 
-current_sort_args = np.argsort(sample_network.random_input)
-
 extent = [1 , num_neurons, sample_network.ceiling_state , sample_network.floor_state] #imshow axises are updside down
 
-grating_num = 100
-grating_blocks_length = ( sample_network.ceiling_state - sample_network.floor_state )/grating_num
+warp_num = 100 #vertical axis
+weft_num = 1000 #horizental axix
 
-plateau = np.zeros((grating_num, num_neurons))
+# column_indices = np.argsort(sample_network.random_input)
+column_indices = np.floor( (sample_network.random_input - sample_network.random_input_span[0])/(sample_network.random_input_span[1] - sample_network.random_input_span[0]) * (weft_num-1) ).astype('int')
+
+
+grating_blocks_length = ( sample_network.ceiling_state - sample_network.floor_state )/warp_num
+plateau = np.zeros((warp_num, weft_num))
 
 color_num = 5
 global color_marks
 color_marks = np.ones(num_neurons) * color_num
 
 def init():
-    phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
+    phase_marks = np.floor( (sample_network.potentail_arr - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
     for neuron_index in range(num_neurons):
         if int(phase_marks[neuron_index]) >= 0:
-            plateau[int(phase_marks[neuron_index]),neuron_index] = color_num
+            plateau[int(phase_marks[neuron_index]),column_indices[neuron_index]] = color_num
     colored_plateau.set_data(plateau)
     
     e_pulse.set_ydata(time_series*0)
@@ -129,8 +133,10 @@ def update(frame):
     
     was_network_active = np.sum(sample_network.spike_mask) > 0
     
+    plateau[:]=plateau[:]*0
+    
     sample_network._march_on(frame-1)
-    phase_marks = np.floor( (sample_network.potentail_arr[current_sort_args] - sample_network.floor_state) / grating_blocks_length ) #sorted neurons
+    phase_marks = np.floor( (sample_network.potentail_arr - sample_network.floor_state) / grating_blocks_length ).astype('int') #sorted neurons
     
     # Change the spiking group color if they stopped spiking
     if np.sum(sample_network.spike_mask) == 0 and was_network_active:
@@ -140,22 +146,24 @@ def update(frame):
 
     # Update neuron phase marks and color
     for neuron_index in range(num_neurons):
-        plateau[:,neuron_index] = plateau[:,neuron_index]*0
+        neuron_column = column_indices[neuron_index]
+        neuron_mark = phase_marks[neuron_index]
+        # plateau[:,neuron_column] = plateau[:,neuron_column]*0
         
         #Spiking ones
-        if sample_network.spike_mask[current_sort_args[neuron_index]] == True:
-            color_marks[neuron_index] = color_num
+        # if sample_network.spike_mask[column_indices[neuron_index]] == True:
+        #     color_marks[neuron_index] = color_num
             
         #coloring
-        if int(phase_marks[neuron_index]) >= 0 and int(phase_marks[neuron_index]) <= grating_num:
-            plateau[int(phase_marks[neuron_index]),neuron_index] = color_marks[neuron_index]
+        if neuron_mark >= 0 and neuron_mark <= warp_num:
+            plateau[neuron_mark,neuron_column] = color_marks[neuron_index]
         
     
     colored_plateau.set_data(plateau)
     # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
     pop_dist.set_xdata( np.sum(plateau>0,axis = 1) )
     e_pulse.set_ydata(sample_network.e_arr[frame-80:frame])
-    wind_direction.set_ydata(sample_network.driving_wind[current_sort_args])
+    wind_direction.set_ydata(sample_network.driving_wind[column_indices])
     return plateau
 
 
@@ -184,7 +192,7 @@ ax_e.set_xlabel('t')
 
 ax_theta_dot.set_ylabel(sample_network.wind_name)
 ax_theta_dot.set_xlabel('neuron number')
-wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[current_sort_args])
+wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[column_indices])
 ax_theta_dot.set_ylim(sample_network.wind_amplitude)
 
 ax_e.set_xlim([0,1])
@@ -193,8 +201,8 @@ time_series = np.arange(0,0.8,sample_network.time_step)
 e_pulse, = ax_e.plot(time_series,time_series*0)
 
 ax_stat.set_xlabel('population')
-pop_dist, = ax_stat.plot( np.sum(plateau>0,axis = 1), np.linspace(sample_network.floor_state,sample_network.ceiling_state,num = grating_num) )
-ax_stat.set_xlim([0,3*num_neurons/grating_num])
+pop_dist, = ax_stat.plot( np.sum(plateau>0,axis = 1), np.linspace(sample_network.floor_state,sample_network.ceiling_state,num = warp_num) )
+ax_stat.set_xlim([0,3*num_neurons/warp_num])
 
 fig.tight_layout()
 
