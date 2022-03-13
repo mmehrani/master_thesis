@@ -90,8 +90,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 num_neurons = 10000
 total_time = 60
 start_time_to_sample = 50
-# g = 20
-g = 0
+g = 20
+# g = 0
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
 
@@ -105,11 +105,11 @@ for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
 extent = [1 , num_neurons, sample_network.ceiling_state , sample_network.floor_state] #imshow axises are updside down
 
 warp_num = 100 #vertical axis
-weft_num = 1000 #horizental axix
+weft_num = 100 #horizental axix
 
-# column_indices = np.argsort(sample_network.random_input)
-column_indices = np.floor( (sample_network.random_input - sample_network.random_input_span[0])/(sample_network.random_input_span[1] - sample_network.random_input_span[0]) * (weft_num-1) ).astype('int')
 
+column_indices = np.floor( (sample_network.random_input - sample_network.random_input_span[0])/(sample_network.random_input_span[1] - sample_network.random_input_span[0]) * (weft_num) ).astype('int')
+argsort_inputs = np.argsort(column_indices)
 
 grating_blocks_length = ( sample_network.ceiling_state - sample_network.floor_state )/warp_num
 plateau = np.zeros((warp_num, weft_num))
@@ -151,8 +151,8 @@ def update(frame):
         # plateau[:,neuron_column] = plateau[:,neuron_column]*0
         
         #Spiking ones
-        # if sample_network.spike_mask[column_indices[neuron_index]] == True:
-        #     color_marks[neuron_index] = color_num
+        if sample_network.spike_mask[neuron_index] == True:
+            color_marks[neuron_index] = color_num
             
         #coloring
         if neuron_mark >= 0 and neuron_mark <= warp_num:
@@ -163,7 +163,7 @@ def update(frame):
     # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
     pop_dist.set_xdata( np.sum(plateau>0,axis = 1) )
     e_pulse.set_ydata(sample_network.e_arr[frame-80:frame])
-    wind_direction.set_ydata(sample_network.driving_wind[column_indices])
+    wind_direction.set_ydata(sample_network.driving_wind[argsort_inputs])
     return plateau
 
 
@@ -192,7 +192,7 @@ ax_e.set_xlabel('t')
 
 ax_theta_dot.set_ylabel(sample_network.wind_name)
 ax_theta_dot.set_xlabel('neuron number')
-wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[column_indices])
+wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[argsort_inputs])
 ax_theta_dot.set_ylim(sample_network.wind_amplitude)
 
 ax_e.set_xlim([0,1])
