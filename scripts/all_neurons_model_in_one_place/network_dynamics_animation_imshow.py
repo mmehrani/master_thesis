@@ -36,8 +36,8 @@ with open("network_reference.py", "w") as net_ref:
 class Animated_network_of_neurons(Network_of_neurons):
     def __init__(self,num_neurons,g,alpha = 20):
         super().__init__(num_neurons,g,alpha = 20)
-        self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
-        # self.potentail_arr = np.linspace(-np.pi,np.pi, num = num_neurons)
+        # self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
+        self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = 100), reps = 100 )
         if neuron_model == current_models[0]:
             self.random_input_span = (1.2,2.8)
             
@@ -107,8 +107,6 @@ sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time = 0.1)
 # for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
 #     sample_network._march_on(i)
 
-for i in range( int( start_time_to_sample / sample_network.time_step ) ):
-    sample_network._march_on(i)
 extent = [1 , num_neurons, sample_network.ceiling_state , sample_network.floor_state] #imshow axises are updside down
 
 warp_num = 100 #vertical axis
@@ -184,8 +182,8 @@ def update(frame):
         # plateau[:,neuron_column] = plateau[:,neuron_column]*0
         
         #Spiking ones
-        if sample_network.spike_mask[neuron_index] == True:
-            color_marks[neuron_index] = color_num
+        # if sample_network.spike_mask[neuron_index] == True:
+        #     color_marks[neuron_index] = color_num
             
         #coloring
         if neuron_mark >= 0 and neuron_mark <= warp_num:
