@@ -24,6 +24,8 @@ class Network_of_neurons(network_engine_class):
         self.g = g
         self.alpha = alpha
         self.potentail_arr = np.zeros(self.num_neurons,dtype = float)
+        self.driving_wind = np.zeros(self.num_neurons,dtype = float)
+        self.spike_mask = np.zeros(self.num_neurons,dtype = bool)
         return
     
     def _retarded_spikes_record(self,step):

@@ -36,8 +36,8 @@ with open("network_reference.py", "w") as net_ref:
 class Animated_network_of_neurons(Network_of_neurons):
     def __init__(self,num_neurons,g,alpha = 20):
         super().__init__(num_neurons,g,alpha = 20)
-        self.potentail_arr = np.random.uniform(0,np.pi, size = num_neurons)
-        
+        self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
+        # self.potentail_arr = np.linspace(-np.pi,np.pi, num = num_neurons)
         if neuron_model == current_models[0]:
             self.random_input_span = (1.2,2.8)
             
@@ -58,6 +58,8 @@ class Animated_network_of_neurons(Network_of_neurons):
             
             self.wind_name = r'$\dot\theta$'
             self.wind_amplitude = [-13,13]
+        
+        
             
     def brace_for_lunch(self,total_time,time_step = 0.01,delay_time = 0.1):
         
@@ -93,8 +95,8 @@ class Animated_network_of_neurons(Network_of_neurons):
     
 num_neurons = 10000
 total_time = 60
-start_time_to_sample = 50
-g = 20
+start_time_to_sample = 0
+g = 10
 # g = 0
 
 sample_network = Animated_network_of_neurons(num_neurons, g = g)
@@ -102,10 +104,11 @@ sample_network = Animated_network_of_neurons(num_neurons, g = g)
 sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time = 0.1)
 
 
-for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
+# for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
+#     sample_network._march_on(i)
+
+for i in range( int( start_time_to_sample / sample_network.time_step ) ):
     sample_network._march_on(i)
-
-
 extent = [1 , num_neurons, sample_network.ceiling_state , sample_network.floor_state] #imshow axises are updside down
 
 warp_num = 100 #vertical axis
@@ -123,13 +126,40 @@ global color_marks
 color_marks = np.ones(num_neurons) * color_num
 
 def init():
-    phase_marks = np.floor( (sample_network.potentail_arr - sample_network.floor_state) / grating_blocks_length ).astype('int') #sorted neurons
-    for neuron_index in range(num_neurons):
-        if phase_marks[neuron_index] >= 0:
-            plateau[phase_marks[neuron_index],column_indices[neuron_index]] = color_num
-    colored_plateau.set_data(plateau)
     
-    e_pulse.set_ydata(time_series*0)
+    global colored_plateau, pop_dist, e_pulse, wind_direction
+    
+    ax = fig.add_subplot(gs[0,0])
+    ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
+    ax_e = fig.add_subplot(gs[2, 0])
+    ax_theta_dot = fig.add_subplot(gs[1, 0], sharex = ax)
+    
+    
+    ax.set_yticks([sample_network.floor_state, - np.pi, 0, sample_network.ceiling_state])
+    ax.set_yticklabels(sample_network.important_states_namestrings)
+    ax.set_title('Network dynamic N={} g={}'.format(num_neurons,g))
+    # colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
+    colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'hot')
+    ax.invert_yaxis()
+    
+    ax_e.set_ylabel('E')
+    ax_e.set_xlabel('t')
+    
+    ax_theta_dot.set_ylabel(sample_network.wind_name)
+    ax_theta_dot.set_xlabel('neuron number')
+    wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[argsort_inputs])
+    # wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), np.zeros(num_neurons))
+    ax_theta_dot.set_ylim(sample_network.wind_amplitude)
+    
+    ax_e.set_xlim([0,1])
+    ax_e.set_ylim([-0.5,2.5])
+    time_series = np.arange(0,0.8,sample_network.time_step)
+    e_pulse, = ax_e.plot(time_series,time_series*0)
+    
+    ax_stat.set_xlabel('population')
+    pop_dist, = ax_stat.plot( np.sum(plateau>0,axis = 1), np.linspace(sample_network.floor_state,sample_network.ceiling_state,num = warp_num) )
+    ax_stat.set_xlim([0,num_neurons/warp_num])
+
     return
 
 
@@ -138,8 +168,7 @@ def update(frame):
     was_network_active = np.sum(sample_network.spike_mask) > 0
     
     plateau[:]=plateau[:]*0
-    
-    sample_network._march_on(frame-1)
+    sample_network._march_on(frame)
     phase_marks = np.floor( (sample_network.potentail_arr - sample_network.floor_state) / grating_blocks_length ).astype('int') #sorted neurons
     
     # Change the spiking group color if they stopped spiking
@@ -166,7 +195,7 @@ def update(frame):
     colored_plateau.set_data(plateau)
     # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(plateau>0,axis = 1)) ).T )
     pop_dist.set_xdata( np.sum(plateau>0,axis = 1) )
-    e_pulse.set_ydata(sample_network.e_arr[frame-80:frame])
+    e_pulse.set_ydata( np.roll( sample_network.e_arr, shift= 80 - frame )[0:80] ) #takes care of initial steps
     wind_direction.set_ydata(sample_network.driving_wind[argsort_inputs])
     return plateau
 
@@ -178,41 +207,11 @@ fig = plt.figure()
 plt.rc('font', family='serif')
 plt.style.use('dark_background')
 
-ax = fig.add_subplot(gs[0,0])
-ax_stat = fig.add_subplot(gs[0,1], sharey = ax)
-ax_e = fig.add_subplot(gs[2, 0])
-ax_theta_dot = fig.add_subplot(gs[1, 0], sharex = ax)
 
+# fig.tight_layout()
 
-ax.set_yticks([sample_network.floor_state, - np.pi, 0, sample_network.ceiling_state])
-ax.set_yticklabels(sample_network.important_states_namestrings)
-ax.set_title('Network dynamic N={} g={}'.format(num_neurons,g))
-# colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'tab20b')
-colored_plateau = ax.imshow( plateau, aspect= 'auto', extent = extent , vmin = 0, vmax = 10, cmap = 'hot')
-ax.invert_yaxis()
-
-ax_e.set_ylabel('E')
-ax_e.set_xlabel('t')
-
-ax_theta_dot.set_ylabel(sample_network.wind_name)
-ax_theta_dot.set_xlabel('neuron number')
-wind_direction, = ax_theta_dot.plot(range(1,num_neurons+1), sample_network.driving_wind[argsort_inputs])
-ax_theta_dot.set_ylim(sample_network.wind_amplitude)
-
-ax_e.set_xlim([0,1])
-ax_e.set_ylim([-0.5,2.5])
-time_series = np.arange(0,0.8,sample_network.time_step)
-e_pulse, = ax_e.plot(time_series,time_series*0)
-
-ax_stat.set_xlabel('population')
-pop_dist, = ax_stat.plot( np.sum(plateau>0,axis = 1), np.linspace(sample_network.floor_state,sample_network.ceiling_state,num = warp_num) )
-ax_stat.set_xlim([0,num_neurons/warp_num])
-
-fig.tight_layout()
-
-frames_range = range( int(start_time_to_sample/sample_network.time_step), sample_network.total_steps)
+frames_range = range( int(start_time_to_sample/sample_network.time_step) + 1, sample_network.total_steps)
 ani = FuncAnimation(fig, update,init_func = init, frames= frames_range, interval = 50)
-
 
 version_name = 'well_in_negatives'
 path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.html".format(
