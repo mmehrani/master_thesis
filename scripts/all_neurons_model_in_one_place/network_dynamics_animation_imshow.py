@@ -8,12 +8,7 @@ Created on Mon Jun  7 09:14:03 2021
 
 import os
 from network_reference import Animated_network_of_neurons
-import numpy as np
-
-from matplotlib import animation, rc
-import matplotlib.pyplot as plt
-
-from IPython.display import HTML
+from tqdm import tqdm
 
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
@@ -33,7 +28,7 @@ with open("network_reference.py", "w") as net_ref:
 num_neurons = 10000
 total_time = 60
 start_time_to_sample = 0
-g = 10
+g = 1
 # g = 0
 
 sample_network = Animated_network_of_neurons('Non_repulsive_rotational',num_neurons, g = g)
