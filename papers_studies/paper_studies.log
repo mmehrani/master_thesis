@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  31 MAR 2022 10:28
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  5 APR 2022 01:34
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1192,13 +1192,13 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 (Font)              scaled to size 8.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 (Font)              scaled to size 6.0pt on input line 4.
- [1
-
-])
+)
 \tf@toc=\write5
 \openout5 = `paper_studies.toc'.
 
- [2]
+ [1
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 [][]
  []
@@ -1209,45 +1209,46 @@ Overfull \hbox (0.5918pt too wide) in paragraph at lines 48--50
 ‌ها در زمان و نتایج ضبط شده از نشانگرهایی[]
  []
 
+(chapters/integrate_and_fire_synchronization.tex
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 59.
+             The label is: - on input line 9.
 
-[3]
+[2]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 77.
+(Font)              scaled to size 14.4pt on input line 27.
 Missing character: There is no ـ in font cmmi8!
 Missing character: There is no ـ in font cmmi8!
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 [][]
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 [][]
  []
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 117.
+             The label is: * on input line 67.
 
 File: ../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T100
 0_g5_input_1.2_2.8/raster_plot.png Graphic file (type bmp)
 <../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T1000_g5_
 input_1.2_2.8/raster_plot.png>
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 135.
+(Font)              scaled to size 10.95pt on input line 85.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 135.
+(Font)              scaled to size 10.95pt on input line 85.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <10.95> not avai
 lable
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 135.
+ne 85.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 135.
+(Font)              scaled to size 10.95pt on input line 85.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 135.
+(Font)              scaled to size 10.95pt on input line 85.
 File: ../papers_studies/figs/IF/sigma.png Graphic file (type bmp)
 <../papers_studies/figs/IF/sigma.png>
 File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
@@ -1261,153 +1262,72 @@ File: ../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png Gr
 aphic file (type bmp)
 <../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png>
 File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
-2.8_cluster_computed/sigma_phase_space.png Graphic file (type bmp)
+2.8_cluster_computed/sigma_phase_space_contour.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
-luster_computed/sigma_phase_space.png>
+luster_computed/sigma_phase_space_contour.png>
 
-Underfull \hbox (badness 3417) in paragraph at lines 170--170
+Underfull \hbox (badness 3417) in paragraph at lines 120--120
 [][]\TU/XBNiloofar(0)/m/n/10.95 (و) |صفحه‌ی فاز مربوط به سامانه‌ی نورون‌های[]
  []
 
 
-Overfull \hbox (1.95313pt too wide) in paragraph at lines 132--173
+Overfull \hbox (1.95313pt too wide) in paragraph at lines 82--123
 [][][]  [][]
  []
 
 
-Overfull \hbox (1.95313pt too wide) in paragraph at lines 132--173
+Overfull \hbox (1.95313pt too wide) in paragraph at lines 82--123
 [][]  [][]
  []
 
 
-Overfull \hbox (1.95313pt too wide) in paragraph at lines 132--173
+Overfull \hbox (1.95313pt too wide) in paragraph at lines 82--123
 [][]  [] []
  []
 
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 [][]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-[][]
- []
-
-[8]
-Missing character: There is no ـ in font cmmi8!
-
-
-LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 211.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-[][]
+) [7] [8]
+Overfull \hbox (29.47617pt too wide) detected at line 119
+[]
  []
 
 [9]
 
-LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 241.
-
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-0_I9.5_13.5_cluster_computed/sigma_g_0.1_65.png Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
-5_13.5_cluster_computed/sigma_g_0.1_65.png>
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-0_I9.5_13.5_cluster_computed/amin_saman_param_g_0.1_65.png Graphic file (type b
-mp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
-5_13.5_cluster_computed/amin_saman_param_g_0.1_65.png>
-[10] [11]
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-0_I9.5_13.5_cluster_computed/mean_spiking_persiods_g_0.1_65.png Graphic file (t
-ype bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
-5_13.5_cluster_computed/mean_spiking_persiods_g_0.1_65.png>
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-0_I9.5_13.5_cluster_computed/mean_spiking_persiods_with_trending_line_g_0.1_65.
-png Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
-5_13.5_cluster_computed/mean_spiking_persiods_with_trending_line_g_0.1_65.png>
+LaTeX Warning: Reference `fig:sigma_rotational' on page 10 undefined on input l
+ine 147.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png 
-Graphic file (type bmp)
-<figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
-[][]
- []
-
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-0_I9.5_13.5_cluster_computed/sigma_phase_space.png Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
-5_13.5_cluster_computed/sigma_phase_space.png>
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 332--333
- [][][][][][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13]
-Missing character: There is no ـ in font cmmi8!
-
-
-LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 349.
-
-[14]
-
-LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 364.
-
-[15]
-File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
-les/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
-10000_T100_I9.5_13.5/sigma_g_0.1_65.png>
- [16] [17]
-Overfull \hbox (29.47617pt too wide) detected at line 446
-[]
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 474--476
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 [][]
  []
 
-[19]
+[10]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 508.
+(Font)              scaled to size 8.0pt on input line 181.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 510.
+(Font)              scaled to size 10.0pt on input line 183.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 510.
+(Font)              scaled to size 5.0pt on input line 183.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <5> not availabl
 e
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 510.
+ne 183.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 5.0pt on input line 510.
+(Font)              scaled to size 5.0pt on input line 183.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 5.0pt on input line 510.
+(Font)              scaled to size 5.0pt on input line 183.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 510.
- [20] [21] [22]
+(Font)              scaled to size 7.0pt on input line 183.
+ [11] [12] [13]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
 les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png Graphic
  file (type bmp)
@@ -1423,12 +1343,12 @@ les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png Graph
 ic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
 10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png>
- [23] [24] [25]
-Overfull \hbox (29.92184pt too wide) detected at line 742
+ [14] [15] [16]
+Overfull \hbox (29.92184pt too wide) detected at line 415
 []
  []
 
-[26] [27] (paper_studies.bbl (paper_studies.brf)
+[17] [18] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
@@ -1436,19 +1356,22 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [28] (paper_studies.aux)
+) [19] (paper_studies.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: 6506E8A18A0E6B4FDCD1410E4CE07209;6865.
+(rerunfilecheck)             Checksum: BBD009FF925559BE9AB8D0F9113B3908;4127.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
-(rerunfilecheck)             Checksum: 6B29F5A627E8C8E26E8D3F2D532826F2;233.
+(rerunfilecheck)             Checksum: 1B29C1BD923CA3FB2D3DC3E25855490B;108.
  ) 
 Here is how much of TeX's memory you used:
- 27005 strings out of 411254
- 538245 string characters out of 2832814
- 973092 words of memory out of 3000000
- 46911 multiletter control sequences out of 15000+600000
+ 26938 strings out of 411254
+ 531608 string characters out of 2832814
+ 973091 words of memory out of 3000000
+ 46848 multiletter control sequences out of 15000+600000
  410547 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,18n,95p,1060b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (28 pages).
+Output written on paper_studies.pdf (19 pages).

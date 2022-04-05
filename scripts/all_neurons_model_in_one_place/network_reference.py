@@ -8,11 +8,13 @@ Created on Sun Apr 11 17:02:33 2021
 """
 
 import numpy as np
-from tqdm import tqdm
+
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from matplotlib import gridspec
 
+from tqdm.notebook import tqdm as tqdm
+tqdm().pandas() #This line make sure that the progress bars looks natural
 
 from neurons_engines import Rotational_neural_network, Kuramoto_neural_network, Non_repulsive_rotational_neural_network
 
@@ -165,7 +167,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.weft_num = 100 #horizental axix
         
         self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = int(num_neurons/self.weft_num) ), reps = self.weft_num )
-        if neuron_model == current_models[0]:
+        if neuron_engine == current_models[0]:
             self.random_input_span = (1.2,2.8)
             
             self.ceiling_state = 1
@@ -176,7 +178,7 @@ class Animated_network_of_neurons(Network_of_neurons):
             self.wind_name = r'$\dot v$'
             self.wind_amplitude = [-1,1]
         
-        elif neuron_model in current_models[1:3]:
+        elif neuron_engine in current_models[1:3]:
             self.random_input_span = (9.5,13.5)
             self.ceiling_state = np.pi
             self.floor_state = - 5*np.pi/2 #used for animations frame
