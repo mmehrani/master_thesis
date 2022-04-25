@@ -190,7 +190,7 @@ class Animated_network_of_neurons(Network_of_neurons):
             self.wind_name = r'$\dot\theta$'
             self.wind_amplitude = [-13,13]
         
-        self.ax_xlim = kwargs.get('xlim',[1,self.weft_num])
+        self.ax_xlim = kwargs.get('xlim',[self.random_input_span[0],self.random_input_span[1]])
         self.ax_ylim = kwargs.get('ylim',[self.floor_state, self.ceiling_state])        
             
     def brace_for_lunch(self,total_time,time_step = 0.01,delay_time = 0.1):
@@ -238,9 +238,9 @@ class Animated_network_of_neurons(Network_of_neurons):
         colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'hot')
         # colored_plateau = ax.imshow( self.plateau, aspect= 'auto',  vmin = 0, vmax = 10, cmap = 'hot')
 
-        # ax.set_xlim(self.ax_xlim)
-        # ax.set_ylim(self.ax_ylim)
-        ax.invert_yaxis()
+        ax.set_xlim(self.ax_xlim)
+        ax.set_ylim(self.ax_ylim)
+        # ax.invert_yaxis()
         
         ax_e.set_ylabel('E')
         ax_e.set_xlabel('t')

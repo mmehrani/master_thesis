@@ -34,10 +34,11 @@ g = 10
 sample_network = Animated_network_of_neurons('Non_repulsive_rotational',
                                               num_neurons, g = g,random_input_span = (9.5,13.5))
 # sample_network = Animated_network_of_neurons('Non_repulsive_rotational',
-#                                              num_neurons, g = g,random_input_span = (9.5,13.5),
-#                                              xlim = [0,100],ylim = [np.pi-1,np.pi])
-sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time = 0.1)
+#                                               num_neurons, g = g,random_input_span = (9.5,13.5),
+#                                               xlim = [9,10],ylim = [np.pi-1,np.pi])
 
+
+sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time = 0.1)
 
 for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
     sample_network._march_on(i)
