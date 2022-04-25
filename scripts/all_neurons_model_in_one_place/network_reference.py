@@ -190,7 +190,7 @@ class Animated_network_of_neurons(Network_of_neurons):
             self.wind_name = r'$\dot\theta$'
             self.wind_amplitude = [-13,13]
         
-        self.ax_xlim = kwargs.get('xlim',[1,self.num_neurons])
+        self.ax_xlim = kwargs.get('xlim',[1,self.weft_num])
         self.ax_ylim = kwargs.get('ylim',[self.floor_state, self.ceiling_state])        
             
     def brace_for_lunch(self,total_time,time_step = 0.01,delay_time = 0.1):
@@ -227,27 +227,27 @@ class Animated_network_of_neurons(Network_of_neurons):
         ax = self.fig.add_subplot(self.gs[0,0])
         ax_stat = self.fig.add_subplot(self.gs[0,1], sharey = ax)
         ax_e = self.fig.add_subplot(self.gs[2, 0])
-        ax_theta_dot = self.fig.add_subplot(self.gs[1, 0], sharex = ax)
+        ax_theta_dot = self.fig.add_subplot(self.gs[1, 0])
         
         
         ax.set_yticks([self.floor_state, - np.pi, 0, self.ceiling_state])
         ax.set_yticklabels(self.important_states_namestrings)
         ax.set_title('Network dynamic N={} g={}'.format(self.num_neurons,self.g))
-        # colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'tab20b')
+        self._compute_suitable_extents()
+        
         colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'hot')
+        # colored_plateau = ax.imshow( self.plateau, aspect= 'auto',  vmin = 0, vmax = 10, cmap = 'hot')
 
-        ax.set_xlim(self.ax_xlim)
-        ax.set_ylim(self.ax_ylim)
-        # ax.invert_yaxis()
-        
-        
+        # ax.set_xlim(self.ax_xlim)
+        # ax.set_ylim(self.ax_ylim)
+        ax.invert_yaxis()
         
         ax_e.set_ylabel('E')
         ax_e.set_xlabel('t')
         
         ax_theta_dot.set_ylabel(self.wind_name)
-        ax_theta_dot.set_xlabel('neuron number')
-        wind_direction, = ax_theta_dot.plot(range(1,self.num_neurons+1), self.driving_wind[self.argsort_inputs])
+        ax_theta_dot.set_xlabel('neuron inputs')
+        wind_direction, = ax_theta_dot.plot(self.random_input[self.argsort_inputs], self.driving_wind[self.argsort_inputs],'ro',markersize=1)
         # wind_direction, = ax_theta_dot.plot(range(1,self.num_neurons+1), np.zeros(self.num_neurons))
         ax_theta_dot.set_ylim(self.wind_amplitude)
         
@@ -280,7 +280,6 @@ class Animated_network_of_neurons(Network_of_neurons):
         for neuron_index in range(self.num_neurons):
             neuron_column = self.column_indices[neuron_index]
             neuron_mark = phase_marks[neuron_index]
-            # self.plateau[:,neuron_column] = self.plateau[:,neuron_column]*0
             
             #Spiking ones
             if self.spike_mask[neuron_index] == True:
@@ -292,7 +291,6 @@ class Animated_network_of_neurons(Network_of_neurons):
             
         
         colored_plateau.set_data(self.plateau)
-        # colored_pop_dist.set_data( np.log10( np.atleast_2d(np.sum(self.plateau>0,axis = 1)) ).T )
         pop_dist.set_xdata( np.sum(self.plateau>0,axis = 1) )
         e_pulse.set_ydata( np.roll( self.e_arr, shift= 80 - frame )[0:80] ) #takes care of initial steps
         wind_direction.set_ydata(self.driving_wind[self.argsort_inputs])
@@ -305,13 +303,18 @@ class Animated_network_of_neurons(Network_of_neurons):
             indices = np.repeat( np.arange(self.num_neurons / self.weft_num, dtype = int), repeats= self.weft_num)
         return indices
     
+    def _compute_suitable_extents(self):
+        if self.random_input_span[1] != self.random_input_span[0]:
+            self.extent = [self.random_input_span[0] , self.random_input_span[1], self.ceiling_state , self.floor_state] #imshow axises are updside down    
+        elif self.random_input_span[1] == self.random_input_span[0]:
+            self.extent = [1 , self.weft_num, self.ceiling_state , self.floor_state] #imshow axises are updside down    
+        return
+    
     def render_animation(self, start_time, path = None):
         self.fig = plt.figure()
         plt.rc('font', family='serif')
         plt.style.use('dark_background')
 
-        self.extent = [1 , self.num_neurons, self.ceiling_state , self.floor_state] #imshow axises are updside down
-        
         self.column_indices = self._compute_column_indices()
         
         self.argsort_inputs = np.argsort(self.column_indices)
