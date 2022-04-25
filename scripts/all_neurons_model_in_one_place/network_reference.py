@@ -305,7 +305,7 @@ class Animated_network_of_neurons(Network_of_neurons):
             indices = np.repeat( np.arange(self.num_neurons / self.weft_num, dtype = int), repeats= self.weft_num)
         return indices
     
-    def render_animation(self, path = None):
+    def render_animation(self, start_time, path = None):
         self.fig = plt.figure()
         plt.rc('font', family='serif')
         plt.style.use('dark_background')
@@ -327,7 +327,7 @@ class Animated_network_of_neurons(Network_of_neurons):
 
         # self.fig.tight_layout()
 
-        frames_range = range( int(0/self.time_step) + 1, self.total_steps)
+        frames_range = range( int(start_time/self.time_step), self.total_steps)
         ani = FuncAnimation(self.fig, self.update,init_func = self.init, frames= frames_range, interval = 50)
         
         if path != None: ani.save(path, writer='imagemagick')

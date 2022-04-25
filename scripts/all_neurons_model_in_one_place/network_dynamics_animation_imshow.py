@@ -27,7 +27,7 @@ with open("network_reference.py", "w") as net_ref:
     
 num_neurons = 10000
 total_time = 120
-start_time_to_sample = 100
+start_time_to_sample = 0
 g = 0
 # g = 0
 
@@ -43,7 +43,7 @@ for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
     sample_network._march_on(i)
 
 
-sample_network.render_animation()
+sample_network.render_animation(start_time_to_sample)
 # version_name = 'well_in_negatives'
 # path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.html".format(
 #     num_neurons,g,sample_network.random_input_span[0],sample_network.random_input_span[1]))
