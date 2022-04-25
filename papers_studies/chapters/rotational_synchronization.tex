@@ -1,4 +1,4 @@
-\section{شبکه‌ی نورون‌های چرخنده}
+\فصل{شبکه‌ی نورون‌های چرخنده}
 در این مدل به جای آن که برای شبکه خود از مدل انباشت-شلیک استفاده کنیم از مدل چرخنده استفاده می‌کنیم. در این مدل نورون‌های ما مانند دونده‌هایی به دور میدان مثلثاتی می‌دوند. ما نقطه‌ی فاز $\pi$ را به عنوان علامت برای این دونده‌ها قرار دادیم. هر زمان که دونده‌ای از علامت خود گذشت یک تیزه برای او درنظرمی‌گیریم و بلافاصله او را به فاز $-\pi$ باز می‌گردانیم.\\
 
 برای توصیف فاز هر نورون از معادلات زیر استفاده می‌کنیم:
@@ -61,18 +61,43 @@
 \subsubsection{در جستجوی تغییرفاز}
 پس از رصد کردن تغییرات رفتار سیستم بر حسب قدرت مهار نورون‌ها، تغییر فاز مانند مدل قبلی مشاهده شد اما مکان تغییر فاز تغییر کرد و حول $g=30$ قرارگرفت. این تغییر فاز در دو شکل \ref{fig:sigma_rotational} و \ref{fig:amin_saman_rotational}  قابل مشاهده‌است.
 \begin{figure}
+	\begin{subfigure}[b]{0.5\textwidth}
 	\centering
-	\includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/sigma_g_0.1_65.png}
+	\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_v1.0/sigma_g_0_130.png}
 	\caption{پهنای جریان یک سامانه چرخنده با ده هزار نورون}
 	\label{fig:sigma_rotational}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_v1.0/amin_saman_param_g_0.1_65.png}
+		\caption{پارامتر نظم تعریف شده در رابطه \ref{eq:saman_amin_param} برای مدل چرخنده }
+		\label{fig:amin_saman_rotational}
+	\end{subfigure}
+	\hfil
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/mean_spiking_persiods_g_0.1_65.png}
+		\caption{فاصله‌ی زمانی بین تیزه زدن‌ها}
+		\label{fig:interspikes_rotational}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/mean_spiking_persiods_with_trending_line_g_0.1_65.png}
+		\caption{محاسبه‌ی نمای بحرانی}
+		\label{fig:interspikes_rotational_trending_line}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/sigma_phase_space_contour.png}
+		\caption{صفحه‌ی فاز مربوط به سامانه‌ی نورون‌های چرخنده: پیوست \ref{appendix:phase_samplingـrotational}}
+		\label{fig:rot_g_d_phase_space}
+	\end{subfigure}
 \end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/amin_saman_param_g_0.1_65.png}
-	\caption{پارامتر نظم تعریف شده در رابطه \ref{eq:saman_amin_param} برای مدل چرخنده }
-	\label{fig:amin_saman_rotational}
-\end{figure}
+
 
 
 \subsubsection{فاصله زمانی بین تیزه‌ها}
@@ -81,31 +106,17 @@
 \\
 با این مشاهده، کنجکاو می‌شویم تا نمای بحرانی را برای آن حساب کنیم. در شکل \ref{fig:interspikes_rotational_trending_line} با گذراندن یک خط بر داده‌های بدست آمده از شبکه‌ای با قدرت مهار ۲۰ را می‌بینیم.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/mean_spiking_persiods_g_0.1_65.png}
-	\caption{فاصله‌ی زمانی بین تیزه زدن‌ها}
-	\label{fig:interspikes_rotational}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/mean_spiking_persiods_with_trending_line_g_0.1_65.png}
-	\caption{محاسبه‌ی نمای بحرانی}
-	\label{fig:interspikes_rotational_trending_line}
-\end{figure}
-
 
 \subsubsection{فعالیت شبکه}
 همان طور که دیدیم تعدادی از نورون‌ها در شبکه به حالت خاموش درمی‌آیند. قابل حدس است که اگر جمعیتی خاموش در شبکه داشته باشیم؛ احتمالا آنهایی هستند که جریان تصادفی اولیه آن‌ها از بقیه کمتر است. برای تحقیق این حدس لازم است تا تعداد تیزه‌های نورون‌های شبکه را بر حسب جریان تصادفی اولیه آنها مرتب کنیم. شکل \ref{fig:spikes_num_vs_background_current} نشانگر سامانه‌ای از ده هزار نورون است که با قدرت $g=50$ روی هم تاثیر می‌گذارند. لازم به ذکر است که این رفتار در فاز هم‌گام قابل مشاهده است. در فاز ناهم‌گام تمام نورون‌ها که از هم تاثیر کمتری می‌پذیرند؛ فعال هستند.
 
-
-\begin{figure}[h]
+\begin{figure}[b]{0.5\textwidth}
 	\centering
-	\includegraphics[width = 10 cm]{figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png}
+	\includegraphics[width = \textwidth]{figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png}
 	\caption{تعداد تیزه بر حسب جریان تصادفی برای سامانه‌ای با ده هزار نورون و ضریب تاثیر $g=50$}
 	\label{fig:spikes_num_vs_background_current}
 \end{figure}
+
 
 تعداد تیزه‌های کل شبکه رابطه‌ی مستقیمی با جریان خارجی جاری در شبکه دارد. می‌توانیم با محاسبات تحلیلی نیز به شکل بدست آمده از شبیه‌سازی عددی نزدیک شویم:
 
@@ -128,9 +139,3 @@
 
 \زیرزیرقسمت{قالی انحراف از معیار میدان}
 در شکل \ref{fig:rot_g_d_phase_space} مشاهده می‌کنیم که شدت هم‌گامی در هر کدام از هنگردهای سامانه چقدر است. بنظر می‌رسد که با افزایش زمان تاخیر و ضریب تاثیر همگامی قدرت پیدا می‌کند و هر دو در ظهور این رفتار شریک هستند.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = 15 cm]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/sigma_phase_space.png}
-	\caption{صفحه‌ی فاز مربوط به سامانه‌ی نورون‌های چرخنده}
-	\label{fig:rot_g_d_phase_space}
-\end{figure}

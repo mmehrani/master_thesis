@@ -9,7 +9,7 @@ Created on Mon Jun  7 09:14:03 2021
 import os
 from network_reference import Animated_network_of_neurons
 from tqdm import tqdm
-
+import numpy as np
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
 neuron_model = current_models[2]
@@ -26,13 +26,16 @@ with open("network_reference.py", "w") as net_ref:
 
     
 num_neurons = 10000
-total_time = 60
-start_time_to_sample = 0
-g = 20
+total_time = 120
+start_time_to_sample = 100
+g = 0
 # g = 0
 
-sample_network = Animated_network_of_neurons('Non_repulsive_rotational',num_neurons, g = g)
-
+sample_network = Animated_network_of_neurons('Non_repulsive_rotational',
+                                              num_neurons, g = g,random_input_span = (9.5,9.5))
+# sample_network = Animated_network_of_neurons('Non_repulsive_rotational',
+#                                              num_neurons, g = g,random_input_span = (9.5,13.5),
+#                                              xlim = [0,100],ylim = [np.pi-1,np.pi])
 sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time = 0.1)
 
 

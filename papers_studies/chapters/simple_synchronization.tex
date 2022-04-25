@@ -1,4 +1,4 @@
-\قسمت{شبکه‌ نورون‌های ساده}
+\فصل{شبکه‌ نورون‌های ساده}
 حل مسئله‌ی مدل چرخنده‌ بسیار دشوار است و تا تاریخ نوشتن این بند، راه‌حلی تحلیلی برای توصیف گذرفاز آن نیافته‌ایم. علت این موضوع هم حضور جمله‌ی غیرخطی $- cos(\theta)$ در جمله‌ی برهم‌کنش‌های آن‌هاست. حال که با ابعاد دشوار مسئله روبرو شده‌ایم؛ اجازه دهید که زمین بازی خود را عوض کنیم.\\
 می‌پرسیم که آیا کیفیت گذرفاز از ناهم‌گامی به هم‌گامی به این جمله وابسته است؟ بی‌تردید پاسخ این سوال را نخواهیم فهمید؛ مگر آن که شبکه‌ی جدیدی مطابق درخواست خود ابداع و شبیه‌سازی کنیم.
 
@@ -41,8 +41,16 @@
 \زیرزیرقسمت{در جستجوی تغییرفاز}
 قابل توجه است که کیفیت تغییرفاز با حذف جمله‌ی ذکر شده تغییر نکرد و تنها مکان و ارتفاع انحراف از معیار جریان داخلی است که دست خور تغییر شده است - شکل \ref{fig:sigma_non_repulsive}.
 \begin{figure}
-	\centering
-	\includegraphics[width = 10 cm]{../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png}
-	\caption{پهنای جریان یک سامانه ساده با ده هزار نورون}
-	\label{fig:sigma_non_repulsive}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png}
+		\caption{پهنای جریان یک سامانه ساده با ده هزار نورون}
+		\label{fig:sigma_non_repulsive}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour.png}
+		\caption{نقاطی از صفحه فاز که از آن‌ها داده‌گیری انجام شده است به رنگ سفید درآمده‌اند.}
+		\label{fig:if_g_d_phase_space_Non_repulsive}
+	\end{subfigure}
 \end{figure}

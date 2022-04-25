@@ -156,7 +156,7 @@ class Network_of_neurons(network_engine_class):
 
 
 class Animated_network_of_neurons(Network_of_neurons):
-    def __init__(self,neuron_model,num_neurons,g,alpha = 20):
+    def __init__(self,neuron_model,num_neurons,g,alpha = 20,**kwargs):
         super().__init__(num_neurons,g,alpha = 20)
         # self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
         
@@ -167,9 +167,10 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.weft_num = 100 #horizental axix
         
         self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = int(num_neurons/self.weft_num) ), reps = self.weft_num )
+        
         if neuron_engine == current_models[0]:
-            self.random_input_span = (1.2,2.8)
-            
+            # self.random_input_span = (1.2,2.8)
+            self.random_input_span = kwargs.get('random_input_span', (1.2,2.8) )
             self.ceiling_state = 1
             self.floor_state =  - 0.5 #used for animations frame
             
@@ -179,7 +180,8 @@ class Animated_network_of_neurons(Network_of_neurons):
             self.wind_amplitude = [-1,1]
         
         elif neuron_engine in current_models[1:3]:
-            self.random_input_span = (9.5,13.5)
+            self.random_input_span = kwargs.get('random_input_span', (9.5,13.5) )
+            # self.random_input_span = (9.5,13.5)
             self.ceiling_state = np.pi
             self.floor_state = - 5*np.pi/2 #used for animations frame
             
@@ -188,7 +190,8 @@ class Animated_network_of_neurons(Network_of_neurons):
             self.wind_name = r'$\dot\theta$'
             self.wind_amplitude = [-13,13]
         
-        
+        self.ax_xlim = kwargs.get('xlim',[1,self.num_neurons])
+        self.ax_ylim = kwargs.get('ylim',[self.floor_state, self.ceiling_state])        
             
     def brace_for_lunch(self,total_time,time_step = 0.01,delay_time = 0.1):
         
@@ -232,7 +235,12 @@ class Animated_network_of_neurons(Network_of_neurons):
         ax.set_title('Network dynamic N={} g={}'.format(self.num_neurons,self.g))
         # colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'tab20b')
         colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'hot')
-        ax.invert_yaxis()
+
+        ax.set_xlim(self.ax_xlim)
+        ax.set_ylim(self.ax_ylim)
+        # ax.invert_yaxis()
+        
+        
         
         ax_e.set_ylabel('E')
         ax_e.set_xlabel('t')
@@ -265,7 +273,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         
         # Change the spiking group color if they stopped spiking
         if np.sum(self.spike_mask) == 0 and was_network_active:
-            self.color_num += 2
+            # self.color_num += 2
             self.color_num = (self.color_num %10)
     
         # Update neuron phase marks and color
@@ -290,6 +298,13 @@ class Animated_network_of_neurons(Network_of_neurons):
         wind_direction.set_ydata(self.driving_wind[self.argsort_inputs])
         return self.plateau
     
+    def _compute_column_indices(self):
+        if self.random_input_span[1] != self.random_input_span[0]:
+            indices = np.floor( (self.random_input - self.random_input_span[0])/(self.random_input_span[1] - self.random_input_span[0]) * (self.weft_num-1) ).astype('int')
+        elif self.random_input_span[1] == self.random_input_span[0]:
+            indices = np.repeat( np.arange(self.num_neurons / self.weft_num, dtype = int), repeats= self.weft_num)
+        return indices
+    
     def render_animation(self, path = None):
         self.fig = plt.figure()
         plt.rc('font', family='serif')
@@ -297,7 +312,8 @@ class Animated_network_of_neurons(Network_of_neurons):
 
         self.extent = [1 , self.num_neurons, self.ceiling_state , self.floor_state] #imshow axises are updside down
         
-        self.column_indices = np.floor( (self.random_input - self.random_input_span[0])/(self.random_input_span[1] - self.random_input_span[0]) * (self.weft_num-1) ).astype('int')
+        self.column_indices = self._compute_column_indices()
+        
         self.argsort_inputs = np.argsort(self.column_indices)
         
         self.grating_blocks_length = ( self.ceiling_state - self.floor_state )/self.warp_num

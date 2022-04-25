@@ -26,7 +26,7 @@ get_ipython().run_cell_magic('capture', '', 'from tqdm import tqdm_notebook as t
 
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
-neuron_model = current_models[0]
+neuron_model = current_models[2]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -59,7 +59,8 @@ num_ensembles_each_g = 1
 
 
 # random_input_span = (9.5,13.5)
-random_input_span = (1.2,2.8)
+random_input_span = (9.5,9.5)
+# random_input_span = (1.2,2.8)
 
 
 # In[7]:
@@ -94,7 +95,7 @@ alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
 # In[10]:
 
 
-version = '_v1.0'
+version = '_similar_input'
 current_size_networks_path = os.path.join(neuron_model + '_ensembles','N{}_T{}_I{}_{}'.format(num_neurons,total_time,random_input_span[0],random_input_span[1]) + version )
 try:
     os.makedirs(current_size_networks_path)
