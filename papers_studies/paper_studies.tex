@@ -7,7 +7,7 @@
 
 \usepackage{pdflscape}
 \usepackage{geometry}
-
+\usepackage{dialogue,attrib,lips}
 \usepackage{subcaption}
 \usepackage[labelformat=parens,labelsep=quad, skip=3pt]{caption}
 \usepackage{graphicx}
@@ -34,6 +34,29 @@
 % newcommands
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+% -------------------- Enviroments --------------------
+\newenvironment{mohsenletter}
+{
+	\begin{tcolorbox}[title = صندوق پیام‌ها]
+		\begin{dialogue}
+		}
+		{
+		\end{dialogue}
+	\end{tcolorbox}
+}
+
+\newenvironment{meeting}
+{
+	\begin{tcolorbox}[title = دیدار]
+		\begin{dialogue}
+		}
+		{
+		\end{dialogue}
+	\end{tcolorbox}
+}
+
+
+% -------------------- Document --------------------
 
 \begin{document}
 \title{مطالعه همگامی در شبکه‌های عصبی مهاری} 
@@ -59,30 +82,11 @@
 %\input{chapters/rotational_synchronization.tex}
 %\input{chapters/simple_synchronization.tex}
 \input{chapters/analytical_approach.tex}
+\input{chapters/simple_synchronization_single_input.tex}
 
 \appendix
-\فصل{نمونه‌گیری صفحه فاز}
-\section{انباشت‌وشلیک} \label{appendix:phase_sampling_if}
-شکل \ref{fig:if_g_d_phase_space} نمایشگر صفحه‌ی فاز است که مقادیر متفاوتی را برای هر نقطه گزارش می‌کند. بدون شک داده‌گیری از تک‌تک نقاط فضا امکان پذیر نبود و برای ایجاد این شکل یک شبکه از نقاط به فاصله‌ی نزدیک از هم استفاده شد و رنگ نقاط میانی از نقطه‌ی همسایه‌ی نزدیک آن‌ها برداشته شد.
-\begin{figure}[h]
-	\includegraphics{../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_cluster_computed/sigma_phase_space_contour_points_plotted.png}
-	\caption{نقاطی از صفحه فاز که از آن‌ها داده‌گیری انجام شده است به رنگ سفید درآمده‌اند.}
-	\label{fig:if_g_d_phase_if_space_points_plotted}
-\end{figure}
+%\input{appendices/phase_space_sampling.tex}
 
-\section{چرخنده} \label{appendix:phase_samplingـrotational}
-\begin{figure}[h]
-	\includegraphics{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/sigma_phase_space_contour_points_plotted.png}
-	\caption{نقاطی از صفحه فاز که از آن‌ها داده‌گیری انجام شده است به رنگ سفید درآمده‌اند.}
-	\label{fig:if_g_d_phase_rotational_space_points_plotted}
-\end{figure}
-
-\section{ساده} \label{appendix:phase_sampling_simple}
-\begin{figure}[h]
-	\includegraphics{../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_points_plotted.png}
-	\caption{نقاطی از صفحه فاز که از آن‌ها داده‌گیری انجام شده است به رنگ سفید درآمده‌اند.}
-	\label{fig:if_g_d_phase_space_Non_repulsive_points_plotted}
-\end{figure}
 \newpage
 \bibliographystyle{plain-fa}
 \bibliography{MyReferences}

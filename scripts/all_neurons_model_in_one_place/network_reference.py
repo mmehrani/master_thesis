@@ -14,7 +14,7 @@ from matplotlib.animation import FuncAnimation
 from matplotlib import gridspec
 
 from tqdm.notebook import tqdm as tqdm
-tqdm().pandas() #This line make sure that the progress bars looks natural
+# tqdm().pandas() #This line make sure that the progress bars looks natural
 
 from neurons_engines import Rotational_neural_network, Kuramoto_neural_network, Non_repulsive_rotational_neural_network
 
@@ -27,9 +27,17 @@ class Network_of_neurons(network_engine_class):
         self.num_neurons = num_neurons
         self.g = g
         self.alpha = alpha
-        self.potentail_arr = np.zeros(self.num_neurons,dtype = float)
+        
+        self.warp_num = 100 #vertical axis
+        self.weft_num = 100 #horizental axix
+        
+        self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = int(num_neurons/self.weft_num) ), reps = self.weft_num )
+        # self.potentail_arr = np.zeros(self.num_neurons,dtype = float)
+        
         self.driving_wind = np.zeros(self.num_neurons,dtype = float)
         self.spike_mask = np.zeros(self.num_neurons,dtype = bool)
+        
+        
         return
     
     def _retarded_spikes_record(self,step):
@@ -103,7 +111,7 @@ class Network_of_neurons(network_engine_class):
 
 
     def report_sigma(self):
-        sigma = np.std( self.e_arr )
+        sigma = np.std( self.e_arr[- self.total_steps//2:] )
         return sigma
     
     def report_e_period_fft(self):
@@ -111,7 +119,8 @@ class Network_of_neurons(network_engine_class):
         xf = np.fft.fftfreq(self.e_arr.size, d = self.time_step)[1:self.e_arr.size//2] #we want only the first half containing the positive freqs.
         
         self.max_intensity = np.max(yf)
-        max_index = np.where( yf == self.max_intensity )[0][0] #we need the index not the array including it!
+        # max_index = np.where( yf == self.max_intensity )[0][0] #we need the index not the array including it!
+        max_index = np.argmax(yf)
         self.e_period = 1 / xf[max_index]
         return self.e_period, self.max_intensity
 
@@ -157,7 +166,7 @@ class Network_of_neurons(network_engine_class):
 
 class Animated_network_of_neurons(Network_of_neurons):
     def __init__(self,neuron_model,num_neurons,g,alpha = 20,**kwargs):
-        super().__init__(num_neurons,g,alpha = 20)
+        super().__init__(num_neurons,g,alpha)
         # self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
         
         current_models = ['IF','Rotational','Non_repulsive_rotational']
@@ -166,6 +175,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.warp_num = 100 #vertical axis
         self.weft_num = 100 #horizental axix
         
+        # self.potentail_arr = np.zeros(self.num_neurons)
         self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = int(num_neurons/self.weft_num) ), reps = self.weft_num )
         
         if neuron_engine == current_models[0]:

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  18 APR 2022 10:16
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  30 APR 2022 00:39
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -374,6 +374,30 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks30
 
 (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/frankenstein\dialogue.sty
+Package: dialogue 1999/03/01 v1.1 dialogue environment (Frankenstein's mouth)
+
+(C:\Program Files\MiKTeX\tex/latex/frankenstein\blkcntrl.sty
+Package: blkcntrl 2001/08/31 v1.2 block control
+
+(C:\Program Files\MiKTeX\tex/latex/frankenstein\moredefs.sty
+Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
+
+\sc@toks@a=\toks31
+\sc@toks@b=\toks32
+)
+(C:\Program Files\MiKTeX\tex/latex/relsize\relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)))
+(C:\Program Files\MiKTeX\tex/latex/frankenstein\attrib.sty
+Package: attrib 2001/08/31 v1.3 attribution of block elements (Frankenstein's h
+at)
+\AttribMinSkip=\skip58
+)
+(C:\Program Files\MiKTeX\tex/latex/frankenstein\lips.sty
+Package: lips 2001/08/31 v2.1 Chicago Manual text ellipses (Frankenstein's lips
+)
+)
 (C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 
@@ -400,7 +424,7 @@ Package caption Info: hyperref package is loaded.
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks31
+\@enLab=\toks33
 )
 (C:\Program Files\MiKTeX\tex/latex/braket\braket.sty)
 (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
@@ -409,7 +433,7 @@ Package: tcolorbox 2021/06/14 version 4.51 text color boxes
 (C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks32
+\pgfutil@everybye=\toks34
 \pgfutil@tempdima=\dimen189
 \pgfutil@tempdimb=\dimen190
 
@@ -429,11 +453,11 @@ Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks35
+\pgfkeys@tmptoks=\toks37
 ))
 \pgf@x=\dimen191
 \pgf@y=\dimen192
@@ -451,9 +475,9 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \c@pgf@countb=\count296
 \c@pgf@countc=\count297
 \c@pgf@countd=\count298
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
 \pgf@sys@id@count=\count299
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
@@ -490,9 +514,9 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 \pgfmath@dimen=\dimen257
 \pgfmath@count=\count303
 \pgfmath@box=\box55
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
@@ -608,8 +632,8 @@ Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 )) (C:\Program Files\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks42
-\verbatim@line=\toks43
+\every@verbatim=\toks44
+\verbatim@line=\toks45
 \verbatim@in@stream=\read3
 )
 (C:\Program Files\MiKTeX\tex/latex/environ\environ.sty
@@ -751,22 +775,22 @@ Package: bidi 2020/05/17 v36.3 Bidirectional typesetting in plain TeX and LaTeX
 ****************************************************
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\biditools.sty
 Package: biditools 2020/05/13 v2 Programming tools for bidi package
-\@bidi@envbody=\toks44
-\@bidi@emptytoks=\toks45
+\@bidi@envbody=\toks46
+\@bidi@emptytoks=\toks47
 \bidi@poscount=\count366
 
 
 Package biditools Warning: Patching `\enddocument' failed on input line 916.
 
 \bidi@tempcountb=\count367
-\bidi@temptoksa=\toks46
-\bidi@temptoksb=\toks47
+\bidi@temptoksa=\toks48
+\bidi@temptoksb=\toks49
 \bidi@dummies=\count368
-\bidi@are@these@correct=\toks48
-\bidi@toks@lista=\toks49
-\bidi@toks@listb=\toks50
+\bidi@are@these@correct=\toks50
+\bidi@toks@lista=\toks51
+\bidi@toks@listb=\toks52
 \bidi@stack@length=\count369
-\bidi@empty@stack=\toks51
+\bidi@empty@stack=\toks53
 \bidi@looprepeat@depth=\count370
 ) (C:\Program Files\MiKTeX\tex/latex/zref\zref-abspage.sty
 Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
@@ -785,8 +809,8 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks52
-\XKV@tempa@toks=\toks53
+\XKV@toks=\toks54
+\XKV@tempa@toks=\toks55
 )
 \XKV@depth=\count372
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -796,14 +820,14 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\latex-xetex-bidi.def
 File: latex-xetex-bidi.def 2019/03/03 v1.3.7 bidi adaptations for `latex.ltx' f
 or XeTeX engine
-\bidi@n@everypar=\toks54
+\bidi@n@everypar=\toks56
 \bidi@column@check@number=\count373
 
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\footnote-xetex-bidi.def
 File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
 gine
 \c@footdir@label=\count374
-\footdir@toks=\toks55
+\footdir@toks=\toks57
 )
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\book-xetex-bidi.def
 File: book-xetex-bidi.def 2017/06/09 v1.0 bidi adaptations for standard book cl
@@ -1106,32 +1130,32 @@ Package csquotes Info: ... none found.
 (paper_studies.aux)
 \openout1 = `paper_studies.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
+1.
  (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-Package hyperref Info: Link coloring ON on input line 38.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+Package hyperref Info: Link coloring ON on input line 61.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1144,9 +1168,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count377
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
 
 (paper_studies.out) (paper_studies.out)
 \@outlinefile=\write4
@@ -1190,39 +1214,39 @@ LaTeX Info: Redefining \nameref on input line 38.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 43.
+(Font)              scaled to size 20.74pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 43.
+(Font)              scaled to size 14.4pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 43.
+(Font)              scaled to size 14.4pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
+(Font)              scaled to size 10.0pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 43.
+(Font)              scaled to size 7.0pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <14.4> not avail
 able
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 43.
+ne 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 43.
+(Font)              scaled to size 14.4pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <10> not availab
 le
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 43.
+ne 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
+(Font)              scaled to size 10.0pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <7> not availabl
 e
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 43.
+ne 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 43.
+(Font)              scaled to size 7.0pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 14.4pt on input line 43.
+(Font)              scaled to size 14.4pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 43.
+(Font)              scaled to size 10.0pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 7.0pt on input line 43.
+(Font)              scaled to size 7.0pt on input line 66.
 [1
 
 
@@ -1230,16 +1254,16 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sl' in size <12> not availab
 le
 (Font)              Font shape `TU/XBNiloofar(0)/m/it' tried instead on input l
-ine 43.
+ine 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 43.
+(Font)              scaled to size 12.0pt on input line 66.
  [2
 
 ]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 43.
+(Font)              scaled to size 24.88pt on input line 66.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 43.
+(Font)              scaled to size 24.88pt on input line 66.
  (paper_studies.toc
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -1282,16 +1306,16 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 ]
 فصل 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 [][]
  []
 
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 50.
+(Font)              scaled to size 17.28pt on input line 73.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 50.
+(Font)              scaled to size 17.28pt on input line 73.
 (chapters/analytical_approach.tex
-Underfull \hbox (badness 10000) in paragraph at lines 57--1
+Underfull \hbox (badness 10000) in paragraph at lines 80--1
 [][]
  []
 
@@ -1407,73 +1431,63 @@ Overfull \hbox (1.66817pt too wide) detected at line 362
 []
  []
 
-) [18]
-پیوست آ.
 
-LaTeX Warning: Reference `fig:if_g_d_phase_space' on page 19 undefined on input
- line 66.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
-2.8_cluster_computed/sigma_phase_space_contour_points_plotted.png Graphic file 
-(type bmp)
-<../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
-luster_computed/sigma_phase_space_contour_points_plotted.png>
+ [18])
+(chapters/simple_synchronization_single_input.tex
 
-Overfull \hbox (15.36613pt too wide) in paragraph at lines 68--69
-[][][][][] []
+LaTeX Font Warning: Font shape `TU/XBNiloofar(0)/m/sc' undefined
+(Font)              using `TU/XBNiloofar(0)/m/n' instead on input line 7.
+
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 13.
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+[][]
  []
 
-[19
-
-]
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-0_I9.5_13.5_cluster_computed/sigma_phase_space_contour_points_plotted.png Graph
-ic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
-5_13.5_cluster_computed/sigma_phase_space_contour_points_plotted.png>
-
-Overfull \hbox (15.36613pt too wide) in paragraph at lines 75--76
-[][][][][] []
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
+[][]
  []
 
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 67.
+
+[20]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
-les/N10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_points_plotted.png Gra
-phic file (type bmp)
+les/N10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
-10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_points_plotted.png>
-
-Overfull \hbox (15.36613pt too wide) in paragraph at lines 82--83
-[][][][][] []
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[20] (paper_studies.bbl (paper_studies.brf)
+10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png>
+ [21]) [22] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
- [21] [22
-
-]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [23] (paper_studies.aux)
+) [23
+
+] (paper_studies.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: CBB57015881972A01119DC6BE3A6A0D7;1172.
+(rerunfilecheck)             Checksum: A63623F54EC20BB989E75481F030DEF7;905.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: 773411D8216B14DD58B52812602B99FD;58.
  ) 
 Here is how much of TeX's memory you used:
- 27380 strings out of 411254
- 537303 string characters out of 2832814
- 990177 words of memory out of 3000000
- 47278 multiletter control sequences out of 15000+600000
+ 27713 strings out of 411254
+ 539919 string characters out of 2832814
+ 994208 words of memory out of 3000000
+ 47591 multiletter control sequences out of 15000+600000
  409407 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,18n,95p,1335b,603s stack positions out of 5000i,500n,10000p,200000b,80000s

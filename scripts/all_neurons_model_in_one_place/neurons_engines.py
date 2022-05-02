@@ -36,10 +36,6 @@ class Rotational_neural_network:
 
         self.m_arr[i+1] = self.m_arr[i] + self.time_step*( -self.alpha*self.m_arr[i] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
         self.e_arr[i+1] = self.e_arr[i] + self.time_step*( self.m_arr[i] - self.alpha*self.e_arr[i] )
-
-        # Prevent neurons from free falling to large negative degrees.
-        # free_fall_mask = self.potentail_arr < - 31.41 # slightly greater than -20pi/2
-        # self.potentail_arr[free_fall_mask] = - 31.41
         
         #here we should spot the spiking neurons.
         self.spike_mask = self.potentail_arr > np.pi
@@ -87,10 +83,6 @@ class Non_repulsive_rotational_neural_network(Rotational_neural_network):
 
         self.m_arr[i+1] = self.m_arr[i] + self.time_step*( -self.alpha*self.m_arr[i] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
         self.e_arr[i+1] = self.e_arr[i] + self.time_step*( self.m_arr[i] - self.alpha*self.e_arr[i] )
-
-        # Prevent neurons from free falling to large negative degrees.
-        # free_fall_mask = self.potentail_arr < - 31.41 # slightly greater than -20pi/2
-        # self.potentail_arr[free_fall_mask] = - 31.41
         
         #here we should spot the spiking neurons.
         self.spike_mask = self.potentail_arr > np.pi

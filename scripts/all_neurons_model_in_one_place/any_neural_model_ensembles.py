@@ -66,21 +66,21 @@ random_input_span = (9.5,9.5)
 # In[7]:
 
 
-connectivity_min,connectivity_max, connectivity_step = 0, 20, 0.5
+connectivity_min,connectivity_max, connectivity_step = 0,15.5, 0.5
 connectivity_span = np.arange(connectivity_min,connectivity_max,connectivity_step).round(2)
 
 
 # In[8]:
 
 
-delay_min, delay_max, delay_step =0.1, 0.11, 0.02
+delay_min, delay_max, delay_step =0.25, 2.5, 0.25
 delay_span = np.arange(delay_min, delay_max, delay_step).round(2)
 
 
 # In[9]:
 
 
-alpha_min, alpha_max, alpha_step = 20, 25, 10
+alpha_min, alpha_max, alpha_step = 20, 25, 40
 alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
 
 
@@ -95,7 +95,8 @@ alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
 # In[10]:
 
 
-version = '_similar_input'
+# version = '_v1.0' #all zero initial condition
+version = '_v2.0' #tiled uniformly on the phase space
 current_size_networks_path = os.path.join(neuron_model + '_ensembles','N{}_T{}_I{}_{}'.format(num_neurons,total_time,random_input_span[0],random_input_span[1]) + version )
 try:
     os.makedirs(current_size_networks_path)
