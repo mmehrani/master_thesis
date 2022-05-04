@@ -1,4 +1,4 @@
-neuron_engine = 'IF'
+neuron_engine = 'Non_repulsive_rotational'
 
 # -*- coding: utf-8 -*-
 """
@@ -16,22 +16,19 @@ from matplotlib import gridspec
 from tqdm.notebook import tqdm as tqdm
 # tqdm().pandas() #This line make sure that the progress bars looks natural
 
-from neurons_engines import Rotational_neural_network, Kuramoto_neural_network, Non_repulsive_rotational_neural_network
+from neurons_engines import Rotational_neural_network, IF_neural_network, Non_repulsive_rotational_neural_network
 
-engines_dict = {'IF':Kuramoto_neural_network, 'Rotational':Rotational_neural_network, 'Non_repulsive_rotational':Non_repulsive_rotational_neural_network}
+engines_dict = {'IF':IF_neural_network, 'Rotational':Rotational_neural_network, 'Non_repulsive_rotational':Non_repulsive_rotational_neural_network}
 network_engine_class = engines_dict[neuron_engine]
 
 
 class Network_of_neurons(network_engine_class):
     def __init__(self,num_neurons,g,alpha = 20):
-        self.num_neurons = num_neurons
-        self.g = g
-        self.alpha = alpha
+        super().__init__(num_neurons,g,alpha)
         
         self.warp_num = 100 #vertical axis
         self.weft_num = 100 #horizental axix
         
-        self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = int(num_neurons/self.weft_num) ), reps = self.weft_num )
         # self.potentail_arr = np.zeros(self.num_neurons,dtype = float)
         
         self.driving_wind = np.zeros(self.num_neurons,dtype = float)
@@ -176,7 +173,8 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.weft_num = 100 #horizental axix
         
         # self.potentail_arr = np.zeros(self.num_neurons)
-        self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = int(num_neurons/self.weft_num) ), reps = self.weft_num )
+        # self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = int(num_neurons/self.weft_num) ), reps = self.weft_num )
+        self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
         
         if neuron_engine == current_models[0]:
             # self.random_input_span = (1.2,2.8)
@@ -220,8 +218,10 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.e_arr = np.zeros(total_steps)
         # self.random_input = np.random.uniform(*self.random_input_span,size = self.num_neurons)
         
-        self.random_input = np.linspace(self.random_input_span[0], self.random_input_span[1], num=self.weft_num)
-        self.random_input = np.repeat(self.random_input, repeats = int( self.num_neurons / self.weft_num) )
+        # self.random_input = np.linspace(self.random_input_span[0], self.random_input_span[1], num=self.weft_num)
+        # self.random_input = np.repeat(self.random_input, repeats = int( self.num_neurons / self.weft_num) )
+        
+        self.random_input = np.random.uniform(self.random_input_span[0], self.random_input_span[1], size = self.num_neurons)
         
         self.amin_saman_param = np.zeros( total_steps )
         self.spiking_records = np.zeros(total_steps)

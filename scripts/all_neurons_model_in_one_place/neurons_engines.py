@@ -9,10 +9,11 @@ import numpy as np
 
 class Rotational_neural_network:
     
-    def __init__(self,num_neurons,g):
+    def __init__(self,num_neurons,g,alpha = 20):
         self.num_neurons = num_neurons
         self.g = g
-        
+        self.alpha = alpha
+        self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
         return
     
     def _march_on(self,i):
@@ -62,6 +63,13 @@ class Rotational_neural_network:
 
 class Non_repulsive_rotational_neural_network(Rotational_neural_network):
     
+    def __init__(self,num_neurons,g,alpha = 20):
+        self.num_neurons = num_neurons
+        self.g = g
+        self.alpha = alpha
+        self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
+        return
+    
     def _march_on(self,i):
         """
         Push the network forward in time.
@@ -94,12 +102,13 @@ class Non_repulsive_rotational_neural_network(Rotational_neural_network):
 
         return
 
-class Kuramoto_neural_network:
+class IF_neural_network:
     
     def __init__(self,num_neurons,g,alpha = 20):
         self.num_neurons = num_neurons
         self.g = g
         self.alpha = alpha
+        self.potentail_arr = np.random.uniform(0,1, size = num_neurons)
         
         return
 
