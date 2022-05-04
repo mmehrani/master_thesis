@@ -1,4 +1,4 @@
-neuron_engine = 'Non_repulsive_rotational'
+neuron_engine = 'IF'
 
 # -*- coding: utf-8 -*-
 """
@@ -248,7 +248,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'hot')
         # colored_plateau = ax.imshow( self.plateau, aspect= 'auto',  vmin = 0, vmax = 10, cmap = 'hot')
 
-        ax.set_xlim(self.ax_xlim)
+        # ax.set_xlim(self.ax_xlim)
         ax.set_ylim(self.ax_ylim)
         # ax.invert_yaxis()
         

@@ -31,11 +31,11 @@ class Rotational_neural_network:
         """
 
         #dynamics
-        self.driving_wind = (self.random_input - np.cos(self.potentail_arr) - self.g * self.e_arr[i] )
+        self.driving_wind = (self.random_input - np.cos(self.potentail_arr) - self.g * self.e_arr[i-1] )
         self.potentail_arr = self.potentail_arr + self.driving_wind * self.time_step
 
-        self.m_arr[i+1] = self.m_arr[i] + self.time_step*( -self.alpha*self.m_arr[i] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
-        self.e_arr[i+1] = self.e_arr[i] + self.time_step*( self.m_arr[i] - self.alpha*self.e_arr[i] )
+        self.m_arr[i] = self.m_arr[i-1] + self.time_step*( -self.alpha*self.m_arr[i-1] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i-1) 
+        self.e_arr[i] = self.e_arr[i-1] + self.time_step*( self.m_arr[i-1] - self.alpha*self.e_arr[i-1] )
         
         #here we should spot the spiking neurons.
         self.spike_mask = self.potentail_arr > np.pi
@@ -78,11 +78,11 @@ class Non_repulsive_rotational_neural_network(Rotational_neural_network):
         """
 
         #dynamics
-        self.driving_wind = (self.random_input - self.g * self.e_arr[i] )
+        self.driving_wind = (self.random_input - self.g * self.e_arr[i-1] )
         self.potentail_arr = self.potentail_arr + self.driving_wind * self.time_step
 
-        self.m_arr[i+1] = self.m_arr[i] + self.time_step*( -self.alpha*self.m_arr[i] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
-        self.e_arr[i+1] = self.e_arr[i] + self.time_step*( self.m_arr[i] - self.alpha*self.e_arr[i] )
+        self.m_arr[i] = self.m_arr[i-1] + self.time_step*( -self.alpha*self.m_arr[i-1] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i-1) 
+        self.e_arr[i] = self.e_arr[i-1] + self.time_step*( self.m_arr[i-1] - self.alpha*self.e_arr[i-1] )
         
         #here we should spot the spiking neurons.
         self.spike_mask = self.potentail_arr > np.pi
@@ -117,7 +117,7 @@ class Kuramoto_neural_network:
         None.
 
         """
-        self.driving_wind = (self.random_input - self.potentail_arr - self.g * self.e_arr[i])
+        self.driving_wind = (self.random_input - self.potentail_arr - self.g * self.e_arr[i-1])
         self.potentail_arr = self.potentail_arr + self.driving_wind *self.time_step 
         
         #here we should spot the spiking neurons.
@@ -125,8 +125,8 @@ class Kuramoto_neural_network:
         self.spiking_records[i] = np.sum( self.spike_mask )
         self.potentail_arr = self.potentail_arr - 1*(self.potentail_arr > 1)
         
-        self.m_arr[i+1] = self.m_arr[i] + self.time_step*( -self.alpha*self.m_arr[i] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i) 
-        self.e_arr[i+1] = self.e_arr[i] + self.time_step*( self.m_arr[i] - self.alpha*self.e_arr[i] )
+        self.m_arr[i] = self.m_arr[i-1] + self.time_step*( -self.alpha*self.m_arr[i-1] ) + ( (self.alpha**2)/self.num_neurons ) *self._retarded_spikes_record(i-1) 
+        self.e_arr[i] = self.e_arr[i-1] + self.time_step*( self.m_arr[i-1] - self.alpha*self.e_arr[i-1] )
         
         
         return
