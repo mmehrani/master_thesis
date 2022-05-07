@@ -238,7 +238,6 @@ class Animated_network_of_neurons(Network_of_neurons):
         ax.set_yticks([self.floor_state, - np.pi, 0, self.ceiling_state])
         ax.set_yticklabels(self.important_states_namestrings)
         ax.set_title('Network dynamic N={} g={}'.format(self.num_neurons,self.g))
-        self._compute_suitable_extents()
         
         self.colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'hot')
 
@@ -253,7 +252,7 @@ class Animated_network_of_neurons(Network_of_neurons):
     
     
     def _init_ax_e(self):
-        ax_e = self.fig.add_subplot(self.gs[2, 0])
+        ax_e = self.fig.add_subplot(self.gs[self.show_space + self.show_velocity, 0])
         
         ax_e.set_ylabel('E')
         ax_e.set_xlabel('t')
@@ -268,7 +267,7 @@ class Animated_network_of_neurons(Network_of_neurons):
     
     def _init_ax_theta_dot(self):
         
-        ax_theta_dot = self.fig.add_subplot(self.gs[1, 0])
+        ax_theta_dot = self.fig.add_subplot(self.gs[self.show_space*1, 0])
         ax_theta_dot.set_ylabel(self.wind_name)
         ax_theta_dot.set_xlabel('neuron inputs')
         self.wind_direction, = ax_theta_dot.plot(self.random_input[self.argsort_inputs], self.driving_wind[self.argsort_inputs],'ro',markersize=1)
@@ -278,31 +277,47 @@ class Animated_network_of_neurons(Network_of_neurons):
         return
         
     def _compute_figure_grid(self):
+        nrows = np.sum([self.show_space,  self.show_field, self.show_velocity])
         if self.show_space == True:
             ncols = 2
+            width_ratios = (10,4)
+            if self.show_field == True and self.show_velocity == True: 
+                height_ratios = (10,5,2)
+            elif self.show_field == True or self.show_velocity == True: 
+                height_ratios = (1,1)
+            self.gs = gridspec.GridSpec(nrows, ncols, width_ratios = width_ratios, height_ratios = height_ratios, wspace = 0.2)
         else:
             ncols = 1
-        nrows = np.sum([self.show_space,  self.show_field, self.show_velocity])
-        self.gs = gridspec.GridSpec(nrows = nrows, ncols = ncols, wspace = 0.2)
-        # self.gs = gridspec.GridSpec(3, 2, width_ratios = (10,4), height_ratios = (10,5,2), wspace = 0.2)
+            if self.show_field == True and self.show_velocity == True: 
+                height_ratios = (1,1)
+                self.gs = gridspec.GridSpec(nrows, ncols, height_ratios = height_ratios, wspace = 0.2)
+            elif self.show_field == True or self.show_velocity == True: 
+                self.gs = gridspec.GridSpec(nrows, ncols, wspace = 0.2)
+
+
+        
+        # self.gs = gridspec.GridSpec(nrows = nrows, ncols = ncols, wspace = 0.2)
+        # self.gs = gridspec.GridSpec(nrows, ncols, width_ratios = width_ratios, height_ratios = (10,5,2), wspace = 0.2)
+        
 
         return self.gs
     
     def init(self):
         
+        self._compute_suitable_extents()
         self._compute_figure_grid()
+        
         if self.show_space == True: self._init_ax()
         if self.show_field == True: self._init_ax_e()
         if self.show_velocity == True: self._init_ax_theta_dot()
         return
     
     
-    def update(self,frame):
-        
+    def _update_ax(self):
         was_network_active = np.sum(self.spike_mask) > 0
         
         self.plateau[:]=self.plateau[:]*0
-        self._march_on(frame)
+        
         phase_marks = np.floor( (self.potentail_arr - self.floor_state) / self.grating_blocks_length ).astype('int') #sorted neurons
         
         # Change the spiking group color if they stopped spiking
@@ -326,9 +341,23 @@ class Animated_network_of_neurons(Network_of_neurons):
         
         self.colored_plateau.set_data(self.plateau)
         self.pop_dist.set_xdata( np.sum(self.plateau>0,axis = 1) )
-        # self.e_pulse.set_ydata( np.roll( self.e_arr, shift= 80 - frame )[0:80] ) #takes care of initial steps
-        # self.wind_direction.set_ydata(self.driving_wind[self.argsort_inputs])
-        return self.plateau
+
+        return
+
+    def _update_ax_e(self,frame):
+        self.e_pulse.set_ydata( np.roll( self.e_arr, shift= 80 - frame )[0:80] ) #takes care of initial steps
+        return
+    
+    def _update_ax_theta_dot(self):
+        self.wind_direction.set_ydata(self.driving_wind[self.argsort_inputs])
+        return
+    
+    def update(self,frame):
+        self._march_on(frame)
+        if self.show_space == True: self._update_ax()
+        if self.show_field == True: self._update_ax_e(frame)
+        if self.show_velocity == True: self._update_ax_theta_dot()
+        return
     
     
     def _compute_column_indices(self):
@@ -372,9 +401,8 @@ class Animated_network_of_neurons(Network_of_neurons):
         
         self.init()
         frames_range = range( int(start_time/self.time_step), self.total_steps)
-        # ani = FuncAnimation(self.fig, self.update, init_func = self.init, frames= frames_range, interval = 50)
         self.ani = FuncAnimation(self.fig, self.update, init_func = None, frames= frames_range, interval = 50)
-        # if path != None: ani.save(path, writer='imagemagick')
+        if path != None: self.ani.save(path, writer='imagemagick')
 
         return
     pass
