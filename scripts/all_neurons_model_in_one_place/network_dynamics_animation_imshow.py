@@ -28,7 +28,7 @@ with open("network_reference.py", "w") as net_ref:
 num_neurons = 10000
 total_time = 100
 start_time_to_sample = 50
-g = 5
+g = 7
 # g = 0
 
 sample_network = Animated_network_of_neurons(neuron_model,

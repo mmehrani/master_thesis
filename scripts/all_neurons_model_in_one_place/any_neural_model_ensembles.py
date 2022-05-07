@@ -80,7 +80,7 @@ delay_span = np.arange(delay_min, delay_max, delay_step).round(2)
 # In[9]:
 
 
-alpha_min, alpha_max, alpha_step = 20, 25, 40
+alpha_min, alpha_max, alpha_step = 100, 125, 40
 alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
 
 
