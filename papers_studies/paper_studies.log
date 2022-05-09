@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  30 APR 2022 00:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  9 MAY 2022 08:43
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -398,9 +398,6 @@ at)
 Package: lips 2001/08/31 v2.1 Chicago Manual text ellipses (Frankenstein's lips
 )
 )
-(C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-
 (C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
@@ -419,6 +416,8 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count292
 Package caption Info: hyperref package is loaded.
 )
+(C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 \c@subfigure=\count293
 \c@subtable=\count294
 )
@@ -1059,7 +1058,7 @@ tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 19.
+(Font)              scaled to size 12.0pt on input line 22.
 
 Package fontspec Info: Font family 'XBNiloofar(1)' created for font 'XB
 (fontspec)             Niloofar' with options [Ligatures=PersianTeX,Scale=1].
@@ -1085,7 +1084,7 @@ tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 Package xepersian-mathsdigitspec Info: DefiningthedefaultPersianmathsdigitsfont
-as'XB Niloofar' on input line 27.
+as'XB Niloofar' on input line 30.
 \symOPERATORS=\mathgroup4
 \symnew@mathbf@font@digits=\mathgroup5
 \symnew@mathit@font@digits=\mathgroup6
@@ -1124,38 +1123,38 @@ ext;"
 (fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
 text;"
 
-LaTeX Info: Redefining \latinfont on input line 28.
+LaTeX Info: Redefining \latinfont on input line 31.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 (paper_studies.aux)
 \openout1 = `paper_studies.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
-1.
+4.
  (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-Package hyperref Info: Link coloring ON on input line 61.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+Package hyperref Info: Link coloring ON on input line 64.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1168,9 +1167,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count377
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
 
 (paper_studies.out) (paper_studies.out)
 \@outlinefile=\write4
@@ -1214,39 +1213,39 @@ LaTeX Info: Redefining \nameref on input line 61.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 66.
+(Font)              scaled to size 20.74pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 66.
+(Font)              scaled to size 14.4pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 66.
+(Font)              scaled to size 14.4pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 66.
+(Font)              scaled to size 10.0pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 66.
+(Font)              scaled to size 7.0pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <14.4> not avail
 able
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 66.
+ne 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 66.
+(Font)              scaled to size 14.4pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <10> not availab
 le
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 66.
+ne 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 66.
+(Font)              scaled to size 10.0pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <7> not availabl
 e
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 66.
+ne 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 66.
+(Font)              scaled to size 7.0pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 14.4pt on input line 66.
+(Font)              scaled to size 14.4pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 66.
+(Font)              scaled to size 10.0pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 7.0pt on input line 66.
+(Font)              scaled to size 7.0pt on input line 69.
 [1
 
 
@@ -1254,16 +1253,16 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sl' in size <12> not availab
 le
 (Font)              Font shape `TU/XBNiloofar(0)/m/it' tried instead on input l
-ine 66.
+ine 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 66.
+(Font)              scaled to size 12.0pt on input line 69.
  [2
 
 ]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 66.
+(Font)              scaled to size 24.88pt on input line 69.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 66.
+(Font)              scaled to size 24.88pt on input line 69.
  (paper_studies.toc
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -1306,136 +1305,34 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 ]
 فصل 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 [][]
  []
 
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 73.
+(Font)              scaled to size 17.28pt on input line 76.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 73.
-(chapters/analytical_approach.tex
-Underfull \hbox (badness 10000) in paragraph at lines 80--1
+(Font)              scaled to size 17.28pt on input line 76.
+(chapters/animation_description.tex [5] [6
+
+]
+فصل 2.
+File: figs/IF/IF_phase_space-Model.png Graphic file (type bmp)
+<figs/IF/IF_phase_space-Model.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (chapters/simple_synchronization_single_input.tex
+Underfull \hbox (badness 10000) in paragraph at lines 83--1
 [][]
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-[6]
-فصل 2.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 19.
+(Font)              scaled to size 14.4pt on input line 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 19.
+(hyperref)                than one, level fixed on input line 2.
 
-[7
-
-]
-Overfull \hbox (60.55138pt too wide) detected at line 66
-[]
- []
-
-[8] [9]
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: xetex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
-* v-part:(T,H,B)=(14.22636pt, 816.59412pt, 14.22636pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=816.59412pt
-* \oddsidemargin=-0.56833pt
-* \evensidemargin=35.28255pt
-* \topmargin=-89.91742pt
-* \headheight=12.0pt
-* \headsep=19.8738pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=88.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
- [10
-
-
-]
-
-LaTeX Warning: Reference `fig:sigma_rotational' on page 11 undefined on input l
-ine 99.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-[][]
- []
-
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 133.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 135.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 135.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <5> not availabl
-e
-(Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 135.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 5.0pt on input line 135.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 5.0pt on input line 135.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 135.
-[11
-
-
-] [12] [13] [14]
-File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
-les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png Graphic
- file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
-10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png>
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 257.
-File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
-les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_simple_g_0.1_130.png Graphic 
-file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
-10000_T100_I9.5_13.5_v1.0/field_zeroth_order_simple_g_0.1_130.png>
-File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
-les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png Graph
-ic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
-10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png>
- [15] [16] [17]
-Overfull \hbox (1.66817pt too wide) detected at line 362
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18])
-(chapters/simple_synchronization_single_input.tex
 
 LaTeX Font Warning: Font shape `TU/XBNiloofar(0)/m/sc' undefined
 (Font)              using `TU/XBNiloofar(0)/m/n' instead on input line 7.
@@ -1443,11 +1340,22 @@ LaTeX Font Warning: Font shape `TU/XBNiloofar(0)/m/sc' undefined
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sc' will be
 (Font)              scaled to size 12.0pt on input line 13.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Overfull \vbox (10.45988pt too high) has occurred while \output is active []
+
+
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 [][]
  []
 
-[19]
+
+LaTeX Warning: Reference `eq:simple_network' on page 9 undefined on input line 
+29.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 56--60
 [][]
  []
@@ -1456,22 +1364,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--60
 LaTeX Warning: The counter will not be printed.
              The label is: * on input line 67.
 
-[20]
+[9]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
 les/N10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
 10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png>
- [21]) [22] (paper_studies.bbl (paper_studies.brf)
+ [10]) [11] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
+ [12
+
+]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [23
-
-] (paper_studies.aux)
+) [13]
+(paper_studies.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1479,17 +1389,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `paper_studies.out' has not changed.
-(rerunfilecheck)             Checksum: A63623F54EC20BB989E75481F030DEF7;905.
+(rerunfilecheck)             Checksum: 11641F78B1834F7699B582EF6C3422D1;687.
 Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: 773411D8216B14DD58B52812602B99FD;58.
  ) 
 Here is how much of TeX's memory you used:
- 27713 strings out of 411254
- 539919 string characters out of 2832814
- 994208 words of memory out of 3000000
- 47591 multiletter control sequences out of 15000+600000
- 409407 words of font info for 123 fonts, out of 8000000 for 9000
+ 27645 strings out of 411254
+ 535569 string characters out of 2832814
+ 982210 words of memory out of 3000000
+ 47533 multiletter control sequences out of 15000+600000
+ 409124 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,18n,95p,1335b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,12n,95p,1335b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (23 pages).
+Output written on paper_studies.pdf (13 pages).

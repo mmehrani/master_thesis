@@ -1,0 +1,7 @@
+\contentsline {chapter}{\numberline {1}سخن نخست}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}مقدمه}{5}{section.1.1}%
+\contentsline {chapter}{\numberline {2}تصویرسازی سامانه‌ها}{7}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}بازی از نو(سامانه‌ی تک‌جریان)}{7}{subsection.2.0.1}%
+\contentsline {subsubsection}{حالت‌پایا}{9}{equation.2.0.1}%
+\contentsline {subsubsection}{اختلال از حالت پایا}{9}{equation.2.0.3}%
+\contentsline {subsubsection}{شبیه‌سازی سامانه‌ی تک‌جریان}{10}{equation.2.0.8}%

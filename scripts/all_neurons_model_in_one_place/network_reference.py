@@ -295,15 +295,17 @@ class Animated_network_of_neurons(Network_of_neurons):
                 self.gs = gridspec.GridSpec(nrows, ncols, wspace = 0.2)
 
 
-        
-        # self.gs = gridspec.GridSpec(nrows = nrows, ncols = ncols, wspace = 0.2)
-        # self.gs = gridspec.GridSpec(nrows, ncols, width_ratios = width_ratios, height_ratios = (10,5,2), wspace = 0.2)
-        
-
         return self.gs
     
     def init(self):
-        
+        """
+        Initialize the figure according to the user request
+
+        Returns
+        -------
+        None.
+
+        """
         self._compute_suitable_extents()
         self._compute_figure_grid()
         
