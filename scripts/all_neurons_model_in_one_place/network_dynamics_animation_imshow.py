@@ -27,13 +27,13 @@ with open("network_reference.py", "w") as net_ref:
     
 num_neurons = 10000
 total_time = 100
-start_time_to_sample = 50
-g = 5
+start_time_to_sample = 0
+g = 7
 # g = 0
 
 sample_network = Animated_network_of_neurons(neuron_model,
                                               num_neurons, g = g,
-                                              random_input_span = (9.5,9.5), alpha = 20)
+                                              random_input_span = (9.5,9.5), alpha = 27.5)
 # sample_network = Animated_network_of_neurons(neuron_model,
 #                                               num_neurons, g = g, alpha = 20)
 # sample_network = Animated_network_of_neurons('Non_repulsive_rotational',
@@ -41,13 +41,17 @@ sample_network = Animated_network_of_neurons(neuron_model,
 #                                               xlim = [9,10],ylim = [np.pi-1,np.pi])
 
 
-sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time = 0.1)
+sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time = 0.2)
 
 for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
     sample_network._march_on(i)
 
+# epsilon = 1
+# for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
+#     sample_network.e_arr[i] = sample_network.e_arr[i] + epsilon
+    # sample_network.spiking_records[i] = sample_network.spiking_records[i] + 10
 
-sample_network.render_animation(start_time_to_sample, show_space=False,
+sample_network.render_animation(start_time_to_sample, show_space=True,
                                 show_field= True, show_velocity=False)
 # version_name = 'well_in_negatives'
 # path = os.path.join('animations','sea_shore',version_name,"N{}_g{}_Imin{}_Imax{}_neurons_rotational.html".format(

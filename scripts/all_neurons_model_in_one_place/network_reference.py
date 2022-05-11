@@ -284,7 +284,7 @@ class Animated_network_of_neurons(Network_of_neurons):
             if self.show_field == True and self.show_velocity == True: 
                 height_ratios = (10,5,2)
             elif self.show_field == True or self.show_velocity == True: 
-                height_ratios = (1,1)
+                height_ratios = (10,5)
             self.gs = gridspec.GridSpec(nrows, ncols, width_ratios = width_ratios, height_ratios = height_ratios, wspace = 0.2)
         else:
             ncols = 1
