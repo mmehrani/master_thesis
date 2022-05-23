@@ -161,6 +161,37 @@ $d >> \alpha$
 برای آن بدست آوریم.
 \begin{align}
 	E &= E_0 + \epsilon \hspace{2cm} (t<0) \\
-	E(t) &= a - \frac{g}{2\pi} \int_{0}^{\infty} ds_1 \big( a - \frac{g}{2\pi} \int ds_2 E(t - 2d - s_1 - s_2) \alpha^2 e^{-\alpha s_2} \big) \alpha^2 e^{-\alpha s_1} \\
-	&= a \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{\floor{t/d} - 1} \big] + (E_0 + \epsilon) (\frac{-g}{2\pi})^{\floor{t/d}}
+	E(t) &= a - \frac{g}{2\pi} \int_{0}^{\infty} ds_1 \big( a - \frac{g}{2\pi} \int ds_2 E(t - 2d - s_1 - s_2) \alpha^2 s_2 e^{-\alpha s_2} \big) \alpha^2 s_1 e^{-\alpha s_1} \\
+	&= a \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{\floor{t/d} - 1} \big] \\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^{\floor{t/d}} \int_{0}^{\infty}\int ... \int E(t - nd - s_1 - s_2 - ... - s_n) \alpha^{2n} s_1 s_2 ... s_n e^{-\alpha(s_1 + s_2 + ... + s_n)} ds_1 ds_2 ... ds_n\\
+	&= \mathcal{K}_{a,g}(t)\\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^{\floor{t/d}} \int_{0}^{\infty}\int ... \int E(t - nd - s_1 - s_2 - ... - s_n) \alpha^{2n} s_1 s_2 ... s_n e^{-\alpha(s_1 + s_2 + ... + s_n)} ds_1 ds_2 ... ds_n
 \end{align}
+که در این رابطه 
+$\mathcal{K}_{a,g}(t)$
+همان پاسخ معادله در حالتی است که تیزه‌ها کاملا باریک هستند. \\
+این روند تو در تو تا زمانی ادامه می‌یابد که انتگرال‌ده ما به زمانی که ما آن را به صورت دستی مقید کرده‌ایم نرسد. زیرا از آن گام به بعد رابطه‌ی میدان از دینامیک گام پیشین خود بدست نمی‌آید.\\
+آخرین گام این رابطه در زمانی است که بخشی از آن در حالت مقید قرار دارد و بخشی از آن در حالت پویا. پس برای آن که معادلات را ساده‌تر کنیم؛ تغییر متغیر
+$r \equiv \sum s_i$
+را می‌دهیم و سپس آن را به دو بخش تقسیم می‌کنیم.\\
+\begin{landscape}
+\begin{align}
+	& \int_{0}^{\infty}\int ... \int E(t - nd - s_1 - s_2 - ... - s_n)
+	\alpha^{2n} s_1 s_2 ... s_n  e^{-\alpha(s_1 + s_2 + ... + s_n)} ds_1 ds_2 ... ds_n\\
+	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n \delta(r-\sum s_i) dr\\
+	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n \delta(r-\sum s_i) dr\\
+	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n e^{ip(r-\sum s_i)} dr dp\\
+	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n e^{-ip\sum s_i} e^{ipr} dr dp\\
+	&= \int_{0}^{\infty}\int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} e^{ipr} [\int_0^{\infty} s e^{-ips} ds]^n dr dp\\
+\end{align}
+عبارت p در جمله‌ی نهایی باید حتما جزئی مختلط داشته باشد تا انتگرال ما قابل تعریف باشد.
+\begin{align}
+	&= \int_{0}^{\infty}\int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} e^{ipr} (-p)^{-2n} dr dp\\
+	&= \int_{t-d}^{\infty} \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} e^{ipr} p^{-2n} dr dp + \int_{0}^{t - d}\int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} e^{ipr} p^{-2n} dr dp\\
+	&= \int_{t-d}^{\infty} \int (E_0 + \epsilon) \alpha^{2n} e^{-\alpha(r)} e^{ipr} p^{-2n} dr dp + \int_{0}^{t - d}\int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} e^{ipr} p^{-2n} dr dp\\
+	&= \int_{0}^{\infty}\int (E_0 + \epsilon) \alpha^{2n} e^{-\alpha(r)} e^{ipr} p^{-2n} dr dp + \int_{0}^{t - d}\int \big[ E(t - nd - r) - (E_0 + \epsilon) \big] \alpha^{2n} e^{-\alpha(r)} e^{ipr} p^{-2n} dr dp\\
+	&= (E_0 + \epsilon) \int \frac{\alpha^{2n}}{\alpha - i p} dp + \int_{0}^{t - d}\int \big[ E_0 - g\epsilon/2\pi - (E_0 + \epsilon) \big] \alpha^{2n} e^{-(\alpha-ip)r} p^{-2n} dr dp\\
+	&= (E_0 + \epsilon) \int \frac{\alpha^{2n}}{\alpha - i p} dp + \big[- g\epsilon/2\pi - \epsilon \big] \int \alpha^{2n} \frac{e^{-(\alpha-ip)(t-d)} - 1}{\alpha - i p} dp
+\end{align}
+
+\end{landscape}

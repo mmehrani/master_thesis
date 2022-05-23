@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  11 MAY 2022 17:59
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  23 MAY 2022 10:25
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1511,18 +1511,34 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:non_repulsive_single_input_sigma_phase_space' on 
 page 23 undefined on input line 160.
 
-) [23] (paper_studies.bbl (paper_studies.brf)
+
+Overfull \hbox (84.9033pt too wide) detected at line 169
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--177
+[][]
+ []
+
+[23] [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25
+
+]
+[26]) (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
- [24
-
-]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [25] (paper_studies.aux)
+) [27
+
+
+] (paper_studies.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1535,12 +1551,12 @@ Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: 773411D8216B14DD58B52812602B99FD;58.
  ) 
 Here is how much of TeX's memory you used:
- 27749 strings out of 411254
- 542804 string characters out of 2832814
+ 27752 strings out of 411254
+ 542843 string characters out of 2832814
  994210 words of memory out of 3000000
- 47623 multiletter control sequences out of 15000+600000
+ 47626 multiletter control sequences out of 15000+600000
  410571 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,18n,95p,1335b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (25 pages).
+Output written on paper_studies.pdf (27 pages).
