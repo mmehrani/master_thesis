@@ -1,12 +1,13 @@
 \contentsline {chapter}{\numberline {1}سخن نخست}{5}{chapter.1}%
 \contentsline {section}{\numberline {1.1}مقدمه}{5}{section.1.1}%
-\contentsline {chapter}{\numberline {2}تلاش برای توصیف}{7}{chapter.2}%
-\contentsline {subsection}{\numberline {2.0.1}حل معادله‌ی شبکه‌ی ساده}{7}{subsection.2.0.1}%
-\contentsline {subsubsection}{روش بازگشتی}{8}{Item.4}%
-\contentsline {subsubsection}{روش اختلال}{11}{equation.2.0.20}%
-\contentsline {subsubsection}{روش آماری}{13}{equation.2.0.47}%
-\contentsline {subsubsection}{حل اختلالی میدان}{15}{equation.2.0.64}%
-\contentsline {subsection}{\numberline {2.0.2}بازی از نو(سامانه‌ی تک‌جریان)}{19}{subsection.2.0.2}%
-\contentsline {subsubsection}{حالت‌پایا}{20}{equation.2.0.99}%
-\contentsline {subsubsection}{اختلال از حالت پایا}{20}{equation.2.0.101}%
-\contentsline {subsubsection}{شبیه‌سازی سامانه‌ی تک‌جریان}{21}{equation.2.0.107}%
+\contentsline {chapter}{\numberline {2}تصویرسازی سامانه‌ها}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {3}تلاش برای توصیف}{9}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}حل معادله‌ی شبکه‌ی ساده}{9}{subsection.3.0.1}%
+\contentsline {subsubsection}{روش بازگشتی}{10}{Item.4}%
+\contentsline {subsubsection}{روش اختلال}{13}{equation.3.0.20}%
+\contentsline {subsubsection}{روش آماری}{15}{equation.3.0.47}%
+\contentsline {subsubsection}{حل اختلالی میدان}{17}{equation.3.0.64}%
+\contentsline {subsection}{\numberline {3.0.2}بازی از نو(سامانه‌ی تک‌جریان)}{21}{subsection.3.0.2}%
+\contentsline {subsubsection}{حالت‌پایا}{22}{equation.3.0.99}%
+\contentsline {subsubsection}{اختلال از حالت پایا}{22}{equation.3.0.101}%
+\contentsline {subsubsection}{شبیه‌سازی سامانه‌ی تک‌جریان}{23}{figure.caption.4}%
