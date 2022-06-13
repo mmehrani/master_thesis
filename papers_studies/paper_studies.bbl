@@ -12,4 +12,13 @@ Luccioli, Stefano and Politi, Antonio.
 
 \end{LTRbibitems}
 
+\begin{LTRbibitems}
+\resetlatinfont
+\bibitem{safaeesirat2020critical}
+Safaeesirat, Amin and Moghimi-Araghi, Saman.
+\newblock Critical behaviour at the onset of synchronization in a neuronal
+  model, 2020.
+
+\end{LTRbibitems}
+
 \end{thebibliography}

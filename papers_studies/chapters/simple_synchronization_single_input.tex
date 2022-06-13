@@ -48,25 +48,42 @@ $E = E_0 + \epsilon$
 	E(t+d) &= \frac{1}{2\pi} \big[ a - g E(t) \big]\\
 	&=  \frac{1}{2\pi} \big[ a - g (E_0 + \epsilon) \big]\\
 	&=  \frac{1}{2\pi} \big[ a - g E_0 \big] - \frac{g\epsilon}{2\pi}\\
-	&= E_0 - \frac{g\epsilon}{2\pi} 
+	&= E_0 - \frac{g\epsilon}{2\pi} \label{eq:Non_repulsive_first_step_field}
 \end{align}
 با ادامه‌ی همین روند می‌توانیم به این نتیجه برسیم که در گام‌های بعدی سامانه چگونه رفتار خواهد کرد(شکل \ref{fig:non_repulsive_single_input_perturbation}): 
 \begin{align}
 	E(t + nd) &= \frac{1}{2\pi} \big[ a - g E(t+(n-1)d) \big]\\
-	&= E_0 + \epsilon \sum_n (\frac{-g}{2\pi})^n
-	\label{eq:geometric_sum}
+	&= \frac{a}{2\pi} \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{n - 1} \big] + (\frac{-g}{2\pi})^{n} (E_0 + \epsilon)
+	\label{eq:geometric_sum}\\
+	&= \frac{a}{2\pi} \frac{1 - (\frac{-g}{2\pi})^{n} }{ 1 - (\frac{-g}{2\pi})} + (\frac{-g}{2\pi})^{n} (E_0 + \epsilon)\\
+	&= \frac{a}{2\pi + g} - \frac{a}{2\pi} \cdot \frac{ (\frac{-g}{2\pi})^{n} }{ 1 - (\frac{-g}{2\pi})} + (\frac{-g}{2\pi})^{n} (E_0 + \epsilon)\\
+	&= \frac{a}{2\pi + g} - \frac{a}{2\pi + g} \cdot (\frac{-g}{2\pi})^{n} + (\frac{-g}{2\pi})^{n} (E_0 + \epsilon)\\
+	&= E_0 + (\frac{-g}{2\pi})^n \cdot \epsilon\\
+	&= E_0 + (\frac{-g}{2\pi})^{\floor{t/d} + 1} \cdot \epsilon
 \end{align}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width =0.8\textwidth]{figs/Perturbation problem-Model.png}
-	\caption{تحول میدان سامانه‌ای تک‌جریان و با تیزه‌های پهن از اخنلالی کوچک از حالت پایا}
+	\caption{
+		تحول میدان سامانه‌ای تک‌جریان و با تیزه‌های پهن از اخنلالی کوچک از حالت پایا (شکل اشتباه است)
+	}
 	\label{fig:non_repulsive_single_input_perturbation}
 \end{figure}
 
 پرواضح است که که اگر ضریب تاثیر از مقدار 
 $2\pi$
 کمتر باشد؛ این مجموع همگراست و اختلال در سامانه هضم خواهد شد. در صورتی اگر بیشتر باشد؛ واگرا خواهد بود. این مقدار بنظر همان گذرفازی است که مدت‌هاست به دنبال آن می‌گردیم. پس موفق شدیم که برای سامانه‌ی تک‌جریان نقطه‌ی گذرفاز را محاسبه کنیم. کمتر باشد؛ این مجموع همگراست و اختلال در سامانه‌ هضم خواهد شد. در صوتی اگر بیشتر باشد؛ واگرا خواهد بود.\\
+اگر چه می‌توانستیم مسئله را از طریق دیگری نیز درپیش بگیریم. از معادله‌ی 
+\ref{eq:Non_repulsive_first_step_field}
+اختلاف جدیدی را که با میدان پایا پیدا شده است را به عنوان 
+$\epsilon'$
+تعریف کنیم و سپس میدان بعدی را از ضرب مجدد عامل
+$ - g/2\pi$
+بدست آوریم. به این ترتیب به طریق ساده‌تر خواهیم داشت:
+\begin{align}
+	E(t+nd) = E_0 + (\frac{-g}{2\pi})^n \cdot \epsilon
+\end{align}
 
 \زیرزیرقسمت{شبیه‌سازی سامانه‌ی تک‌جریان}
 حدس می‌زنیم که برای سامانه‌ی یاد شده در قسمت قبل گذر فاز در 
@@ -171,53 +188,69 @@ $d >> \alpha$
 تیز نباشد و لبه‌هایی نرم‌تر به خود گیرند.
 \begin{align}
 	E &= E_0 + \epsilon \hspace{2cm} (t<0) \\
-	E(t) &= a - \frac{g}{2\pi} \int_{0}^{\infty} ds_1 \big( a - \frac{g}{2\pi} \int ds_2 E(t - 2d - s_1 - s_2) \alpha^2 s_2 e^{-\alpha s_2} \big) \alpha^2 s_1 e^{-\alpha s_1} \\
-	&= a \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{\floor{t/d} - 1} \big] \\
-	&\hspace{3mm}+ (\frac{-g}{2\pi})^{\floor{t/d}} \int_{0}^{\infty}\int ... \int E(t - nd - s_1 - s_2 - ... - s_n) \alpha^{2n} s_1 s_2 ... s_n e^{-\alpha(s_1 + s_2 + ... + s_n)} ds_1 ds_2 ... ds_n\\
+	E(t) &= \frac{a}{2\pi} - \frac{g}{2\pi} \int_{0}^{\infty} ds_1 \big( \frac{a}{2\pi} - \frac{g}{2\pi} \int ds_2 E(t - 2d - s_1 - s_2) \alpha^2 s_2 e^{-\alpha s_2} \big) \alpha^2 s_1 e^{-\alpha s_1} \\
+	&= \frac{a}{2\pi} \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{n - 1} \big] \\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^{n} \int_{0}^{\infty}\int ... \int E(t - nd - s_1 - s_2 - ... - s_n) \alpha^{2n} s_1 s_2 ... s_n e^{-\alpha(s_1 + s_2 + ... + s_n)} ds_1 ds_2 ... ds_n\\
 	&= \mathcal{K}_{a,g}(t)\\
-	&\hspace{3mm}+ (\frac{-g}{2\pi})^{\floor{t/d}} \int_{0}^{\infty}\int ... \int E(t - nd - s_1 - s_2 - ... - s_n) \alpha^{2n} s_1 s_2 ... s_n e^{-\alpha(s_1 + s_2 + ... + s_n)} ds_1 ds_2 ... ds_n
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^{n} \int_{0}^{\infty}\int ... \int E(t - nd - s_1 - s_2 - ... - s_n) \alpha^{2n} s_1 s_2 ... s_n e^{-\alpha(s_1 + s_2 + ... + s_n)} ds_1 ds_2 ... ds_n
 \end{align}
 که در این رابطه 
 $\mathcal{K}_{a,g}(t)$
 همان پاسخ معادله در حالتی است که تیزه‌ها کاملا باریک هستند. \\
 این روند تو در تو تا زمانی ادامه می‌یابد که انتگرال‌ده ما به زمانی که ما آن را به صورت دستی مقید کرده‌ایم نرسد. زیرا از آن گام به بعد رابطه‌ی میدان از دینامیک گام پیشین خود بدست نمی‌آید.\\
-آخرین گام این رابطه در زمانی است که بخشی از آن در حالت مقید قرار دارد و بخشی از آن در حالت پویا. پس برای آن که معادلات را ساده‌تر کنیم؛ تغییر متغیر
+آخرین گام این رابطه در زمانی است که بخشی از آن در حالت مقید قرار دارد و بخشی از آن در حالت پویا. پس برای آن که این ملاحظه را اعمال کنیم؛ تغییر متغیر
 $r \equiv \sum s_i$
-را می‌دهیم و سپس آن را به دو بخش تقسیم می‌کنیم.\\
-
+را می‌دهیم تا ورودی تابع میدان را رصد کند. سپس روی مقادیر مختلف $r$ انتگرال‌ها را جمع می‌زنیم.
 \begin{align}
 	& \int_{0}^{\infty}\int ... \int E(t - nd - s_1 - s_2 - ... - s_n)
 	\alpha^{2n} s_1 s_2 ... s_n  e^{-\alpha(s_1 + s_2 + ... + s_n)} ds_1 ds_2 ... ds_n\\
-	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n \delta(r-\sum s_i) dr\\
-	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n \delta(r-\sum s_i) dr\\
+	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n \delta(r-\sum s_i) dr
+\end{align}
+معادل تابع دلتای دیراک برای ادامه‌ی انتگرال‌گیری مناسب‌تر است.
+\begin{align}
 	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n \frac{e^{ip(r-\sum s_i)}}{2\pi} dr dp\\
 	&= \int_{0}^{\infty}\int ... \int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} s_1 s_2 ... s_n ds_1 ds_2 ... ds_n e^{-ip\sum s_i} \frac{e^{ipr}}{2\pi} dr dp\\
-	&= \int_{0}^{\infty}\int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} \frac{e^{ipr}}{2\pi} [\int_0^{\infty} s e^{-ips} ds]^n dr dp\\
+	&= \int_{0}^{\infty}\int E(t - nd - r) \alpha^{2n} e^{-\alpha(r)} \frac{e^{ipr}}{2\pi} [\int_0^{\infty} s e^{-ips} ds]^n dr dp
 \end{align}
 عبارت p در جمله‌ی نهایی باید حتما باید قسمت موهومی منفی داشته باشد تا انتگرال ما قابل تعریف باشد.
 \begin{align}
-	&= \int_{0}^{\infty}\int E(t - nd - r) \alpha^{2n} e^{-\alpha r} \frac{e^{ipr}}{2\pi} (-p)^{-2n} dp dr\\
-	&= \int_{0}^{\infty} E(t - nd - r) \alpha^{2n} e^{-\alpha r} \frac{2\pi}{2\pi (2n-1)!} i \cdot \frac{\partial^{2n-1} e^{ipr}}{\partial p^{2n-1}}|_{p=0} dr\\
-	&= \frac{1}{(2n-1)!}\int_{0}^{\infty} E(t - nd - r) \alpha^{2n} e^{-\alpha r} i \cdot (ir)^{2n-1} dr\\
-	&= \frac{(-1)^n}{(2n-1)!} \int_{0}^{\infty} E(t - nd - r) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr\\
-	&= \frac{(-1)^n}{(2n-1)!} \int_{t-nd}^{\infty} E(t - nd - r) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr + \frac{(-1)^n}{(2n-1)!} \int_{0}^{t - nd}E(t - nd - r) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr\\
-	&= \frac{(-1)^n}{(2n-1)!} \int_{t-nd}^{\infty} (E_0 + \epsilon) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr + \frac{(-1)^n}{(2n-1)!} \int_{0}^{t - nd}(E_0 - g\epsilon/2\pi) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr\\
-	&= \frac{(-1)^n}{(2n-1)!} (E_0 + \epsilon) \int_{0}^{\infty} \alpha^{2n} e^{-\alpha r} r^{2n-1} dr + \frac{(-1)^n}{(2n-1)!} ( - \epsilon - g\epsilon/2\pi) \int_{0}^{t - nd} \alpha^{2n} e^{-\alpha r} r^{2n-1} dr\\
-	&= \frac{(-1)^n}{(2n-1)!} (E_0 + \epsilon) (2n - 1)! + \frac{(-1)^n}{(2n-1)!} ( - \epsilon - g\epsilon/2\pi) \int_{0}^{t - nd} \alpha^{2n} e^{-\alpha r} r^{2n-1} dr\\
-	&= (-1)^n (E_0 + \epsilon) + \frac{(-1)^n}{(2n-1)!} ( - \epsilon - g\epsilon/2\pi) \gamma(2n,\alpha( t-nd))\\
+	&= \int_{0}^{\infty}\int E(t - nd - r) \alpha^{2n} e^{-\alpha r} \frac{e^{ipr}}{2\pi} (-p^{-2})^n dp dr
 \end{align}
-
-پس در نهایت برای میدان خواهیم داشت:
+به کمک حساب‌مانده‌ها می‌دانیم که حاصل قسمت $p$ انتگرال برابر مشتق $ 2n-1 $ام از انتگرال‌ده آن است.
+\begin{align}
+	&= (-1)^n \int_{0}^{\infty} E(t - nd - r) \alpha^{2n} e^{-\alpha r} \frac{2\pi}{2\pi (2n-1)!} i \cdot \frac{\partial^{2n-1} e^{ipr}}{\partial p^{2n-1}}\mid_{p=0} dr\\
+	&= \frac{(-1)^n}{(2n-1)!}\int_{0}^{\infty} E(t - nd - r) \alpha^{2n} e^{-\alpha r} i \cdot (ir)^{2n-1} dr\\
+	&= \frac{1}{(2n-1)!} \int_{0}^{\infty} E(t - nd - r) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr\\
+\end{align}	
+همان‌طور که پیشتر گفته بودیم؛ تنها قسمتی از بازه‌ی انتگرال‌گیری ما مربوط به قسمت پویایی است و باید حساب آن را از قسمت قیدی جدا کنیم. این قسمت در بازه‌ی 
+$0 < r < t-nd$
+وجود دارد.
+\begin{align}
+	&= \frac{1}{(2n-1)!} \int_{t-nd}^{\infty} E(t - nd - r) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr + \frac{1}{(2n-1)!} \int_{0}^{t - nd}E(t - nd - r) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr	
+\end{align}
+میدان را در زمان‌های مقید می‌دانیم. از روی آن می‌توانیم میدان در گام اول را نیز محاسبه کنیم.
+\begin{align}
+	&= \frac{1}{(2n-1)!} \int_{t-nd}^{\infty} (E_0 + \epsilon) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr + \frac{1}{(2n-1)!} \int_{0}^{t - nd}(E_0 - g\epsilon/2\pi) \alpha^{2n} e^{-\alpha r} r^{2n-1} dr\\
+	&= \frac{1}{(2n-1)!} (E_0 + \epsilon) \int_{0}^{\infty} \alpha^{2n} e^{-\alpha r} r^{2n-1} dr + \frac{1}{(2n-1)!} ( - \epsilon - g\epsilon/2\pi) \int_{0}^{t - nd} \alpha^{2n} e^{-\alpha r} r^{2n-1} dr	
+\end{align}
+اگر بازه‌ی انتگرال اول از صفر شروع می‌شد؛ آنگاه می‌توانستیم آن را تبدیل به تابع گاما کنیم. اگر چه صورت کنونی آن به این شکل نیست اما می‌توانیم با اضافه کردن ادامه‌ی بازه به انتگرال و کم کردن آن از انتگرال دیگر، خواسته‌ی خود را برآورده کنیم.
+\begin{align}
+	&= \frac{1}{(2n-1)!} (E_0 + \epsilon) (2n - 1)! + \frac{1}{(2n-1)!} ( - \epsilon - g\epsilon/2\pi) \int_{0}^{t - nd} \alpha^{2n} e^{-\alpha r} r^{2n-1} dr\\
+	&= (E_0 + \epsilon) + \frac{1}{(2n-1)!} ( - \epsilon - g\epsilon/2\pi) \gamma(2n,\alpha( t-nd))
+\end{align}
+حال که جمله‌ی درخواستی خود را محاسبه کردیم؛ آن را در کنار جملات قبلی قرار می‌دهیم تا در نهایت برای میدان داشته باشیم:
 \begin{align}
 	E(t) &= \mathcal{K}_{a,g}(t) \\
-	&\hspace{3mm}+ (\frac{-g}{2\pi})^n (-1)^n (E_0 + \epsilon) \\
-	&\hspace{3mm}+ (\frac{-g}{2\pi})^n \frac{(-1)^n}{(2n-1)!} ( - \epsilon - g\epsilon/2\pi) \gamma(2n,\alpha( t-nd))\\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^n (E_0 + \epsilon) \\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^n \frac{1}{(2n-1)!} ( - \epsilon - g\epsilon/2\pi) \gamma(2n,\alpha( t-nd))\\
 	&= \mathcal{K}_{a,g}(t) \\
-	&\hspace{3mm}+ (\frac{g}{2\pi})^n (E_0 + \epsilon)\\
-	&\hspace{3mm}+ (\frac{g}{2\pi})^n ( - \epsilon - g\epsilon/2\pi) \frac{\gamma(2n,\alpha( t-nd))}{(2n-1)!}\\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^n (E_0 + \epsilon)\\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^n ( - \epsilon - g\epsilon/2\pi) \frac{\gamma(2n,\alpha( t-nd))}{(2n-1)!}\\
 	&= \mathcal{K}_{a,g}(t) \\
-	&\hspace{3mm}+ (\frac{g}{2\pi})^{\floor{t/d}} (E_0 + \epsilon)\\
-	&\hspace{3mm}+ (\frac{g}{2\pi})^{\floor{t/d}} ( - \epsilon - g\epsilon/2\pi) \frac{\gamma(2\floor{t/d},\alpha d( t/d - \floor{t/d}))}{(2n-1)!}\\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^{\floor{t/d}+1} (E_0 + \epsilon)\\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^{\floor{t/d} + 1} ( - \epsilon - g\epsilon/2\pi) \frac{\gamma(2\floor{t/d},\alpha d( t/d - \floor{t/d}))}{(2n-1)!}\\
+	&= E_0 + (\frac{-g}{2\pi})^{\floor{t/d}+1} \cdot \epsilon\\
+	&\hspace{3mm}+ (\frac{-g}{2\pi})^{\floor{t/d}+1} ( - \epsilon - g\epsilon/2\pi) \frac{\gamma(2\floor{t/d},\alpha d( t/d - \floor{t/d}))}{(2n-1)!}\\
 \end{align}
 نتیجه‌ی بدست آمده شامل نکات قابل توجهی است و تا حدودی با شواهد بدست آمده از شبیه‌سازی سازگاری دارد.
 \begin{enumerate}
@@ -226,7 +259,7 @@ $r \equiv \sum s_i$
 	$ \gamma(2n,0) = 0 $
 	درمی‌آید. این باعث می‌شود که فارغ از باریک یا تیزه بودن تیزه‌های ما میدن در این لحظات مطابق 		عبارت زیر باشد:
 	\begin{align}
-		&= a \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{\floor{t/d} - 1} \big] + (\frac{g}{2\pi})^{\floor{t/d}} (E_0 + \epsilon)
+		&= \frac{a}{2\pi} \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{\floor{t/d} - 1} \big] + (\frac{g}{2\pi})^{\floor{t/d}} (E_0 + \epsilon)
 	\end{align}
 	
 	\item 
@@ -236,7 +269,7 @@ $r \equiv \sum s_i$
 	$ \gamma(2n,\infty) = (2n-1)! $
 	درمی‌آید. در این حالت میدان نهایی عبارتی شبیه توصیف ‌کننده‌ی سامانه‌ی تیزه‌های باریک می‌دهد.
 	\begin{align}
-		&= a \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{\floor{t/d} - 1} \big] + (\frac{g}{2\pi})^{\floor{t/d}} (E_0 - g\epsilon/2\pi)
+		&= \frac{a}{2\pi} \big[ 1 - \frac{g}{2\pi} + (\frac{g}{2\pi})^2 + ... + (\frac{-g}{2\pi})^{\floor{t/d} - 1} \big] + (\frac{g}{2\pi})^{\floor{t/d}} (E_0 - g\epsilon/2\pi)
 	\end{align}
 	
 \end{enumerate}
