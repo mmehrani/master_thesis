@@ -73,15 +73,31 @@ connectivity_span = np.arange(connectivity_min,connectivity_max,connectivity_ste
 # In[8]:
 
 
-delay_min, delay_max, delay_step =0.25, 2.5, 0.25
+delay_min, delay_max, delay_step =0.1, 0.11, 0.25
 delay_span = np.arange(delay_min, delay_max, delay_step).round(2)
 
 
 # In[9]:
 
 
-alpha_min, alpha_max, alpha_step = 100, 125, 40
-alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
+# alpha_min, alpha_max, alpha_step = 1, 100, 10
+# alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
+a1 = np.logspace(0, 1,num = 2)
+a2 = np.arange(1,10,1)
+alpha_span = np.outer(a1, a2).flatten()
+alpha_span
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:

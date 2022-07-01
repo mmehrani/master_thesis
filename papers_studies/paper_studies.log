@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  14 JUN 2022 17:13
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  1 JUL 2022 13:02
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1626,18 +1626,34 @@ Overfull \hbox (37.83534pt too wide) detected at line 235
 []
  []
 
-[32]) [33] (paper_studies.bbl (paper_studies.brf)
+[32] [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+Overfull \vbox (36.82521pt too high) has occurred while \output is active []
+
+
+[35]
+Overfull \hbox (14.95pt too wide) detected at line 314
+[]
+ []
+
+
+Overfull \hbox (133.90736pt too wide) detected at line 327
+[]
+ []
+
+) [36] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
- [34
-
-]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [35] (paper_studies.aux)
+) [37
+
+] (paper_studies.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1658,4 +1674,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  88i,18n,95p,1335b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (35 pages).
+Output written on paper_studies.pdf (37 pages).

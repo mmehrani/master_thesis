@@ -22,3 +22,4 @@
 \contentsline {subsubsection}{حالت‌پایا}{26}{equation.3.0.99}%
 \contentsline {subsubsection}{اختلال از حالت پایا}{26}{equation.3.0.101}%
 \contentsline {subsubsection}{شبیه‌سازی سامانه‌ی تک‌جریان}{28}{equation.3.0.113}%
+\contentsline {subsubsection}{خیالش (مشکل) از کفم نمی‌رود.}{34}{equation.3.0.148}%

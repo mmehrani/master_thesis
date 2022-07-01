@@ -274,3 +274,61 @@ $0 < r < t-nd$
 	
 \end{enumerate}
 
+\زیرزیرقسمت{خیالش (مشکل) از کفم نمی‌رود.}
+
+متاسفانه مشکل همچنان پابرجاست. پس از تلاش‌های بسیار و زیرورو کردن راه‌حل مشکلات زیادی از میان آن بیرون کشیده شد. هر چند در ابتدا بنظر می‌آمد خودسازگار و جامع باشد.\\
+مسئله‌ی مهم آن است که ما بی‌مهابا هر دم میدان را درون خود جاگذاری می‌کنیم. گذشته از این که این کار به ازای تمامی زمان‌های شبیه‌سازی صحیح نیست. همواره وقتی میدان در زمان‌های منفی سیر می‌کند؛ باید حالت مقید را جاگذاری کنیم. این اتفاق در هر مرحله از بازنویسی انتگرال برحسب گام‌های قبلی رخ می‌دهد. پس قاعدتا هر مرحله باید انتگرال خود را به درستی تفکیک کنیم و فقط برای زمان‌های مثبت خود میدان را بر حسب خود بازنویسی کنیم.\\
+این بار بگذارید که به جای عبارت
+$a/2\pi$
+و
+$g/2\pi$
+بگذاریم:
+$\hat{g}, \hat{a}$
+
+
+\begin{align}
+	E &= E_0 + \epsilon \hspace{2cm} (t<0) \\
+	E(t) &= \hat{a} - \hat{g} \int_{0}^{\infty} ds_1 E(t - d - s_1) \alpha^2 s_1 e^{-\alpha s_1} \\
+	&= \hat{a} - \hat{g} \int_{t - d}^{\infty} ds_1 E(t - d - s_1) \alpha^2 s_1 e^{-\alpha s_1} \\
+	&\hspace{1 cm} - \hat{g} \int_{0}^{t - d} ds_1 E(t - d - s_1) \alpha^2 s_1 e^{-\alpha s_1} \\
+	&= \hat{a} - \hat{g} \int_{t - d}^{\infty} ds_1 ( E_0 + \epsilon ) \alpha^2 s_1 e^{-\alpha s_1}\\
+	& \hspace{1 cm} - \hat{g} \int_{0}^{t - d} ds_1 \big( \hat{a} - \hat{g} \int_{0}^{\infty} ds_2 E(t - 2d - s_1 - s_2) \alpha^2 s_2 e^{-\alpha s_2} \big) \alpha^2 s_1 e^{-\alpha s_1} \\
+	&= \hat{a} - \hat{g} \int_{t - d}^{\infty} ds_1 ( E_0 + \epsilon ) \alpha^2 s_1 e^{-\alpha s_1}\\
+	& \hspace{1 cm} - \hat{g} \hat{a} \int_{0}^{t - d} ds_1 \alpha^2 s_1 e^{-\alpha s_1}\\
+	& \hspace{1 cm} - \hat{g} \int_{0}^{t - d} \int_{0}^{\infty} ds_1 ds_2 E(t - 2d - s_1 - s_2) \alpha^2 s_2 e^{-\alpha s_2} \alpha^2 s_1 e^{-\alpha s_1} \\
+	&= \hat{a} - \hat{g} \int_{t - d}^{\infty} ds_1 ( E_0 + \epsilon ) \alpha^2 s_1 e^{-\alpha s_1}\\
+	& \hspace{1 cm} - \hat{g} \hat{a} \int_{0}^{t - d} ds_1 \alpha^2 s_1 e^{-\alpha s_1}\\
+	& \hspace{1 cm} + (-\hat{g})^2 \int_{0}^{t-d} \int_{t - d - s_1}^{\infty} ds_1 ds_2 E(t - 2d - s_1 - s_2) \alpha^2 s_2 e^{-\alpha s_2} \alpha^2 s_1 e^{-\alpha s_1} \\
+	& \hspace{1 cm} + (-\hat{g})^2 \int_{0}^{t - d} \int_{0}^{t - d - s_1} ds_1 ds_2 E(t - 2d - s_1 - s_2) \alpha^2 s_2 e^{-\alpha s_2} \alpha^2 s_1 e^{-\alpha s_1} \\
+	&= \hat{a} - \hat{g} \int_{t - d}^{\infty} ds_1 ( E_0 + \epsilon ) \alpha^2 s_1 e^{-\alpha s_1}\\
+	& \hspace{1 cm} - \hat{g} \hat{a} \int_{0}^{t - d} ds_1 \alpha^2 s_1 e^{-\alpha s_1}\\
+	& \hspace{1 cm} +(-\hat{g})^2 \int_{0}^{t-d} \int_{t - d - s_1}^{\infty} ds_1 ds_2 (E_0 + \epsilon) \alpha^2 s_2 e^{-\alpha s_2} \alpha^2 s_1 e^{-\alpha s_1} \\
+	& \hspace{1 cm} +(-\hat{g})^2 \int_{0}^{t - d} \int_{0}^{t - d - s_1} ds_1 ds_2 E(t - 2d - s_1 - s_2) \alpha^2 s_2 e^{-\alpha s_2} \alpha^2 s_1 e^{-\alpha s_1}
+\end{align}
+
+با ادامه‌ی این روند زنجیروار می‌توانیم حدس بزنیم که خانواده‌ای از جمع جملات متفاوت خواهیم داشت که به صورت زیر قابل نوشتن هستند:
+\begin{align}
+	E(t) &= \hat{a} + \hat{a} \sum^{n - 1}_{i=1} (-\hat{g})^i \int_{0}^{t - d} \int_{0}^{t - d - s_1} \int_{0}^{t - d - s_1 - s_2} ... \int_{0}^{t - d - s_1 - ... s_i} \Pi^i_j \alpha^2 s_j e^{-\alpha s_j} ds_j \\
+	&\hspace{1 cm} + (E_0 + \epsilon) \sum^{n}_{i=1} (-\hat{g})^i \int_{0}^{t - d} \int_{0}^{t - d - s_1} \int_{0}^{t - d - s_1 - s_2} ... \int_{t - d - s_1 - ... s_i}^{\infty} \Pi^i_j \alpha^2 s_j e^{-\alpha s_j} ds_j \\
+	&\hspace{1 cm} + (E_0 + \epsilon) (-\hat{g})^n \int_{0}^{t - d} \int_{0}^{t - d - s_1} \int_{0}^{t - d - s_1 - s_2} ... \int_{0}^{t - d - s_1 - ... s_{n-1}} \Pi^n_j \alpha^2 s_j e^{-\alpha s_j} ds_j
+\end{align}
+
+حال معادل سازی هرکدام با تابع گاما‌ی ناقص امکان پذیر است:
+\begin{align}
+	E(t) &= \hat{a} + \hat{a} \sum^{n - 1}_{i=1} (-\hat{g})^i [\int_0^{t-d} \alpha^2 s e^{-\alpha s} ds]^i\\
+	&\hspace{1 cm} + (E_0 + \epsilon) \sum^{n}_{i=1} (-\hat{g})^i \int_{0}^{t - d} \int_{0}^{t - d - s_1} \int_{0}^{t - d - s_1 - s_2} ... \int_0^{t - d - s_1 - ... - s_{i-1}} (1 - \int_{0}^{t - d - s_1 - ... - s_i} \Pi^i_j \alpha^2 s_j e^{-\alpha s_j} ds_j )  \\
+	&\hspace{1 cm} + (E_0 + \epsilon) (-\hat{g})^n [\int_{0}^{t - d} \alpha^2 s e^{-\alpha s} ds]^n\\
+	&= \hat{a} + \hat{a} \sum^{n - 1}_{i=1} (-\hat{g})^i [\int_0^{t-d} \alpha^2 s e^{-\alpha s} ds]^i\\
+	&\hspace{1 cm} + (E_0 + \epsilon) \sum^{n}_{i=1} (-\hat{g})^i  ([\int_0^{t-d} \alpha^2 s e^{-\alpha s} ds]^{i-1} - [\int_0^{t-d} \alpha^2 s e^{-\alpha s} ds]^i)  \\
+	&\hspace{1 cm} + (E_0 + \epsilon) (-\hat{g})^n [\int_{0}^{t - d} \alpha^2 s e^{-\alpha s} ds]^n \\
+	&= \hat{a} + \hat{a} \sum^{n - 1}_{i=1} (-\hat{g})^i \gamma^i(1,\alpha(t-d))\\
+	&\hspace{1 cm} + (E_0 + \epsilon) \sum^{n}_{i=1} (-\hat{g})^i  [\gamma^{i-1}(1,\alpha(t-d)) - \gamma^{i}(1,\alpha(t-d))]  \\
+	&\hspace{1 cm} + (E_0 + \epsilon) (-\hat{g})^n \gamma^{n}(1,\alpha(t-d)) \\
+\end{align}
+
+
+
+
+
+
+
