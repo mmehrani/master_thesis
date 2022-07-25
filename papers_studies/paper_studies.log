@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  1 JUL 2022 13:02
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  22 JUL 2022 18:00
 entering extended mode
 **./paper_studies.tex
 (paper_studies.tex
@@ -1633,17 +1633,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (36.82521pt too high) has occurred while \output is active []
 
 
-[35]
-Overfull \hbox (14.95pt too wide) detected at line 314
-[]
+[35] [36
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 341--350
+[][]
  []
 
 
-Overfull \hbox (133.90736pt too wide) detected at line 327
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+[][]
  []
 
-) [36] (paper_studies.bbl (paper_studies.brf)
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_analytical_trans_points
+_alpha20.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alph
+a20.png>
+
+Overfull \hbox (15.36613pt too wide) in paragraph at lines 372--373
+[][][][][] []
+ []
+
+) [37
+
+] [38] (paper_studies.bbl (paper_studies.brf)
 \tf@brf=\write6
 \openout6 = `paper_studies.brf'.
 
@@ -1651,7 +1666,7 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 12.
-) [37
+) [39
 
 ] (paper_studies.aux)
 
@@ -1666,12 +1681,12 @@ Package rerunfilecheck Info: File `paper_studies.brf' has not changed.
 (rerunfilecheck)             Checksum: A103110DAD3B1AACE15E96E88CAB685E;112.
  ) 
 Here is how much of TeX's memory you used:
- 27841 strings out of 411254
- 548691 string characters out of 2832814
+ 27851 strings out of 411254
+ 549974 string characters out of 2832814
  994210 words of memory out of 3000000
- 47700 multiletter control sequences out of 15000+600000
+ 47709 multiletter control sequences out of 15000+600000
  410579 words of font info for 131 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,18n,95p,1335b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper_studies.pdf (37 pages).
+Output written on paper_studies.pdf (39 pages).

@@ -1,4 +1,9 @@
+\section*{فرصتی برای مدل‌های دیگر نورونی}
+در بخش قبل به بررسی ویژگی‌های مدل انباشت‌-شلیک پراختیم. اگر چه این مدل بسیار ساده توانست رفتارهای آشنایی را برای ما بازتولید کند اما شامل محدودیت‌هایی است. این محدودیت‌ها باعث می‌شود تا ما به سراغ مدل‌های نورونی دیگری مانند نورون‌های چرخنده برویم.\\
+این مدل نسبت به مدل قبلی شامل ویژگی‌های مثبتی است. یکی از ویژگی‌های خوب آن این است که پس از بازنشانی فاز نورون تیزه زده، فاز آن به زاویه‌ای برده می‌شود که دارای خواص مثلثاتی مشابهی است. به این معنا که دیگر شاهد گسستگی در اندازه‌ی جملاتی که تحول نورون را توصیف می‌کنند؛ نیستیم.\\
+
 \فصل{شبکه‌ی نورون‌های چرخنده}
+\label{chap:rotational}
 در این مدل به جای آن که برای شبکه خود از مدل انباشت-شلیک استفاده کنیم از مدل چرخنده استفاده می‌کنیم. در این مدل نورون‌های ما مانند دونده‌هایی به دور میدان مثلثاتی می‌دوند. ما نقطه‌ی فاز $\pi$ را به عنوان علامت برای این دونده‌ها قرار دادیم. هر زمان که دونده‌ای از علامت خود گذشت یک تیزه برای او درنظرمی‌گیریم و بلافاصله او را به فاز $-\pi$ باز می‌گردانیم.\\
 
 برای توصیف فاز هر نورون از معادلات زیر استفاده می‌کنیم:
@@ -92,7 +97,7 @@
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
 		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.5_13.5_cluster_computed/sigma_phase_space_contour.png}
-		\caption{صفحه‌ی فاز مربوط به سامانه‌ی نورون‌های چرخنده: پیوست \ref{appendix:phase_samplingـrotational}}
+		\caption{صفحه‌ی فاز مربوط به سامانه‌ی نورون‌های چرخنده: پیوست \ref{appendix:phase_sampling_simple}}
 		\label{fig:rot_g_d_phase_space}
 	\end{subfigure}
 \end{figure}
@@ -112,7 +117,7 @@
 
 \begin{figure}[b]
 	\centering
-	\includegraphics[width = \textwidth]{figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png}
+	\includegraphics[width = 0.5 \textwidth]{../papers_studies/figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_3.5_13.5.png}
 	\caption{تعداد تیزه بر حسب جریان تصادفی برای سامانه‌ای با ده هزار نورون و ضریب تاثیر $g=50$}
 	\label{fig:spikes_num_vs_background_current}
 \end{figure}

@@ -66,25 +66,25 @@ random_input_span = (9.5,9.5)
 # In[7]:
 
 
-connectivity_min,connectivity_max, connectivity_step = 0,15.5, 0.5
+connectivity_min,connectivity_max, connectivity_step = 6,6.5, 0.1
 connectivity_span = np.arange(connectivity_min,connectivity_max,connectivity_step).round(2)
 
 
 # In[8]:
 
 
-delay_min, delay_max, delay_step =0.1, 0.11, 0.25
+delay_min, delay_max, delay_step =0.5, 2.5, 0.25
 delay_span = np.arange(delay_min, delay_max, delay_step).round(2)
 
 
 # In[9]:
 
 
-# alpha_min, alpha_max, alpha_step = 1, 100, 10
-# alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
-a1 = np.logspace(0, 1,num = 2)
-a2 = np.arange(1,10,1)
-alpha_span = np.outer(a1, a2).flatten()
+alpha_min, alpha_max, alpha_step = 20, 21, 10
+alpha_span = np.arange(alpha_min, alpha_max, alpha_step).round(2)
+# a1 = np.logspace(0, 1,num = 2)
+# a2 = np.arange(1,10,1)
+# alpha_span = np.outer(a1, a2).flatten()
 alpha_span
 
 
