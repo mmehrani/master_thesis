@@ -1,0 +1,102 @@
+\documentclass[12pt,onecolumn,a4paper]{book}
+\usepackage{epsfig,amsthm,amsmath,booktabs,csquotes}
+\usepackage [pagebackref=true, colorlinks, linkcolor=blue, citecolor=magenta, urlcolor=cyan] {hyperref}
+\usepackage{color,xcolor}
+
+\usepackage{titlesec} %include more subsection than subsubsection
+\usepackage{pdflscape}
+\usepackage{geometry}
+
+\usepackage{dialogue,attrib,lips}
+\usepackage[utf8]{inputenc}
+
+\renewcommand*\DialogueLabel[1]{%
+	\scshape\lowercase{#1} :\hfil
+}
+
+\usepackage{subcaption}
+\usepackage[labelformat=parens,labelsep=quad, skip=3pt]{caption}
+\usepackage{graphicx}
+\usepackage{enumerate,braket,tcolorbox}
+\usepackage[localise]{xepersian}
+
+\settextfont[Scale=1]{XB Niloofar}
+
+\ExplSyntaxOn
+\cs_set_eq:NN
+\etex_iffontchar:D
+\tex_iffontchar:D
+\cs_undefine:N \c_one
+\int_const:Nn \c_one { 1 }
+\ExplSyntaxOff
+\setdigitfont[Scale=1]{XB Niloofar}
+\setlatintextfont[Scale=1]{Times New Roman}
+
+% set local changes to margin
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+%
+
+% newcommands
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+
+% -------------------- Enviroments --------------------
+\newenvironment{mohsenletter}
+	{
+	\begin{tcolorbox}[title = صندوق پیام‌ها]
+	\begin{dialogue}
+	}
+	{
+	\end{dialogue}
+	\end{tcolorbox}
+	}
+
+\newenvironment{meeting}
+{
+	\begin{tcolorbox}[title = دیدار]
+		\begin{dialogue}
+		}
+		{
+		\end{dialogue}
+	\end{tcolorbox}
+}
+
+\input{styles/common.tex}
+\input{styles/custom.tex}
+
+\begin{document}
+
+
+\input{front/info.tex}
+\input{front/template/title.tex}
+\input{front/template/besmellah.tex}
+
+\tableofcontents \newpage
+\listoffigures \newpage
+\listoftables \newpage
+
+% -------------------- Front Pages --------------------
+%\input{front/preface.tex}
+%\input{front/acknowledge.tex}
+
+
+% -------------------- Chapters --------------------
+%\input{chapters/first_correspondance.tex}
+\input{chapters/the_very_first_problem.tex}
+\input{../papers_studies/chapters/integrate_and_fire_synchronization.tex}
+
+\input{../papers_studies/chapters/rotational_synchronization.tex}
+\input{../papers_studies/chapters/simple_synchronization.tex}
+
+\input{../papers_studies/chapters/analytical_approach.tex}
+\input{../papers_studies/chapters/simple_synchronization_single_input.tex}
+
+\appendix
+\input{../papers_studies/appendices/phase_space_sampling.tex}
+
+\newpage
+\bibliographystyle{plain-fa}
+\bibliography{MyReferences}
+
+\end{document}
