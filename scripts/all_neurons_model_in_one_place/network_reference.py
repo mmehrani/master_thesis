@@ -169,8 +169,8 @@ class Animated_network_of_neurons(Network_of_neurons):
         current_models = ['IF','Rotational','Non_repulsive_rotational']
         
         
-        self.warp_num = 100 #vertical axis
-        self.weft_num = 100 #horizental axix
+        self.warp_num = 500 #vertical axis
+        self.weft_num = 500 #horizental axix
         
         # self.potentail_arr = np.zeros(self.num_neurons)
         # self.potentail_arr = np.tile( np.linspace(-np.pi,np.pi, num = int(num_neurons/self.weft_num) ), reps = self.weft_num )
@@ -338,7 +338,11 @@ class Animated_network_of_neurons(Network_of_neurons):
                 
             #coloring
             if neuron_mark >= 0 and neuron_mark <= self.warp_num:
-                self.plateau[neuron_mark,neuron_column] = self.color_marks[neuron_index]
+                for x in range(3):
+                    for y in range(3 - x):
+                        x_circle = int( (neuron_mark + x)% self.warp_num) 
+                        y_circle = int( (neuron_column + y)% self.weft_num )
+                        self.plateau[x_circle, y_circle] = self.color_marks[neuron_index]
             
         
         self.colored_plateau.set_data(self.plateau)
