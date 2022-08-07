@@ -5,7 +5,8 @@
 از آنجا که شبیه‌سازی این سامانه شامل تعریف فرآیندهای متفاوتی بود؛ بدیهی است که نوشتن معادله‌ی تحلیلی برای توصیف کامل آن آسان نباشد. اما در این بخش تلاش می‌کنیم که با کنار هم قرار دادن معادلات اصلی چارچوب مسئله‌ی خود را مشخص کنیم.\\
 هر نورون که از حالت $\theta = \pi$ عبور می‌کند [تیزه می‌زند] باعث می‌شود تا سهمی از جریان با کیفیت $p(t):= \alpha^2 t \cdot exp(-\alpha t)$ به جریان درونی کل سامانه $E(t)$ اضافه شود.
 \begin{equation}
-	E(t) = \frac{1}{N}\int_{0}^{\infty} \int J_a (\pi,t-d-u) da \cdot \alpha^2 u\, e^{-\alpha u} du
+	E(t) = \frac{1}{N}\int_{0}^{\infty} \int J_a (\pi,t-d-u) da \cdot \alpha^2 u\, e^{-\alpha u} du 
+	\label{eq:general_field}
 \end{equation}
 
 اما جریان برای هر نورون با ورودی $a$ به طریق زیر است:
@@ -14,7 +15,7 @@
 \end{equation}
 این رفتار به خوبی نشان می‌دهد جریان فقط در ناحیه‌ی $\theta \leq \pi$ وجود دارد. زیرا ورود نورون به ناحیه‌ی مثبت‌تر را ممنوع کرده‌ایم.  بی‌تردید برای فهمیدن چگونگی تغییر جریان در ناحیه‌های میانی باید از معادله‌ی پخش استفاده کنیم.
 \begin{align}
-	\frac{\partial n_a}{\partial t} &= - \frac{\partial J_a}{\partial \theta}\\
+	\frac{\partial n_a}{\partial t} &= - \frac{\partial J_a}{\partial \theta} \label{eq:continuity_relation}\\
 	&= - \frac{\partial n_a}{\partial \theta} \cdot \dot \theta_a
 \end{align}
 \زیرقسمت{حل معادله‌ی شبکه‌ی ساده}

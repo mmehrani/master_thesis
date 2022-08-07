@@ -26,7 +26,7 @@ get_ipython().run_cell_magic('capture', '', 'from tqdm import tqdm_notebook as t
 
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
-neuron_model = current_models[2]
+neuron_model = current_models[1]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -58,22 +58,22 @@ num_ensembles_each_g = 1
 # In[6]:
 
 
-# random_input_span = (9.5,13.5)
-random_input_span = (9.5,9.5)
+random_input_span = (9.5,13.5)
+# random_input_span = (9.5,9.5)
 # random_input_span = (1.2,2.8)
 
 
 # In[7]:
 
 
-connectivity_min,connectivity_max, connectivity_step = 6,6.5, 0.1
+connectivity_min,connectivity_max, connectivity_step = 5,10, 0.1
 connectivity_span = np.arange(connectivity_min,connectivity_max,connectivity_step).round(2)
 
 
 # In[8]:
 
 
-delay_min, delay_max, delay_step =0.5, 2.5, 0.25
+delay_min, delay_max, delay_step =0.01, 0.5, 0.05
 delay_span = np.arange(delay_min, delay_max, delay_step).round(2)
 
 

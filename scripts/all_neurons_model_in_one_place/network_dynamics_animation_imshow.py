@@ -12,7 +12,7 @@ from tqdm import tqdm
 import numpy as np
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
-neuron_model = current_models[2]
+neuron_model = current_models[1]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -28,12 +28,12 @@ with open("network_reference.py", "w") as net_ref:
 num_neurons = 10000
 total_time = 200
 start_time_to_sample = 50
-g = 10
+g = 14
 # g = 0
 
 sample_network = Animated_network_of_neurons(neuron_model,
                                               num_neurons, g = g,
-                                              random_input_span = (9.5,9.5), alpha = 20)
+                                              random_input_span = (9.5,13.5), alpha = 100)
 # sample_network = Animated_network_of_neurons(neuron_model,
 #                                               num_neurons, g = g, alpha = 20)
 # sample_network = Animated_network_of_neurons('Non_repulsive_rotational',
@@ -41,7 +41,7 @@ sample_network = Animated_network_of_neurons(neuron_model,
 #                                               xlim = [9,10],ylim = [np.pi-1,np.pi])
 
 
-sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time = 0.1)
+sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time =1)
 
 for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
     sample_network._march_on(i)
