@@ -23,5 +23,5 @@
 \contentsline {subsubsection}{هم‌خوانی با هم‌گامی}{42}{equation.2.0.183}%
 \contentsline {subsection}{\numberline {2-0-3}از شبکه‌ی ساده به پیچیده‌تر}{42}{subsection.2.0.3}%
 \contentsline {subsubsection}{مدل قبلی را می‌خواهم!}{42}{subsection.2.0.3}%
-\contentsline {subsubsection}{جریان‌های وسیعتر}{45}{equation.2.0.203}%
-\contentsline {chapter}{\numberline {3}نتیجه‌گیری}{47}{chapter.3}%
+\contentsline {subsubsection}{جریان‌های وسیعتر}{45}{figure.caption.10}%
+\contentsline {chapter}{\numberline {3}نتیجه‌گیری}{49}{chapter.3}%

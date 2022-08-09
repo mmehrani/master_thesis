@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  7 AUG 2022 18:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  8 AUG 2022 00:32
 entering extended mode
 **./JozVaKol.tex
 (JozVaKol.tex
@@ -2076,35 +2076,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
  []
 
 [44]
-Underfull \vbox (badness 1354) has occurred while \output is active []
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha20.png 
+Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha20.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha100.png
+ Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha100.png>
 
- [45])
-(../papers_studies/chapters/conclusion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 76--1
+
+LaTeX Warning: Float too large for page by 48.10072pt on input line 79.
+
+[45] [46]) (../papers_studies/chapters/conclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 100--1
 [][]
  []
 
-[46]
+[47] [48
+
+]
 فصل 3.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 2--96
 [][]
  []
 
-[47
-
-] (JozVaKol.bbl (JozVaKol.brf)
+[49] (JozVaKol.bbl (JozVaKol.brf)
 \tf@brf=\write7
 \openout7 = `JozVaKol.brf'.
 
- [48
+ [50
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 7.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 13.
-) [49] (JozVaKol.aux)
+) [51] (JozVaKol.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2117,12 +2128,12 @@ Package rerunfilecheck Info: File `JozVaKol.brf' has not changed.
 (rerunfilecheck)             Checksum: E964BEEE1A6A74497BA7957E04799B01;132.
  ) 
 Here is how much of TeX's memory you used:
- 29359 strings out of 411254
- 573623 string characters out of 2832814
- 1006565 words of memory out of 3000000
- 49125 multiletter control sequences out of 15000+600000
+ 29381 strings out of 411254
+ 576277 string characters out of 2832814
+ 1006563 words of memory out of 3000000
+ 49144 multiletter control sequences out of 15000+600000
  412418 words of font info for 152 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,18n,95p,1296b,662s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on JozVaKol.pdf (49 pages).
+Output written on JozVaKol.pdf (51 pages).

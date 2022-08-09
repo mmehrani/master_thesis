@@ -246,8 +246,12 @@ class Animated_network_of_neurons(Network_of_neurons):
         # ax.invert_yaxis()
         
         ax_stat.set_xlabel('population')
-        self.pop_dist, = ax_stat.plot( np.sum(self.plateau>0,axis = 1), np.linspace(self.floor_state,self.ceiling_state,num = self.warp_num) )
-        ax_stat.set_xlim([0,self.num_neurons/self.warp_num])
+        # self.pop_dist, = ax_stat.plot( np.sum(self.plateau>0,axis = 1), np.linspace(self.floor_state,self.ceiling_state,num = self.warp_num) )
+        hist, bins = np.histogram(self.potentail_arr,
+                                  bins=np.linspace(self.floor_state,self.ceiling_state,num = self.warp_num),
+                                  density=True)
+        self.pop_dist, = ax_stat.plot( hist, bins[:-1] )
+        # ax_stat.set_xlim([0,self.num_neurons/self.warp_num])
         return
     
     
@@ -315,38 +319,51 @@ class Animated_network_of_neurons(Network_of_neurons):
         return
     
     
+    def _on_chart_fun(self, x, y):
+        x_corrected = x
+        y_corrected = y
+        if x >= self.warp_num:
+            x_corrected = self.warp_num - 1
+        elif x < 0 :
+            x_corrected = 0
+
+        if y >= self.weft_num:
+            y_corrected = self.weft_num - 1
+        elif y < 0 :
+            y_corrected = 0            
+
+        return x_corrected, y_corrected
+    
     def _update_ax(self):
-        was_network_active = np.sum(self.spike_mask) > 0
         
         self.plateau[:]=self.plateau[:]*0
         
-        phase_marks = np.floor( (self.potentail_arr - self.floor_state) / self.grating_blocks_length ).astype('int') #sorted neurons
-        
-        # Change the spiking group color if they stopped spiking
-        if np.sum(self.spike_mask) == 0 and was_network_active:
-            # self.color_num += 2
-            self.color_num = (self.color_num %10)
+        self.phase_marks = np.floor( (self.potentail_arr - self.floor_state) / self.grating_blocks_length ).astype('int') #sorted neurons
     
         # Update neuron phase marks and color
         for neuron_index in range(self.num_neurons):
             neuron_column = self.column_indices[neuron_index]
-            neuron_mark = phase_marks[neuron_index]
+            neuron_mark = self.phase_marks[neuron_index]
             
             #Spiking ones
             if self.spike_mask[neuron_index] == True:
                 self.color_marks[neuron_index] = self.color_num
                 
             #coloring
-            if neuron_mark >= 0 and neuron_mark <= self.warp_num:
-                for x in range(3):
-                    for y in range(3 - x):
-                        x_circle = int( (neuron_mark + x)% self.warp_num) 
-                        y_circle = int( (neuron_column + y)% self.weft_num )
-                        self.plateau[x_circle, y_circle] = self.color_marks[neuron_index]
+            self.radius = 1
+            for x in range(-self.radius, self.radius):
+                y_min, y_max = sorted([x - self.radius, self.radius - x]) 
+                for y in range(y_min, y_max):
+                    #make a circle for each neuron
+                    x_circle, y_circle = self._on_chart_fun(neuron_mark + x, neuron_column + y)
+                    self.plateau[x_circle, y_circle] = 5
             
         
         self.colored_plateau.set_data(self.plateau)
-        self.pop_dist.set_xdata( np.sum(self.plateau>0,axis = 1) )
+        # self.pop_dist.set_xdata( np.sum(self.plateau>0,axis = 1) )
+        self.pop_dist.set_xdata( np.histogram(self.potentail_arr,
+                                              bins= np.linspace(self.floor_state,self.ceiling_state,num = self.warp_num),
+                                              density=True)[0] )
 
         return
 

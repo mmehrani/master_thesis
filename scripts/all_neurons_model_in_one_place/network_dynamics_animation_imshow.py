@@ -27,13 +27,13 @@ with open("network_reference.py", "w") as net_ref:
     
 num_neurons = 10000
 total_time = 200
-start_time_to_sample = 50
+start_time_to_sample = 100
 g = 14
 # g = 0
 
 sample_network = Animated_network_of_neurons(neuron_model,
                                               num_neurons, g = g,
-                                              random_input_span = (9.5,13.5), alpha = 100)
+                                              random_input_span = (9.5,13.5), alpha = 20)
 # sample_network = Animated_network_of_neurons(neuron_model,
 #                                               num_neurons, g = g, alpha = 20)
 # sample_network = Animated_network_of_neurons('Non_repulsive_rotational',
