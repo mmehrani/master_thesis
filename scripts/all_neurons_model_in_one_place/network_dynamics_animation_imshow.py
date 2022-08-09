@@ -27,8 +27,8 @@ with open("network_reference.py", "w") as net_ref:
     
 num_neurons = 10000
 total_time = 200
-start_time_to_sample = 100
-g = 14
+start_time_to_sample = 50
+g = 7
 # g = 0
 
 sample_network = Animated_network_of_neurons(neuron_model,
@@ -41,7 +41,7 @@ sample_network = Animated_network_of_neurons(neuron_model,
 #                                               xlim = [9,10],ylim = [np.pi-1,np.pi])
 
 
-sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time =0.1)
+sample_network.brace_for_lunch(total_time, time_step = 0.01, delay_time =1)
 
 for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
     sample_network._march_on(i)

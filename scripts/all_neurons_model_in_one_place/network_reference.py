@@ -239,7 +239,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         ax.set_yticklabels(self.important_states_namestrings)
         ax.set_title('Network dynamic N={} g={}'.format(self.num_neurons,self.g))
         
-        self.colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'hot')
+        self.colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'binary')
 
         # ax.set_xlim(self.ax_xlim)
         ax.set_ylim(self.ax_ylim)
@@ -351,12 +351,12 @@ class Animated_network_of_neurons(Network_of_neurons):
                 
             #coloring
             self.radius = 1
-            for x in range(-self.radius, self.radius):
-                y_min, y_max = sorted([x - self.radius, self.radius - x]) 
-                for y in range(y_min, y_max):
+            for x in range(-self.radius, self.radius + 1):
+                y_min, y_max = sorted([abs(x) - self.radius, self.radius - abs(x)]) 
+                for y in range(y_min, y_max + 1):
                     #make a circle for each neuron
                     x_circle, y_circle = self._on_chart_fun(neuron_mark + x, neuron_column + y)
-                    self.plateau[x_circle, y_circle] = 5
+                    self.plateau[x_circle, y_circle] = 10
             
         
         self.colored_plateau.set_data(self.plateau)
@@ -403,7 +403,7 @@ class Animated_network_of_neurons(Network_of_neurons):
                          show_field = False, show_velocity = False, path = None):
         self.fig = plt.figure()
         plt.rc('font', family='serif')
-        plt.style.use('dark_background')
+        # plt.style.use('dark_background')
 
         self.column_indices = self._compute_column_indices()
         
@@ -412,7 +412,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.grating_blocks_length = ( self.ceiling_state - self.floor_state )/self.warp_num
         self.plateau = np.zeros((self.warp_num, self.weft_num))
         
-        self.color_num = 5
+        self.color_num = 10
         self.color_marks = np.ones(self.num_neurons) * self.color_num
         
         self.show_space = show_space
