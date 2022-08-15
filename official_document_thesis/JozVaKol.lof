@@ -1,9 +1,14 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1-2}{\ignorespaces تعداد تیزه بر حسب جریان تصادفی برای سامانه‌ای با ده هزار نورون و ضریب تاثیر $g=50$\relax }}{13}{figure.caption.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2-1}{\ignorespaces تطابق جریان پایای بدست آمده از حل عددی و تحلیلی\relax }}{24}{figure.caption.5}%
-\contentsline {figure}{\numberline {2-2}{\ignorespaces تحول میدان سامانه‌ای تک‌جریان و با تیزه‌های پهن از اخنلالی کوچک از حالت پایا (شکل اشتباه است) \relax }}{31}{figure.caption.6}%
-\contentsline {figure}{\numberline {2-3}{\ignorespaces مشخصه‌ی نظم سامانه ده هزار نورونی تک‌جریان\relax }}{32}{figure.caption.7}%
-\contentsline {figure}{\numberline {2-5}{\ignorespaces مقایسه‌ی نقطه‌ی گذرفاز محاسبه شده و داده‌های شبیه‌سازی\relax }}{43}{figure.caption.9}%
-\contentsline {figure}{\numberline {2-6}{\ignorespaces تطبیق شبیه‌سازی عددی با رابطه‌ی تحلیلی \ref {eq:analytical_first_trans_point_rotational} \relax }}{46}{figure.caption.10}%
+\contentsline {figure}{\numberline {2-1}{\ignorespaces مقاله‌ی اندرسون در سال ۱۹۷۲ که آغازگر جهان‌بینی جدیدی در حل مسائل پیچیده بود.\relax }}{12}{figure.caption.3}%
+\contentsline {figure}{\numberline {2-2}{\ignorespaces تفکیک بخش‌های مختلف مغز بر حسب کنترل اعضای بدن \cite {penttila_2022} \relax }}{13}{figure.caption.4}%
+\contentsline {figure}{\numberline {2-3}{\ignorespaces سرایت هم‌گامی از کانون آن به ناحیه‌های همسایه \cite {Tomlinson2017SecondaryGO} محور عمودی در شکل بالا نمایش دهنده‌ی شمارنده‌های گیرنده‌هایی است که سیگنال‌های دریافتی از ناحیه‌های مختلف مغز را ضبط کرده‌اند. در این شکل به وضوح می‌بینیم که پس گذشت ۱۰ ثانیه از شروع فعالیت کانون صرع، بقیه بقیه نواحی هم شروع به تشدید می‌کند و پس از گذشت ۸۰ ثانیه حمله‌ی صرع متوقف می‌شود. \relax }}{15}{figure.caption.5}%
+\contentsline {figure}{\numberline {2-4}{\ignorespaces آزمایش جعبه‌ی سیاه - در این آزمایش بررسی می‌شود که آیا مدل یا برنامه‌ی ارائه شده توانسته است که با توجه به ورودی‌ها خروجی‌های مورد انتظار را بازتولید کند یا خیر.\relax }}{17}{figure.caption.6}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4-2}{\ignorespaces تعداد تیزه بر حسب جریان تصادفی برای سامانه‌ای با ده هزار نورون و ضریب تاثیر $g=50$\relax }}{33}{figure.caption.13}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6-1}{\ignorespaces تصویر فضای فاز سامانه نورونی انباشت‌وشلیک\relax }}{39}{figure.caption.17}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7-1}{\ignorespaces تطابق جریان پایای بدست آمده از حل عددی و تحلیلی\relax }}{50}{figure.caption.21}%

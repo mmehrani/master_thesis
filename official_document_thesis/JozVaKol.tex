@@ -1,6 +1,7 @@
 \documentclass[12pt,onecolumn,a4paper]{book}
+\usepackage[utf8]{inputenc}
 \usepackage{epsfig,amsthm,amsmath,booktabs,csquotes}
-\usepackage [pagebackref=true, colorlinks, linkcolor=blue, citecolor=magenta, urlcolor=cyan] {hyperref}
+%\usepackage [pagebackref=true, colorlinks, linkcolor=blue, citecolor=magenta, urlcolor=cyan] {hyperref}
 \usepackage{color,xcolor}
 
 \usepackage{titlesec} %include more subsection than subsubsection
@@ -8,7 +9,6 @@
 \usepackage{geometry}
 
 \usepackage{dialogue,attrib,lips}
-\usepackage[utf8]{inputenc}
 
 \renewcommand*\DialogueLabel[1]{%
 	\scshape\lowercase{#1} :\hfil
@@ -18,9 +18,11 @@
 \usepackage[labelformat=parens,labelsep=quad, skip=3pt]{caption}
 \usepackage{graphicx}
 \usepackage{enumerate,braket,tcolorbox}
-\usepackage[localise]{xepersian}
 
-\settextfont[Scale=1]{XB Niloofar}
+
+%\usepackage[localise]{xepersian}
+%
+%\settextfont[Scale=1]{XB Niloofar}
 
 \ExplSyntaxOn
 \cs_set_eq:NN
@@ -29,8 +31,8 @@
 \cs_undefine:N \c_one
 \int_const:Nn \c_one { 1 }
 \ExplSyntaxOff
-\setdigitfont[Scale=1]{XB Niloofar}
-\setlatintextfont[Scale=1]{Times New Roman}
+%\setdigitfont[Scale=1]{XB Niloofar}
+%\setlatintextfont[Scale=1]{Times New Roman}
 
 % set local changes to margin
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
@@ -77,22 +79,24 @@
 %\listoftables \newpage
 
 % -------------------- Front Pages --------------------
-%\input{front/preface.tex}
-%\input{front/acknowledge.tex}
+\input{front/preface.tex}
+\input{front/acknowledge.tex}
 
 
 % -------------------- Chapters --------------------
-%\input{chapters/first_correspondance.tex}
-%\input{chapters/the_very_first_problem.tex}
-%\input{../papers_studies/chapters/integrate_and_fire_synchronization.tex}
+\input{chapters/first_correspondance.tex}
+\input{chapters/the_very_first_problem.tex}
 
-\input{../papers_studies/chapters/rotational_synchronization.tex}
+%\input{../papers_studies/chapters/integrate_and_fire_synchronization.tex}
+%\input{../papers_studies/chapters/rotational_synchronization.tex}
 %\input{../papers_studies/chapters/simple_synchronization.tex}
 
-\input{../papers_studies/chapters/analytical_approach.tex}
-\input{../papers_studies/chapters/simple_synchronization_single_input.tex}
-\input{../papers_studies/chapters/from_simple_to_other_models.tex}
-\input{../papers_studies/chapters/conclusion.tex}
+\input{../papers_studies/chapters/animation_description.tex}
+
+%\input{../papers_studies/chapters/analytical_approach.tex}
+%\input{../papers_studies/chapters/simple_synchronization_single_input.tex}
+%\input{../papers_studies/chapters/from_simple_to_other_models.tex}
+%\input{../papers_studies/chapters/conclusion.tex}
 
 
 

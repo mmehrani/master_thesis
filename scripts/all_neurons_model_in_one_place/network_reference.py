@@ -1,4 +1,4 @@
-neuron_engine = 'Rotational'
+neuron_engine = 'IF'
 
 # -*- coding: utf-8 -*-
 """
@@ -211,6 +211,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.total_time = total_time
         self.total_steps = total_steps
         self.time_step = time_step
+        self.delay_time = delay_time
         self.delay_step = int(delay_time/time_step)
         
         
@@ -237,7 +238,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         
         ax.set_yticks([self.floor_state, - np.pi, 0, self.ceiling_state])
         ax.set_yticklabels(self.important_states_namestrings)
-        ax.set_title('Network dynamic N={} g={}'.format(self.num_neurons,self.g))
+        ax.set_title('N_neurons={} g={} delay ={}(s)'.format(self.num_neurons,self.g,self.delay_time))
         
         self.colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'binary')
 
