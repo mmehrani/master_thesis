@@ -1,4 +1,4 @@
-neuron_engine = 'IF'
+neuron_engine = 'Rotational'
 
 # -*- coding: utf-8 -*-
 """
@@ -234,25 +234,26 @@ class Animated_network_of_neurons(Network_of_neurons):
     def _init_ax(self):
         
         ax = self.fig.add_subplot(self.gs[0,0])
-        ax_stat = self.fig.add_subplot(self.gs[0,1], sharey = ax)
+        
         
         ax.set_yticks([self.floor_state, - np.pi, 0, self.ceiling_state])
         ax.set_yticklabels(self.important_states_namestrings)
-        ax.set_title('N_neurons={} g={} delay ={}(s)'.format(self.num_neurons,self.g,self.delay_time))
+        ax.set_title(r'N = $10^{}$, g={}, delay ={}(s)'.format(int(np.log10(self.num_neurons)),self.g,self.delay_time))
         
         self.colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'binary')
-
+        ax.set_xlabel('External input')
+        ax.set_ylabel('Phase state')
         # ax.set_xlim(self.ax_xlim)
         ax.set_ylim(self.ax_ylim)
         # ax.invert_yaxis()
         
-        ax_stat.set_xlabel('population')
-        # self.pop_dist, = ax_stat.plot( np.sum(self.plateau>0,axis = 1), np.linspace(self.floor_state,self.ceiling_state,num = self.warp_num) )
-        hist, bins = np.histogram(self.potentail_arr,
-                                  bins=np.linspace(self.floor_state,self.ceiling_state,num = self.warp_num),
-                                  density=True)
-        self.pop_dist, = ax_stat.plot( hist, bins[:-1] )
-        # ax_stat.set_xlim([0,self.num_neurons/self.warp_num])
+        if self.show_pop == True:
+            ax_stat = self.fig.add_subplot(self.gs[0,1], sharey = ax)
+            ax_stat.set_xlabel('pop. density')
+            hist, bins = np.histogram(self.potentail_arr,
+                                      bins=np.linspace(self.floor_state,self.ceiling_state,num = int(self.warp_num/10)),
+                                      density=True)
+            self.pop_dist, = ax_stat.plot( hist, bins[:-1], color = 'k' )
         return
     
     
@@ -266,7 +267,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         ax_e.set_ylim([-0.5,2.5])
 
         time_series = np.arange(0,0.8,self.time_step)
-        self.e_pulse, = ax_e.plot(time_series,time_series*0)
+        self.e_pulse, = ax_e.plot(time_series,time_series*0, color = 'k')
 
         return
     
@@ -284,18 +285,27 @@ class Animated_network_of_neurons(Network_of_neurons):
     def _compute_figure_grid(self):
         nrows = np.sum([self.show_space,  self.show_field, self.show_velocity])
         if self.show_space == True:
-            ncols = 2
-            width_ratios = (10,4)
+            if self.show_pop == True:
+                ncols = 2
+                width_ratios = (10,4)
+            elif self.show_pop == False:
+                ncols = 1
+                width_ratios = None
+                
             if self.show_field == True and self.show_velocity == True: 
                 height_ratios = (10,5,2)
             elif self.show_field == True or self.show_velocity == True: 
                 height_ratios = (10,5)
-            self.gs = gridspec.GridSpec(nrows, ncols, width_ratios = width_ratios, height_ratios = height_ratios, wspace = 0.2)
+            self.gs = gridspec.GridSpec(nrows, ncols,
+                                        width_ratios = width_ratios, height_ratios = height_ratios,
+                                        hspace = 0.3, wspace = 0.2)
         else:
             ncols = 1
             if self.show_field == True and self.show_velocity == True: 
                 height_ratios = (1,1)
-                self.gs = gridspec.GridSpec(nrows, ncols, height_ratios = height_ratios, wspace = 0.2)
+                self.gs = gridspec.GridSpec(nrows, ncols,
+                                            height_ratios = height_ratios,
+                                            hspace = 0.3, wspace = 0.2)
             elif self.show_field == True or self.show_velocity == True: 
                 self.gs = gridspec.GridSpec(nrows, ncols, wspace = 0.2)
 
@@ -317,6 +327,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         if self.show_space == True: self._init_ax()
         if self.show_field == True: self._init_ax_e()
         if self.show_velocity == True: self._init_ax_theta_dot()
+        
         return
     
     
@@ -361,10 +372,11 @@ class Animated_network_of_neurons(Network_of_neurons):
             
         
         self.colored_plateau.set_data(self.plateau)
-        # self.pop_dist.set_xdata( np.sum(self.plateau>0,axis = 1) )
-        self.pop_dist.set_xdata( np.histogram(self.potentail_arr,
-                                              bins= np.linspace(self.floor_state,self.ceiling_state,num = self.warp_num),
-                                              density=True)[0] )
+
+        if self.show_pop == True:
+            self.pop_dist.set_xdata( np.histogram(self.potentail_arr,
+                                                  bins= np.linspace(self.floor_state,self.ceiling_state,int(self.warp_num/10)),
+                                                  density=True)[0] )
 
         return
 
@@ -388,7 +400,8 @@ class Animated_network_of_neurons(Network_of_neurons):
         if self.random_input_span[1] != self.random_input_span[0]:
             indices = np.floor( (self.random_input - self.random_input_span[0])/(self.random_input_span[1] - self.random_input_span[0]) * (self.weft_num-1) ).astype('int')
         elif self.random_input_span[1] == self.random_input_span[0]:
-            indices = np.repeat( np.arange(self.num_neurons / self.weft_num, dtype = int), repeats= self.weft_num)
+            indices = np.floor( np.random.uniform(size = self.num_neurons) * (self.weft_num-1) ).astype('int')
+            # indices = np.repeat( np.arange(self.weft_num, dtype = int), repeats= self.warp_num)
         return indices
     
     
@@ -400,7 +413,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         return
     
     
-    def render_animation(self, start_time, show_space = True,
+    def render_animation(self, start_time, show_space = True, show_pop = False,
                          show_field = False, show_velocity = False, path = None):
         self.fig = plt.figure()
         plt.rc('font', family='serif')
@@ -419,6 +432,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.show_space = show_space
         self.show_field = show_field
         self.show_velocity = show_velocity
+        self.show_pop = show_pop
         
 
         # self.fig.tight_layout()

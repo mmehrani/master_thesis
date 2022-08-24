@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  15 AUG 2022 09:53
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  24 AUG 2022 08:44
 entering extended mode
 **./JozVaKol.tex
 (JozVaKol.tex
@@ -1497,28 +1497,25 @@ Underfull \vbox (badness 6978) has occurred while \output is active []
 
  [3
 
-])
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4])
 \tf@toc=\write5
 \openout5 = `JozVaKol.toc'.
 
 
-[4] (JozVaKol.lof
+[5] [6
 
-LaTeX Warning: Citation `penttila_2022' on page 5 undefined on input line 4.
+] (JozVaKol.lof
+Underfull \vbox (badness 1337) has occurred while \output is active []
 
-
-LaTeX Warning: Citation `Tomlinson2017SecondaryGO' on page 5 undefined on input
- line 5.
-
-)
+ [7])
 \tf@lof=\write6
 \openout6 = `JozVaKol.lof'.
 
- [5
 
-] (front/preface.tex [6
-
-]
+[8] (front/preface.tex
 فصل 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -1538,7 +1535,9 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
+ [9
+
+]
 (chapters/first_correspondance.tex
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 (Font)              scaled to size 8.71997pt on input line 9.
@@ -1576,7 +1575,7 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 (Font)              scaled to size 5.44998pt on input line 9.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 (Font)              scaled to size 7.62997pt on input line 9.
- [8]
+ [10]
 
 LaTeX Font Warning: Font shape `TU/XBNiloofar(0)/m/sc' undefined
 (Font)              using `TU/XBNiloofar(0)/m/n' instead on input line 21.
@@ -1601,8 +1600,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9])
-(chapters/the_very_first_problem.tex [10]
+ [11])
+(chapters/the_very_first_problem.tex [12]
 فصل 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1617,7 +1616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
 Underfull \vbox (badness 1953) has occurred while \output is active []
 
- [11
+ [13
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -1636,7 +1635,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--24
 [][]
  []
 
-[12]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
 Overfull \hbox (5.12369pt too wide) in paragraph at lines 25--26
 []\TU/XBNiloofar(0)/m/sc/12 می‌کنند با مدلسازی رفتارهای طلایی مغز همچون حافظه، 
 خواب و ... و همچنین اختلالات و بیماری‌هایی[]
@@ -1645,20 +1647,11 @@ Overfull \hbox (5.12369pt too wide) in paragraph at lines 25--26
 File: figs//../Figures/neuroanatomy_plot.jpg Graphic file (type bmp)
 <figs//../Figures/neuroanatomy_plot.jpg>
 
-LaTeX Warning: Citation `penttila_2022' on page 13 undefined on input line 36.
-
-
-LaTeX Warning: Citation `penttila_2022' on page 13 undefined on input line 36.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 [][]
  []
 
-
-Underfull \vbox (badness 1939) has occurred while \output is active []
-
- [13]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 [][]
  []
@@ -1670,30 +1663,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
 File: figs//../Figures/generalized_seizure.png Graphic file (type bmp)
 <figs//../Figures/generalized_seizure.png>
-
-LaTeX Warning: Citation `Tomlinson2017SecondaryGO' on page 14 undefined on inpu
-t line 58.
-
-
-LaTeX Warning: Citation `Tomlinson2017SecondaryGO' on page 14 undefined on inpu
-t line 58.
-
-[14] [15]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 [][]
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
 Underfull \hbox (badness 10000) in paragraph at lines 82--85
 [][]
  []
 
 File: figs//../Figures/Black_box_test.jpg Graphic file (type bmp)
 <figs//../Figures/Black_box_test.jpg>
-[16]) (../papers_studies/chapters/integrate_and_fire_synchronization.tex
-[17] [18
 
-]
+LaTeX Warning: Citation `lapicque:jppg1907' on page 18 undefined on input line 
+101.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+File: Figures/IF_model_spike_pattern.png Graphic file (type bmp)
+<Figures/IF_model_spike_pattern.png>
+
+[19]
+File: figs//../Figures/Canonical model.png Graphic file (type bmp)
+<figs//../Figures/Canonical model.png>
+File: Figures/canonical_model_spike_pattern.png Graphic file (type bmp)
+<Figures/canonical_model_spike_pattern.png>
+ [20] [21])
+(../papers_studies/chapters/integrate_and_fire_synchronization.tex [22]
 فصل 3.
 
 LaTeX Warning: The counter will not be printed.
@@ -1702,18 +1704,20 @@ LaTeX Warning: The counter will not be printed.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
+ [23
+
+]
 Missing character: There is no ـ in font cmmi8!
 Missing character: There is no ـ in font cmmi8!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+ [24]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 [][]
  []
 
-[21]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 [][]
  []
@@ -1725,7 +1729,7 @@ LaTeX Warning: The counter will not be printed.
 
 Underfull \vbox (badness 2521) has occurred while \output is active []
 
- [22]
+ [26]
 File: ../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T100
 0_g5_input_1.2_2.8/raster_plot.png Graphic file (type bmp)
 <../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T1000_g5_
@@ -1760,17 +1764,6 @@ File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
 2.8_cluster_computed/sigma_phase_space_contour.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
 luster_computed/sigma_phase_space_contour.png>
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 11.93546pt on input line 121.
-
-
-LaTeX Warning: Reference `appendix:phase_sampling_if' on page 23 undefined on i
-nput line 121.
-
-
-LaTeX Warning: Reference `appendix:phase_sampling_if' on page 23 undefined on i
-nput line 121.
-
 
 Underfull \hbox (badness 7168) in paragraph at lines 121--121
 [][]\TU/XBNiloofar(0)/m/n/10.95 (و) |صفحه‌ی فاز مربوط به سامانه‌ی نورون‌های[]
@@ -1791,21 +1784,21 @@ Overfull \hbox (2.1289pt too wide) in paragraph at lines 83--124
 [][]  [] []
  []
 
-[23] [24]
+[27] [28]
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 [][]
  []
 
 
-LaTeX Warning: Reference `fig:if_g_d_phase_space' on page 25 undefined on input
+LaTeX Warning: Reference `fig:if_g_d_phase_space' on page 29 undefined on input
  line 147.
 
-[25]) (../papers_studies/chapters/rotational_synchronization.tex
+[29]) (../papers_studies/chapters/rotational_synchronization.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 [][]
  []
 
-[26]
+[30]
 فصل 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -1820,14 +1813,22 @@ LaTeX Warning: The counter will not be printed.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27
+ [31
 
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 28.
 
-[28]
+
+LaTeX Warning: Citation `safaeesirat2020critical' on page 32 undefined on input
+ line 29.
+
+
+LaTeX Warning: Citation `safaeesirat2020critical' on page 32 undefined on input
+ line 37.
+
+[32]
 
 LaTeX Warning: The counter will not be printed.
              The label is: * on input line 47.
@@ -1856,14 +1857,6 @@ mp)
 <../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
 5_13.5_cluster_computed/sigma_phase_space_contour.png>
 
-LaTeX Warning: Reference `appendix:phase_sampling_simple' on page 29 undefined 
-on input line 100.
-
-
-LaTeX Warning: Reference `appendix:phase_sampling_simple' on page 29 undefined 
-on input line 100.
-
-
 Overfull \hbox (2.1289pt too wide) in paragraph at lines 69--103
 [][][]  [][]
  []
@@ -1873,24 +1866,21 @@ Overfull \hbox (2.1289pt too wide) in paragraph at lines 69--103
 [][]  [][]
  []
 
-
-Underfull \vbox (badness 1975) has occurred while \output is active []
-
- [29]
+[33]
 File: ../papers_studies/figs/Rotational/spikies_num_vs_input_fitted_curve_g50_i
 nput_3.5_13.5.png Graphic file (type bmp)
 <../papers_studies/figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_
 3.5_13.5.png>
 
-Underfull \vbox (badness 6157) has occurred while \output is active []
+Underfull \vbox (badness 2253) has occurred while \output is active []
 
- [30]
-[31]
+ [34]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 142--143
 [][]
  []
 
-) (../papers_studies/chapters/simple_synchronization.tex [32] [33] [34
+) (../papers_studies/chapters/simple_synchronization.tex [36] [37] [38
 
 ]
 فصل 5.
@@ -1902,7 +1892,7 @@ LaTeX Warning: The counter will not be printed.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [39]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 25.
@@ -1916,18 +1906,10 @@ les/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
 10000_T100_I9.5_13.5/sigma_g_0.1_65.png>
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
-les/N10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour.png Graphic file (type
- bmp)
+les/N10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_alpha20.png Graphic fi
+le (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
-10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour.png>
-
-LaTeX Warning: Reference `appendix:phase_samplingـrotational' on page 36 undefi
-ned on input line 56.
-
-
-LaTeX Warning: Reference `appendix:phase_samplingـrotational' on page 36 undefi
-ned on input line 56.
-
+10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_alpha20.png>
 
 Overfull \hbox (2.1289pt too wide) in paragraph at lines 44--59
 [][]$[]$  [] []
@@ -1936,37 +1918,106 @@ Overfull \hbox (2.1289pt too wide) in paragraph at lines 44--59
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
-(../papers_studies/chapters/animation_description.tex [37] [38
+ [40]
+(../papers_studies/chapters/animation_description.tex [41] [42
 
 ]
 فصل 6.
 File: ../papers_studies/figs/IF/IF_phase_space-Model.png Graphic file (type bmp
 )
 <../papers_studies/figs/IF/IF_phase_space-Model.png>
-)
-Underfull \hbox (badness 10000) in paragraph at lines 11--95
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-(../papers_studies/chapters/analytical_approach.tex [40]
-فصل 7.
+ [43]
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 21.
+Package caption Warning: \label without proper reference on input line 60.
+See the caption package documentation for explanation.
 
-[41
 
-] [42]
-Overfull \hbox (40.49425pt too wide) detected at line 68
-[]
+LaTeX Warning: Reference `fig:abc_points_neuron_models' on page 44 undefined on
+ input line 15.
+
+File: Figures/animation_chapter/IF_sigma_phase_space_contour_selected_points.pn
+g Graphic file (type bmp)
+<Figures/animation_chapter/IF_sigma_phase_space_contour_selected_points.png>
+File: Figures/animation_chapter/Rotational_sigma_phase_space_contour_selected_p
+oints.png Graphic file (type bmp)
+<Figures/animation_chapter/Rotational_sigma_phase_space_contour_selected_points
+.png>
+File: Figures/animation_chapter/Non_repulsive_sigma_phase_space_contour_alpha20
+_selected_points.png Graphic file (type bmp)
+<Figures/animation_chapter/Non_repulsive_sigma_phase_space_contour_alpha20_sele
+cted_points.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 36--61
+[][]$[]$  $[]$[]
  []
 
-[43]
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
+[][]
+ []
+
+[44] [45]
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/1.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/1.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/50.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/50.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/100.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/100.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/150.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/150.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/200.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/200.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/250.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/250.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 88--138
+[][]$[]$  $[]$[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 88--138
+[]$[]$  $[]$[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 88--138
+[]$[]$  $[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--138
+[][]
+ []
+
+
+LaTeX Warning: Float too large for page by 9.15216pt on input line 140.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
+[][]
+ []
+
+[46] [47] [48]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: a4paper
@@ -1999,27 +2050,173 @@ Overfull \hbox (40.49425pt too wide) detected at line 68
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [44
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/250.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/250.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/300.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/300.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/350.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/350.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/400.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/400.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/450.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/450.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/500.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/500.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/550.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/550.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/600.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/600.png>
+
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 168--226
+[][]$[]$ $[]$[]
+ []
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 168--226
+[]$[]$ $[]$[]
+ []
+
+
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 168--226
+[]$[]$ $[]$[]
+ []
+
+
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 168--226
+[]$[]$ $[]$ []
+ []
+
+[49]
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/1.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/1.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/50.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/50.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/100.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/100.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/150.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/150.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/200.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/200.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/250.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/250.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 248--298
+[][]$[]$  $[]$[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 248--298
+[]$[]$  $[]$[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 248--298
+[]$[]$  $[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--298
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+LaTeX Warning: Float too large for page by 9.15216pt on input line 300.
+
+) (../papers_studies/chapters/analytical_approach.tex [50
+
+
+] [51] [52
+
+]
+فصل 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+[][]
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+[][]
+ []
+
+[54] [55]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(14.22636pt, 816.59412pt, 14.22636pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=816.59412pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
+* \topmargin=-102.91742pt
+* \headheight=25.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [56
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 [][]
  []
 
 
-Underfull \vbox (badness 2460) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+[][]
+ []
 
- [45
+[57
 
 
-]
-[46] [47] [48]
+] [58] [59] [60]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
 les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png Graphic
  file (type bmp)
@@ -2035,25 +2232,237 @@ les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png Graph
 ic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
 10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png>
- [49] [50] [51] [52] [53]) [54] (JozVaKol.bbl) [55
 
-] (JozVaKol.aux)
+
+LaTeX Warning: Float too large for page by 83.01701pt on input line 296.
+
+[61] [62] [63] [64] [65])
+(../papers_studies/chapters/simple_synchronization_single_input.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+[][]
+ []
+
+[67]
+File: ../papers_studies/figs/Perturbation problem-Model.png Graphic file (type 
+bmp)
+<../papers_studies/figs/Perturbation problem-Model.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[68]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 94.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha100.png Graphic fi
+le (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha100.png>
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha20.png Graphic fil
+e (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha20.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 155--171
+[][][]  [][]
+ []
+
+
+Package caption Warning: \label without proper reference on input line 170.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:non_repulsive_single_input_sigma_phase_space' on 
+page 72 undefined on input line 173.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--178
+[][]
+ []
+
+
+Package caption Warning: \label without proper reference on input line 170.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:non_repulsive_single_input_sigma_phase_space' on 
+page 72 undefined on input line 185.
+
+
+Overfull \hbox (51.33482pt too wide) detected at line 196
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72]
+[73]
+Overfull \hbox (56.0585pt too wide) detected at line 230
+[]
+ []
+
+
+Overfull \hbox (21.06516pt too wide) detected at line 235
+[]
+ []
+
+[74] [75]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76]
+Overfull \vbox (29.27437pt too high) has occurred while \output is active []
+
+
+[77] [78
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 341--350
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 367--370
+[][]
+ []
+
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_analytical_trans_points
+_alpha20.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alph
+a20.png>
+) (../papers_studies/chapters/from_simple_to_other_models.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+[][]
+ []
+
+
+Underfull \vbox (badness 3557) has occurred while \output is active []
+
+ [80]
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+[][]
+ []
+
+[82]
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha20.png 
+Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha20.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha100.png
+ Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha100.png>
+
+
+LaTeX Warning: Float too large for page by 48.10072pt on input line 79.
+
+[83] [84]) (../papers_studies/chapters/conclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 100--1
+[][]
+ []
+
+[85] [86
+
+]
+فصل 8.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--103
+[][]
+ []
+
+(../papers_studies/appendices/phase_space_sampling.tex [87] [88
+
+]
+پیوست آ.
+
+LaTeX Warning: Reference `fig:if_g_d_phase_space' on page 89 undefined on input
+ line 3.
+
+File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
+2.8_cluster_computed/sigma_phase_space_contour_points_plotted.png Graphic file 
+(type bmp)
+<../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
+luster_computed/sigma_phase_space_contour_points_plotted.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/sigma_phase_space_contour_points_plotted.png Graph
+ic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/sigma_phase_space_contour_points_plotted.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_points_plotted_alpha20
+.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_points_plotted_alpha20.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [89] (JozVaKol.bbl [90] [91] [92
+
+]) [93] (JozVaKol.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `JozVaKol.out' has not changed.
-(rerunfilecheck)             Checksum: 43183954489AF7F8DFA7F3BCB7F581A5;6091.
+(rerunfilecheck)             Checksum: 24EF90BAFD4F3CBD50459E49414E0DB1;9235.
  ) 
 Here is how much of TeX's memory you used:
- 29465 strings out of 411254
- 577218 string characters out of 2832814
+ 29833 strings out of 411254
+ 609099 string characters out of 2832814
  1005751 words of memory out of 3000000
- 49232 multiletter control sequences out of 15000+600000
- 412194 words of font info for 124 fonts, out of 8000000 for 9000
+ 49546 multiletter control sequences out of 15000+600000
+ 412186 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,18n,98p,2947b,662s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 93i,18n,98p,2947b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on JozVaKol.pdf (55 pages).
+Output written on JozVaKol.pdf (93 pages).

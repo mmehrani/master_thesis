@@ -8,6 +8,308 @@
 	\label{fig:if_animation_plot}
 \end{figure}
 
-پویایی شکل \ref{fig:if_animation_plot} به ما نشان خواهد داد که چگونه سامانه در زمان متحول می‌شود. هر نقطه در این صفحه نمایانگر حالت یک نورون است. محور افقی نشان دهنده‌ی جریان ثابت خارجی است که به هر نورون در ابتدا متصل کرده‌ایم و محور عمودی نشان دهنده‌ی پتانسیل نورون است.طبق توصیفی که از پویایی سامانه‌ی خود داریم؛ توقع داریم که نورون‌هایی که از آستانه عبور کردند؛ مجددا از محور صفر پیدا شوند.\\
+هر نقطه در این صفحه نمایانگر حالت یک نورون است. محور افقی نشان دهنده‌ی جریان ثابت خارجی است که به هر نورون در ابتدا متصل کرده‌ایم و محور عمودی نشان دهنده‌ی پتانسیل نورون است. پویایی شکل \ref{fig:if_animation_plot} به ما نشان خواهد داد که چگونه سامانه در زمان متحول می‌شود. طبق توصیفی که از پویایی سامانه‌ی خود داریم؛ توقع داریم که نورون‌هایی که از آستانه عبور کردند؛ مجددا از محور صفر پیدا شوند.\\
 
-حال 
+حال بیایید تا پویایی مدل‌های محتلف سامانه‌های نورونی را از این طریق رصد کنیم. به این ترتیب که برای هر کدام از نقاطی خاص از فضای فاز مربوط به آن‌ها انتخاب می‌کنیم و می‌پرسیم که سامانه چه تصویری دارد.\\
+در شکل‌ 
+\ref{fig:abc_points_neuron_models}
+از هر صفحه‌ی فاز ۴ نقطه به اختصار انتخاب شده است.
+\begin{enumerate}[a.]
+	\item 
+	نقطه‌ی 
+	A
+	:معرف نقطه‌ای است که سامانه دقیقا در حالت هم‌گام قرار دارد.
+	\item 
+	نقطه‌ی
+	B
+	:نقطه‌ای میانی بین فاز هم‌گام و ناهم‌گام است.
+	\item 
+	نقطه‌ی
+	C
+	: حالتی ناهم‌گام است با این وجود که تاخیر آکسونی در سامانه وجود دارد اما هم‌گامی رخ نمی‌دهد.
+	\item 
+	D
+	: حالتی از سامانه است که ضریب تاثیر قابل ملاحظه‌ای دارد اما تاخیر در سامانه نزدیک به صفر است.
+\end{enumerate}
+
+\begin{figure}
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width = \textwidth]{Figures/animation_chapter/IF_sigma_phase_space_contour_selected_points.png}
+	\caption{
+		نقاط انتخاب شده در فضای فاز شبکه‌ی نورون‌های انباشت‌وشلیک
+	}
+	\label{fig:IF_abc}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{Figures/animation_chapter/Rotational_sigma_phase_space_contour_selected_points.png}
+		\caption{
+		نقاط انتخاب شده در فضای فاز شبکه‌ی نورون‌های چرخنده
+	}
+		\label{fig:Rotational_abc}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{Figures/animation_chapter/Non_repulsive_sigma_phase_space_contour_alpha20_selected_points.png}
+		\caption{
+		نقاط انتخاب شده در فضای فاز شبکه‌ی نورون‌های ساده
+		}
+		\label{fig:Non_repulsive_abc}
+	\end{subfigure}
+	\hfill
+	\label{fig:abc_points_neuron_models}
+\end{figure}
+
+
+\قسمت{مدل انباشت‌وشلیک}
+شکل
+\ref{fig:IF_animation_A}
+نمایی از ۶ برداشت از پویانمایی سامانه‌ی نورون‌های انباشت‌وشلیک ارائه شده است. شرایط اولیه این سامانه به گونه‌ای است که همه‌ی نورون‌ها در فضای فاز به صورت یکنواخت توزیع شده‌اند. تو گویی حالت اولیه شبکه یک مستطیل یکنواخت را روایت می‌کرده است.\\
+
+\begin{enumerate}
+	\item 
+	نمای سامانه در این حالت بسیار قابل توجه است. همه‌ی نورون‌هایی که جریان خارجی مشخصی دارند؛ در یک فاز جمع شده‌اند.
+	\item 
+	 فاصله‌ی فاز هر دو نورون با جریان خارجی نزدیک به هم رابطه‌ای خطی دارد. این پیشامد نیز با بازنویسی معادلات دیفرانسیل قابل درک است.
+	 \begin{align}
+	 	\dot{v_a} &= a - v_a - g E\\
+	 	\Delta\dot{v_a} &= \Delta a - \Delta v_a\\
+	 	\frac{\Delta\dot{v_a}}{\Delta a} &= 1 - \frac{\Delta v_a}{\Delta a}\\
+	 	\Rightarrow \frac{\Delta v_a}{\Delta a} &= 1 + C_0 e^{-t}\\
+	 	\Rightarrow \frac{\Delta v_a}{\Delta a} &\rightarrow 1\\
+	 \end{align}
+ پس این معادلات کاملا توضیح می‌دهد که فارغ از شرط اولیه در صفحه‌ی فاز باید انتظار یک خط با شیب یک داشته باشیم که همه‌ی نورون‌ها در آن جمع شده‌اند. در کنار این شرط دوره‌ای هم باید در نظر گرفته شود که باعث شده است این خط بریده‌بریده شود.
+ 	\item 
+ 	هم‌گامی در این شکل به معنای جفت شدن سرعت‌های نورون‌ها با یکدیگر است و نه فاز آن‌ها. آن‌ها با هم به سمت آستانه حرکت می‌کنند و باهم عقب‌نشینی می‌کنند اما دوشادوش یک‌دیگر کمتر قرار می‌گیرند.
+\end{enumerate}
+
+
+\begin{figure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_frames/A/1.png}
+		\caption{
+			ثانیه صفرم		
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_frames/A/50.png}
+		\caption{
+			ثانیه $0.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_frames/A/100.png}
+		\caption{
+			ثانیه $1$		
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_frames/A/150.png}
+		\caption{
+			ثانیه $1.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_frames/A/200.png}
+		\caption{
+			ثانیه $2$
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_frames/A/250.png}
+		\caption{
+			ثانیه $2.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\caption{
+		نمایی از پویایی سامانه‌ی نورونی انباشت‌وشلیک در نقطه‌ی A - این پویانمایی پس گذشت ۲۰۰ ثانیه از تاریخچه‌ی سامانه انجام شده است. شرایط اولیه به گونه‌ای است که نورون‌ها با توزیع یکنواخت در صفحه‌ی فاز پراکنده شده‌اند.	
+	}
+	\label{fig:IF_animation_A}
+\end{figure}
+
+
+\قسمت{مدل چرخنده}
+شکل
+\ref{fig:rotational_animation_A}
+نمایی از ۶ برداشت از پویانمایی سامانه‌ی نورون‌های ساده ارائه شده است. شرایط اولیه این سامانه به گونه‌ای است که همه‌ی نورون‌ها در فضای فاز به صورت یکنواخت توزیع شده‌اند. تو گویی حالت اولیه شبکه یک مستطیل یکنواخت را روایت می‌کرده است.\\
+
+\begin{enumerate}
+	\item 
+	به نظر می‌آید نکاتی که مربوط به حالت هم‌گامی در قسمت انباشت‌وشلیک روایت کردیم برای این سامانه هم برقرار است به جز ویژگی‌هایی جزئی
+	\item 
+	توجه داشته باشیم که در برخی از قسمت‌های شکل، نورون‌ها روی منحنی‌هایی تجمع کرده‌اند. این منحنی‌ها را می‌توان با نوشتن معادلات توصیف کرد:
+	 \begin{align}
+		\dot{\theta_a} &= a - Cos(\theta_a) - g E\\
+		\Delta\dot{\theta_a} &= \Delta a - \Delta Cos(\theta_a)\\
+		\frac{\Delta\dot{v_a}}{\Delta a} &= 1 - Sin(\theta_a)\frac{\Delta \theta_a}{\Delta a}\\
+		\frac{\Delta\dot{v_a}}{\Delta a} &= 0 : 1 - Sin(\theta_a)\frac{\Delta \theta_a}{\Delta a} = 0\\
+		\Rightarrow \Delta \theta &= - \frac{\Delta a}{Sin(\theta)}\\
+		&= - Cosec(\theta_a) \Delta a
+	\end{align}
+همان طور که معادلات نشان می‌دهد منحنی‌های تجمع بسیار شبیه به عکس سینوس هستند. 
+	\item 
+	شاید بپرسیم که چرا در ناحیه‌های دیگر صفحه‌ی فاز چرا نورون‌ها تجمع نکرده‌اند. می‌تواند به این علت باشد که منحنی‌های یاد شده به ازای آن جریان‌های خارجی جاذب نیستند. هر چند حضور شرط دوره‌ای نیز بی‌تاثیر نیست.
+\end{enumerate}
+
+\newgeometry{top=5mm, bottom=5mm}
+\begin{figure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rotational_frames/A/250.png}
+		\caption{
+			ثانیه صفرم		
+		}
+		%		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rotational_frames/A/300.png}
+		\caption{
+			ثانیه $0.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rotational_frames/A/350.png}
+		\caption{
+			ثانیه $1$		
+		}
+		%		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rotational_frames/A/400.png}
+		\caption{
+			ثانیه $1.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rotational_frames/A/450.png}
+		\caption{
+			ثانیه $2$
+		}
+		%		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rotational_frames/A/500.png}
+		\caption{
+			ثانیه $2.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rotational_frames/A/550.png}
+		\caption{
+			ثانیه $3$
+		}
+		%		\label{}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rotational_frames/A/600.png}
+		\caption{
+			ثانیه $3.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\caption{
+		نمایی از پویایی سامانه‌ی نورونی چرخنده در نقطه‌ی A - این پویانمایی پس گذشت ۲۰۰ ثانیه از تاریخچه‌ی سامانه انجام شده است. شرایط اولیه به گونه‌ای است که نورون‌ها با توزیع یکنواخت در صفحه‌ی فاز پراکنده شده‌اند.	
+	}
+	\label{fig:rotational_animation_A}
+\end{figure}
+\restoregeometry 
+
+\قسمت{مدل نورونی ساده}
+در شکل 
+\ref{fig:simple_animation_A}
+نمایی از ۶ برداشت از پویانمایی سامانه‌ی نورون‌های ساده ارائه شده است. شرایط اولیه این سامانه به گونه‌ای است که همه‌ی نورون‌ها در فضای فاز به صورت یکنواخت توزیع شده‌اند. تو گویی حالت اولیه شبکه یک مستطیل یکنواخت را روایت می‌کرده است.\\
+این پویانمایی نشانی‌های بسیار خوبی به ما می‌دهد تا در بخش‌های بعدی هم‌گامی را به شکل تحلیلی نیز توضیح دهیم. شاید این واضح‌ترین تصویری است که می‌توانیم در مورد شکل‌گیری همگامی در میان شبکه نورونی خود ببینیم.
+\begin{enumerate}
+	\item 
+	چون این مدل جمله‌ای از جنس مهار ذاتی درون معادلات دیفرانسیل خود ندارد؛ شکل نهایی آن دارای منحنی جاذب نیست و چگالی یک یکنواختی دارد.
+	\item 
+	در هر مرحله از فراز و فرود سامانه، شکل مستطیلی آن تبدیل به متوازی‌الاضلاع می‌شود و پس از عبور از آستانه، شرط دوره‌ای شکل اولیه آن را به او برمی‌گرداند.
+	\item 
+	به نظر می‌آید شروع هم‌گامی از ضریب تاثیری است که موفق می‌شود نورون‌هایی که کمترین جریان خارجی را دارند از محور آستانه پس بزند. به طوری که در چند لحظه‌ی متوالی از تیزه زدن باز بمانند.
+	\item 
+	اگر به مرزهای فضای حالت‌های نورون‌های چرخنده و انباشت‌وشلیک توجه کنیم؛ متوجه می‌شویم که آن‌ها نیز زیرشکلی از این مستطیل را در اختیار داشتند و تجول آن‌ها از ناهم‌گامی به هم‌گامی باید شبیه شکل نورون‌های ساده باشد. 
+\end{enumerate}
+
+\begin{figure}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non_repulsive_frames/A/1.png}
+		\caption{
+			ثانیه صفرم		
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non_repulsive_frames/A/50.png}
+		\caption{
+			ثانیه $0.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non_repulsive_frames/A/100.png}
+		\caption{
+			ثانیه $1$		
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non_repulsive_frames/A/150.png}
+		\caption{
+			ثانیه $1.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non_repulsive_frames/A/200.png}
+		\caption{
+			ثانیه $2$
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width = \textwidth]{../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non_repulsive_frames/A/250.png}
+		\caption{
+			ثانیه $2.5$
+		}
+		%		\label{}
+	\end{subfigure}
+	\hfill
+	\caption{
+		نمایی از پویایی سامانه‌ی نورونی ساده در نقطه‌ی A - این پویانمایی پس گذشت ۲۰۰ ثانیه از تاریخچه‌ی سامانه انجام شده است. شرایط اولیه به گونه‌ای است که نورون‌ها با توزیع یکنواخت در صفحه‌ی فاز پراکنده شده‌اند.	
+	}
+	\label{fig:simple_animation_A}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

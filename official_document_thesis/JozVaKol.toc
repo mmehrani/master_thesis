@@ -1,43 +1,65 @@
-\contentsline {chapter}{\numberline {1}سرآغاز}{7}{chapter.1}%
-\contentsline {section}{\numberline {1-1}تشکر}{8}{section.1.1}%
-\contentsline {section}{\numberline {1-2}شروع داستان}{8}{section.1.2}%
-\contentsline {section}{\numberline {1-3}شروع مکاتبات}{9}{section.1.3}%
-\contentsline {chapter}{\numberline {2}شرح مسئله}{11}{chapter.2}%
-\contentsline {section}{\numberline {2-1}علوم اعصاب نیازمند آرامش}{11}{section.2.1}%
-\contentsline {section}{\numberline {2-2}کارکرد سالم}{13}{section.2.2}%
-\contentsline {section}{\numberline {2-3}صرع}{14}{section.2.3}%
-\contentsline {section}{\numberline {2-4}لزوم شبیه‌سازی}{16}{section.2.4}%
-\contentsline {section}{\numberline {2-5}مسئله‌ات را به من بده!}{16}{section.2.5}%
-\contentsline {chapter}{\numberline {3}شبکه انباشت و شلیک}{19}{chapter.3}%
-\contentsline {section}{\numberline {3-1}آهنگ تیزه زدن}{20}{section.3.1}%
-\contentsline {section}{\numberline {3-2}نشانگر تشخیص فاز هم‌گامی}{21}{section.3.2}%
-\contentsline {section}{\numberline {3-3}مسائل پیشروی پیاده سازی شبیه سازی}{21}{section.3.3}%
-\contentsline {subsection}{\numberline {3-3-1}تابع بی‌کران دلتا}{21}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3-3-2}ثبت تاریخ تیزه زدن‌ها}{22}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3-4}نتایج}{23}{section.3.4}%
-\contentsline {subsection}{\numberline {3-4-1}انحراف از معیار میدان}{23}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3-4-2}نورون‌های خاموش}{23}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3-4-3}توزیع تناوب زمانی تیزه‌ها}{25}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3-4-4}پهن‌کردن قالی صفحه‌ی فاز}{25}{subsection.3.4.4}%
-\contentsline {subsubsection}{قالی انحراف از معیار میدان}{25}{subsubsection*.8}%
-\contentsline {chapter}{\numberline {4}شبکه‌ی نورون‌های چرخنده}{27}{chapter.4}%
-\contentsline {subsection}{\numberline {4-0-1}آهنگ تیزه زدن}{28}{subsection.4.0.1}%
-\contentsline {subsection}{\numberline {4-0-2}نشانگر توسعه یافته‌ی تشخیص همگامی}{28}{subsection.4.0.2}%
-\contentsline {subsection}{\numberline {4-0-3}شبیه‌سازی}{29}{subsection.4.0.3}%
-\contentsline {subsection}{\numberline {4-0-4}نتایج }{29}{subsection.4.0.4}%
-\contentsline {subsubsection}{در جستجوی تغییرفاز}{30}{subsubsection*.9}%
-\contentsline {subsubsection}{فاصله زمانی بین تیزه‌ها}{30}{subsubsection*.11}%
-\contentsline {subsubsection}{فعالیت شبکه}{30}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {4-0-5}پهن‌کردن قالی صفحه‌ی فاز}{32}{subsection.4.0.5}%
-\contentsline {subsubsection}{قالی انحراف از معیار میدان}{32}{subsubsection*.14}%
-\contentsline {chapter}{\numberline {5}شبکه‌ نورون‌های ساده}{35}{chapter.5}%
-\contentsline {subsection}{\numberline {5-0-1}شبیه‌سازی}{36}{subsection.5.0.1}%
-\contentsline {subsection}{\numberline {5-0-2}نتایج}{37}{subsection.5.0.2}%
-\contentsline {subsubsection}{در جستجوی تغییرفاز}{37}{subsubsection*.15}%
-\contentsline {chapter}{\numberline {6}تصویرسازی سامانه‌ها}{39}{chapter.6}%
-\contentsline {chapter}{\numberline {7}تلاش برای توصیف}{41}{chapter.7}%
-\contentsline {subsection}{\numberline {7-0-1}حل معادله‌ی شبکه‌ی ساده}{42}{subsection.7.0.1}%
-\contentsline {subsubsection}{روش بازگشتی}{42}{subsubsection*.18}%
-\contentsline {subsubsection}{روش اختلال}{45}{subsubsection*.19}%
-\contentsline {subsubsection}{روش آماری}{48}{subsubsection*.20}%
-\contentsline {subsubsection}{حل اختلالی میدان}{51}{subsubsection*.22}%
+\contentsline {chapter}{\numberline {1}سرآغاز}{9}{chapter.1}%
+\contentsline {section}{\numberline {1-1}تشکر}{10}{section.1.1}%
+\contentsline {section}{\numberline {1-2}شروع داستان}{10}{section.1.2}%
+\contentsline {section}{\numberline {1-3}شروع مکاتبات}{11}{section.1.3}%
+\contentsline {chapter}{\numberline {2}شرح مسئله}{13}{chapter.2}%
+\contentsline {section}{\numberline {2-1}علوم اعصاب نیازمند آرامش}{13}{section.2.1}%
+\contentsline {section}{\numberline {2-2}کارکرد سالم}{15}{section.2.2}%
+\contentsline {section}{\numberline {2-3}صرع}{16}{section.2.3}%
+\contentsline {section}{\numberline {2-4}لزوم شبیه‌سازی}{18}{section.2.4}%
+\contentsline {section}{\numberline {2-5}انواعی از مدل‌های نورونی}{18}{section.2.5}%
+\contentsline {subsection}{\numberline {2-5-1}انباشت‌وشلیک}{19}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2-5-2}چرخنده}{20}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2-6}پیکربندی جستار این نامه}{22}{section.2.6}%
+\contentsline {chapter}{\numberline {3}شبکه انباشت و شلیک}{23}{chapter.3}%
+\contentsline {section}{\numberline {3-1}آهنگ تیزه زدن}{24}{section.3.1}%
+\contentsline {section}{\numberline {3-2}نشانگر تشخیص فاز هم‌گامی}{25}{section.3.2}%
+\contentsline {section}{\numberline {3-3}مسائل پیشروی پیاده سازی شبیه سازی}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3-3-1}تابع بی‌کران دلتا}{25}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3-3-2}ثبت تاریخ تیزه زدن‌ها}{26}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3-4}نتایج}{27}{section.3.4}%
+\contentsline {subsection}{\numberline {3-4-1}انحراف از معیار میدان}{27}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3-4-2}نورون‌های خاموش}{27}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3-4-3}توزیع تناوب زمانی تیزه‌ها}{29}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3-4-4}پهن‌کردن قالی صفحه‌ی فاز}{29}{subsection.3.4.4}%
+\contentsline {subsubsection}{قالی انحراف از معیار میدان}{29}{subsubsection*.11}%
+\contentsline {chapter}{\numberline {4}شبکه‌ی نورون‌های چرخنده}{31}{chapter.4}%
+\contentsline {subsection}{\numberline {4-0-1}آهنگ تیزه زدن}{32}{subsection.4.0.1}%
+\contentsline {subsection}{\numberline {4-0-2}نشانگر توسعه یافته‌ی تشخیص همگامی}{32}{subsection.4.0.2}%
+\contentsline {section}{\numberline {4-1}شبیه‌سازی}{33}{section.4.1}%
+\contentsline {section}{\numberline {4-2}نتایج }{33}{section.4.2}%
+\contentsline {subsection}{\numberline {4-2-1}در جستجوی تغییرفاز}{34}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4-2-2}فاصله زمانی بین تیزه‌ها}{34}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4-2-3}فعالیت شبکه}{34}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4-2-4}پهن‌کردن قالی صفحه‌ی فاز}{36}{subsection.4.2.4}%
+\contentsline {subsubsection}{قالی انحراف از معیار میدان}{36}{subsubsection*.14}%
+\contentsline {chapter}{\numberline {5}شبکه‌ نورون‌های ساده}{39}{chapter.5}%
+\contentsline {subsection}{\numberline {5-0-1}شبیه‌سازی}{40}{subsection.5.0.1}%
+\contentsline {subsection}{\numberline {5-0-2}نتایج}{41}{subsection.5.0.2}%
+\contentsline {subsubsection}{در جستجوی تغییرفاز}{41}{subsubsection*.15}%
+\contentsline {chapter}{\numberline {6}تصویرسازی سامانه‌ها}{43}{chapter.6}%
+\contentsline {section}{\numberline {6-1}مدل انباشت‌وشلیک}{44}{section.6.1}%
+\contentsline {section}{\numberline {6-2}مدل چرخنده}{46}{section.6.2}%
+\contentsline {section}{\numberline {6-3}مدل نورونی ساده}{50}{section.6.3}%
+\contentsline {chapter}{\numberline {7}تلاش برای توصیف}{53}{chapter.7}%
+\contentsline {section}{\numberline {7-1}حل معادله‌ی شبکه‌ی ساده}{54}{section.7.1}%
+\contentsline {subsection}{\numberline {7-1-1}روش بازگشتی}{55}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7-1-2}روش اختلال}{57}{subsection.7.1.2}%
+\contentsline {subsubsection}{محاسبه‌ی حالت پایستار - تلاش شماره‌ی ۱}{57}{subsubsection*.22}%
+\contentsline {subsubsection}{محاسبه‌ی حالت پایستار - تلاش شماره‌ی ۲}{60}{subsubsection*.23}%
+\contentsline {subsubsection}{اختلال در میدان پایستار - تلاش شماره‌ی ۱}{63}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {7-1-3}بازی از نو(سامانه‌ی تک‌جریان)}{66}{subsection.7.1.3}%
+\contentsline {subsubsection}{حالت‌پایا}{67}{subsubsection*.26}%
+\contentsline {subsubsection}{اختلال از حالت پایا}{68}{subsubsection*.27}%
+\contentsline {subsubsection}{شبیه‌سازی سامانه‌ی تک‌جریان}{69}{subsubsection*.29}%
+\contentsline {subsubsection}{مشکل پابرجا}{76}{subsubsection*.32}%
+\contentsline {subsubsection}{نقطه‌ی گذرفاز پیشنهادی}{79}{subsubsection*.33}%
+\contentsline {subsubsection}{هم‌خوانی با هم‌گامی}{80}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {7-1-4}از شبکه‌ی ساده به پیچیده‌تر}{80}{subsection.7.1.4}%
+\contentsline {subsubsection}{مدل قبلی را می‌خواهم!}{80}{subsubsection*.36}%
+\contentsline {subsubsection}{جریان‌های وسیعتر}{83}{subsubsection*.38}%
+\contentsline {chapter}{\numberline {8}نتیجه‌گیری}{87}{chapter.8}%
+\contentsline {chapter}{\numberline {آ}نمونه‌گیری صفحه فاز}{89}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ-1}انباشت‌وشلیک}{89}{section.Alph1.1}%
+\contentsline {section}{\numberline {آ-2}چرخنده}{89}{section.Alph1.2}%
+\contentsline {section}{\numberline {آ-3}ساده}{89}{section.Alph1.3}%

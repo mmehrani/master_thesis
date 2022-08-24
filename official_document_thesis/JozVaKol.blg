@@ -5,48 +5,50 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plain-fa.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: MyReferences.bib
+Warning--I didn't find a database entry for "lapicque_recherches_1907"
 -- plain-fa.bst version 0.6 (2011/07/01) 
 -- This is a BibTeX style for XePersian: http://www.parsilatex.com
 
 Done.
-You've used 4 entries,
+You've used 6 entries,
             2535 wiz_defined-function locations,
-            652 strings with 5882 characters,
-and the built_in function-call counts, 1320 in all, are:
-= -- 117
-> -- 46
+            671 strings with 6269 characters,
+and the built_in function-call counts, 1988 in all, are:
+= -- 176
+> -- 76
 < -- 0
-+ -- 18
-- -- 14
-* -- 94
-:= -- 204
-add.period$ -- 11
-call.type$ -- 4
-change.case$ -- 19
++ -- 31
+- -- 24
+* -- 140
+:= -- 312
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 40
-empty$ -- 102
-format.name$ -- 14
-if$ -- 297
+cite$ -- 6
+duplicate$ -- 61
+empty$ -- 147
+format.name$ -- 24
+if$ -- 448
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 29
-newline$ -- 41
-num.names$ -- 8
-pop$ -- 18
+int.to.str$ -- 6
+missing$ -- 45
+newline$ -- 59
+num.names$ -- 12
+pop$ -- 25
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 24
 quote$ -- 0
-skip$ -- 32
+skip$ -- 47
 stack$ -- 0
-substring$ -- 88
-swap$ -- 4
+substring$ -- 126
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 4
-type$ -- 16
+type$ -- 24
 warning$ -- 0
-while$ -- 13
-width$ -- 5
-write$ -- 58
+while$ -- 18
+width$ -- 7
+write$ -- 86
+(There was 1 warning)

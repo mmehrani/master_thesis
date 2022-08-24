@@ -25,6 +25,15 @@ Brunel, Nicolas and Van~Rossum, Mark~CW.
 
 \begin{LTRbibitems}
 \resetlatinfont
+\bibitem{Erö2018}
+Erö, Csaba, Gewaltig, Marc-Oliver, Keller, Daniel, and Markram, Henry.
+\newblock A cell atlas for the mouse brain.
+\newblock {\em Frontiers in Neuroinformatics}, 12, 11 2018.
+
+\end{LTRbibitems}
+
+\begin{LTRbibitems}
+\resetlatinfont
 \bibitem{PhysRevLett.105.158104}
 Luccioli, Stefano and Politi, Antonio.
 \newblock Irregular collective behavior of heterogeneous neural networks.
@@ -34,10 +43,19 @@ Luccioli, Stefano and Politi, Antonio.
 
 \begin{LTRbibitems}
 \resetlatinfont
-\bibitem{safaeesirat2020critical}
-Safaeesirat, Amin and Moghimi-Araghi, Saman.
-\newblock Critical behaviour at the onset of synchronization in a neuronal
-  model, 2020.
+\bibitem{penttila_2022}
+Penttila, Nicky.
+\newblock Neuroanatomy: The basics, Aug 2022.
+
+\end{LTRbibitems}
+
+\begin{LTRbibitems}
+\resetlatinfont
+\bibitem{Tomlinson2017SecondaryGO}
+Tomlinson, Samuel~B. and Venkataraman, Arun.
+\newblock Secondary generalization of focal-onset seizures: examining the
+  relationship between seizure propagation and epilepsy surgery outcome.
+\newblock {\em Journal of neurophysiology}, 117 4:1426--1430, 2017.
 
 \end{LTRbibitems}
 
