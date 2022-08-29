@@ -1,0 +1,21 @@
+\قسمت{محاسبه‌ی دوره‌ی تناوب نورون‌های چرخنده}
+\label{appendix:activity_calculation}
+انتگرال مربوط به این محاسبه یکی از انتگرال‌های معروفی است که راه‌حلی کاملا خلاقانه دارد.
+\begin{align*}
+	\int_0^{2 \pi
+	} \frac{dx}{a + \cos x}  &= \int_0^{2 \pi} \frac{dx}{a + \frac{e^{ix} + e^{-ix}}{2}}  \\
+	&= 2\int_0^{2 \pi} \frac{e^{ix} \ dx}{2ae^{ix} + e^{2ix} + 1} && \text{Let } z=e^{ix}, \text{ so } dz = ie^{ix} \ dx. \\
+	&= \frac{2}{i} \int_{|z|=1} \frac{dz}{z^2 + 2az + 1} \\
+	&= \frac{2}{i} \int_{|z|=1} \frac{dz}{(z-z_1)(z-z_2)}
+\end{align*}
+قطب‌های انتگرال به قرار زیر هستند:
+\begin{align*} z_1 = -a - \sqrt{a^2-1}  && z_2 = -a + \sqrt{a^2-1}.
+\end{align*}
+با این تغییر متغیر ادامه می‌دهیم:
+\begin{align*}
+	\frac{2}{i} \int_{|z|=1} \frac{dz}{(z-z_1)(z-z_2)}
+	&= \frac{2}{i} \ 2 \pi i \ \mathrm{Res}\left( \frac{1}{(z-z_1)(z-z_2)}, z_2\right) \\
+	&= 4 \pi \frac{1}{z_2 - z_1} \\
+	&= 4 \pi \frac{1}{2 \sqrt{a^2 -1}} \\
+	&= \frac{2 \pi}{\sqrt{a^2-1}}.
+\end{align*}
