@@ -10,6 +10,7 @@
 
 \usepackage{dialogue,attrib,lips}
 
+
 \renewcommand*\DialogueLabel[1]{%
 	\scshape\lowercase{#1} :\hfil
 }
@@ -19,7 +20,13 @@
 \usepackage{graphicx}
 \usepackage{enumerate,braket,tcolorbox}
 
+\usepackage{afterpage}% for "\afterpage"
+\usepackage{pagecolor}
 
+\usepackage{tikz}               % you know what this does!
+\usetikzlibrary{calc}
+
+\usepackage{pdfpages}
 %\usepackage[localise]{xepersian}
 %
 %\settextfont[Scale=1]{XB Niloofar}
@@ -43,64 +50,98 @@
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
 
+\definecolor{myorange}{cmyk}{0,0.20,0.66,0}
+% -------------------- Styles --------------------
+\input{styles/common.tex}
+\input{styles/custom.tex}
 % -------------------- Enviroments --------------------
+
+
+\fancypagestyle{letterpage}{%
+	\fancyhf{}
+	\fancyhead[LO]{%
+		\begin{tikzpicture}[overlay,remember picture]
+			\fill [color=myorange] (current page.north west) rectangle
+			($ (current page.south west) + (2cm,0cm) $);
+		\end{tikzpicture}
+	}
+	\fancyhead[RE]{%
+		\begin{tikzpicture}[overlay,remember picture]
+			\fill [color=myorange](current page.north east) rectangle
+			($ (current page.south east) + (-2cm,0cm) $);
+		\end{tikzpicture}
+	}
+	\fancyfoot[C]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+
 \newenvironment{mohsenletter}
 	{
-	\begin{tcolorbox}[title = صندوق پیام‌ها]
+	\newpage
+	\pagestyle{letterpage}
+	\begin{figure}
+		\centering
+		\includegraphics[width = 3 cm]{Figures/gmail_logo.png}
+		\caption*{صندوق پیام‌ها}
+	\end{figure}
+
 	\begin{dialogue}
 	}
 	{
 	\end{dialogue}
-	\end{tcolorbox}
+	\afterpage{\restorepagecolor}
+	\newpage
 	}
 
 \newenvironment{meeting}
 {
-	\begin{tcolorbox}[title = دیدار]
-		\begin{dialogue}
-		}
-		{
-		\end{dialogue}
-	\end{tcolorbox}
+	\newpage
+	\pagestyle{letterpage}
+	\begin{dialogue}
+	}
+	{
+	\end{dialogue}
+	\afterpage{\restorepagecolor}
+	\newpage
 }
 
-\input{styles/common.tex}
-\input{styles/custom.tex}
+
 
 \begin{document}
 
 
 \input{front/info.tex}
 \input{front/template/title.tex}
+\includepdf[pages={1}]{esalat-mattn.pdf}
 \input{front/template/besmellah.tex}
-
-
-% -------------------- Front Pages --------------------
-\input{front/abstract.tex}
-%\input{front/preface.tex}
-%\input{front/acknowledge.tex}
-%\input{chapters/first_correspondance.tex}
+\input{front/template/signatures.tex}
+%
+%% -------------------- Front Pages --------------------
+\input{front/abstract_fa.tex}
+\input{front/acknowledge.tex}
 
 
 % -------------------- Glossary --------------------
-\tableofcontents \newpage
+\pagestyle{fancy}
+\tableofcontents
 \listoffigures \newpage
 %\listoftables \newpage
 
 % -------------------- Chapters --------------------
+\input{front/preface.tex}
+\input{chapters/first_correspondance.tex}
+\input{chapters/the_very_first_problem.tex}
 
-%\input{chapters/the_very_first_problem.tex}
+\input{../papers_studies/chapters/integrate_and_fire_synchronization.tex}
+\input{../papers_studies/chapters/rotational_synchronization.tex}
+\input{../papers_studies/chapters/simple_synchronization.tex}
+
+\input{../papers_studies/chapters/animation_description.tex}
 %
-%\input{../papers_studies/chapters/integrate_and_fire_synchronization.tex}
-%\input{../papers_studies/chapters/rotational_synchronization.tex}
-%\input{../papers_studies/chapters/simple_synchronization.tex}
-%
-%\input{../papers_studies/chapters/animation_description.tex}
-%%
-%\input{../papers_studies/chapters/analytical_approach.tex}
-%\input{../papers_studies/chapters/simple_synchronization_single_input.tex}
-%%\input{../papers_studies/chapters/from_simple_to_other_models.tex}
-%\input{../papers_studies/chapters/conclusion.tex}
+\input{../papers_studies/chapters/analytical_approach.tex}
+\input{../papers_studies/chapters/simple_synchronization_single_input.tex}
+\input{../papers_studies/chapters/conclusion.tex}
 %
 %
 %
@@ -108,7 +149,16 @@
 \input{../papers_studies/appendices/phase_space_sampling.tex}
 \input{chapters/magical_formulas.tex}
 \newpage
-\bibliographystyle{plain-fa}
+
+\setLTRbibitems
 \bibliography{MyReferences}
+\bibliographystyle{unsrt}
+\newpage
+% -------------------- Front Pages --------------------
+
+\input{front/abstract_en.tex}
+\newpage
+\input{front/template/title-eng.tex}
+\newpage
 
 \end{document}

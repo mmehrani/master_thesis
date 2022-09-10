@@ -1,4 +1,4 @@
-neuron_engine = 'Rotational'
+neuron_engine = 'Non_repulsive_rotational'
 
 # -*- coding: utf-8 -*-
 """

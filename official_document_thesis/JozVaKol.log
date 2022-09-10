@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  29 AUG 2022 12:35
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  8 SEP 2022 18:02
 entering extended mode
 **./JozVaKol.tex
 (JozVaKol.tex
@@ -526,7 +526,148 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box66
 \tcb@temp=\box67
 )
-(styles/common.tex (C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Program Files\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks48
+\AP@partial=\box68
+\AP@footins=\box69
+)
+(C:\Program Files\MiKTeX\tex/latex/pagecolor\pagecolor.sty
+Package: pagecolor 2017/05/29 v1.0i Provides thepagecolor (HMM)
+
+(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+Package pagecolor Info: \nopagecolor is undefined on input line 101.
+
+
+Package pagecolor Warning: Option nopagecolor=none requested but \nopagecolor u
+nknown:
+(pagecolor)                By option nopagecolor the "colour" to be used with\n
+opagecolor
+(pagecolor)                is set. The current value is "none" (maybe by defaul
+t),
+(pagecolor)                but command \nopagecolor is undefined.
+(pagecolor)                Therefore the colour cannot be "none".
+(pagecolor)                Please change the option accordingly!
+(pagecolor)                As first aid nopagecolor is now set to white
+(pagecolor)                 on input line 116.
+
+
+Package pagecolor Warning: Option pagecolor=none (maybe by default) used,
+(pagecolor)                but \nopagecolor is unknown.
+(pagecolor)                Please use anotheroption value;
+(pagecolor)                white 
+(pagecolor)                will be used now
+(pagecolor)                 on input line 127.
+
+) (C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
+\pgffor@iter=\dimen280
+\pgffor@skip=\dimen281
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
+tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen282
+)
+\tikz@lastx=\dimen283
+\tikz@lasty=\dimen284
+\tikz@lastxsaved=\dimen285
+\tikz@lastysaved=\dimen286
+\tikz@lastmovetox=\dimen287
+\tikz@lastmovetoy=\dimen288
+\tikzleveldistance=\dimen289
+\tikzsiblingdistance=\dimen290
+\tikz@figbox=\box70
+\tikz@figbox@bg=\box71
+\tikz@tempbox=\box72
+\tikz@tempbox@bg=\box73
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
+ (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
+)
+\tikz@expandcount=\count307
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Program Files\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2022/05/22 v0.5v Insert pages of external PDF documents (AM)
+
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count308
+\calc@Bcount=\count309
+\calc@Adimen=\dimen291
+\calc@Bdimen=\dimen292
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count310
+\calc@Cskip=\skip60
+)
+(C:\Program Files\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen293
+\ESO@tempdimb=\dimen294
+)
+\AM@pagewidth=\dimen295
+\AM@pageheight=\dimen296
+\AM@fboxrule=\dimen297
+
+(C:\Program Files\MiKTeX\tex/latex/pdfpages\ppxetex.def
+File: ppxetex.def 2022/05/22 v0.5v Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count311
+\AM@pagebox=\box74
+\AM@global@opts=\toks51
+\AM@pagecnt=\count312
+\AM@toc@title=\toks52
+\c@AM@survey=\count313
+\AM@templatesizebox=\box75
+) (styles/common.tex
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
@@ -540,9 +681,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
-(C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
 (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -553,9 +691,6 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-)
-(C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
 (C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -572,12 +707,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-)
-\@linkdim=\dimen280
-\Hy@linkcounter=\count299
-\Hy@pagecounter=\count300
+\@linkdim=\dimen298
+\Hy@linkcounter=\count314
+\Hy@pagecounter=\count315
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -592,7 +724,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count301
+\Hy@SavedSpaceFactor=\count316
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -605,14 +737,14 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count302
+\c@Hy@tempcnt=\count317
 
 (C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen281
+\XeTeXLinkMargin=\dimen299
 
 (C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -621,9 +753,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count303
-\Field@Width=\dimen282
-\Fld@charsize=\dimen283
+\Fld@menulength=\count318
+\Field@Width=\dimen300
+\Fld@charsize=\dimen301
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -633,9 +765,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6101.
 Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
-\Hy@abspage=\count304
-\c@Item=\count305
-\c@Hfootnote=\count306
+\Hy@abspage=\count319
+\c@Item=\count320
+\c@Hfootnote=\count321
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -646,11 +778,11 @@ File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\pdfm@box=\box68
-\c@Hy@AnnotLevel=\count307
-\HyField@AnnotCount=\count308
-\Fld@listcount=\count309
-\c@bookmark@seq@number=\count310
+\pdfm@box=\box76
+\c@Hy@AnnotLevel=\count322
+\HyField@AnnotCount=\count323
+\Fld@listcount=\count324
+\c@bookmark@seq@number=\count325
 
 (C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -666,20 +798,20 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip58
+\Hy@SectionHShift=\skip61
 )
 (C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
-\f@nch@headwidth=\skip59
-\f@nch@O@elh=\skip60
-\f@nch@O@erh=\skip61
-\f@nch@O@olh=\skip62
-\f@nch@O@orh=\skip63
-\f@nch@O@elf=\skip64
-\f@nch@O@erf=\skip65
-\f@nch@O@olf=\skip66
-\f@nch@O@orf=\skip67
+\f@nch@headwidth=\skip62
+\f@nch@O@elh=\skip63
+\f@nch@O@erh=\skip64
+\f@nch@O@olh=\skip65
+\f@nch@O@orh=\skip66
+\f@nch@O@elf=\skip67
+\f@nch@O@erf=\skip68
+\f@nch@O@olf=\skip69
+\f@nch@O@orf=\skip70
 )
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\euscript.sty
 Package: euscript 2009/06/22 v3.00 Euler Script fonts
@@ -688,35 +820,27 @@ LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count311
-\mult@box=\box69
-\multicol@leftmargin=\dimen284
-\c@unbalance=\count312
-\c@collectmore=\count313
-\doublecol@number=\count314
-\multicoltolerance=\count315
-\multicolpretolerance=\count316
-\full@width=\dimen285
-\page@free=\dimen286
-\premulticols=\dimen287
-\postmulticols=\dimen288
-\multicolsep=\skip68
-\multicolbaselineskip=\skip69
-\partial@page=\box70
-\last@line=\box71
-\maxbalancingoverflow=\dimen289
-\mult@rightbox=\box72
-\mult@grightbox=\box73
-\mult@gfirstbox=\box74
-\mult@firstbox=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
+\c@tracingmulticols=\count326
+\mult@box=\box77
+\multicol@leftmargin=\dimen302
+\c@unbalance=\count327
+\c@collectmore=\count328
+\doublecol@number=\count329
+\multicoltolerance=\count330
+\multicolpretolerance=\count331
+\full@width=\dimen303
+\page@free=\dimen304
+\premulticols=\dimen305
+\postmulticols=\dimen306
+\multicolsep=\skip71
+\multicolbaselineskip=\skip72
+\partial@page=\box78
+\last@line=\box79
+\maxbalancingoverflow=\dimen307
+\mult@rightbox=\box80
+\mult@grightbox=\box81
+\mult@gfirstbox=\box82
+\mult@firstbox=\box83
 \@tempa=\box84
 \@tempa=\box85
 \@tempa=\box86
@@ -746,33 +870,38 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box110
 \@tempa=\box111
 \@tempa=\box112
-\c@minrows=\count317
-\c@columnbadness=\count318
-\c@finalcolumnbadness=\count319
-\last@try=\dimen290
-\multicolovershoot=\dimen291
-\multicolundershoot=\dimen292
-\mult@nat@firstbox=\box113
-\colbreak@box=\box114
-\mc@col@check@num=\count320
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\c@minrows=\count332
+\c@columnbadness=\count333
+\c@finalcolumnbadness=\count334
+\last@try=\dimen308
+\multicolovershoot=\dimen309
+\multicolundershoot=\dimen310
+\mult@nat@firstbox=\box121
+\colbreak@box=\box122
+\mc@col@check@num=\count335
 )
 (C:\Program Files\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
-(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-)
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count321
-\c@ALG@rem=\count322
-\c@ALG@nested=\count323
-\ALG@tlm=\skip70
-\ALG@thistlm=\skip71
-\c@ALG@Lnr=\count324
-\c@ALG@blocknr=\count325
-\c@ALG@storecount=\count326
-\c@ALG@tmpcounter=\count327
-\ALG@tmplength=\skip72
+\c@ALG@line=\count336
+\c@ALG@rem=\count337
+\c@ALG@nested=\count338
+\ALG@tlm=\skip73
+\ALG@thistlm=\skip74
+\c@ALG@Lnr=\count339
+\c@ALG@blocknr=\count340
+\c@ALG@storecount=\count341
+\c@ALG@tmpcounter=\count342
+\ALG@tmplength=\skip75
 ) (C:\Program Files\MiKTeX\tex/latex/algorithms\algorithm.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -780,14 +909,14 @@ nment
 
 (C:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count328
-\float@exts=\toks48
-\float@box=\box115
-\@float@everytoks=\toks49
-\@floatcapt=\box116
+\c@float@type=\count343
+\float@exts=\toks53
+\float@box=\box123
+\@float@everytoks=\toks54
+\@floatcapt=\box124
 )
-\@float@every@algorithm=\toks50
-\c@algorithm=\count329
+\@float@every@algorithm=\toks55
+\c@algorithm=\count344
 )
 (C:\Program Files\MiKTeX\tex/xelatex/xepersian\xepersian.sty
 Package: xepersian 2020/05/17 v23.1 Persian typesetting in XeLaTeX
@@ -800,14 +929,14 @@ Package: expl3 2021-06-18 L3 programming layer (loader)
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
 File: l3backend-xetex.def 2021-05-07 L3 backend support: XeTeX
  ()
-\c__kernel_sys_dvipdfmx_version_int=\count330
-\l__color_backend_stack_int=\count331
-\g__color_backend_stack_int=\count332
-\g__graphics_track_int=\count333
-\l__pdf_internal_box=\box117
-\g__pdf_backend_object_int=\count334
-\g__pdf_backend_annotation_int=\count335
-\g__pdf_backend_link_int=\count336
+\c__kernel_sys_dvipdfmx_version_int=\count345
+\l__color_backend_stack_int=\count346
+\g__color_backend_stack_int=\count347
+\g__graphics_track_int=\count348
+\l__pdf_internal_box=\box125
+\g__pdf_backend_object_int=\count349
+\g__pdf_backend_annotation_int=\count350
+\g__pdf_backend_link_int=\count351
 ))
 Package: xparse 2021-06-18 L3 Experimental document command parser
 )
@@ -816,20 +945,20 @@ Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 (C:\Program Files\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count337
-\l__fontspec_language_int=\count338
-\l__fontspec_strnum_int=\count339
-\l__fontspec_tmp_int=\count340
-\l__fontspec_tmpa_int=\count341
-\l__fontspec_tmpb_int=\count342
-\l__fontspec_tmpc_int=\count343
-\l__fontspec_em_int=\count344
-\l__fontspec_emdef_int=\count345
-\l__fontspec_strong_int=\count346
-\l__fontspec_strongdef_int=\count347
-\l__fontspec_tmpa_dim=\dimen293
-\l__fontspec_tmpb_dim=\dimen294
-\l__fontspec_tmpc_dim=\dimen295
+\l__fontspec_script_int=\count352
+\l__fontspec_language_int=\count353
+\l__fontspec_strnum_int=\count354
+\l__fontspec_tmp_int=\count355
+\l__fontspec_tmpa_int=\count356
+\l__fontspec_tmpb_int=\count357
+\l__fontspec_tmpc_int=\count358
+\l__fontspec_em_int=\count359
+\l__fontspec_emdef_int=\count360
+\l__fontspec_strong_int=\count361
+\l__fontspec_strongdef_int=\count362
+\l__fontspec_tmpa_dim=\dimen311
+\l__fontspec_tmpb_dim=\dimen312
+\l__fontspec_tmpc_dim=\dimen313
 
 (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -837,43 +966,43 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 (C:\Program Files\MiKTeX\tex/latex/fontspec\fontspec.cfg)))
 (C:\Program Files\MiKTeX\tex/xelatex/xepersian\xepersian-persiancal.sty
 Package: xepersian-persiancal 2012/07/25 v0.2 provides Persian calendar
-\XePersian@i=\count348
-\XePersian@y=\count349
-\XePersian@m=\count350
-\XePersian@d=\count351
-\XePersian@latini=\count352
-\XePersian@persiani=\count353
-\XePersian@latinii=\count354
-\XePersian@persianii=\count355
-\XePersian@latiniii=\count356
-\XePersian@persianiii=\count357
-\XePersian@latiniv=\count358
-\XePersian@persianiv=\count359
-\XePersian@latinv=\count360
-\XePersian@persianv=\count361
-\XePersian@latinvi=\count362
-\XePersian@persianvi=\count363
-\XePersian@latinvii=\count364
-\XePersian@persianvii=\count365
-\XePersian@latinviii=\count366
-\XePersian@persianviii=\count367
-\XePersian@latinix=\count368
-\XePersian@persianix=\count369
-\XePersian@latinx=\count370
-\XePersian@persianx=\count371
-\XePersian@latinxi=\count372
-\XePersian@persianxi=\count373
-\XePersian@latinxii=\count374
-\XePersian@persianxii=\count375
-\XePersian@persianxiii=\count376
-\XePersian@temp=\count377
-\XePersian@temptwo=\count378
-\XePersian@tempthree=\count379
-\XePersian@yModHundred=\count380
-\XePersian@thirtytwo=\count381
-\XePersian@dn=\count382
-\XePersian@sn=\count383
-\XePersian@mminusone=\count384
+\XePersian@i=\count363
+\XePersian@y=\count364
+\XePersian@m=\count365
+\XePersian@d=\count366
+\XePersian@latini=\count367
+\XePersian@persiani=\count368
+\XePersian@latinii=\count369
+\XePersian@persianii=\count370
+\XePersian@latiniii=\count371
+\XePersian@persianiii=\count372
+\XePersian@latiniv=\count373
+\XePersian@persianiv=\count374
+\XePersian@latinv=\count375
+\XePersian@persianv=\count376
+\XePersian@latinvi=\count377
+\XePersian@persianvi=\count378
+\XePersian@latinvii=\count379
+\XePersian@persianvii=\count380
+\XePersian@latinviii=\count381
+\XePersian@persianviii=\count382
+\XePersian@latinix=\count383
+\XePersian@persianix=\count384
+\XePersian@latinx=\count385
+\XePersian@persianx=\count386
+\XePersian@latinxi=\count387
+\XePersian@persianxi=\count388
+\XePersian@latinxii=\count389
+\XePersian@persianxii=\count390
+\XePersian@persianxiii=\count391
+\XePersian@temp=\count392
+\XePersian@temptwo=\count393
+\XePersian@tempthree=\count394
+\XePersian@yModHundred=\count395
+\XePersian@thirtytwo=\count396
+\XePersian@dn=\count397
+\XePersian@sn=\count398
+\XePersian@mminusone=\count399
 )
 (C:\Program Files\MiKTeX\tex/xelatex/xepersian\xepersian-mathsdigitspec.sty
 Package: xepersian-mathsdigitspec 2018/12/16 v1.1.7 Unicode Persian maths digit
@@ -910,23 +1039,23 @@ Package: bidi 2020/05/17 v36.3 Bidirectional typesetting in plain TeX and LaTeX
 ****************************************************
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\biditools.sty
 Package: biditools 2020/05/13 v2 Programming tools for bidi package
-\@bidi@envbody=\toks51
-\@bidi@emptytoks=\toks52
-\bidi@poscount=\count385
+\@bidi@envbody=\toks56
+\@bidi@emptytoks=\toks57
+\bidi@poscount=\count400
 
 
 Package biditools Warning: Patching `\enddocument' failed on input line 916.
 
-\bidi@tempcountb=\count386
-\bidi@temptoksa=\toks53
-\bidi@temptoksb=\toks54
-\bidi@dummies=\count387
-\bidi@are@these@correct=\toks55
-\bidi@toks@lista=\toks56
-\bidi@toks@listb=\toks57
-\bidi@stack@length=\count388
-\bidi@empty@stack=\toks58
-\bidi@looprepeat@depth=\count389
+\bidi@tempcountb=\count401
+\bidi@temptoksa=\toks58
+\bidi@temptoksb=\toks59
+\bidi@dummies=\count402
+\bidi@are@these@correct=\toks60
+\bidi@toks@lista=\toks61
+\bidi@toks@listb=\toks62
+\bidi@stack@length=\count403
+\bidi@empty@stack=\toks63
+\bidi@looprepeat@depth=\count404
 ) (C:\Program Files\MiKTeX\tex/latex/zref\zref-abspage.sty
 Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
 
@@ -936,7 +1065,7 @@ Package zref Info: New property list: main on input line 764.
 Package zref Info: New property: default on input line 765.
 Package zref Info: New property: page on input line 766.
 )
-\c@abspage=\count390
+\c@abspage=\count405
 Package zref Info: New property: abspage on input line 66.
 )
 (C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
@@ -944,10 +1073,10 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks59
-\XKV@tempa@toks=\toks60
+\XKV@toks=\toks64
+\XKV@tempa@toks=\toks65
 )
-\XKV@depth=\count391
+\XKV@depth=\count406
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \@bidi@copyins@=\insert252
@@ -955,14 +1084,14 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\latex-xetex-bidi.def
 File: latex-xetex-bidi.def 2019/03/03 v1.3.7 bidi adaptations for `latex.ltx' f
 or XeTeX engine
-\bidi@n@everypar=\toks61
-\bidi@column@check@number=\count392
+\bidi@n@everypar=\toks66
+\bidi@column@check@number=\count407
 
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\footnote-xetex-bidi.def
 File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count393
-\footdir@toks=\toks62
+\c@footdir@label=\count408
+\footdir@toks=\toks67
 )
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\book-xetex-bidi.def
 File: book-xetex-bidi.def 2017/06/09 v1.0 bidi adaptations for standard book cl
@@ -1019,6 +1148,14 @@ kage for XeTeX engine
 File: fancyhdr-xetex-bidi.def 2018/02/15 v0.7 bidi adaptations for fancyhdr pac
 kage for XeTeX engine
 )
+(C:\Program Files\MiKTeX\tex/xelatex/bidi\eso-pic-xetex-bidi.def
+File: eso-pic-xetex-bidi.def 2013/04/10 v0.2 bidi adaptations for eso-pic packa
+ge for XeTeX engine
+)
+(C:\Program Files\MiKTeX\tex/xelatex/bidi\pdfpages-xetex-bidi.def
+File: pdfpages-xetex-bidi.def 2010/07/25 v0.1 bidi adaptations for pdfpages pac
+kage for XeTeX engine
+)
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\pgfcorescopes.code-xetex-bidi.def
 File: pgfcorescopes.code-xetex-bidi.def 2015/11/14 v0.1 bidi adaptations for pg
 f package for XeTeX engine
@@ -1039,7 +1176,7 @@ ackage for XeTeX engine
 File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
  last package loaded
 )
-\bidi@digits=\count394
+\bidi@digits=\count409
 \bidi@digits@charclass=\XeTeXcharclass1
 \bidi@sepmark@charclass=\XeTeXcharclass2
 )
@@ -1066,9 +1203,9 @@ File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
 * Primary author of xepersian package: Vafa Khalighi.
 * 
 ****************************************************
-\xepersian@tcl=\count395
-\xepersian@ilg=\dimen296
-\xepersian@strutilg=\dimen297
+\xepersian@tcl=\count410
+\xepersian@ilg=\dimen314
+\xepersian@strutilg=\dimen315
 (C:\Program Files\MiKTeX\tex/xelatex/xepersian\loadingorder-xepersian.def
 File: loadingorder-xepersian.def 2018/09/29 v0.5 making sure that xepersian is 
 the last package loaded
@@ -1088,6 +1225,10 @@ File: enumerate-xepersian.def 2010/07/25 v0.1 adaptations for enumerate package
 (C:\Program Files\MiKTeX\tex/xelatex/xepersian\hyperref-xepersian.def
 File: hyperref-xepersian.def 2015/02/02 v0.6 bilingual captions for hyperref pa
 ckage
+)
+(C:\Program Files\MiKTeX\tex/xelatex/xepersian\tikz.code-xepersian.def
+File: tikz.code-xepersian.def 2020/05/17 v0.2 adaptations for tikz.code.tex fil
+e
 )
 (C:\Program Files\MiKTeX\tex/xelatex/xepersian\book-xepersian.def
 File: book-xepersian.def 2010/07/25 v0.2 adaptations for standard book class
@@ -1135,15 +1276,15 @@ File: color-localise-xepersian.def 2011/03/01 v0.1 localising color package
 (C:\Program Files\MiKTeX\tex/xelatex/bidi\extrafootnotefeatures-xetex-bidi.def
 File: extrafootnotefeatures-xetex-bidi.def 2018/10/11 v1.7 bidi extra footnote 
 features for XeTeX engine
-\footmarkwidth=\skip73
-\footinsdim=\skip74
+\footmarkwidth=\skip76
+\footinsdim=\skip77
 \footinsv@r=\insert251
 \footinsv@l=\insert250
 \@mpfootinsv@r=\insert249
 \@mpfootinsv@l=\insert248
-\m@m@k=\count396
-\m@m@h=\dimen298
-\m@mipn@skip=\skip75
+\m@m@k=\count411
+\m@m@h=\dimen316
+\m@mipn@skip=\skip78
 )
 (C:\Program Files\MiKTeX\tex/xelatex/xepersian\extrafootnotefeatures-xepersian.
 def
@@ -1318,55 +1459,42 @@ Package fontspec Info: Font family 'XBKayhanPook(0)' created for font 'XB
 ext;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-\c@قضیه=\count397
-\c@مسئله=\count398
-\c@تعریف=\count399
-\c@مثال=\count400
-
-
-! LaTeX Error: Command \psscalebox undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 \renewcommand{\psscalebox}
-                                [1]{}  % for LaTeX Draw
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+\c@قضیه=\count412
+\c@مسئله=\count413
+\c@تعریف=\count414
+\c@مثال=\count415
 ) (styles/custom.tex)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (JozVaKol.aux)
 \openout1 = `JozVaKol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
-0.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+11.
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1406,7 +1534,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 70.
+Package hyperref Info: Link coloring ON on input line 111.
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1416,11 +1544,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count401
+\c@section@level=\count416
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
 
 (JozVaKol.out) (JozVaKol.out)
 \@outlinefile=\write4
@@ -1441,91 +1569,1084 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 [1
 
 
-]) (front/template/besmellah.tex
+])
+File: esalat-mattn.pdf Graphic file (type pdf)
+<use esalat-mattn.pdf>
+File: esalat-mattn.pdf Graphic file (type pdf)
+<use esalat-mattn.pdf>
+File: esalat-mattn.pdf Graphic file (type pdf)
+<use esalat-mattn.pdf, page 1>
+File: esalat-mattn.pdf Graphic file (type pdf)
+<use esalat-mattn.pdf, page 1>
+File: esalat-mattn.pdf Graphic file (type pdf)
+<use esalat-mattn.pdf, page 1>
+File: esalat-mattn.pdf Graphic file (type pdf)
+<use esalat-mattn.pdf, page 1>
+File: esalat-mattn.pdf Graphic file (type pdf)
+<use esalat-mattn.pdf, page 1>
+ [2] (front/template/besmellah.tex
 File: front/template/images/besmellah.jpg Graphic file (type bmp)
 <front/template/images/besmellah.jpg>
- [2]) (front/abstract.tex
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 13.07996pt on input line 10.
- [3]) [4
+ [3]) (front/template/signatures.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
 
-]
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 27.11911pt on input line 86.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 27.11911pt on input line 86.
 
-(JozVaKol.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 13.07996pt on input line 2.
+(Font)              scaled to size 15.69594pt on input line 33.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 8.71997pt on input line 2.
+(Font)              scaled to size 10.89996pt on input line 33.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 6.53998pt on input line 2.
+(Font)              scaled to size 7.62997pt on input line 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <14.4> not avail
+able
+(Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
+ne 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
+(Font)              scaled to size 15.69594pt on input line 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <10> not availab
+le
+(Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
+ne 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
+(Font)              scaled to size 10.89996pt on input line 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <7> not availabl
+e
+(Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
+ne 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
+(Font)              scaled to size 7.62997pt on input line 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
+(Font)              scaled to size 15.69594pt on input line 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
+(Font)              scaled to size 10.89996pt on input line 33.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
+(Font)              scaled to size 7.62997pt on input line 33.
+
+Underfull \hbox (badness 2020) in paragraph at lines 34--34
+[][]\TU/XBNiloofar(0)/m/n/14.4 استاد راهنما: استاد سامان مقیمی[]
+ []
+
+[4]) (front/abstract_fa.tex
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
+(Font)              scaled to size 13.07996pt on input line 10.
+ [5]) (front/acknowledge.tex
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
+(Font)              scaled to size 18.83513pt on input line 5.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
+(Font)              scaled to size 18.83513pt on input line 5.
+) [6]
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
+(Font)              scaled to size 27.11911pt on input line 127.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
+(Font)              scaled to size 27.11911pt on input line 127.
+ (JozVaKol.toc
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
+(Font)              scaled to size 13.07996pt on input line 3.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
+(Font)              scaled to size 8.71997pt on input line 3.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
+(Font)              scaled to size 6.53998pt on input line 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <12> not availab
 le
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 2.
+ne 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 13.07996pt on input line 2.
+(Font)              scaled to size 13.07996pt on input line 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <8> not availabl
 e
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 2.
+ne 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 8.71997pt on input line 2.
+(Font)              scaled to size 8.71997pt on input line 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <6> not availabl
 e
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 2.
+ne 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 6.53998pt on input line 2.
+(Font)              scaled to size 6.53998pt on input line 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 13.07996pt on input line 2.
+(Font)              scaled to size 13.07996pt on input line 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 8.71997pt on input line 2.
+(Font)              scaled to size 8.71997pt on input line 3.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 6.53998pt on input line 2.
+(Font)              scaled to size 6.53998pt on input line 3.
+
+Underfull \vbox (badness 6978) has occurred while \output is active []
+
+ [7
+
+]
+[8]
+Overfull \hbox (0.80212pt too wide) detected at line 63
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۱[][][]
+ []
+
+
+Overfull \hbox (0.80212pt too wide) detected at line 64
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۳[][][]
+ []
+
+
+Overfull \hbox (0.80212pt too wide) detected at line 65
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۳[][][]
+ []
+
+
+Overfull \hbox (0.80212pt too wide) detected at line 66
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۳[][][]
+ []
+
 )
 \tf@toc=\write5
 \openout5 = `JozVaKol.toc'.
 
- [5] [6
+ [9] [10
 
-] (JozVaKol.lof)
+] (JozVaKol.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Overfull \hbox (0.80212pt too wide) detected at line 28
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۲[][][]
+ []
+
+
+Overfull \hbox (0.80212pt too wide) detected at line 29
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۳[][][]
+ []
+
+
+Overfull \hbox (0.80212pt too wide) detected at line 30
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۴[][][]
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `JozVaKol.lof'.
 
+ [12] (front/preface.tex
+فصل 0.
 
-[7] (../papers_studies/appendices/phase_space_sampling.tex [8
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+[][]
+ []
+
+) (chapters/first_correspondance.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13
+
+]
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
+(Font)              scaled to size 8.71997pt on input line 9.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
+(Font)              scaled to size 10.89996pt on input line 9.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
+(Font)              scaled to size 5.44998pt on input line 9.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <5> not availabl
+e
+(Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
+ne 9.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
+(Font)              scaled to size 5.44998pt on input line 9.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
+(Font)              scaled to size 5.44998pt on input line 9.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
+(Font)              scaled to size 7.62997pt on input line 9.
+
+[14] [15]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+
+
+LaTeX Font Warning: Font shape `TU/XBNiloofar(0)/m/sc' undefined
+(Font)              using `TU/XBNiloofar(0)/m/n' instead on input line 21.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[][]
+ []
+
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sc' will be
+(Font)              scaled to size 13.07996pt on input line 31.
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+[][]
+ []
+
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sl' in size <10> not availab
+le
+(Font)              Font shape `TU/XBNiloofar(0)/m/it' tried instead on input l
+ine 39.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/it' will be
+(Font)              scaled to size 10.89996pt on input line 39.
+[16]) (chapters/the_very_first_problem.tex [17] [18
+
+]
+فصل 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+[][]
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+[][]
+ []
+
+File: figs//../Figures/more_is_different_anderson.png Graphic file (type bmp)
+<figs//../Figures/more_is_different_anderson.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Overfull \hbox (5.12369pt too wide) in paragraph at lines 25--26
+[]\TU/XBNiloofar(0)/m/sc/12 می‌کنند با مدلسازی رفتارهای طلایی مغز همچون حافظه، 
+خواب و ... و همچنین اختلالات و بیماری‌هایی[]
+ []
+
+File: figs//../Figures/neuroanatomy_plot.jpg Graphic file (type bmp)
+<figs//../Figures/neuroanatomy_plot.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[][]
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[][]
+ []
+
+File: figs//../Figures/generalized_seizure.png Graphic file (type bmp)
+<figs//../Figures/generalized_seizure.png>
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+[][]
+ []
+
+File: figs//../Figures/Black_box_test.jpg Graphic file (type bmp)
+<figs//../Figures/Black_box_test.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+File: Figures/IF_model_spike_pattern.png Graphic file (type bmp)
+<Figures/IF_model_spike_pattern.png>
+
+[25]
+File: figs//../Figures/Canonical model.png Graphic file (type bmp)
+<figs//../Figures/Canonical model.png>
+File: Figures/canonical_model_spike_pattern.png Graphic file (type bmp)
+<Figures/canonical_model_spike_pattern.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
+[][]
+ []
+
+[26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+[][]
+ []
+
+
+Overfull \hbox (20.2958pt too wide) in paragraph at lines 178--179
+[][]\TU/XBNiloofar(0)/m/sc/12 گذرفاز مفهومی بسیار وسیع است که در پدیده‌های زیاد
+ی همچون ماده‌چگال، ابررسانایی، جمعیت‌شناسی[]
+ []
+
+[28]) (../papers_studies/chapters/integrate_and_fire_synchronization.tex
+[29] [30
+
+]
+فصل 2.
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 10.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Missing character: There is no ـ in font cmmi8!
+Missing character: There is no ـ in font cmmi8!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[][]
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+[][]
+ []
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 68.
+
+
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+ [34]
+File: ../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T100
+0_g5_input_1.2_2.8/raster_plot.png Graphic file (type bmp)
+<../scripts/kuramoto_model_synchoronization_problem/single_runs/N1000_T1000_g5_
+input_1.2_2.8/raster_plot.png>
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
+(Font)              scaled to size 11.93546pt on input line 86.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
+(Font)              scaled to size 11.93546pt on input line 86.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <10.95> not avai
+lable
+(Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
+ne 86.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
+(Font)              scaled to size 11.93546pt on input line 86.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
+(Font)              scaled to size 11.93546pt on input line 86.
+File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T100_I1.2_2
+.8_v1.0/sigma_g_0_130.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T100_I1.2_2.8_v1
+.0/sigma_g_0_130.png>
+File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
+2.8_cluster_computed/silent_neurons_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
+luster_computed/silent_neurons_g_0.1_65.png>
+File: ../papers_studies/figs/IF/mean_spiking_persiods.png Graphic file (type bm
+p)
+<../papers_studies/figs/IF/mean_spiking_persiods.png>
+File: ../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png Gr
+aphic file (type bmp)
+<../papers_studies/figs/IF/mean_spiking_persiods_with_trending_line.png>
+File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
+2.8_cluster_computed/sigma_phase_space_contour.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
+luster_computed/sigma_phase_space_contour.png>
+
+Underfull \hbox (badness 7168) in paragraph at lines 121--121
+[][]\TU/XBNiloofar(0)/m/n/10.95 (و) |صفحه‌ی فاز مربوط به سامانه‌ی نورون‌های[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 83--124
+[][][]  [][]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 83--124
+[][]  [][]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 83--124
+[][]  [] []
+ []
+
+[35] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+[][]
+ []
+
+[37]) (../papers_studies/chapters/rotational_synchronization.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+[][]
+ []
+
+[38]
+فصل 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+[][]
+ []
+
+Missing character: There is no ـ in font cmmi8!
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 18.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+[][]
+ []
+
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 62.
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+[][]
+ []
+
+[42]
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_v1.0/sigma_g_0_130.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_v1.0/sigma_g_0_130.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_v1.0/amin_saman_param_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_v1.0/amin_saman_param_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/mean_spiking_persiods_g_0.1_65.png Graphic file (t
+ype bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/mean_spiking_persiods_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/mean_spiking_persiods_with_trending_line_g_0.1_65.
+png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/mean_spiking_persiods_with_trending_line_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
+0_I9.5_13.5_cluster_computed/sigma_phase_space_contour.png Graphic file (type b
+mp)
+<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
+5_13.5_cluster_computed/sigma_phase_space_contour.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 96--130
+[][][]  [][]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 96--130
+[][]  [][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--141
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+[44]
+Overfull \hbox (0.37357pt too wide) in paragraph at lines 149--152
+[][]\TU/XBNiloofar(0)/m/sc/12 به هر جهت رسم نمودار فعالیت نورون‌ها بر حسب جریان
+‌های تصادفی اولیه‌ی آن‌ها می‌تواند اطلاعات[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
+[][]
+ []
+
+File: ../papers_studies/figs/Rotational/spikies_num_vs_input_fitted_curve_g50_i
+nput_3.5_13.5.png Graphic file (type bmp)
+<../papers_studies/figs/Rotational/spikies_num_vs_input_fitted_curve_g50_input_
+3.5_13.5.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--194
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+[][]
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--214
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+[][]
+ []
+
+) (../papers_studies/chapters/simple_synchronization.tex [47] [48]
+فصل 4.
+Missing character: There is no ـ in font cmmi8!
+
+LaTeX Warning: The counter will not be printed.
+             The label is: - on input line 14.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49
+
+]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 29.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[][]
+ []
+
+
+Underfull \vbox (badness 5519) has occurred while \output is active []
+
+ [50]
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5/sigma_g_0.1_65.png>
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_alpha20.png Graphic fi
+le (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_alpha20.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 59--74
+[][]$[]$  $[]$ []
+ []
+
+) [51] (../papers_studies/chapters/animation_description.tex [52]
+فصل 5.
+File: ../papers_studies/figs/IF/IF_phase_space-Model.png Graphic file (type bmp
+)
+<../papers_studies/figs/IF/IF_phase_space-Model.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53
+
+]
+[54]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+ [55]
+File: Figures/animation_chapter/IF_sigma_phase_space_contour_selected_points.pn
+g Graphic file (type bmp)
+<Figures/animation_chapter/IF_sigma_phase_space_contour_selected_points.png>
+File: Figures/animation_chapter/Rotational_sigma_phase_space_contour_selected_p
+oints.png Graphic file (type bmp)
+<Figures/animation_chapter/Rotational_sigma_phase_space_contour_selected_points
+.png>
+File: Figures/animation_chapter/Non_repulsive_sigma_phase_space_contour_alpha20
+_selected_points.png Graphic file (type bmp)
+<Figures/animation_chapter/Non_repulsive_sigma_phase_space_contour_alpha20_sele
+cted_points.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 68--92
+[][]$[]$  $[]$[]
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+[58]
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/1.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/1.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/50.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/50.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/100.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/100.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/150.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/150.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/200.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/200.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/IF_frames/A/250.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
+frames/A/250.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 132--184
+[][]$[]$  $[]$[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 132--184
+[]$[]$  $[]$[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 132--184
+[]$[]$  $[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--184
+[][]
+ []
+
+
+LaTeX Warning: Float too large for page by 32.35225pt on input line 186.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--192
+[][]
+ []
+
+[59] [60]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(14.22636pt, 816.59412pt, 14.22636pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=816.59412pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
+* \topmargin=-102.91742pt
+* \headheight=25.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/250.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/250.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/300.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/300.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/350.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/350.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/400.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/400.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/450.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/450.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/500.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/500.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/550.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/550.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Rotational_frames/A/600.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
+ational_frames/A/600.png>
+
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 214--272
+[][]$[]$ $[]$[]
+ []
+
+
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 214--272
+[]$[]$ $[]$[]
+ []
+
+
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 214--272
+[]$[]$ $[]$[]
+ []
+
+
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 214--272
+[]$[]$ $[]$ []
+ []
+
+[61] [62
+
+
+]
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/1.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/1.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/50.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/50.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/100.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/100.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/150.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/150.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/200.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/200.png>
+File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
+e/Non_repulsive_frames/A/250.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
+_repulsive_frames/A/250.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 296--346
+[][]$[]$  $[]$[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 296--346
+[]$[]$  $[]$[]
+ []
+
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 296--346
+[]$[]$  $[]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--346
+[][]
+ []
+
+
+LaTeX Warning: Float too large for page by 9.15216pt on input line 348.
+
+) (../papers_studies/chapters/analytical_approach.tex [63] [64]
+فصل 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+[][]
+ []
+
+[65
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+[][]
+ []
+
+[66] [67]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(14.22636pt, 816.59412pt, 14.22636pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=816.59412pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
+* \topmargin=-102.91742pt
+* \headheight=25.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [68
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+[][]
+ []
+
+[69
+
+
+] [70] [71] [72]
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png Graphic
+ file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png>
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_simple_g_0.1_130.png Graphic 
+file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5_v1.0/field_zeroth_order_simple_g_0.1_130.png>
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png Graph
+ic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png>
+
+
+LaTeX Warning: Float too large for page by 83.01701pt on input line 296.
+
+[73] [74] [75] [76] [77])
+(../papers_studies/chapters/simple_synchronization_single_input.tex [78]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+
+[79]
+Underfull \vbox (badness 3088) has occurred while \output is active []
+
+ [80]
+File: ../papers_studies/figs/Perturbation problem-Model.png Graphic file (type 
+bmp)
+<../papers_studies/figs/Perturbation problem-Model.png>
+
+[81]
+
+LaTeX Warning: The counter will not be printed.
+             The label is: * on input line 93.
+
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png>
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha100.png Graphic fi
+le (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha100.png>
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha20.png Graphic fil
+e (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha20.png>
+
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 123--138
+[][][]  [] []
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
+[][]
+ []
+
+[82] [83]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+
+Underfull \vbox (badness 2057) has occurred while \output is active []
+
+ [84]
+[85]
+Overfull \hbox (51.33482pt too wide) detected at line 195
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86]
+Overfull \hbox (56.0585pt too wide) detected at line 229
+[]
+ []
+
+
+Overfull \hbox (21.06516pt too wide) detected at line 234
+[]
+ []
+
+[87] [88] [89]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+[][]
+ []
+
+[90]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91]
+Overfull \vbox (29.27437pt too high) has occurred while \output is active []
+
+
+[92] [93
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 373--382
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [94
+
+]
+File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
+les/N10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_analytical_trans_points
+_alpha20.png Graphic file (type bmp)
+<../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
+10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alph
+a20.png>
+)
+(../papers_studies/chapters/conclusion.tex [95] [96]
+فصل 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97
+
+]
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/it' will be
+(Font)              scaled to size 13.07996pt on input line 30.
+
+[98]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+ [99]) (../papers_studies/appendices/phase_space_sampling.tex [100
 
 ]
 پیوست آ.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 18.83513pt on input line 2.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 18.83513pt on input line 2.
-
-LaTeX Warning: Reference `fig:if_g_d_phase_space' on page 9 undefined on input 
-line 3.
-
 File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
 2.8_cluster_computed/sigma_phase_space_contour_points_plotted.png Graphic file 
 (type bmp)
 <../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_2.8_c
 luster_computed/sigma_phase_space_contour_points_plotted.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
 0_I9.5_13.5_cluster_computed/sigma_phase_space_contour_points_plotted.png Graph
 ic file (type bmp)
@@ -1545,32 +2666,34 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (chapters/magical_formulas.tex
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 8.71997pt on input line 10.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 (Font)              scaled to size 6.53998pt on input line 10.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
+ [101]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-[11]) [12] (JozVaKol.bbl) [13
+ [102]
+[103]) [104] (JozVaKol.bbl [105
 
-] (JozVaKol.aux)
+] [106]) [107] (front/abstract_en.tex) [108]
+(front/template/title-eng.tex
+File: front/template/images/logo.png Graphic file (type bmp)
+<front/template/images/logo.png>
+) [109] (JozVaKol.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `JozVaKol.out' has not changed.
-(rerunfilecheck)             Checksum: 859117C41A531235B49C67179C55FE48;932.
+(rerunfilecheck)             Checksum: 2AB780D5761BE91E778A4FCE05225A6C;10479.
  ) 
 Here is how much of TeX's memory you used:
- 29081 strings out of 411254
- 556188 string characters out of 2832814
- 989751 words of memory out of 3000000
- 48915 multiletter control sequences out of 15000+600000
- 408819 words of font info for 94 fonts, out of 8000000 for 9000
+ 33250 strings out of 411254
+ 681477 string characters out of 2832814
+ 1077391 words of memory out of 3000000
+ 52873 multiletter control sequences out of 15000+600000
+ 413819 words of font info for 140 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,10n,98p,2947b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 93i,18n,98p,4830b,786s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on JozVaKol.pdf (13 pages).
+Output written on JozVaKol.pdf (109 pages).

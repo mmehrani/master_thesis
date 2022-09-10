@@ -1,54 +1,53 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: JozVaKol.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: plain-fa.bst
 Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
 Database file #1: MyReferences.bib
-Warning--I didn't find a database entry for "lapicque_recherches_1907"
--- plain-fa.bst version 0.6 (2011/07/01) 
--- This is a BibTeX style for XePersian: http://www.parsilatex.com
-
-Done.
-You've used 6 entries,
-            2535 wiz_defined-function locations,
-            671 strings with 6269 characters,
-and the built_in function-call counts, 1988 in all, are:
-= -- 176
-> -- 76
-< -- 0
-+ -- 31
-- -- 24
-* -- 140
-:= -- 312
-add.period$ -- 17
-call.type$ -- 6
-change.case$ -- 30
+Warning--empty publisher in Krawczyk2017
+Warning--empty booktitle in POE20101
+Warning--empty booktitle in SMITH19981
+Warning--empty school in amir_naderi2022
+You've used 22 entries,
+            1791 wiz_defined-function locations,
+            605 strings with 7308 characters,
+and the built_in function-call counts, 4997 in all, are:
+= -- 457
+> -- 186
+< -- 5
++ -- 71
+- -- 49
+* -- 349
+:= -- 782
+add.period$ -- 68
+call.type$ -- 22
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 61
-empty$ -- 147
-format.name$ -- 24
-if$ -- 448
+cite$ -- 26
+duplicate$ -- 218
+empty$ -- 508
+format.name$ -- 49
+if$ -- 1119
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 45
-newline$ -- 59
-num.names$ -- 12
-pop$ -- 25
+int.to.str$ -- 22
+missing$ -- 20
+newline$ -- 112
+num.names$ -- 22
+pop$ -- 57
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 0
 quote$ -- 0
-skip$ -- 47
+skip$ -- 98
 stack$ -- 0
-substring$ -- 126
-swap$ -- 6
-text.length$ -- 0
+substring$ -- 369
+swap$ -- 44
+text.length$ -- 5
 text.prefix$ -- 0
-top$ -- 4
-type$ -- 24
-warning$ -- 0
-while$ -- 18
-width$ -- 7
-write$ -- 86
-(There was 1 warning)
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 50
+width$ -- 24
+write$ -- 240
+(There were 4 warnings)
