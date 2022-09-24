@@ -238,7 +238,7 @@ class Animated_network_of_neurons(Network_of_neurons):
         
         ax.set_yticks([self.floor_state, - np.pi, 0, self.ceiling_state])
         ax.set_yticklabels(self.important_states_namestrings)
-        ax.set_title(r'N = $10^{}$, g={}, delay ={}(s)'.format(int(np.log10(self.num_neurons)),self.g,self.delay_time))
+        ax.set_title(r'N = $10^{}$, g={}, delay ={}'.format(int(np.log10(self.num_neurons)),self.g,self.delay_time))
         
         self.colored_plateau = ax.imshow( self.plateau, aspect= 'auto', extent = self.extent , vmin = 0, vmax = 10, cmap = 'binary')
         ax.set_xlabel('External input')

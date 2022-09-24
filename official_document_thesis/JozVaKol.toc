@@ -58,9 +58,12 @@
 \contentsline {subsubsection}{مشکل پابرجا}{91}{subsubsection*.37}%
 \contentsline {subsubsection}{نقطه‌ی گذرفاز پیشنهادی}{94}{subsubsection*.38}%
 \contentsline {subsubsection}{هم‌خوانی با هم‌گامی}{95}{subsubsection*.39}%
-\contentsline {chapter}{\numberline {7}نتیجه‌گیری}{97}{chapter.7}%
-\contentsline {chapter}{\numberline {آ}نمونه‌گیری صفحه فاز}{101}{appendix.Alph1}%
-\contentsline {section}{\numberline {آ-1}انباشت‌وشلیک}{101}{section.Alph1.1}%
-\contentsline {section}{\numberline {آ-2}چرخنده}{103}{section.Alph1.2}%
-\contentsline {section}{\numberline {آ-3}ساده}{103}{section.Alph1.3}%
-\contentsline {section}{\numberline {آ-4}محاسبه‌ی دوره‌ی تناوب نورون‌های چرخنده}{103}{section.Alph1.4}%
+\contentsline {subsection}{\numberline {6-1-4}از شبکه‌ی ساده به پیچیده‌تر}{95}{subsection.6.1.4}%
+\contentsline {subsubsection}{مدل قبلی را می‌خواهم!}{96}{subsubsection*.41}%
+\contentsline {subsubsection}{جریان‌های وسیعتر}{98}{subsubsection*.43}%
+\contentsline {chapter}{\numberline {7}نتیجه‌گیری}{101}{chapter.7}%
+\contentsline {chapter}{\numberline {آ}نمونه‌گیری صفحه فاز}{105}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ-1}انباشت‌وشلیک}{105}{section.Alph1.1}%
+\contentsline {section}{\numberline {آ-2}چرخنده}{107}{section.Alph1.2}%
+\contentsline {section}{\numberline {آ-3}ساده}{107}{section.Alph1.3}%
+\contentsline {section}{\numberline {آ-4}محاسبه‌ی دوره‌ی تناوب نورون‌های چرخنده}{107}{section.Alph1.4}%

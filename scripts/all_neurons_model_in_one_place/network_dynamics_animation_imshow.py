@@ -12,7 +12,7 @@ from tqdm import tqdm
 import numpy as np
 
 current_models = ['IF','Rotational','Non_repulsive_rotational']
-neuron_model = current_models[1]
+neuron_model = current_models[2]
 
 with open("network_reference.py") as net_ref: 
     lines = net_ref.readlines() #read 
@@ -26,15 +26,15 @@ with open("network_reference.py", "w") as net_ref:
 
     
 num_neurons = 10000
-total_time = 100
-start_time_to_sample = 50
-g = 6.5
-delay_time = 2
+total_time = 200
+start_time_to_sample = 100
+g = 10
+delay_time = 1.5
 # g = 0
 
 sample_network = Animated_network_of_neurons(neuron_model,
                                               num_neurons, g = g,
-                                              random_input_span = (9.5,9.5), alpha = 20)
+                                              random_input_span = (9.5,13.5), alpha = 20)
 # sample_network = Animated_network_of_neurons(neuron_model,
 #                                               num_neurons, g = g,
 #                                               random_input_span = (1.2,2.8), alpha = 20)
@@ -52,7 +52,7 @@ for i in tqdm(range( int( start_time_to_sample / sample_network.time_step ) ) ):
     sample_network.e_arr[i] = sample_network.e_arr[i] + epsilon
     # sample_network.spiking_records[i] = sample_network.spiking_records[i] + 10
 
-sample_network.render_animation(start_time_to_sample, show_space=True, show_pop = True,
+sample_network.render_animation(start_time_to_sample, show_space=True, show_pop = False,
                                 show_field= True, show_velocity=True)
 
 # version_name = 'black_white'
@@ -63,6 +63,6 @@ sample_network.render_animation(start_time_to_sample, show_space=True, show_pop 
 #                         neuron_model))
 
 # sample_network.render_animation(start_time_to_sample, show_space=True, show_pop = False,
-#                                 show_field= True, show_velocity=False, path = path)
+#                                 show_field= True, show_velocity=True, path = path)
 
 
