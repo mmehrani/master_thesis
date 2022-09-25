@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  18 SEP 2022 09:37
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  25 SEP 2022 19:07
 entering extended mode
 **./JozVaKol.tex
 (JozVaKol.tex
@@ -1834,11 +1834,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--24
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-Overfull \hbox (5.12369pt too wide) in paragraph at lines 25--26
-[]\TU/XBNiloofar(0)/m/sc/12 می‌کنند با مدلسازی رفتارهای طلایی مغز همچون حافظه، 
-خواب و ... و همچنین اختلالات و بیماری‌هایی[]
- []
-
 File: figs//../Figures/neuroanatomy_plot.jpg Graphic file (type bmp)
 <figs//../Figures/neuroanatomy_plot.jpg>
 
@@ -1877,10 +1872,9 @@ File: figs//../Figures/Black_box_test.jpg Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
+[25]
 File: Figures/IF_model_spike_pattern.png Graphic file (type bmp)
 <Figures/IF_model_spike_pattern.png>
-
-[25]
 File: figs//../Figures/Canonical model.png Graphic file (type bmp)
 <figs//../Figures/Canonical model.png>
 File: Figures/canonical_model_spike_pattern.png Graphic file (type bmp)
@@ -2168,9 +2162,9 @@ Underfull \vbox (badness 5519) has occurred while \output is active []
 
  [50]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
-les/N10000_T100_I9.5_13.5/sigma_g_0.1_65.png Graphic file (type bmp)
+les/N10000_T100_I9.5_13.5_v1.0/sigma_g_0_130.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
-10000_T100_I9.5_13.5/sigma_g_0.1_65.png>
+10000_T100_I9.5_13.5_v1.0/sigma_g_0_130.png>
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
 les/N10000_T100_I9.5_13.5_v1.0/sigma_phase_space_contour_alpha20.png Graphic fi
 le (type bmp)
@@ -2181,7 +2175,7 @@ Overfull \hbox (2.1289pt too wide) in paragraph at lines 59--74
 [][]$[]$  $[]$ []
  []
 
-) [51] (../papers_studies/chapters/animation_description.tex [52]
+) (../papers_studies/chapters/animation_description.tex [51] [52]
 فصل 5.
 File: ../papers_studies/figs/IF/IF_phase_space-Model.png Graphic file (type bmp
 )
@@ -2645,33 +2639,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--1
 [100]
 فصل 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
 [][]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
-[][]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [101
+[101
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+[][]
+ []
+
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/it' will be
-(Font)              scaled to size 13.07996pt on input line 30.
+(Font)              scaled to size 13.07996pt on input line 32.
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--34
+[][]
+ []
 
 [102]
 File: Figures/gmail_logo.png Graphic file (type bmp)
@@ -2723,11 +2717,11 @@ File: front/template/images/logo.png Graphic file (type bmp)
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `JozVaKol.out' has not changed.
-(rerunfilecheck)             Checksum: 79E38D67F1DD7B30540F750780240255;10757.
+(rerunfilecheck)             Checksum: 0ADC805FB016757D115CEEEEDDAF6241;10749.
  ) 
 Here is how much of TeX's memory you used:
- 33278 strings out of 411254
- 684472 string characters out of 2832814
+ 33275 strings out of 411254
+ 684283 string characters out of 2832814
  1077391 words of memory out of 3000000
  52895 multiletter control sequences out of 15000+600000
  413819 words of font info for 140 fonts, out of 8000000 for 9000

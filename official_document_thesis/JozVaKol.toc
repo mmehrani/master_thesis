@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {5-1-3}مدل نورونی ساده}{62}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5-2}جمع‌بندی}{63}{section.5.2}%
 \contentsline {chapter}{\numberline {6}تلاش برای توصیف}{65}{chapter.6}%
-\contentsline {section}{\numberline {6-1}حل معادله‌ی شبکه‌ی ساده}{66}{section.6.1}%
+\contentsline {section}{\numberline {6-1}حل معادلهٔ شبکه‌ی ساده}{66}{section.6.1}%
 \contentsline {subsection}{\numberline {6-1-1}روش بازگشتی}{67}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6-1-2}روش اختلال}{69}{subsection.6.1.2}%
 \contentsline {subsubsection}{محاسبه‌ی حالت پایستار - تلاش شماره‌ی ۱}{69}{subsubsection*.24}%
