@@ -38,7 +38,7 @@ Swen Dunkelmann and G{\"u}nter Radons.
 \newblock Neural networsk and abelian sandpile models of self-organized
   criticality.
 \newblock In {\em Proceedings of International Conference Artificial Neural
-  Networks}, pages 867--870. Springer-Verlag, 1994.
+  Networks}, pages 867--870. Springer, 1994.
 
 \bibitem{bedard2006model}
 Claude B{\'e}dard, Helmut Kr{\"o}ger, and Alain Destexhe.
@@ -49,12 +49,12 @@ Claude B{\'e}dard, Helmut Kr{\"o}ger, and Alain Destexhe.
 \bibitem{beggs2012being}
 John~M Beggs and Nicholas Timme.
 \newblock Being critical of criticality in the brain.
-\newblock {\em Frontiers in physiology}, 3:163, 2012.
+\newblock {\em Frontiers in Physiology}, 3:163, 2012.
 
 \bibitem{PhysRevLett.105.158104}
 Stefano Luccioli and Antonio Politi.
 \newblock Irregular collective behavior of heterogeneous neural networks.
-\newblock {\em Phys. Rev. Lett.}, 105:158104, Oct 2010.
+\newblock {\em Physical Review Letters}, 105:158104, Oct 2010.
 
 \bibitem{kazemi2022phase}
 Sheida Kazemi and Yousef Jamali.
@@ -66,7 +66,7 @@ Sheida Kazemi and Yousef Jamali.
 Igor Belykh, Enno de~Lange, and Martin Hasler.
 \newblock Synchronization of bursting neurons: What matters in the network
   topology.
-\newblock {\em Phys. Rev. Lett.}, 94:188101, May 2005.
+\newblock {\em Physical Review Letter}, 94:188101, May 2005.
 
 \bibitem{eytan2006dynamics}
 Danny Eytan and Shimon Marom.
@@ -79,7 +79,7 @@ John~A White, Carson~C Chow, Jason Rit, Cristina Soto-Trevi{\~n}o, and Nancy
   Kopell.
 \newblock Synchronization and oscillatory dynamics in heterogeneous, mutually
   inhibited neurons.
-\newblock {\em Journal of computational neuroscience}, 5(1):5--16, 1998.
+\newblock {\em Journal of Computational Neuroscience}, 5(1):5--16, 1998.
 
 \bibitem{penttila_2022}
 Nicky Penttila.
@@ -89,7 +89,7 @@ Nicky Penttila.
 Samuel~B. Tomlinson and Arun Venkataraman.
 \newblock Secondary generalization of focal-onset seizures: examining the
   relationship between seizure propagation and epilepsy surgery outcome.
-\newblock {\em Journal of neurophysiology}, 117 4:1426--1430, 2017.
+\newblock {\em Journal of Neurophysiology}, 117 4:1426--1430, 2017.
 
 \bibitem{brunel2007quantitative}
 Nicolas Brunel and Mark~CW Van~Rossum.
@@ -119,7 +119,7 @@ J~Wilting and V~Priesemann.
 Nicolas Brunel.
 \newblock Dynamics of sparsely connected networks of excitatory and inhibitory
   spiking neurons.
-\newblock {\em Journal of computational neuroscience}, 8(3):183--208, 2000.
+\newblock {\em Journal of Computational Neuroscience}, 8(3):183--208, 2000.
 
 \bibitem{safaeesirat2020critical}
 Amin Safaeesirat and Saman Moghimi-Araghi.

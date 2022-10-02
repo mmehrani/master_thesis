@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  25 SEP 2022 19:07
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.6.28) (preloaded format=xelatex 2021.7.4)  2 OCT 2022 15:33
 entering extended mode
 **./JozVaKol.tex
 (JozVaKol.tex
@@ -1469,32 +1469,32 @@ Package csquotes Info: ... none found.
  (JozVaKol.aux)
 \openout1 = `JozVaKol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-11.
+12.
 
 (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1534,7 +1534,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 111.
+Package hyperref Info: Link coloring ON on input line 112.
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1546,9 +1546,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count416
 )
-LaTeX Info: Redefining \ref on input line 111.
-LaTeX Info: Redefining \pageref on input line 111.
-LaTeX Info: Redefining \nameref on input line 111.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
 
 (JozVaKol.out) (JozVaKol.out)
 \@outlinefile=\write4
@@ -1588,54 +1588,56 @@ File: esalat-mattn.pdf Graphic file (type pdf)
 File: front/template/images/besmellah.jpg Graphic file (type bmp)
 <front/template/images/besmellah.jpg>
  [3]) (front/template/signatures.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 15.69594pt on input line 33.
+(Font)              scaled to size 15.69594pt on input line 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 10.89996pt on input line 33.
+(Font)              scaled to size 10.89996pt on input line 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
-(Font)              scaled to size 7.62997pt on input line 33.
+(Font)              scaled to size 7.62997pt on input line 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <14.4> not avail
 able
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 33.
+ne 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 15.69594pt on input line 33.
+(Font)              scaled to size 15.69594pt on input line 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <10> not availab
 le
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 33.
+ne 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 10.89996pt on input line 33.
+(Font)              scaled to size 10.89996pt on input line 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/bx/n' in size <7> not availabl
 e
 (Font)              Font shape `TU/XBNiloofar(1)/b/n' tried instead on input li
-ne 33.
+ne 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/b/n' will be
-(Font)              scaled to size 7.62997pt on input line 33.
+(Font)              scaled to size 7.62997pt on input line 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 15.69594pt on input line 33.
+(Font)              scaled to size 15.69594pt on input line 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 10.89996pt on input line 33.
+(Font)              scaled to size 10.89996pt on input line 30.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
-(Font)              scaled to size 7.62997pt on input line 33.
-
-Underfull \hbox (badness 2020) in paragraph at lines 34--34
-[][]\TU/XBNiloofar(0)/m/n/14.4 استاد راهنما: استاد سامان مقیمی[]
- []
-
-[4]) (front/abstract_fa.tex
+(Font)              scaled to size 7.62997pt on input line 30.
+File: Figures/saman_sign.png Graphic file (type bmp)
+<Figures/saman_sign.png>
+File: Figures/rahimitabar_sign.png Graphic file (type bmp)
+<Figures/rahimitabar_sign.png>
+File: Figures/niri_sign.png Graphic file (type bmp)
+<Figures/niri_sign.png>
+ [4])
+(front/abstract_fa.tex
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 (Font)              scaled to size 13.07996pt on input line 10.
  [5]) (front/acknowledge.tex
@@ -1645,9 +1647,9 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
 (Font)              scaled to size 18.83513pt on input line 5.
 ) [6]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
-(Font)              scaled to size 27.11911pt on input line 127.
+(Font)              scaled to size 27.11911pt on input line 128.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/b/n' will be
-(Font)              scaled to size 27.11911pt on input line 127.
+(Font)              scaled to size 27.11911pt on input line 128.
  (JozVaKol.toc
 LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/n' will be
 (Font)              scaled to size 13.07996pt on input line 3.
@@ -1686,22 +1688,32 @@ Underfull \vbox (badness 6978) has occurred while \output is active []
 
 ]
 [8]
-Overfull \hbox (0.80212pt too wide) detected at line 66
+Overfull \hbox (0.80212pt too wide) detected at line 71
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۲[][][]
+ []
+
+
+Overfull \hbox (0.80212pt too wide) detected at line 72
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۳[][][]
+ []
+
+
+Overfull \hbox (0.80212pt too wide) detected at line 73
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۴[][][]
+ []
+
+[9]
+Overfull \hbox (0.80212pt too wide) detected at line 74
  [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۵[][][]
  []
 
 
-Overfull \hbox (0.80212pt too wide) detected at line 67
- [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۷[][][]
+Overfull \hbox (0.80212pt too wide) detected at line 75
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۶[][][]
  []
 
 
-Overfull \hbox (0.80212pt too wide) detected at line 68
- [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۷[][][]
- []
-
-
-Overfull \hbox (0.80212pt too wide) detected at line 69
+Overfull \hbox (0.80212pt too wide) detected at line 76
  [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۷[][][]
  []
 
@@ -1709,31 +1721,27 @@ Overfull \hbox (0.80212pt too wide) detected at line 69
 \tf@toc=\write5
 \openout5 = `JozVaKol.toc'.
 
- [9] [10
-
-] (JozVaKol.lof
+ [10] (JozVaKol.lof
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-Overfull \hbox (0.80212pt too wide) detected at line 29
- [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۶[][][]
- []
+ [11
 
-
+]
 Overfull \hbox (0.80212pt too wide) detected at line 30
- [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۷[][][]
- []
-
-
-Overfull \hbox (0.80212pt too wide) detected at line 31
- [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۸[][][]
+ [][][]\TU/XBNiloofar(0)/m/n/12 ۱۰۰[][][]
  []
 
 )
 \tf@lof=\write6
 \openout6 = `JozVaKol.lof'.
 
- [12] (front/preface.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+[13] (front/preface.tex [14
+
+]
 فصل 0.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1748,9 +1756,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 ) (chapters/first_correspondance.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13
-
-]
+ [15]
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 (Font)              scaled to size 8.71997pt on input line 9.
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
@@ -1768,37 +1774,6 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(1)/m/it' will be
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 (Font)              scaled to size 7.62997pt on input line 9.
 
-[14] [15]
-File: Figures/gmail_logo.png Graphic file (type bmp)
-<Figures/gmail_logo.png>
-
-
-LaTeX Font Warning: Font shape `TU/XBNiloofar(0)/m/sc' undefined
-(Font)              using `TU/XBNiloofar(0)/m/n' instead on input line 21.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-[][]
- []
-
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sc' will be
-(Font)              scaled to size 13.07996pt on input line 31.
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
-[][]
- []
-
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sl' in size <10> not availab
-le
-(Font)              Font shape `TU/XBNiloofar(0)/m/it' tried instead on input l
-ine 39.
-LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/it' will be
-(Font)              scaled to size 10.89996pt on input line 39.
 [16]) (chapters/the_very_first_problem.tex [17] [18
 
 ]
@@ -1851,15 +1826,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 [][]
  []
 
+[22]
 File: figs//../Figures/generalized_seizure.png Graphic file (type bmp)
 <figs//../Figures/generalized_seizure.png>
-[22]
+
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 [][]
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3646) has occurred while \output is active []
 
  [23]
 Underfull \hbox (badness 10000) in paragraph at lines 82--85
@@ -1875,24 +1851,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [25]
 File: Figures/IF_model_spike_pattern.png Graphic file (type bmp)
 <Figures/IF_model_spike_pattern.png>
+ [26]
 File: figs//../Figures/Canonical model.png Graphic file (type bmp)
 <figs//../Figures/Canonical model.png>
 File: Figures/canonical_model_spike_pattern.png Graphic file (type bmp)
 <Figures/canonical_model_spike_pattern.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
-[][]
- []
-
-[26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
 [][]
  []
 
 
-Overfull \hbox (20.2958pt too wide) in paragraph at lines 178--179
-[][]\TU/XBNiloofar(0)/m/sc/12 گذرفاز مفهومی بسیار وسیع است که در پدیده‌های زیاد
-ی همچون ماده‌چگال، ابررسانایی، جمعیت‌شناسی[]
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Overfull \hbox (20.2958pt too wide) in paragraph at lines 179--180
+[][]\TU/XBNiloofar(0)/m/n/12 گذرفاز مفهومی بسیار وسیع است که در پدیده‌های زیادی
+ همچون ماده‌چگال، ابررسانایی، جمعیت‌شناسی[]
  []
 
 [28]) (../papers_studies/chapters/integrate_and_fire_synchronization.tex
@@ -2084,8 +2064,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [43]
 [44]
 Overfull \hbox (0.37357pt too wide) in paragraph at lines 149--152
-[][]\TU/XBNiloofar(0)/m/sc/12 به هر جهت رسم نمودار فعالیت نورون‌ها بر حسب جریان
-‌های تصادفی اولیه‌ی آن‌ها می‌تواند اطلاعات[]
+[][]\TU/XBNiloofar(0)/m/n/12 به هر جهت رسم نمودار فعالیت نورون‌ها بر حسب جریان‌
+های تصادفی اولیه‌ی آن‌ها می‌تواند اطلاعات[]
  []
 
 
@@ -2158,7 +2138,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
  []
 
 
-Underfull \vbox (badness 5519) has occurred while \output is active []
+Underfull \vbox (badness 5939) has occurred while \output is active []
 
  [50]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
@@ -2181,20 +2161,11 @@ File: ../papers_studies/figs/IF/IF_phase_space-Model.png Graphic file (type bmp
 )
 <../papers_studies/figs/IF/IF_phase_space-Model.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-[][]
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [53
 
 ]
-[54]
-File: Figures/gmail_logo.png Graphic file (type bmp)
-<Figures/gmail_logo.png>
- [55]
 File: Figures/animation_chapter/IF_sigma_phase_space_contour_selected_points.pn
 g Graphic file (type bmp)
 <Figures/animation_chapter/IF_sigma_phase_space_contour_selected_points.png>
@@ -2207,18 +2178,14 @@ _selected_points.png Graphic file (type bmp)
 <Figures/animation_chapter/Non_repulsive_sigma_phase_space_contour_alpha20_sele
 cted_points.png>
 
-Overfull \hbox (2.1289pt too wide) in paragraph at lines 68--92
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 21--56
 [][]$[]$  $[]$[]
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
-[58]
+[54] [55] [56]
 File: ../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_whit
 e/IF_frames/A/1.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
@@ -2244,37 +2211,37 @@ e/IF_frames/A/250.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/IF_
 frames/A/250.png>
 
-Overfull \hbox (2.1289pt too wide) in paragraph at lines 132--184
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 96--148
 [][]$[]$  $[]$[]
  []
 
 
-Overfull \hbox (2.1289pt too wide) in paragraph at lines 132--184
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 96--148
 []$[]$  $[]$[]
  []
 
 
-Overfull \hbox (2.1289pt too wide) in paragraph at lines 132--184
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 96--148
 []$[]$  $[]$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--184
+Underfull \hbox (badness 10000) in paragraph at lines 96--148
 [][]
  []
 
 
-LaTeX Warning: Float too large for page by 32.35225pt on input line 186.
+LaTeX Warning: Float too large for page by 32.35225pt on input line 150.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--192
+Underfull \hbox (badness 10000) in paragraph at lines 153--156
 [][]
  []
 
-[59] [60]
+[57] [58]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: a4paper
@@ -2340,26 +2307,26 @@ e/Rotational_frames/A/600.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Rot
 ational_frames/A/600.png>
 
-Overfull \hbox (2.12889pt too wide) in paragraph at lines 214--272
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 178--236
 [][]$[]$ $[]$[]
  []
 
 
-Overfull \hbox (2.12889pt too wide) in paragraph at lines 214--272
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 178--236
 []$[]$ $[]$[]
  []
 
 
-Overfull \hbox (2.12889pt too wide) in paragraph at lines 214--272
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 178--236
 []$[]$ $[]$[]
  []
 
 
-Overfull \hbox (2.12889pt too wide) in paragraph at lines 214--272
+Overfull \hbox (2.12889pt too wide) in paragraph at lines 178--236
 []$[]$ $[]$ []
  []
 
-[61] [62
+[59] [60
 
 
 ]
@@ -2388,43 +2355,43 @@ e/Non_repulsive_frames/A/250.png Graphic file (type bmp)
 <../scripts/all_neurons_model_in_one_place/animations/sea_shore/black_white/Non
 _repulsive_frames/A/250.png>
 
-Overfull \hbox (2.1289pt too wide) in paragraph at lines 296--346
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 260--310
 [][]$[]$  $[]$[]
  []
 
 
-Overfull \hbox (2.1289pt too wide) in paragraph at lines 296--346
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 260--310
 []$[]$  $[]$[]
  []
 
 
-Overfull \hbox (2.1289pt too wide) in paragraph at lines 296--346
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 260--310
 []$[]$  $[]$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--346
+Underfull \hbox (badness 10000) in paragraph at lines 260--310
 [][]
  []
 
 
-LaTeX Warning: Float too large for page by 9.15216pt on input line 348.
+LaTeX Warning: Float too large for page by 9.15216pt on input line 312.
 
-) (../papers_studies/chapters/analytical_approach.tex [63] [64]
+) (../papers_studies/chapters/analytical_approach.tex [61] [62]
 فصل 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 [][]
  []
 
-[65
+[63
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 30--34
 [][]
  []
 
-[66] [67]
+[64] [65]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: a4paper
@@ -2457,7 +2424,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--34
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [68
+ [66
 
 
 ]
@@ -2470,10 +2437,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 [][]
  []
 
-[69
+[67
 
 
-] [70] [71] [72]
+] [68] [69] [70]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
 les/N10000_T100_I9.5_13.5_v1.0/field_zeroth_order_asterix_g_0.1_130.png Graphic
  file (type bmp)
@@ -2491,25 +2458,27 @@ ic file (type bmp)
 10000_T100_I9.5_13.5_v1.0/field_zeroth_order_developed_g_0.1_130.png>
 
 
-LaTeX Warning: Float too large for page by 83.01701pt on input line 296.
+LaTeX Warning: Float too large for page by 83.01701pt on input line 295.
 
-[73] [74] [75] [76] [77])
-(../papers_studies/chapters/simple_synchronization_single_input.tex [78]
-File: Figures/gmail_logo.png Graphic file (type bmp)
-<Figures/gmail_logo.png>
+[71] [72]
+Underfull \vbox (badness 1803) has occurred while \output is active []
 
-[79]
-Underfull \vbox (badness 3088) has occurred while \output is active []
+ [73]
+[74] [75]) (../papers_studies/chapters/simple_synchronization_single_input.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
+ [76]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77]
 File: ../papers_studies/figs/Perturbation problem-Model.png Graphic file (type 
 bmp)
 <../papers_studies/figs/Perturbation problem-Model.png>
 
-[81]
+[78]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: * on input line 93.
+             The label is: * on input line 74.
 
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
 les/N10000_T100_I9.5_9.5_v2.0/sigma_g_0_130.png Graphic file (type bmp)
@@ -2526,7 +2495,7 @@ e (type bmp)
 <../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensembles/N
 10000_T100_I9.5_9.5_v2.0/sigma_phase_space_contour_alpha20.png>
 
-Overfull \hbox (2.1289pt too wide) in paragraph at lines 123--138
+Overfull \hbox (2.1289pt too wide) in paragraph at lines 104--119
 [][][]  [] []
  []
 
@@ -2534,61 +2503,51 @@ Overfull \hbox (2.1289pt too wide) in paragraph at lines 123--138
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--147
+Underfull \hbox (badness 10000) in paragraph at lines 123--128
 [][]
  []
 
-[82] [83]
-File: Figures/gmail_logo.png Graphic file (type bmp)
-<Figures/gmail_logo.png>
-
-Underfull \vbox (badness 2057) has occurred while \output is active []
-
- [84]
-[85]
-Overfull \hbox (51.33482pt too wide) detected at line 195
+[79]
+Overfull \hbox (54.59868pt too wide) detected at line 149
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86]
-Overfull \hbox (56.0585pt too wide) detected at line 229
+ [80]
+[81]
+Overfull \hbox (58.66959pt too wide) detected at line 183
 []
  []
 
 
-Overfull \hbox (21.06516pt too wide) detected at line 234
+Overfull \hbox (22.49417pt too wide) detected at line 188
 []
  []
 
-[87] [88] [89]
-File: Figures/gmail_logo.png Graphic file (type bmp)
-<Figures/gmail_logo.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-[][]
- []
-
-[90]
+[82]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [91]
-Overfull \vbox (29.27437pt too high) has occurred while \output is active []
+ [83]
+[84]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85]
+Overfull \vbox (5.0743pt too high) has occurred while \output is active []
 
 
-[92] [93
+[86] [87
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 373--382
+Underfull \hbox (badness 10000) in paragraph at lines 297--306
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [94
+ [88
 
 ]
 File: ../scripts/all_neurons_model_in_one_place/Non_repulsive_rotational_ensemb
@@ -2606,37 +2565,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
 Underfull \vbox (badness 7796) has occurred while \output is active []
 
- [95]
+ [89]
 Underfull \hbox (badness 10000) in paragraph at lines 11--13
 [][]
  []
 
-[96]
+[90]
 Underfull \hbox (badness 10000) in paragraph at lines 40--42
 [][]
  []
 
-[97]
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-0_I9.5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha20.png 
-Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
-5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha20.png>
-File: ../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T10
-0_I9.5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha100.png
- Graphic file (type bmp)
-<../scripts/all_neurons_model_in_one_place/Rotational_ensembles/N10000_T100_I9.
-5_13.5_v2.0/sigma_phase_space_contour_analytical_trans_points_alpha100.png>
-
-
-LaTeX Warning: Float too large for page by 48.10072pt on input line 79.
-
-[98] [99]) (../papers_studies/chapters/conclusion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 100--1
+[91] [92]) (../papers_studies/chapters/conclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 79--1
 [][]
  []
 
-[100]
+[93] [94
+
+]
 فصل 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
@@ -2644,35 +2590,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--14
+Underfull \hbox (badness 10000) in paragraph at lines 10--16
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
 [][]
  []
 
-[101
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
+[95]
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
 [][]
  []
 
 LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/it' will be
-(Font)              scaled to size 13.07996pt on input line 32.
+(Font)              scaled to size 13.07996pt on input line 34.
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--34
+Underfull \hbox (badness 10000) in paragraph at lines 28--36
 [][]
  []
 
-[102]
-File: Figures/gmail_logo.png Graphic file (type bmp)
-<Figures/gmail_logo.png>
- [103]) (../papers_studies/appendices/phase_space_sampling.tex [104
-
-]
+) (../papers_studies/appendices/phase_space_sampling.tex [96]
 پیوست آ.
 File: ../scripts/all_neurons_model_in_one_place/IF_ensembles/N10000_T1000_I1.2_
 2.8_cluster_computed/sigma_phase_space_contour_points_plotted.png Graphic file 
@@ -2702,14 +2641,71 @@ LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/n' will be
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [105]
+ [97
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106]
-[107]) [108] (JozVaKol.bbl [109
+ [98]
+[99]) (chapters/letters.tex [100]
+پیوست ب.
+[101
 
-] [110]) [111] (front/abstract_en.tex) [112]
-(front/template/title-eng.tex
+]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+
+
+LaTeX Font Warning: Font shape `TU/XBNiloofar(0)/m/sc' undefined
+(Font)              using `TU/XBNiloofar(0)/m/n' instead on input line 5.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+[][]
+ []
+
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sc' will be
+(Font)              scaled to size 13.07996pt on input line 15.
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+[][]
+ []
+
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/sl' in size <10> not availab
+le
+(Font)              Font shape `TU/XBNiloofar(0)/m/it' tried instead on input l
+ine 23.
+LaTeX Font Info:    Font shape `TU/XBNiloofar(0)/m/it' will be
+(Font)              scaled to size 10.89996pt on input line 23.
+[102]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+ [103]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+ [104]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+ [105]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+[][]
+ []
+
+[106]
+File: Figures/gmail_logo.png Graphic file (type bmp)
+<Figures/gmail_logo.png>
+ [107]) (JozVaKol.bbl [108
+
+] [109] [110]) [111] (front/abstract_en.tex)
+[112] (front/template/title-eng.tex
 File: front/template/images/logo.png Graphic file (type bmp)
 <front/template/images/logo.png>
 ) [113] (JozVaKol.aux)
@@ -2717,15 +2713,15 @@ File: front/template/images/logo.png Graphic file (type bmp)
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `JozVaKol.out' has not changed.
-(rerunfilecheck)             Checksum: 0ADC805FB016757D115CEEEEDDAF6241;10749.
+(rerunfilecheck)             Checksum: B56B3BFE557D5C3AC18650A41BA807B8;11190.
  ) 
 Here is how much of TeX's memory you used:
- 33275 strings out of 411254
- 684283 string characters out of 2832814
- 1077391 words of memory out of 3000000
- 52895 multiletter control sequences out of 15000+600000
- 413819 words of font info for 140 fonts, out of 8000000 for 9000
+ 33292 strings out of 411254
+ 682696 string characters out of 2832814
+ 1078395 words of memory out of 3000000
+ 52908 multiletter control sequences out of 15000+600000
+ 413827 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,18n,98p,4830b,786s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 93i,18n,98p,4830b,756s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on JozVaKol.pdf (113 pages).
