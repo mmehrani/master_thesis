@@ -6,31 +6,31 @@
 
 می‌دانیم هر نورونی که از حالت $\theta = \pi$ عبور می‌کند [تیزه می‌زند] باعث می‌شود تا سهمی از جریان با کیفیت $p(t):= \alpha^2 t \cdot exp(-\alpha t)$ به جریان درونی کل سامانه $E(t)$ اضافه شود.
 \begin{equation}
-	E(t) = \frac{1}{N}\int_{0}^{\infty} \int J_a (\pi,t-d-u) da \cdot \alpha^2 u\, e^{-\alpha u} du 
+	E(t) = \frac{1}{N}\int_{0}^{\infty} \int J_a (\pi,t-d-u) da \cdot \alpha^2 u\, e^{-\alpha u} du .
 	\label{eq:general_field}
 \end{equation}
 
 اما جریان برای هر نورون با ورودی $a$ به طریق زیر است:
 \begin{equation}
-	J_a (\theta, t) = n_a(\theta,t) \cdot \dot \theta_a
+	J_a (\theta, t) = n_a(\theta,t) \, \dot \theta_a .
 \end{equation}
-این رفتار به خوبی نشان می‌دهد جریان فقط در ناحیه‌ی $\theta \leq \pi$ وجود دارد. زیرا ورود نورون به ناحیه‌ی مثبت‌تر را ممنوع کرده‌ایم.  بی‌تردید برای فهمیدن چگونگی تغییر جریان در ناحیه‌های میانی باید از معادله‌ی پخش استفاده کنیم.
+این رفتار به خوبی نشان می‌دهد جریان فقط در ناحیه‌ی $\theta \leq \pi$ وجود دارد. زیرا ورود نورون به ناحیه‌ی مثبت‌تر را ممنوع کرده‌ایم.  بی‌تردید برای فهمیدن چگونگی تغییر جریان در ناحیه‌های میانی باید از معادلهٔ پخش استفاده کنیم.
 \begin{align}
 	\frac{\partial n_a}{\partial t} &= - \frac{\partial J_a}{\partial \theta} \label{eq:continuity_relation}\\
-	&= - \frac{\partial n_a}{\partial \theta} \cdot \dot \theta_a
+	&= - \frac{\partial n_a}{\partial \theta} \, \dot \theta_a .
 \end{align}
-\قسمت{حل معادله‌ی شبکه‌ی ساده}
+\قسمت{حل معادلهٔ شبکه‌ی ساده}
 اجازه بدهید تا اولین تلاش خود را از ساده‌ترین نوع شبکه‌ها شروع کنیم. شبکه‌ای که به جز جریان داخلی و جریان تصادفی اولیه ورودی دیگری ندارد. پس خواهیم داشت:
 \begin{align}
 	\begin{cases}
-		E(t) = \frac{1}{N} \int_{0}^{\infty} \int n_a(\pi,t-d-u) \cdot \big[ a - g E(t-d-u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
-		\frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E(t) )
+		E(t) = \frac{1}{N} \int_{0}^{\infty} \int n_a(\pi,t-d-u) \cdot \big[ a - g E(t-d-u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du , \\
+		\frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E(t) ) .
 	\end{cases}
 	\label{eq:simple_network}
 \end{align}
 همان‌طور که از معادلات بالا مشخص است ما با یک دستگاه مواجه هستیم که دستور تغییر E را به خود E در زمان‌های گذشته مربوط کرده است. گذشته از آن که تغییر عبارت
 $n_a$
-نیز بر طبق معادله‌ی پخش به E وابسته است! همان‌طور که خواننده مدنظر دارد؛ ما با معادلاتی طرف هستیم که بسیار گره‌خورده‌اند.\\
+نیز بر طبق معادلهٔ پخش به E وابسته است! همان‌طور که خواننده مدنظر دارد؛ ما با معادلاتی طرف هستیم که بسیار گره‌خورده‌اند.\\
 
 بی‌تردید می‌توان از زوایای متفاوت به مسئله نگاه کرد و راه‌حل‌های زیادی را پیشنهاد داد. ما در اینجا پیشنهاداتی را که در زمان مواجهه اولیه با این دستگاه داشتیم در زیر آوردیم:
 \begin{enumerate}[1.]
@@ -39,7 +39,7 @@ $n_a$
 	\item
 	از آنجا که میدان به گونه‌ای متناوب عمل می‌کند؛ یک پیشنهاد خوب می‌تواند آن باشد که بسط فوریه‌ی آن را بنویسیم.
 	\begin{equation}
-		E(t) = \sum c_i \cdot cos(\omega_i t)
+		E(t) = \sum c_i \cdot \cos \omega_i t .
 	\end{equation}
 	که اگر ثابت کنیم تحت شرایطی یکی از ضرایب
 	 $c_i$
@@ -64,26 +64,26 @@ $n_a$
 %\newcommand{\impact}[1]{u_{#1}\, e^{-\alpha u_{#1}}}
 %
 \begin{align}
-	\J{t-d-u} &\equiv \int n_a(\pi,t-d-u) a \cdot da\\
-	\N{t-d-u} &\equiv \int n_a(\pi,t-d-u) \cdot da\\
-	\Pexp{} &\equiv \alpha^2 u\, e^{-\alpha u}
+	\J{t-d-u} &\equiv \int n_a(\pi,t-d-u) a \cdot da ,\\
+	\N{t-d-u} &\equiv \int n_a(\pi,t-d-u) \cdot da ,\\
+	\Pexp{} &\equiv \alpha^2 u\, e^{-\alpha u} .
 \end{align}
 عبارت $\J{u}$ به معنای جمع جریان تصادفی نورون‌هایی است که در زمان u در آستانه قرار دارند. همچنین عبارت $\N{u}$ به معنای تعداد همین نورون‌هاست.\\
 حال با نمادهای بالا شروع به بازنویسی جملات پیشین می‌کنیم:
 \begin{align}
 	E(t) &= \frac{1}{N} \int_{0}^{\infty} \J{t-d-u_1} \cdot \Pexp{1} du_1\\
-	 &-\frac{g}{N}\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} E(t-d-u_1)  du_1
+	 &-\frac{g}{N}\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} E(t-d-u_1)  du_1 .
 	 \label{eq:field_zeroth_step}
 \end{align}
  جمله‌ی اول را می‌توانیم با عبارت دیگری خلاصه‌سازی می‌کنیم:
 
 \begin{equation}
-	\A{t} \equiv \frac{1}{N}\int_{0}^{\infty} \J{t-d-u_1} \cdot \Pexp{1} du_1
+	\A{t} \equiv \frac{1}{N}\int_{0}^{\infty} \J{t-d-u_1} \cdot \Pexp{1} du_1 .
 \end{equation}
  جمله‌ی دوم که حاوی عبارتی از جنس میدان است می‌تواند با معادله‌ای مشابه بازنویسی شود. به این ترتیب برای آن خواهیم داشت:
 \begin{align}
-	E(t - d - u_1) &= \frac{1}{N} \int_{0}^{\infty} \J{t-2d-u_1-u_2} \cdot \Pexp{2} du_2\\
-	&- \frac{g}{N}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2)  du_2
+	E(t - d - u_1) =& \frac{1}{N} \int_{0}^{\infty} \J{t-2d-u_1-u_2} \cdot \Pexp{2} du_2\\
+	&- \frac{g}{N}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2)  du_2 .
 \end{align}
 
 \newgeometry{top=5mm, bottom=5mm}
@@ -96,13 +96,13 @@ E(t)
 برحسب بسط جملاتی نوشته شود که حاصل اتفاقات زمان‌های گذشته هستند.
 
 	\begin{align}
-		E(t) &= \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} E(t-d-u_1) du_1\\
-		&= \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} \cdot \big[ \A{t-2d-u_1} - g\int_{0}^{\infty} \N{t-d- u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2) du_2 \big] du_1\\
-		&= \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} \cdot \A{t-2d-u_1} du_1\\ 
-		&\hspace{1 cm}+ g^2 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2) du_2 du_1\\
-		&= \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} \cdot \A{t-2d-u_1} du_1\\ 
-		&\hspace{1 cm}+ g^2 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} \A{t-3d-u_1-u_2} du_2 du_1\\
-		&\hspace{1 cm}- g^3 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} \int_{0}^{\infty} \N{t-3d-u_1-u_2-u_3} \cdot \Pexp{3} E(t-3d-u_1-u_2-u_3) du_3 du_2 du_1
+		E(t) =& \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} E(t-d-u_1) du_1\\
+		=& \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} \cdot \big[ \A{t-2d-u_1} - g\int_{0}^{\infty} \N{t-d- u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2) du_2 \big] du_1\\
+		=& \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} \cdot \A{t-2d-u_1} du_1\\ 
+		&+ g^2 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2) du_2 du_1\\
+		=& \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} \cdot \A{t-2d-u_1} du_1\\ 
+		&+ g^2 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} \A{t-3d-u_1-u_2} du_2 du_1\\
+		&- g^3 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} \int_{0}^{\infty} \N{t-3d-u_1-u_2-u_3} \cdot \Pexp{3} E(t-3d-u_1-u_2-u_3) du_3 du_2 du_1 .
 	\end{align}
 \end{landscape}
 
@@ -114,27 +114,27 @@ E(t)
 
 \زیرقسمت{روش اختلال}
 \زیرزیرقسمت{محاسبه‌ی حالت پایستار - تلاش شماره‌ی ۱}
-به نمودار \ref{fig:sigma_rotational} دقت کنید. در زمانی که تعداد نورون‌ها بی‌نهایت باشد؛ در فاز ناهم‌گام انحراف معیار میدان صفر خواهد شد. این به این معنی است که جریان در زمان ثابت خواهد ماند. پس بگذارید با علم بر این موضوع یک جواب معادله‌ی \ref{eq:simple_network} را در حالت حدی میدان ثابت $E_0$ معرفی کنیم.\\
+به نمودار \ref{fig:sigma_rotational} دقت کنید. در زمانی که تعداد نورون‌ها بی‌نهایت باشد؛ در فاز ناهم‌گام انحراف معیار میدان صفر خواهد شد. این به این معنی است که جریان در زمان ثابت خواهد ماند. پس بگذارید با علم بر این موضوع یک جواب معادلهٔ \ref{eq:simple_network} را در حالت حدی میدان ثابت $E_0$ معرفی کنیم.\\
 با فرض ثابت بودن میدان، اندازه‌ی آن را محاسبه می‌کنیم. سپس مجدد به معادلات برمی‌گردیم و می‌پرسیم که در صورت جمع با یک جمله‌ی اختلالی کوچک این انحراف رشد خواهد کرد یا خیر. به عبارت دیگر آیا این جواب جاذب است.\\
 \begin{align}
 	\begin{cases}
-		E_0 = \frac{1}{N}\int_{- \infty}^{t - d} \int n_a(\pi,u) \cdot \big[ a - g E_0 \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
-		\frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E_0 )
+		E_0 = \frac{1}{N}\int_{- \infty}^{t - d} \int n_a(\pi,u) \cdot \big[ a - g E_0 \big] da \cdot \alpha^2 u\, e^{-\alpha u} du ,\\
+		\frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E_0 ) .
 	\end{cases}
 \end{align}
 
 یک راه خوب برای پیشبرد سطر اول معادلات آن است که از دو طرف آهنگ تغییرشان با زمان را بپرسیم. از آنجا که سمت چپ معادله ثابت است؛ سمت راست هم باید جوابی مشابه را حکایت کند.\\
 \begin{equation}
-	0 = \frac{dE_0}{dt} = \frac{\alpha^2 (t-d) e^{-\alpha (t-d)}}{N} \cdot [ - gE_0 \cdot \int n_a(\pi,t-d) da + \int n_a(\pi,t-d)\cdot a\,da ]
+	0 = \frac{dE_0}{dt} = \frac{\alpha^2 (t-d) e^{-\alpha (t-d)}}{N} \cdot [ - gE_0 \cdot \int n_a(\pi,t-d) da + \int n_a(\pi,t-d)\cdot a\,da ].
 \end{equation}
 مشخص است که کدام جمله از جملات ضربی بالا صفر است. پس برای $E_0$ خواهیم داشت:
 \begin{equation}
-	E_0 = \frac{1}{g}\cdot \frac{\int n_a(\pi,t-d)\cdot a\,da}{\int n_a(\pi,t-d) da }
+	E_0 = \frac{1}{g}\cdot \frac{\int n_a(\pi,t-d)\cdot a\,da}{\int n_a(\pi,t-d) da }.
 \end{equation}
 
 حال برای ادامه‌ی فرآیند نیاز داریم تا عبارت حاکم بر 
 $n_a(\pi,t-d)$
-را بدست آوریم. اگر فرض کنیم که نورون با جریان خارجی a، در زمان صفر در فاز
+را به دست آوریم. اگر فرض کنیم که نورون با جریان خارجی a، در زمان صفر در فاز
 $\theta_0$
 حضور داشته؛ جواب پیشنهادی ما برای چگالی حضور نورون از جنس تابع دلتاست:
 \begin{align}
@@ -150,30 +150,30 @@ $2\pi$
 فاز کامل پس از تیزه زدن آن به تعداد 
 $\floor{K^{(t)}_a}$
 شده‌ایم.
-\footnote{دقت کنیم که معادله‌ی ذکر شده برای نورون‌هایی درست است که 
+\footnote{دقت کنیم که معادلهٔ ذکر شده برای نورون‌هایی درست است که 
 	$(a - g E_0) > 0 $
 }
 قابل محاسبه است که عبارت کامل آن به صورت زیر است.
 \begin{equation}
-	K^{(t)}_a = \frac{(a - gE_0)t + \pi + \theta_0}{2\pi}
+	K^{(t)}_a = \frac{(a - gE_0)t + \pi + \theta_0}{2\pi} .
 \end{equation}
 
 برای محاسبه‌ی انتگرال‌هایی که شامل این دلتای دیراک هستند؛ لازم است تا صفر‌های آرگومان آن را محاسبه کنیم.
 \begin{align}
-	\big( 2 \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}} + 1 \big)\pi - (a - g E_0)t + \theta_0 &= 0\\
-	2\pi \times \bigg( \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}}  - \frac{(a - gE_0)t + \pi + \theta_0}{2\pi} \bigg) &= 0\\
-	2\pi \times \bigg( \floor{K^{(t)}_a} - K^{(t)}_a \bigg) &= 0  \label{eq:neuron_pattern_simple_model}
+	\big( 2 \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}} + 1 \big)\pi - (a - g E_0)t + \theta_0 &= 0 ,\\
+	2\pi \times \bigg( \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}}  - \frac{(a - gE_0)t + \pi + \theta_0}{2\pi} \bigg) &= 0 ,\\
+	2\pi \times \bigg( \floor{K^{(t)}_a} - K^{(t)}_a \bigg) &= 0 . \label{eq:neuron_pattern_simple_model}
 \end{align}
 این رابطه کاملا یک تابع تناوبی را توصیف می‌کند. یک تابع مقطع که در مکانی که آرگومان آن صحیح می‌شود؛ مقدار صفر به خود می‌گیرد. پس روشن است که توقع داشته باشیم. تعداد صفرهای این معادله به اندازه‌ی تعداد تناوبی است که در هر زمان در بازه‌ی جریان‌های داده شده دارد.
 \begin{align}
-	\Delta K^{(t)}_a  &= 1\\
-	\Delta K^{(t)}_a &= \frac{t}{2\pi}\Delta a\\
-	\Delta a &= \frac{2\pi}{t}
+	\Delta K^{(t)}_a  &= 1 ,\\
+	\Delta K^{(t)}_a &= \frac{t}{2\pi}\Delta a ,\\
+	\Delta a &= \frac{2\pi}{t} .
 \end{align}
 این دوره‌ی تناوب با افزایش زمان کوچکتر می‌شود. اگر تعداد نورون‌ها را به صورتی ترمودینامیکی بزرگ بگیریم؛ آنگاه به ازای هر دوره‌ی تناوب یک نورون حتما هست که روی محور آستانه قرار گرفته است.\\
 حال که دوره‌ی تناوب 
 $\Delta a$
-را بدست آوردیم؛ می‌دانیم که ریشه‌های رابطه‌ی 
+را به دست آوردیم؛ می‌دانیم که ریشه‌های رابطه‌ی 
 \ref{eq:neuron_pattern_simple_model}
 چه زمانی رخ می‌دهند. فرض کنیم که اولین صفر در جریانی مثل
 $a_m$
@@ -186,33 +186,33 @@ $(a_m - g E_0) > 0 $
 	\int n_a(\pi,t-d)a\,da &= \int \delta \bigg( 2\pi ( \floor{K^{(t)}_a} - K^{(t)}_a) \bigg) a\,da\\
 	&= \frac{1}{2\pi} \cdot \sum_{K^{(t)}_a \in Z} a_i \\
 	&= \frac{1}{2\pi} \cdot \sum^{M}_{m=0} a_m + m \cdot \Delta a\\
-	&= \frac{M+1}{2\pi} \cdot ( \frac{a_m +a_{max} }{2} )\\
+	&= \frac{M+1}{2\pi} \cdot ( \frac{a_m +a_{max} }{2} ).\\
 \end{align}
 و از طرفی:
 \begin{align}
 	\int n_a(\pi,t-d)\,da &= \int \delta \bigg( 2\pi ( \floor{K^{(t)}_a} - K^{(t)}_a) \bigg) a\,da\\
 	&= \frac{1}{2\pi} \cdot \sum_{K^{(t)}_a \in Z} 1 \\
 	&= \frac{1}{2\pi} \cdot \sum^{M}_{m=0}  1\\
-	&= \frac{M+1}{2\pi}
+	&= \frac{M+1}{2\pi}.
 \end{align}
 حال اگر به محاسبه‌ی میدان ثابت خود برگردیم و تکه‌های پازل را کنار هم بگذاریم؛ خواهیم داشت:
 \begin{align}
 	E_0 &= \frac{1}{g}\cdot \frac{\int n_a(\pi,t-d)\cdot a\,da}{\int n_a(\pi,t-d) da } \\
 	&= \frac{1}{g}\cdot \frac{ \frac{M+1}{2\pi} \cdot ( \frac{a_m +a_{max} }{2} ) }{ \frac{M+1}{2\pi} } \\
-	&= \frac{1}{g} ( \frac{a_m +a_{max} }{2} )
+	&= \frac{1}{g} \big( \frac{a_m +a_{max} }{2} \big) .
 \end{align}
 این میدان معادل است با جریان میانگین بین نورون‌هایی که آن‌ها را روشن خطاب کرده بودیم. این نتیجه صحیح نیست زیرا اگر میدان در میانه‌ی این جریان‌ها قرار گیرد؛ آنگاه نورون‌های با جریان پایین‌دست 
 $a < \frac{1}{g} ( \frac{a_m +a_{max} }{2} ) $
 را خاموش خواهد کرد و اصلا روشن نخواهند ماند. پس این راه‌حل نیز دارای مشکل است و تا مشخص شدن نقص آن، آن را کنار می‌گذاریم.
 
 \زیرزیرقسمت{محاسبه‌ی حالت پایستار - تلاش شماره‌ی ۲}
-در این روش فرض می‌کنیم که برای هر جریان تصادفی اولیه، نورون‌های زیادی را به اختیار گرفته‌ایم. در حالت پایا  ، در یک حالت خاص تغییری در چگالی جمعیت مشاهده نمی‌شود پس در معادله‌ی
+در این روش فرض می‌کنیم که برای هر جریان تصادفی اولیه، نورون‌های زیادی را به اختیار گرفته‌ایم. در حالت پایا  ، در یک حالت خاص تغییری در چگالی جمعیت مشاهده نمی‌شود پس در معادلهٔ
 \ref{eq:simple_network}
 خواهیم داشت:
 \begin{equation}
-	\frac{\partial n_a}{\partial t} = 0
+	\frac{\partial n_a}{\partial t} = 0 .
 \end{equation}
-همچنین در حالت پایا که در واقع از نگاه ما حالت ناهم‌گام است؛ جریان بین نورون‌ها - که کمیتی بزرگ مقیاس است -  در زمان تغییری نمی‌کند. پس به این ترتیب:
+همچنین در حالت پایا که در واقع از نگاه ما حالت ناهم‌گام است؛ جریان بین نورون‌ها -که کمیتی بزرگ مقیاس است- در زمان تغییری نمی‌کند. پس به این ترتیب:
 
 \begin{align}
 	\begin{cases}
@@ -220,22 +220,21 @@ $a < \frac{1}{g} ( \frac{a_m +a_{max} }{2} ) $
 		J_{a}(\theta, t) = n_a(\theta,t) \cdot [ a - g E ]\\
 	\end{cases}
 	\Rightarrow J_{a}(\theta, t) = J_{a}(t)\\
-	\Rightarrow n_{a}(\theta, t) = n_{a}\\
+	\Rightarrow n_{a}(\theta, t) = n_{a} .\\
 \end{align}
 
 پس توزیع جمعیت نورون‌‌ها مستقل از زمان و حالت آن‌ها خواهد شد. اگر توزیع را در ابتدا یکنواخت میان جریان‌های مختلف توزیع کرده باشیم؛ برای همه‌ی زمان‌ها و حالت‌ها داریم:
 \begin{equation}
-	n = \frac{N}{2 \pi (a_{Max} - a_{min}) }
+	n = \frac{N}{2 \pi (a_{Max} - a_{min}) }.
 \end{equation}
 
 
 برای جریان بین نورون‌ها هم خواهیم داشت:
 \begin{align}
 	E &= \frac{1}{N} \int_{- \infty}^{t - d} \int n \cdot \big[ a - g E \big] da \cdot \alpha^2 u\, e^{-\alpha u} du\\
-	&=  \int \frac{n}{N} \cdot \big[ a - g E \big] da \label{eq:e_sum_simple}
+	&=  \int \frac{n}{N} \cdot \big[ a - g E \big] da . \label{eq:e_sum_simple}
 \end{align}
-دقت کنیم که انتگرال رابطه‌ی \ref{eq:e_sum_simple} روی  نورون‌هایی است که مستعد تیزه زدن هستند.
-\footnote{
+دقت کنیم که انتگرال رابطه‌ی \ref{eq:e_sum_simple} روی  نورون‌هایی است که مستعد تیزه زدن هستند.\LTRfootnote{
 	$(a - g E) > 0 $
 }
 
@@ -244,30 +243,30 @@ $a_* = a_{min}$
 می‌شود. اما در حالتی که جریان مهاری زیاد می‌شود؛ این مقدار از کمترین جریان تصادفی اولیه سامانه بزرگتر می‌شود. محاسبات را ادامه می‌دهیم:
 \begin{align}
 	E &=  \int \frac{n}{N} \cdot \big[ a - g E \big] da \\
-	&= \frac{n}{N} \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2} - g E (a_{Max} - a_*) \big] \\
-	\Rightarrow E &= n \cdot \big[ \frac{a^2_{Max} - {a_*}^2}{2}  \big] / \big[ N + g n (a_{Max} - a_*)\big]
+	&= \frac{n}{N} \cdot \bigg[ \frac{a^2_{Max} - {a_*}^2}{2} - g E (a_{Max} - a_*) \bigg] \\
+	\Rightarrow E &= n \cdot \bigg[ \frac{a^2_{Max} - {a_*}^2}{2}  \bigg] / \big[ N + g n (a_{Max} - a_*)\big].
 	\label{}
 \end{align}
-شاید بنظر این یک معادله‌ی درجه یک ساده باشد که میدان را گزارش می‌کند اما در واقع خود $a^*$ هم به میدان وابسته است و باید وابستگی آن را لحاظ کنیم. به تقریب:
+شاید بنظر این یک معادلهٔ درجه یک ساده باشد که میدان را گزارش می‌کند اما در واقع خود $a^*$ هم به میدان وابسته است و باید وابستگی آن را لحاظ کنیم. به تقریب:
 $a^{*} = gE$
-با اضافه کردن این معادله و حل معمول یک معادله‌ی درجه‌ی دو برای میدان صراحتا خواهیم داشت:
+با اضافه کردن این معادله و حل معمول یک معادلهٔ درجه‌ی دو برای میدان صراحتا خواهیم داشت:
 \begin{align}
-	E =  \big( \frac{a_{Max}}{g} + \frac{N}{n g^2}  \big) \pm \big[ \big( \frac{N}{n g^2} + \frac{a_{Max}}{g} \big)^2 - \frac{{a_{Max}}^2}{g^2} \big]^{\frac{1}{2}}
+	E =  \bigg( \frac{a_{Max}}{g} + \frac{N}{n g^2}  \bigg) \pm \bigg[ \bigg( \frac{N}{n g^2} + \frac{a_{Max}}{g} \bigg)^2 - \frac{{a_{Max}}^2}{g^2} \bigg]^{\frac{1}{2}}.
 \end{align}
 نتیجه می‌دهد که $a_{*}$ هم باید به صورت زیر باشد:
 \begin{align}
-	a_{*} &=  \big( a_{Max} + \frac{N}{n g} \big) \pm \big[ \big( \frac{N}{n g} + a_{Max} \big)^2 - {a_{Max}}^2 \big]^{\frac{1}{2}}\\
-	&=  \big( a_{Max} + \frac{N}{n g} \big) \pm \big[  \frac{N^2}{n^2 g^2} + \frac{2a_{Max}N}{ng}  \big]^{\frac{1}{2}}
+	a_{*} &=  \bigg( a_{Max} + \frac{N}{n g} \bigg) \pm \bigg[ \bigg( \frac{N}{n g} + a_{Max} \bigg)^2 - {a_{Max}}^2 \bigg]^{\frac{1}{2}}.\\
+	&=  \bigg( a_{Max} + \frac{N}{n g} \bigg) \pm \bigg[  \frac{N^2}{n^2 g^2} + \frac{2a_{Max}N}{ng}  \bigg]^{\frac{1}{2}}.
 \end{align}
 اجازه بدهید علامت مثبت را کنار بگذاریم زیرا مقدار $a_{*}$ را خارج بازه‌ی جریان‌های سامانه گزارش می‌کند. پس هم برای میدان و هم جریان $a_{*}$ خواهیم داشت:
 \begin{align}
 	\begin{cases}
-		a_{*} =  \big( a_{Max} + \frac{N}{n g} \big) - \big[  \frac{N^2}{n^2 g^2} + \frac{2a_{Max}}{ng}  \big]^{\frac{1}{2}}\\
-		E =  \big( \frac{a_{Max}}{g} + \frac{N}{n g^2} \big) - \big[ \frac{N^2}{n^2 g^4} + \frac{2Na_{Max}}{ng^3}  \big]^{\frac{1}{2}}\\
+		a_{*} =  \big( a_{Max} + \frac{N}{n g} \big) - \big[  \frac{N^2}{n^2 g^2} + \frac{2a_{Max}}{ng}  \big]^{\frac{1}{2}} ,\\
+		E =  \big( \frac{a_{Max}}{g} + \frac{N}{n g^2} \big) - \big[ \frac{N^2}{n^2 g^4} + \frac{2Na_{Max}}{ng^3}  \big]^{\frac{1}{2}} .\\
 	\end{cases}
 \end{align}
 
-حال اگر نتایج بدست آمده را با داده‌های شبیه‌سازی تطبیق دهیم؛ خواهیم دید که تطابق خوبی با یک دیگر دارند.
+حال اگر نتایج به دست آمده را با داده‌های شبیه‌سازی تطبیق دهیم؛ خواهیم دید که تطابق خوبی با یک دیگر دارند.
 
 \begin{figure}
 	\centering
@@ -291,79 +290,78 @@ $a^{*} = gE$
 		\caption{نسخه ساخته شده از اتصال هر دو حالت}
 		\label{fig:e_zeroth_developed}
 	\end{subfigure}
-	\caption{تطابق جریان پایای بدست آمده از حل عددی و تحلیلی}
+	\caption{تطابق جریان پایای به دست آمده از حل عددی و تحلیلی}
 	\label{fig:three graphs}
 \end{figure}
 
 در ضریب تاثیرهای بسیار بزرگ داریم:
 \begin{align}
-	E \cong & \frac{a_{Max}}{g} + \frac{N}{ng^2} - (\frac{2N a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{N}{2nga_{Max}} \big]^{\frac{1}{2}}\\
-	=& \frac{a_{Max}}{g} + \frac{N}{ng^2} - (\frac{2 N a_{Max}}{n g^3})^{\frac{1}{2}} \big[ 1 + \frac{N}{4nga_{Max}} \big]\\
-	=& \frac{a_{Max}}{g} - (\frac{2 N a_{Max}}{n g^3})^{\frac{1}{2}} + \frac{N}{ng^2}  - (\frac{N}{2n})^{\frac{3}{2}}  \cdot \frac{1}{ {a^{\frac{1}{2}}_{Max} g^{\frac{5}{2}}}}
+	E \cong & \frac{a_{Max}}{g} + \frac{N}{ng^2} - \bigg(\frac{2N a_{Max}}{n g^3}\bigg)^{\frac{1}{2}} \bigg[ 1 + \frac{N}{2nga_{Max}} \bigg]^{\frac{1}{2}}\\
+	=& \frac{a_{Max}}{g} + \frac{N}{ng^2} - \bigg(\frac{2 N a_{Max}}{n g^3}\bigg)^{\frac{1}{2}} \bigg[ 1 + \frac{N}{4nga_{Max}} \bigg]\\
+	=& \frac{a_{Max}}{g} - \bigg(\frac{2 N a_{Max}}{n g^3}\bigg)^{\frac{1}{2}} + \frac{N}{ng^2}  - \bigg(\frac{N}{2n}\bigg)^{\frac{3}{2}}  \cdot \frac{1}{ {a^{\frac{1}{2}}_{Max} g^{\frac{5}{2}}}}.
 \end{align}
 
 
 \زیرزیرقسمت{اختلال در میدان پایستار - تلاش شماره‌ی ۱}
 همان طور که مشخص است؛ حل دقیق میدان بسیار کار دشواری است اما می‌توان از طریق ترفندهای اختلالی به جواب آن نزدیک شد. یکی از روش‌های معمول حل زنجیری و تودرتوی دستگاه معادلات است. \\
-به این ترتیب که ابتدا از معادله  پاسخ حالت پایا (مرتبه‌ی صفرم) را در معادله‌ی پخش جاگذاری می‌کنیم تا توزیع آماری وابسته به زمان نورون‌ها بدست آید. سپس مجددا از توزیع بدست آمده؛ میدان مرتبه‌ی اول را که وابسته به زمان است؛ محاسبه می‌کنیم.\\
+به این ترتیب که ابتدا از معادله  پاسخ حالت پایا (مرتبه‌ی صفرم) را در معادلهٔ پخش جاگذاری می‌کنیم تا توزیع آماری وابسته به زمان نورون‌ها به دست آید. سپس مجددا از توزیع به دست آمده؛ میدان مرتبه‌ی اول را که وابسته به زمان است؛ محاسبه می‌کنیم.\\
 از آنجا که توزیع سامانه‌ رفتاری دوره‌ای به طول $2\pi$ دارد؛ می‌توانیم آن را به صورت زیر بسط دهیم:
 \begin{align}
-	\rho(\theta, a, t) = \rho_0 + \sum_k A_k(t) e^{ik\theta}, \quad k \in \mathcal{Z}
+	\rho(\theta, a, t) = \rho_0 + \sum_k A_k(t) e^{ik\theta}, \quad k \in \mathcal{Z}.
 \end{align}
-
 \begin{align}
-	\frac{\partial \rho}{\partial t} &= \sum \dot A_k e^{ik\theta}\\
-	\frac{\partial \rho}{\partial \theta} &= \sum A_k \cdot ik \cdot e^{ik\theta}\\
+	\frac{\partial \rho}{\partial t} &= \sum \dot A_k e^{ik\theta} ,\\
+	\frac{\partial \rho}{\partial \theta} &= \sum A_k \cdot ik \cdot e^{ik\theta}.
 \end{align}
-حال آن را در معادله‌ی پخش قرار می‌دهیم تا بتوانیم معادله‌ی حاکم بر ضرایب را محاسبه کنیم.
+حال آن را در معادلهٔ پخش قرار می‌دهیم تا بتوانیم معادلهٔ حاکم بر ضرایب را محاسبه کنیم.
 \begin{align}
 	\sum \dot A_k e^{ik\theta} &= - \sum A_k \cdot ik(a - gE(t)) \cdot e^{ik\theta}\\
-	\Rightarrow \dot A_k &= - A_k \cdot ik(a - gE(t))
+	\Rightarrow \dot A_k &= - A_k \cdot ik(a - gE(t)) .
 \end{align}
 در تقریب مرتبه‌ی اول برای توزیع داریم:
 \begin{align}
 	\dot A_k &= - A_k \cdot ik(a - g E_0)\\
 	\Rightarrow A_k(t) &= A_k(0) e^{- ik(a-gE_0)t}\\
-	\Rightarrow \rho(\theta, a, t) &= \rho_0 + \sum_k A_k(0) e^{ik\theta - ik(a - gE_0)t}
+	\Rightarrow \rho(\theta, a, t) &= \rho_0 + \sum_k A_k(0) e^{ik\theta - ik(a - gE_0)t} .
 \end{align}
 پس برای نورون‌های روی آستانه خواهیم داشت:
 \begin{align}
-	\rho(\pi, a, t) = \rho_0 + \sum_k A_k(0) e^{ik\pi - ik(a - gE_0)t}
+	\rho(\pi, a, t) = \rho_0 + \sum_k A_k(0) e^{ik\pi - ik(a - gE_0)t} .
 \end{align}
-حال از نتیجه‌ی بدست آمده استفاده می‌کنیم و همان طور که اشاره شد به محاسبه‌ی مرتبه‌ی بعدی میدان می‌رویم:
+حال از نتیجه‌ی به دست آمده استفاده می‌کنیم و همان طور که اشاره شد به محاسبه‌ی مرتبه‌ی بعدی میدان می‌رویم:
 \begin{align}
-	E(t) &= \int \int_{0}^{\infty} \rho(\pi, a, t-d-v)\cdot \dot \theta \cdot \alpha^2 ve^{-\alpha v} dv da \label{eq:perturbed_field}\\
-	&= E_0\\
+	E(t) =& \int \int_{0}^{\infty} \rho(\pi, a, t-d-v)\cdot \dot \theta \cdot \alpha^2 ve^{-\alpha v} dv da \label{eq:perturbed_field}\\
+	=& E_0\\
 	&+ \int \int_{0}^{\infty} \sum_k A_k(0) e^{ik\pi - ik(a - gE_0)(t-d - v)} \cdot (a - gE_0) \alpha^2 ve^{-\alpha v} dv da \\
-	&= E_0 + \sum_k \int \int_{0}^{\infty} A_k(0) e^{ik\pi - ik(a - gE_0)(t-d - v)} \cdot (a - gE_0) \alpha^2 ve^{-\alpha v} dv da
+	=& E_0 + \sum_k \int \int_{0}^{\infty} A_k(0) e^{ik\pi - ik(a - gE_0)(t-d - v)} \cdot (a - gE_0) \alpha^2 ve^{-\alpha v} dv da.
 \end{align}
 اجازه بدهید سهم مدهای متفاوت از میدان را به صورت جداگانه محاسبه کنیم و سپس مجددا در کنار یکدیگر قرار دهیم.
 \begin{align}
-	E_{k,a}(t) = -\alpha^2 A_k(0)(a - gE_0) e^{ik\pi}\int^{\infty}_{0} v e^{-[\alpha - ik(a - gE_0)]v-ik(a - gE_0)(t-d)} dv
+	E_{k,a}(t) = -\alpha^2 A_k(0)(a - gE_0) e^{ik\pi}\int^{\infty}_{0} v e^{-[\alpha - ik(a - gE_0)]v-ik(a - gE_0)(t-d)} dv .
 \end{align}
-با با تغییر متغیر 
+با تغییر متغیر 
 $\beta \equiv \alpha - ik(a-gE_0)$
-محاسبات را ادامه می‌دهیم:
+محاسبات را ادامه می‌دهیم،
 \begin{align}
-	&= \alpha^2 A_k(0) (a - gE_0) e^{ik\pi} e^{-ik(a-gE_0)(t-d)} \cdot \int^{\infty}_0 v e^{-\beta v}dv \\
+	E_{k,a}(t) &= \alpha^2 A_k(0) (a - gE_0) e^{ik\pi} e^{-ik(a-gE_0)(t-d)} \cdot \int^{\infty}_0 v e^{-\beta v}dv . \\
 	&= \alpha^2 A_k(0) (a - gE_0) e^{ik\pi} e^{-ik(a-gE_0)(t-d)} \cdot \frac{1}{\beta^2} \\
-	&= A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} \cdot (\frac{\alpha}{\alpha-ik(a-gE_0)})^2
+	&= A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} \cdot \bigg( \frac{\alpha}{\alpha-ik(a-gE_0)} \bigg)^2 .
 \end{align}
 حال قدم به قدم به محاسبات پیشین خود برمی‌گردیم. ابتدا می‌پرسیم میدان همه‌ی نورون‌های با مد یکسان چه جریانی را تولید می‌کنند.
 \begin{align}
 	E_k(t) &= \int E_{k,a} da\\
-	&= \int A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} (\frac{\alpha}{\alpha-ik(a-gE_0)})^2 da
+	&= \int A_k(0) (a - gE_0) e^{ik[\pi -(a-gE_0)(t-d)]} (\frac{\alpha}{\alpha-ik(a-gE_0)})^2 da .
 \end{align}
 با تغییر متغیر
 $h \equiv a - gE_0$
-تلاش می‌کنیم انتگرال را ادامه دهیم.
+تلاش می‌کنیم انتگرال را ادامه دهیم،
 \begin{align}
-	E_k(t) = A_k(0)e^{ik\pi} \int^{a_M - gE_0}_{0} h e^{-ikh(t-d)} (\frac{1}{1 - ikh/\alpha})^2 dh
+	E_k(t) = A_k(0)e^{ik\pi} \int^{a_M - gE_0}_{0} h e^{-ikh(t-d)} \bigg(\frac{1}{1 - ikh/\alpha}\bigg)^2 dh .
 \end{align}
 نرم‌افزارهای محاسباتی همچون ابزار ولفرم به ما امکان می‌دهد تا پاسخ آن را به صورت زیر بیان کنیم:
 \begin{align}
 	E_k(t) = -A_k(0)\frac{\alpha^2}{k^2} e^{ik\pi} &\bigg[ \frac{ e^{-i(\xi_{(h)} + k(t-d)h)} }{\sqrt{1 + h^2 k^2/\alpha^2}} \\
-	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1) Ei[(\alpha-ikh)(t-d)] \, \bigg]	\Biggr|_{0}^{a_M -gE_0}
+	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1) Ei[(\alpha-ikh)(t-d)] \, \bigg]	\Biggr|_{0}^{a_M -gE_0} .
 \end{align}
 به صورتی که 
 $e^{-i\xi_{(h)}} = \frac{1 + ikh/\alpha}{\sqrt{1 + h^2 k^2/\alpha^2}}$
@@ -378,16 +376,16 @@ $Ei[z] = - \int^{+\infty}_{-z} e^{-t}/t dt$
 	&- e^{-ik(t-d)(a_M -gE_0)} \\
 	&- e^{-\alpha(t-d)}(\alpha(t-d) + 1) Ei[\alpha(t-d)] \bigg]\\
 	=&- A_k(0) \frac{\alpha^2}{k^2} e^{ik\pi} \bigg[ e^{-ik(t-d)(a_M -gE_0)} \bigg( \frac{ e^{-i(\xi_{(a_M -gE_0)})} }{ \sqrt{1 + (a_M -gE_0)^2 k^2/\alpha^2} } + 1\bigg) \\
-	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1)\bigg( Ei[(\alpha-ik(a_M -gE_0))(t-d)] - Ei[\alpha(t-d)] \bigg) \bigg]
+	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1)\bigg( Ei[(\alpha-ik(a_M -gE_0))(t-d)] - Ei[\alpha(t-d)] \bigg) \bigg] .
 \end{align}
 پس یک جمله‌ی نوسانی دارد و جمله‌ای که شامل تکینگی است.\\
-خبر خوب یا بد این است که این راه هم دارای ایراد است. زیرا در محاسبه‌ی مرتبه‌ی اول میدان اشتباهی رخداده است - رابطه‌ی \ref{eq:perturbed_field}.
+خبر خوب یا بد این است که این راه هم دارای ایراد است. زیرا در محاسبه‌ی مرتبه‌ی اول میدان اشتباهی رخداده است، رابطه‌ی \ref{eq:perturbed_field}.
 در این رابطه باید ضرب مرتبه‌ی صفرم چگالی در مرتبه‌ی اول میدان جا مانده است. یعنی باید می‌نوشتیم:
 \begin{align}
-		E(t) &= \int \int_{0}^{\infty} (\rho_0 + \rho_1)(a - g(E_0 + E_1) ) \cdot \alpha^2 ve^{-\alpha v} dv da \\
-		&= \int \int_{0}^{\infty} [\rho_0(a - gE_0) + \rho_1 (a - gE_0)] \cdot \alpha^2 ve^{-\alpha v} dv da \\
+		E(t) =& \int \int_{0}^{\infty} (\rho_0 + \rho_1)(a - g(E_0 + E_1) ) \cdot \alpha^2 ve^{-\alpha v} dv da \\
+		=& \int \int_{0}^{\infty} [\rho_0(a - gE_0) + \rho_1 (a - gE_0)] \cdot \alpha^2 ve^{-\alpha v} dv da \\
 		&+ \int \int_{0}^{\infty} -g E_1 \rho_1 \cdot \alpha^2 ve^{-\alpha v} dv da \\
-		&+ \int \int_{0}^{\infty} -g E_1 \rho_0 \cdot \alpha^2 ve^{-\alpha v} dv da \\
+		&+ \int \int_{0}^{\infty} -g E_1 \rho_0 \cdot \alpha^2 ve^{-\alpha v} dv da . \\
 \end{align}
 در واقع جمله‌ی آخر رابطه‌ی بالا جامانده بود و باعث می‌شود بخشی از جواب در پشت آن پنهان بماند. البته با در نظر گرفتن آن جمله پیچیدگی اصلی مسئله دوباره به صفحه‌ی بازی برمی‌گردد.
  
