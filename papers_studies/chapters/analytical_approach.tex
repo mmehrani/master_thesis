@@ -6,25 +6,25 @@
 
 می‌دانیم هر نورونی که از حالت $\theta = \pi$ عبور می‌کند [تیزه می‌زند] باعث می‌شود تا سهمی از جریان با کیفیت $p(t):= \alpha^2 t \cdot exp(-\alpha t)$ به جریان درونی کل سامانه $E(t)$ اضافه شود.
 \begin{equation}
-	E(t) = \frac{1}{N}\int_{0}^{\infty} \int J_a (\pi,t-d-u) da \cdot \alpha^2 u\, e^{-\alpha u} du 
+	E(t) = \frac{1}{N}\int_{0}^{\infty} \int J_a (\pi,t-d-u) da \cdot \alpha^2 u\, e^{-\alpha u} du .
 	\label{eq:general_field}
 \end{equation}
 
 اما جریان برای هر نورون با ورودی $a$ به طریق زیر است:
 \begin{equation}
-	J_a (\theta, t) = n_a(\theta,t) \, \dot \theta_a
+	J_a (\theta, t) = n_a(\theta,t) \, \dot \theta_a .
 \end{equation}
 این رفتار به خوبی نشان می‌دهد جریان فقط در ناحیه‌ی $\theta \leq \pi$ وجود دارد. زیرا ورود نورون به ناحیه‌ی مثبت‌تر را ممنوع کرده‌ایم.  بی‌تردید برای فهمیدن چگونگی تغییر جریان در ناحیه‌های میانی باید از معادلهٔ پخش استفاده کنیم.
 \begin{align}
 	\frac{\partial n_a}{\partial t} &= - \frac{\partial J_a}{\partial \theta} \label{eq:continuity_relation}\\
-	&= - \frac{\partial n_a}{\partial \theta} \, \dot \theta_a
+	&= - \frac{\partial n_a}{\partial \theta} \, \dot \theta_a .
 \end{align}
 \قسمت{حل معادلهٔ شبکه‌ی ساده}
 اجازه بدهید تا اولین تلاش خود را از ساده‌ترین نوع شبکه‌ها شروع کنیم. شبکه‌ای که به جز جریان داخلی و جریان تصادفی اولیه ورودی دیگری ندارد. پس خواهیم داشت:
 \begin{align}
 	\begin{cases}
-		E(t) = \frac{1}{N} \int_{0}^{\infty} \int n_a(\pi,t-d-u) \cdot \big[ a - g E(t-d-u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du \\
-		\frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E(t) )
+		E(t) = \frac{1}{N} \int_{0}^{\infty} \int n_a(\pi,t-d-u) \cdot \big[ a - g E(t-d-u) \big] da \cdot \alpha^2 u\, e^{-\alpha u} du , \\
+		\frac{\partial n_a}{\partial t} = - \frac{\partial n_a}{\partial \theta} \cdot (a - g E(t) ) .
 	\end{cases}
 	\label{eq:simple_network}
 \end{align}
@@ -39,7 +39,7 @@ $n_a$
 	\item
 	از آنجا که میدان به گونه‌ای متناوب عمل می‌کند؛ یک پیشنهاد خوب می‌تواند آن باشد که بسط فوریه‌ی آن را بنویسیم.
 	\begin{equation}
-		E(t) = \sum c_i \cdot cos(\omega_i t)
+		E(t) = \sum c_i \cdot \cos \omega_i t .
 	\end{equation}
 	که اگر ثابت کنیم تحت شرایطی یکی از ضرایب
 	 $c_i$
@@ -64,26 +64,26 @@ $n_a$
 %\newcommand{\impact}[1]{u_{#1}\, e^{-\alpha u_{#1}}}
 %
 \begin{align}
-	\J{t-d-u} &\equiv \int n_a(\pi,t-d-u) a \cdot da\\
-	\N{t-d-u} &\equiv \int n_a(\pi,t-d-u) \cdot da\\
-	\Pexp{} &\equiv \alpha^2 u\, e^{-\alpha u}
+	\J{t-d-u} &\equiv \int n_a(\pi,t-d-u) a \cdot da ,\\
+	\N{t-d-u} &\equiv \int n_a(\pi,t-d-u) \cdot da ,\\
+	\Pexp{} &\equiv \alpha^2 u\, e^{-\alpha u} .
 \end{align}
 عبارت $\J{u}$ به معنای جمع جریان تصادفی نورون‌هایی است که در زمان u در آستانه قرار دارند. همچنین عبارت $\N{u}$ به معنای تعداد همین نورون‌هاست.\\
 حال با نمادهای بالا شروع به بازنویسی جملات پیشین می‌کنیم:
 \begin{align}
-	E(t) =& \frac{1}{N} \int_{0}^{\infty} \J{t-d-u_1} \cdot \Pexp{1} du_1\\
-	 &-\frac{g}{N}\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} E(t-d-u_1)  du_1
+	E(t) &= \frac{1}{N} \int_{0}^{\infty} \J{t-d-u_1} \cdot \Pexp{1} du_1\\
+	 &-\frac{g}{N}\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} E(t-d-u_1)  du_1 .
 	 \label{eq:field_zeroth_step}
 \end{align}
  جمله‌ی اول را می‌توانیم با عبارت دیگری خلاصه‌سازی می‌کنیم:
 
 \begin{equation}
-	\A{t} \equiv \frac{1}{N}\int_{0}^{\infty} \J{t-d-u_1} \cdot \Pexp{1} du_1
+	\A{t} \equiv \frac{1}{N}\int_{0}^{\infty} \J{t-d-u_1} \cdot \Pexp{1} du_1 .
 \end{equation}
  جمله‌ی دوم که حاوی عبارتی از جنس میدان است می‌تواند با معادله‌ای مشابه بازنویسی شود. به این ترتیب برای آن خواهیم داشت:
 \begin{align}
 	E(t - d - u_1) =& \frac{1}{N} \int_{0}^{\infty} \J{t-2d-u_1-u_2} \cdot \Pexp{2} du_2\\
-	&- \frac{g}{N}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2)  du_2
+	&- \frac{g}{N}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2)  du_2 .
 \end{align}
 
 \newgeometry{top=5mm, bottom=5mm}
@@ -102,7 +102,7 @@ E(t)
 		&+ g^2 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} E(t-2d-u_1-u_2) du_2 du_1\\
 		=& \A{t-d} - g\int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1} \cdot \A{t-2d-u_1} du_1\\ 
 		&+ g^2 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} \A{t-3d-u_1-u_2} du_2 du_1\\
-		&- g^3 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} \int_{0}^{\infty} \N{t-3d-u_1-u_2-u_3} \cdot \Pexp{3} E(t-3d-u_1-u_2-u_3) du_3 du_2 du_1
+		&- g^3 \int_{0}^{\infty} \N{t-d-u_1} \cdot \Pexp{1}\int_{0}^{\infty} \N{t-2d-u_1-u_2} \cdot \Pexp{2} \int_{0}^{\infty} \N{t-3d-u_1-u_2-u_3} \cdot \Pexp{3} E(t-3d-u_1-u_2-u_3) du_3 du_2 du_1 .
 	\end{align}
 \end{landscape}
 
@@ -125,11 +125,11 @@ E(t)
 
 یک راه خوب برای پیشبرد سطر اول معادلات آن است که از دو طرف آهنگ تغییرشان با زمان را بپرسیم. از آنجا که سمت چپ معادله ثابت است؛ سمت راست هم باید جوابی مشابه را حکایت کند.\\
 \begin{equation}
-	0 = \frac{dE_0}{dt} = \frac{\alpha^2 (t-d) e^{-\alpha (t-d)}}{N} \cdot [ - gE_0 \cdot \int n_a(\pi,t-d) da + \int n_a(\pi,t-d)\cdot a\,da ]
+	0 = \frac{dE_0}{dt} = \frac{\alpha^2 (t-d) e^{-\alpha (t-d)}}{N} \cdot [ - gE_0 \cdot \int n_a(\pi,t-d) da + \int n_a(\pi,t-d)\cdot a\,da ].
 \end{equation}
 مشخص است که کدام جمله از جملات ضربی بالا صفر است. پس برای $E_0$ خواهیم داشت:
 \begin{equation}
-	E_0 = \frac{1}{g}\cdot \frac{\int n_a(\pi,t-d)\cdot a\,da}{\int n_a(\pi,t-d) da }
+	E_0 = \frac{1}{g}\cdot \frac{\int n_a(\pi,t-d)\cdot a\,da}{\int n_a(\pi,t-d) da }.
 \end{equation}
 
 حال برای ادامه‌ی فرآیند نیاز داریم تا عبارت حاکم بر 
@@ -155,20 +155,20 @@ $\floor{K^{(t)}_a}$
 }
 قابل محاسبه است که عبارت کامل آن به صورت زیر است.
 \begin{equation}
-	K^{(t)}_a = \frac{(a - gE_0)t + \pi + \theta_0}{2\pi}
+	K^{(t)}_a = \frac{(a - gE_0)t + \pi + \theta_0}{2\pi} .
 \end{equation}
 
 برای محاسبه‌ی انتگرال‌هایی که شامل این دلتای دیراک هستند؛ لازم است تا صفر‌های آرگومان آن را محاسبه کنیم.
 \begin{align}
-	\big( 2 \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}} + 1 \big)\pi - (a - g E_0)t + \theta_0 &= 0\\
-	2\pi \times \bigg( \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}}  - \frac{(a - gE_0)t + \pi + \theta_0}{2\pi} \bigg) &= 0\\
-	2\pi \times \bigg( \floor{K^{(t)}_a} - K^{(t)}_a \bigg) &= 0  \label{eq:neuron_pattern_simple_model}
+	\big( 2 \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}} + 1 \big)\pi - (a - g E_0)t + \theta_0 &= 0 ,\\
+	2\pi \times \bigg( \floor{\frac{(a - gE_0)t + \pi + \theta_0}{2\pi}}  - \frac{(a - gE_0)t + \pi + \theta_0}{2\pi} \bigg) &= 0 ,\\
+	2\pi \times \bigg( \floor{K^{(t)}_a} - K^{(t)}_a \bigg) &= 0 . \label{eq:neuron_pattern_simple_model}
 \end{align}
 این رابطه کاملا یک تابع تناوبی را توصیف می‌کند. یک تابع مقطع که در مکانی که آرگومان آن صحیح می‌شود؛ مقدار صفر به خود می‌گیرد. پس روشن است که توقع داشته باشیم. تعداد صفرهای این معادله به اندازه‌ی تعداد تناوبی است که در هر زمان در بازه‌ی جریان‌های داده شده دارد.
 \begin{align}
-	\Delta K^{(t)}_a  &= 1\\
-	\Delta K^{(t)}_a &= \frac{t}{2\pi}\Delta a\\
-	\Delta a &= \frac{2\pi}{t}
+	\Delta K^{(t)}_a  &= 1 ,\\
+	\Delta K^{(t)}_a &= \frac{t}{2\pi}\Delta a ,\\
+	\Delta a &= \frac{2\pi}{t} .
 \end{align}
 این دوره‌ی تناوب با افزایش زمان کوچکتر می‌شود. اگر تعداد نورون‌ها را به صورتی ترمودینامیکی بزرگ بگیریم؛ آنگاه به ازای هر دوره‌ی تناوب یک نورون حتما هست که روی محور آستانه قرار گرفته است.\\
 حال که دوره‌ی تناوب 
@@ -220,7 +220,7 @@ $a < \frac{1}{g} ( \frac{a_m +a_{max} }{2} ) $
 		J_{a}(\theta, t) = n_a(\theta,t) \cdot [ a - g E ]\\
 	\end{cases}
 	\Rightarrow J_{a}(\theta, t) = J_{a}(t)\\
-	\Rightarrow n_{a}(\theta, t) = n_{a}\\
+	\Rightarrow n_{a}(\theta, t) = n_{a} .\\
 \end{align}
 
 پس توزیع جمعیت نورون‌‌ها مستقل از زمان و حالت آن‌ها خواهد شد. اگر توزیع را در ابتدا یکنواخت میان جریان‌های مختلف توزیع کرده باشیم؛ برای همه‌ی زمان‌ها و حالت‌ها داریم:
@@ -310,7 +310,7 @@ $a^{*} = gE$
 	\rho(\theta, a, t) = \rho_0 + \sum_k A_k(t) e^{ik\theta}, \quad k \in \mathcal{Z}.
 \end{align}
 \begin{align}
-	\frac{\partial \rho}{\partial t} &= \sum \dot A_k e^{ik\theta}\\
+	\frac{\partial \rho}{\partial t} &= \sum \dot A_k e^{ik\theta} ,\\
 	\frac{\partial \rho}{\partial \theta} &= \sum A_k \cdot ik \cdot e^{ik\theta}.
 \end{align}
 حال آن را در معادلهٔ پخش قرار می‌دهیم تا بتوانیم معادلهٔ حاکم بر ضرایب را محاسبه کنیم.
@@ -376,7 +376,7 @@ $Ei[z] = - \int^{+\infty}_{-z} e^{-t}/t dt$
 	&- e^{-ik(t-d)(a_M -gE_0)} \\
 	&- e^{-\alpha(t-d)}(\alpha(t-d) + 1) Ei[\alpha(t-d)] \bigg]\\
 	=&- A_k(0) \frac{\alpha^2}{k^2} e^{ik\pi} \bigg[ e^{-ik(t-d)(a_M -gE_0)} \bigg( \frac{ e^{-i(\xi_{(a_M -gE_0)})} }{ \sqrt{1 + (a_M -gE_0)^2 k^2/\alpha^2} } + 1\bigg) \\
-	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1)\bigg( Ei[(\alpha-ik(a_M -gE_0))(t-d)] - Ei[\alpha(t-d)] \bigg) \bigg]
+	&+ e^{-\alpha(t-d)}(\alpha(t-d) + 1)\bigg( Ei[(\alpha-ik(a_M -gE_0))(t-d)] - Ei[\alpha(t-d)] \bigg) \bigg] .
 \end{align}
 پس یک جمله‌ی نوسانی دارد و جمله‌ای که شامل تکینگی است.\\
 خبر خوب یا بد این است که این راه هم دارای ایراد است. زیرا در محاسبه‌ی مرتبه‌ی اول میدان اشتباهی رخداده است، رابطه‌ی \ref{eq:perturbed_field}.
