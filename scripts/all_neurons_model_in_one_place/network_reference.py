@@ -23,8 +23,8 @@ network_engine_class = engines_dict[neuron_engine]
 
 
 class Network_of_neurons(network_engine_class):
-    def __init__(self,num_neurons,g,alpha = 20):
-        super().__init__(num_neurons,g,alpha)
+    def __init__(self,num_neurons,g,alpha = 20, external_input = 0):
+        super().__init__(num_neurons,g,alpha, external_input)
         
         self.warp_num = 100 #vertical axis
         self.weft_num = 100 #horizental axix
@@ -43,8 +43,8 @@ class Network_of_neurons(network_engine_class):
         else:
             return 0
     
-    def ignite(self,random_input_span,total_time,time_step = 0.01,delay_time = 0.1):
-        
+    def ignite(self,random_input_span,total_time,time_step = 0.01, delay_time = 0.1):
+
         # random_input_span = (3.5,13.5)
         
         total_steps = int(total_time/time_step)
@@ -59,6 +59,7 @@ class Network_of_neurons(network_engine_class):
         self.m_arr = np.zeros(total_steps)
         self.e_arr = np.zeros(total_steps)
         self.random_input = np.random.uniform(*random_input_span,size = self.num_neurons)
+    
         
         self.amin_saman_param = np.zeros( total_steps )
         self.spiking_records = np.zeros(total_steps)
@@ -71,6 +72,7 @@ class Network_of_neurons(network_engine_class):
             
         return
     
+        return
     def _set_cornometers(self):
         """
         These cornometers are going to record mean spikes intervals for every neuron.
@@ -162,8 +164,8 @@ class Network_of_neurons(network_engine_class):
 
 
 class Animated_network_of_neurons(Network_of_neurons):
-    def __init__(self,neuron_model,num_neurons,g,alpha = 20,**kwargs):
-        super().__init__(num_neurons,g,alpha)
+    def __init__(self,neuron_model,num_neurons,g,alpha = 20, external_input = 0, **kwargs):
+        super().__init__(num_neurons,g,alpha, external_input)
         # self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
         
         current_models = ['IF','Rotational','Non_repulsive_rotational']
