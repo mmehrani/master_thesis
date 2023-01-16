@@ -52,8 +52,11 @@ sample_network_two.brace_for_lunch(total_time, time_step = 0.01, delay_time = de
 
 
 
+for i in tqdm(range( int( (start_time_to_sample - 5) / sample_network_one.time_step ) ) ):
+    sample_network_one._march_on(i)    
+    
 
-for i in tqdm(range( int( start_time_to_sample / sample_network_one.time_step ) ) ):
+for i in tqdm(range( int( (start_time_to_sample - 5) / sample_network_one.time_step ), int( start_time_to_sample / sample_network_one.time_step ) ) ):
     sample_network_one._march_on(i)
     sample_network_two._march_on(i)
     
