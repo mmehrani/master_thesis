@@ -24,12 +24,38 @@ with open("network_reference.py", "w") as net_ref:
     net_ref.writelines(lines) #write back 
 
 
+class Two_connected_neural_network():
+    def __init__(self, first_Animated_network_of_neurons, second_Animated_network_of_neurons, inter_connectivity):
+        self.first_network = first_Animated_network_of_neurons
+        self.second_network = second_Animated_network_of_neurons
+        self.connectivity = inter_connectivity
+        
+        self.first_network.external_input_strength = inter_connectivity
+        self.second_network.external_input_strength = inter_connectivity
+        
+        self.first_network.external_input = self.second_network.e_arr
+        self.second_network.external_input = self.first_network.e_arr
+        return
+    
+    def ignite(self, checkpoint_step):
+        for i in tqdm(range( int( checkpoint_step / self.first_network.time_step ) ) ):
+            self.first_network._march_on(i)
+            self.second_network._march_on(i)
+        return
+    
+    def get_networks_animation(self):
+        self.first_network.render_animation(start_time_to_sample, show_space=True, show_pop = False,
+                                            show_field= True, show_velocity=False)
+        self.second_network.render_animation(start_time_to_sample, show_space=True, show_pop = False,
+                                            show_field= True, show_velocity=False)
+        return
+    pass
 
 num_neurons = 10000
 total_time = 200
 start_time_to_sample = 10
-g = 10
-between_g = 1
+g = 0
+between_g = - 10
 delay_time = 0.5
 # g = 0
 
@@ -40,48 +66,11 @@ sample_network_two = Animated_network_of_neurons(neuron_model,
                                                  num_neurons, g = g,
                                                  random_input_span = (9.5,13.5), alpha = 20)
 
-# sample_network = Animated_network_of_neurons(neuron_model,
-#                                               num_neurons, g = g,
-#                                               random_input_span = (1.2,2.8), alpha = 20)
-# sample_network = Animated_network_of_neurons(neuron_model,
-#                                               num_neurons, g = g, alpha = 20)
 
 
 sample_network_one.brace_for_lunch(total_time, time_step = 0.01, delay_time = delay_time)
 sample_network_two.brace_for_lunch(total_time, time_step = 0.01, delay_time = delay_time)
 
-
-
-for i in tqdm(range( int( (start_time_to_sample - 5) / sample_network_one.time_step ) ) ):
-    sample_network_one._march_on(i)    
-    
-
-for i in tqdm(range( int( (start_time_to_sample - 5) / sample_network_one.time_step ), int( start_time_to_sample / sample_network_one.time_step ) ) ):
-    sample_network_one._march_on(i)
-    sample_network_two._march_on(i)
-    
-    sample_network_one.external_input =  - between_g * sample_network_two.e_arr[i-1]
-    sample_network_two.external_input =  - between_g * sample_network_one.e_arr[i-1]
-
-# epsilon = 0.5
-# for i in tqdm(range( int( start_time_to_sample / sample_network_one.time_step ) ) ):
-#     sample_network_one.e_arr[i] = sample_network_one.e_arr[i] + epsilon
-    # sample_network_one.spiking_records[i] = sample_network_one.spiking_records[i] + 10
-
-
-sample_network_one.render_animation(start_time_to_sample, show_space=True, show_pop = False,
-                                    show_field= True, show_velocity=False)
-sample_network_two.render_animation(start_time_to_sample, show_space=True, show_pop = False,
-                                    show_field= True, show_velocity=False)
-
-# version_name = 'black_white'
-# path = os.path.join('animations','sea_shore',version_name,
-#                     "N{}_g{}_d{}_Imin{}_Imax{}_{}.gif".format(
-#                         num_neurons, g, delay_time,
-#                         sample_network.random_input_span[0],sample_network.random_input_span[1],
-#                         neuron_model))
-
-# sample_network.render_animation(start_time_to_sample, show_space=True, show_pop = False,
-#                                 show_field= True, show_velocity=True, path = path)
-
-
+total_network = Two_connected_neural_network(sample_network_one, sample_network_two,  between_g)
+total_network.ignite(start_time_to_sample)
+total_network.get_networks_animation()

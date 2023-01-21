@@ -13,7 +13,9 @@ class Rotational_neural_network:
         self.g = g
         self.alpha = alpha
         self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
+        
         self.external_input = external_input
+        self.external_input_strength = 1
         return
     
     def _march_on(self,i):
@@ -34,9 +36,11 @@ class Rotational_neural_network:
         #dynamics
         try:
             iter_object = iter(self.external_input)
-            self.driving_wind = self.random_input - np.cos(self.potentail_arr) - self.g * self.e_arr[i-1] + self.external_input[i-1]
+            self.driving_wind = self.random_input - np.cos(self.potentail_arr) \
+                - self.g * self.e_arr[i-1] + self.external_input_strength * self.external_input[i-1]
         except:
-            self.driving_wind = self.random_input - np.cos(self.potentail_arr) - self.g * self.e_arr[i-1] + self.external_input
+            self.driving_wind = self.random_input - np.cos(self.potentail_arr) \
+                - self.g * self.e_arr[i-1] + self.external_input_strength * self.external_input
         
         self.potentail_arr = self.potentail_arr + self.driving_wind * self.time_step
 
@@ -72,7 +76,9 @@ class Non_repulsive_rotational_neural_network(Rotational_neural_network):
         self.g = g
         self.alpha = alpha
         self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
+        
         self.external_input = external_input
+        self.external_input_strength = 1
         return
     
     def _march_on(self,i):
@@ -94,12 +100,14 @@ class Non_repulsive_rotational_neural_network(Rotational_neural_network):
         try:
             iter_object = iter(self.external_input)
             if len(self.e_arr) == len(self.external_input):
-                self.driving_wind = self.random_input - self.g * self.e_arr[i-1] + self.external_input[i-1]
+                self.driving_wind = self.random_input - self.g * self.e_arr[i-1] \
+                    + self.external_input_strength * self.external_input[i-1]
             else:
                 raise AttributeError('External input does not have correct length!')
             
         except:
-            self.driving_wind = self.random_input - self.g * self.e_arr[i-1] + self.external_input
+            self.driving_wind = self.random_input - self.g * self.e_arr[i-1] \
+                + self.external_input_strength * self.external_input
             
         self.potentail_arr = self.potentail_arr + self.driving_wind * self.time_step
 
