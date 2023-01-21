@@ -43,8 +43,26 @@ class Network_of_neurons(network_engine_class):
         else:
             return 0
     
-    def ignite(self,random_input_span,total_time,time_step = 0.01,delay_time = 0.1):
-        
+    def brace_for_lunch(self,total_time,time_step = 0.01,delay_time = 0.1):
+        """
+        Set all the things that need to be considered to a complete run.
+
+        Parameters
+        ----------
+        random_input_span : tuple
+            The external input range.
+        total_time :
+            total time of the simulation.
+        time_step : TYPE, optional
+            The simulation steps to compute the variables. The default is 0.01.
+        delay_time : TYPE, optional
+            Each neuron will be notified by the inter-current with a delay time. The default is 0.1.
+
+        Returns
+        -------
+        None.
+
+        """
         # random_input_span = (3.5,13.5)
         
         total_steps = int(total_time/time_step)
@@ -53,19 +71,46 @@ class Network_of_neurons(network_engine_class):
         self.total_time = total_time
         self.total_steps = total_steps
         self.time_step = time_step
+        self.delay_time = delay_time
         self.delay_step = int(delay_time/time_step)
         
         
         self.m_arr = np.zeros(total_steps)
         self.e_arr = np.zeros(total_steps)
-        self.random_input = np.random.uniform(*random_input_span,size = self.num_neurons)
+        
+        self.random_input = np.random.uniform(self.random_input_span[0], self.random_input_span[1], size = self.num_neurons)
         
         self.amin_saman_param = np.zeros( total_steps )
         self.spiking_records = np.zeros(total_steps)
         
         self._set_cornometers()
+    
+    
+    def ignite(self,random_input_span:tuple,total_time,time_step = 0.01,delay_time = 0.1):
+        """
+        Ignite the network and let the neurons fire. From the begining through the end.
+
+        Parameters
+        ----------
+        random_input_span : tuple
+            The external input range.
+        total_time :
+            total time of the simulation.
+        time_step : TYPE, optional
+            The simulation steps to compute the variables. The default is 0.01.
+        delay_time : TYPE, optional
+            Each neuron will be notified by the inter-current with a delay time. The default is 0.1.
+
+        Returns
+        -------
+        None.
+
+        """
+        self.random_input_span = random_input_span
+        self.brace_for_lunch(total_time, time_step=time_step, delay_time=delay_time)
         
-        for i in tqdm( range(total_steps - 1),desc = 'network dynamic' ):
+        
+        for i in tqdm( range(self.total_steps - 1),desc = 'network dynamic' ):
             self._march_on(i)
             self._update_cornometers()
             
@@ -74,6 +119,11 @@ class Network_of_neurons(network_engine_class):
     def _set_cornometers(self):
         """
         These cornometers are going to record mean spikes intervals for every neuron.
+        This method will set them up.
+
+        Returns
+        -------
+        None.
 
         """
         self.spiking_cornometer = np.zeros(self.num_neurons)
@@ -85,6 +135,10 @@ class Network_of_neurons(network_engine_class):
         """
         Set lapsed time for every neuron which spiked. In addition, let other
         cornometers to keep on ticking.
+
+        Returns
+        -------
+        None.
 
         """
         self.total_spikes_num = self.total_spikes_num + self.spike_mask
@@ -108,6 +162,15 @@ class Network_of_neurons(network_engine_class):
 
 
     def report_sigma(self):
+        """
+        The standard deviation of spiking current will show if the system is turned into periodic phase.
+
+        Returns
+        -------
+        sigma : float
+            The standard deviation of the current.
+
+        """
         sigma = np.std( self.e_arr[- self.total_steps//2:] )
         return sigma
     
@@ -126,43 +189,33 @@ class Network_of_neurons(network_engine_class):
         xf = np.fft.fftfreq(self.e_arr.size, d = self.time_step)
         plt.plot(xf,yf)
         return
-    
-    def report_e_period(self, **kwargs):
-        sampling_period = kwargs.get('sampling_period',int( self.total_steps / 10 ) )
-        e_sampled = self.e_arr[-sampling_period:]
-        self.e_mean = np.mean(e_sampled)
-        
-        e_booled = 1*(e_sampled > self.e_mean)
-        
-        #computing E(t) main period
-        period_list = []
-        start_index = 0
-        index = 0
-        for i in range(5):
-            while e_booled[index] == e_booled[start_index]: # Find when it start to get a different value
-                index += 1 
-            
-            period = 0
-            try:
-                while e_booled[index + period] != e_booled[0]: # How long this value resist
-                    period += 1
-                period*=2  # period must show the total oscillation time
-                period_list.append(period)
-                start_index = index
-                
-            except:
-                if i == 0 : period_list.append(sampling_period)
-                # period = sampling_period
-                break
-            
-        self.e_period = round( np.mean(period_list) * self.time_step, 2)
-        return self.e_period 
 
     pass
 
 
 class Animated_network_of_neurons(Network_of_neurons):
-    def __init__(self,neuron_model,num_neurons,g,alpha = 20,**kwargs):
+    def __init__(self,neuron_model:str,num_neurons:int,g:float,alpha = 20,**kwargs):
+        """
+        This is an animated class of neural network with visulization scope.
+
+        Parameters
+        ----------
+        neuron_model : str
+            The name of the neuron model chosen according to the glossary.
+        num_neurons : int
+            Number of neurons in the simulation.
+        g : float
+            The inhibiton strength of neurons.
+        alpha : TYPE, optional
+            Inverse of effective period for spikes. The default is 20.
+        **kwargs : TYPE
+            you can set "xlim" and "ylim" of the figures.
+
+        Returns
+        -------
+        None.
+
+        """
         super().__init__(num_neurons,g,alpha)
         # self.potentail_arr = np.random.uniform(-np.pi,np.pi, size = num_neurons)
         
@@ -201,34 +254,6 @@ class Animated_network_of_neurons(Network_of_neurons):
         self.ax_xlim = kwargs.get('xlim',[self.random_input_span[0],self.random_input_span[1]])
         self.ax_ylim = kwargs.get('ylim',[self.floor_state, self.ceiling_state])        
             
-    def brace_for_lunch(self,total_time,time_step = 0.01,delay_time = 0.1):
-        
-        # random_input_span = (3.5,13.5)
-        
-        total_steps = int(total_time/time_step)
-        time_span = np.arange(0,total_time,time_step)
-        
-        self.total_time = total_time
-        self.total_steps = total_steps
-        self.time_step = time_step
-        self.delay_time = delay_time
-        self.delay_step = int(delay_time/time_step)
-        
-        
-        self.m_arr = np.zeros(total_steps)
-        self.e_arr = np.zeros(total_steps)
-        # self.random_input = np.random.uniform(*self.random_input_span,size = self.num_neurons)
-        
-        # self.random_input = np.linspace(self.random_input_span[0], self.random_input_span[1], num=self.weft_num)
-        # self.random_input = np.repeat(self.random_input, repeats = int( self.num_neurons / self.weft_num) )
-        
-        self.random_input = np.random.uniform(self.random_input_span[0], self.random_input_span[1], size = self.num_neurons)
-        
-        self.amin_saman_param = np.zeros( total_steps )
-        self.spiking_records = np.zeros(total_steps)
-        
-        self._set_cornometers()
-    
         return
 
     def _init_ax(self):
