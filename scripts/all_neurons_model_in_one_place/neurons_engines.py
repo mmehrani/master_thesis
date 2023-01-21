@@ -8,8 +8,31 @@ Created on Wed Apr 14 19:07:00 2021
 import numpy as np
 
 class Rotational_neural_network:
-    
-    def __init__(self,num_neurons,g,alpha = 20):
+    def __init__(self,num_neurons:int,g:float,alpha = 20):
+        """
+        This will depict a fully-connected inhibitory network.
+        Here is the dynamics of each neuron potentails called rotational model :
+        $$
+        \begin{cases}
+        \dot{\theta_i}=I_i - cos(\theta_i) -g  E \\
+        \ddot{E}+ 2\alpha \dot{E}+\alpha^{2}E =\frac{\alpha^{2}}{N} \sum_{n|tـn<t} \delta(t - t_n - t_d)
+        \end{cases}
+        $$
+
+        Parameters
+        ----------
+        num_neurons : int
+            Total number of neurons in the simulation.
+        g : float
+            The inhibition strength of neurons on each other.
+        alpha : TYPE, optional
+            DESCRIPTION. The default is 20.
+
+        Returns
+        -------
+        None.
+
+        """
         self.num_neurons = num_neurons
         self.g = g
         self.alpha = alpha
@@ -62,8 +85,31 @@ class Rotational_neural_network:
     pass
 
 class Non_repulsive_rotational_neural_network(Rotational_neural_network):
-    
     def __init__(self,num_neurons,g,alpha = 20):
+        """
+        This will depict a fully-connected inhibitory network.
+        Here is the dynamics of each neuron potentails called simple non-repulsive model :
+        $$
+        \begin{cases}
+        \dot{\theta_i}=I_i -g  E \\
+        \ddot{E}+ 2\alpha \dot{E}+\alpha^{2}E =\frac{\alpha^{2}}{N} \sum_{n|tـn<t} \delta(t - t_n - t_d)
+        \end{cases}
+        $$
+
+        Parameters
+        ----------
+        num_neurons : int
+            Total number of neurons in the simulation.
+        g : float
+            The inhibition strength of neurons on each other.
+        alpha : TYPE, optional
+            DESCRIPTION. The default is 20.
+
+        Returns
+        -------
+        None.
+
+        """
         self.num_neurons = num_neurons
         self.g = g
         self.alpha = alpha
@@ -103,8 +149,31 @@ class Non_repulsive_rotational_neural_network(Rotational_neural_network):
         return
 
 class IF_neural_network:
-    
     def __init__(self,num_neurons,g,alpha = 20):
+        """
+        This will depict a fully-connected inhibitory network.
+        Here is the dynamics of each neuron potentails called Integrate-Fire model :
+        $$
+        \begin{cases}
+        \dot{v_i}=I_i - v_i -g  E \\
+        \ddot{E}+ 2\alpha \dot{E}+\alpha^{2}E =\frac{\alpha^{2}}{N} \sum_{n|tـn<t} \delta(t - t_n - t_d)
+        \end{cases}
+        $$
+
+        Parameters
+        ----------
+        num_neurons : int
+            Total number of neurons in the simulation.
+        g : float
+            The inhibition strength of neurons on each other.
+        alpha : TYPE, optional
+            DESCRIPTION. The default is 20.
+
+        Returns
+        -------
+        None.
+
+        """
         self.num_neurons = num_neurons
         self.g = g
         self.alpha = alpha
