@@ -37,6 +37,16 @@ class Two_connected_neural_network():
         self.second_network.external_input = self.first_network.e_arr
         return
     
+    # def ignite(self, checkpoint_step):
+        # for i in tqdm(range( int( 10 / self.first_network.time_step ) ) ):
+        #     self.first_network._march_on(i)
+        #     # self.second_network._march_on(i)
+            
+        # for i in tqdm(range( int( 10 / self.first_network.time_step ), int( checkpoint_step / self.first_network.time_step ) ) ):
+        #     self.first_network._march_on(i)
+        #     self.second_network._march_on(i - int( 10 / self.first_network.time_step ))
+        # return
+
     def ignite(self, checkpoint_step):
         for i in tqdm(range( int( checkpoint_step / self.first_network.time_step ) ) ):
             self.first_network._march_on(i)
@@ -53,15 +63,17 @@ class Two_connected_neural_network():
 
 num_neurons = 10000
 total_time = 200
-start_time_to_sample = 10
-g = 0
-between_g = - 10
+start_time_to_sample = 100
+g = 10
+between_g =  - 1
 delay_time = 0.5
 # g = 0
 
 sample_network_one = Animated_network_of_neurons(neuron_model,
                                                  num_neurons, g = g,
                                                  random_input_span = (9.5,13.5), alpha = 20)
+sample_network_one.potentail_arr -= 2
+
 sample_network_two = Animated_network_of_neurons(neuron_model,
                                                  num_neurons, g = g,
                                                  random_input_span = (9.5,13.5), alpha = 20)
